@@ -1,0 +1,54 @@
+{
+  "id": "scholar",
+  "title": "书桌前的学者",
+  "originalTitle": "A Scholar at His Desk",
+  "file": "Scholar at his desk (1631), by Rembrandt van Rijn.jpg",
+  "date": "1631 年",
+  "description": "男子从书桌前转过头，书籍与手中的笔使人物仿佛刚刚暂停工作。身份尚不确定。",
+  "looking": "沿着目光看向停住的手，再比较桌布、书页和皮肤的质感。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node176",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node176",
+  "source": "https://commons.wikimedia.org/wiki/File:Scholar_at_his_desk_(1631),_by_Rembrandt_van_Rijn.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Scholar_at_his_desk_%281631%29%2C_by_Rembrandt_van_Rijn.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 3400,
+  "sourceHeight": 3691,
+  "variants": [
+    {
+      "url": "/assets/artworks/scholar/far.webp",
+      "width": 590,
+      "height": 640,
+      "bytes": 77910
+    },
+    {
+      "url": "/assets/artworks/scholar/medium.webp",
+      "width": 1474,
+      "height": 1600,
+      "bytes": 737172
+    },
+    {
+      "url": "/assets/artworks/scholar/near.webp",
+      "width": 2763,
+      "height": 3000,
+      "bytes": 2954980
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/scholar/detail.webp",
+    "width": 3400,
+    "height": 3691,
+    "bytes": 4411074,
+    "dzi": "/assets/artworks/scholar/detail.dzi",
+    "tileBytes": 5839060
+  },
+  "original": {
+    "width": 3400,
+    "height": 3691,
+    "dzi": "/assets/artworks/scholar/detail.dzi"
+  },
+  "hasOriginal": false
+}

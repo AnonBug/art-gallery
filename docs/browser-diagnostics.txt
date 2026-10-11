@@ -1,0 +1,54 @@
+漫览 v1.0.0 · 20261011
+{
+  "position": [
+    0,
+    2.6,
+    -0.8300097484210882
+  ],
+  "yaw": 0,
+  "pitch": 0,
+  "selected": "prodigal",
+  "moving": false,
+  "suspended": false,
+  "stick": {
+    "x": 0,
+    "y": 0
+  },
+  "loadedTextures": 12
+}
+查看器 {
+  "activeViewers": 0,
+  "pendingTiles": 0,
+  "artwork": "prodigal",
+  "source": "detail",
+  "viewport": [
+    0,
+    0
+  ],
+  "events": [
+    "16:54:33 首张瓦片已绘制",
+    "16:54:33 缩放 1.000",
+    "16:54:33 加载 prodigal /assets/artworks/prodigal/original.dzi / DPR=1",
+    "16:54:33 DZI 打开成功",
+    "16:54:33 首张瓦片已绘制",
+    "16:54:33 缩放 1.000",
+    "16:54:33 加载 prodigal /assets/artworks/prodigal/detail.dzi / DPR=1",
+    "16:54:33 DZI 打开成功",
+    "16:54:33 首张瓦片已绘制",
+    "16:54:33 缩放 1.000",
+    "16:54:34 关闭 / viewer 已销毁",
+    "16:54:35 加载 prodigal /assets/artworks/prodigal/detail.dzi / DPR=1",
+    "16:54:35 DZI 打开成功",
+    "16:54:35 首张瓦片已绘制",
+    "16:54:35 缩放 1.000",
+    "16:54:35 加载 prodigal /assets/artworks/prodigal/original.dzi / DPR=1",
+    "16:54:35 DZI 打开成功",
+    "16:54:35 首张瓦片已绘制",
+    "16:54:35 缩放 1.000",
+    "16:54:35 加载 prodigal /assets/artworks/prodigal/detail.dzi / DPR=1",
+    "16:54:35 DZI 打开成功",
+    "16:54:35 首张瓦片已绘制",
+    "16:54:35 缩放 1.000",
+    "16:54:36 关闭 / viewer 已销毁"
+  ]
+}

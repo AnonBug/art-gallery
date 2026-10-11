@@ -1,0 +1,54 @@
+{
+  "id": "holy-family",
+  "title": "圣家族与天使",
+  "originalTitle": "The Holy Family with Angels",
+  "file": "Rembrandt Harmensz. van Rijn - The Holy Family.jpg",
+  "date": "1645 年",
+  "description": "圣母在摇篮旁读书，约瑟在暗处工作，天使从光中降临。",
+  "looking": "先看摇篮与书页，再寻找左上方的天使，体会日常生活与神圣主题的交织。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node175",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_The_Holy_Family.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Rembrandt_Harmensz._van_Rijn_-_The_Holy_Family.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 8464,
+  "sourceHeight": 10880,
+  "variants": [
+    {
+      "url": "/assets/artworks/holy-family/far.webp",
+      "width": 498,
+      "height": 640,
+      "bytes": 78080
+    },
+    {
+      "url": "/assets/artworks/holy-family/medium.webp",
+      "width": 1245,
+      "height": 1600,
+      "bytes": 521012
+    },
+    {
+      "url": "/assets/artworks/holy-family/near.webp",
+      "width": 2334,
+      "height": 3000,
+      "bytes": 1850642
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/holy-family/detail.webp",
+    "width": 6224,
+    "height": 8000,
+    "bytes": 15239386,
+    "dzi": "/assets/artworks/holy-family/detail.dzi",
+    "tileBytes": 19938002
+  },
+  "original": {
+    "width": 8464,
+    "height": 10880,
+    "dzi": "/assets/artworks/holy-family/original.dzi"
+  },
+  "hasOriginal": true
+}

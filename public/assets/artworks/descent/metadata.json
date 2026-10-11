@@ -1,0 +1,53 @@
+{
+  "id": "descent",
+  "title": "卸下十字架",
+  "originalTitle": "The Descent from the Cross",
+  "date": "1634 年",
+  "dimensions": "约 158 × 117 厘米",
+  "medium": "布面油画",
+  "accession": "ГЭ-753",
+  "file": "Descent from the Cross (Rembrant).jpg",
+  "attribution": "伦勃朗及其工作室（归属待核对）",
+  "description": "人们将基督从十字架上放下，光线集中在身体与围绕他的手上。所用文件页归类于伦勃朗工作室，展签保留归属待核对说明。",
+  "looking": "留意光线落在何处，以及暗处的人物怎样共同支撑身体。",
+  "source": "https://commons.wikimedia.org/wiki/File:Descent_from_the_Cross_(Rembrant).jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Descent_from_the_Cross_%28Rembrant%29.jpg",
+  "license": "Public domain",
+  "sourceWidth": 2789,
+  "sourceHeight": 3840,
+  "variants": [
+    {
+      "url": "/assets/artworks/descent/far.webp",
+      "width": 465,
+      "height": 640,
+      "bytes": 40642
+    },
+    {
+      "url": "/assets/artworks/descent/medium.webp",
+      "width": 1162,
+      "height": 1600,
+      "bytes": 273686
+    },
+    {
+      "url": "/assets/artworks/descent/near.webp",
+      "width": 2179,
+      "height": 3000,
+      "bytes": 1021060
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/descent/detail.webp",
+    "width": 2789,
+    "height": 3840,
+    "bytes": 1372260,
+    "dzi": "/assets/artworks/descent/detail.dzi",
+    "tileBytes": 2779860
+  },
+  "original": {
+    "width": 2789,
+    "height": 3840,
+    "dzi": "/assets/artworks/descent/detail.dzi"
+  },
+  "hasOriginal": false,
+  "credit": "Workshop of   Rembrandt"
+}

@@ -1,0 +1,52 @@
+{
+  "id": "flora",
+  "title": "花神",
+  "originalTitle": "Flora",
+  "date": "1634 年",
+  "dimensions": "125 × 101 厘米",
+  "medium": "布面油画",
+  "accession": "ГЭ-732",
+  "file": "Saskia van Uylenburgh (1612-1642) as Flora, by Rembrandt.jpg",
+  "description": "萨斯基娅以花神的形象出现。花冠、衣饰和柔和的侧光，使肖像具有寓意画的气息。",
+  "looking": "观察花冠的层次、衣料的反光，以及面部与暗背景之间的过渡。",
+  "source": "https://commons.wikimedia.org/wiki/File:Saskia_van_Uylenburgh_(1612-1642)_as_Flora,_by_Rembrandt.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Saskia_van_Uylenburgh_%281612-1642%29_as_Flora%2C_by_Rembrandt.jpg",
+  "license": "Public domain",
+  "sourceWidth": 5422,
+  "sourceHeight": 6680,
+  "variants": [
+    {
+      "url": "/assets/artworks/flora/far.webp",
+      "width": 519,
+      "height": 640,
+      "bytes": 74732
+    },
+    {
+      "url": "/assets/artworks/flora/medium.webp",
+      "width": 1299,
+      "height": 1600,
+      "bytes": 562402
+    },
+    {
+      "url": "/assets/artworks/flora/near.webp",
+      "width": 2435,
+      "height": 3000,
+      "bytes": 2472216
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/flora/detail.webp",
+    "width": 5422,
+    "height": 6680,
+    "bytes": 10394194,
+    "dzi": "/assets/artworks/flora/detail.dzi",
+    "tileBytes": 15235554
+  },
+  "original": {
+    "width": 5422,
+    "height": 6680,
+    "dzi": "/assets/artworks/flora/detail.dzi"
+  },
+  "hasOriginal": false,
+  "credit": "Rembrandt"
+}

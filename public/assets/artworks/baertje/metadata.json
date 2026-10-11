@@ -1,0 +1,54 @@
+{
+  "id": "baertje",
+  "title": "巴尔特耶·马滕斯肖像",
+  "originalTitle": "Portrait of Baertje Martens",
+  "file": "Baertje Martens, by Rembrandt van Rijn.jpg",
+  "date": "1640 年",
+  "description": "画中人是框具与家具工匠赫尔曼·多默的妻子，轻微的笑意使肖像富有亲切感。",
+  "looking": "注意眼神、嘴角与领口的精细处理，观察人物与暗背景之间的关系。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node174",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node174",
+  "source": "https://commons.wikimedia.org/wiki/File:Baertje_Martens,_by_Rembrandt_van_Rijn.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Baertje_Martens%2C_by_Rembrandt_van_Rijn.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 2694,
+  "sourceHeight": 3762,
+  "variants": [
+    {
+      "url": "/assets/artworks/baertje/far.webp",
+      "width": 458,
+      "height": 640,
+      "bytes": 25604
+    },
+    {
+      "url": "/assets/artworks/baertje/medium.webp",
+      "width": 1146,
+      "height": 1600,
+      "bytes": 164534
+    },
+    {
+      "url": "/assets/artworks/baertje/near.webp",
+      "width": 2148,
+      "height": 3000,
+      "bytes": 499696
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/baertje/detail.webp",
+    "width": 2694,
+    "height": 3762,
+    "bytes": 651472,
+    "dzi": "/assets/artworks/baertje/detail.dzi",
+    "tileBytes": 1622864
+  },
+  "original": {
+    "width": 2694,
+    "height": 3762,
+    "dzi": "/assets/artworks/baertje/detail.dzi"
+  },
+  "hasOriginal": false
+}

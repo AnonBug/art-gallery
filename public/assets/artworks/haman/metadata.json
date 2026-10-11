@@ -1,0 +1,54 @@
+{
+  "id": "haman",
+  "title": "哈曼得知自己的命运",
+  "originalTitle": "Haman Recognizes His Fate",
+  "file": "Rembrandt Harmensz. van Rijn 055.jpg",
+  "date": "约 1648—1665 年（画源所列范围）",
+  "description": "人物沉入暗处，前景男子的表情与胸前手势凝聚了叙事。官方全景也介绍了“大卫与乌利亚”的另一种主题解释。",
+  "looking": "比较前景面孔与身后人物的明暗层次，观察手势如何传达内心变化。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node173",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node173",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_055.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rembrandt_Harmensz._van_Rijn_055.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt   or workshop",
+  "sourceWidth": 2536,
+  "sourceHeight": 2792,
+  "variants": [
+    {
+      "url": "/assets/artworks/haman/far.webp",
+      "width": 581,
+      "height": 640,
+      "bytes": 80596
+    },
+    {
+      "url": "/assets/artworks/haman/medium.webp",
+      "width": 1453,
+      "height": 1600,
+      "bytes": 472950
+    },
+    {
+      "url": "/assets/artworks/haman/near.webp",
+      "width": 2536,
+      "height": 2792,
+      "bytes": 920672
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/haman/detail.webp",
+    "width": 2536,
+    "height": 2792,
+    "bytes": 920672,
+    "dzi": "/assets/artworks/haman/detail.dzi",
+    "tileBytes": 1947233
+  },
+  "original": {
+    "width": 2536,
+    "height": 2792,
+    "dzi": "/assets/artworks/haman/detail.dzi"
+  },
+  "hasOriginal": false
+}

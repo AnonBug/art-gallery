@@ -1,0 +1,52 @@
+{
+  "id": "danae",
+  "title": "达娜厄",
+  "originalTitle": "Danaë",
+  "date": "1636—1643 年",
+  "dimensions": "约 185 × 203 厘米",
+  "medium": "布面油画",
+  "accession": "ГЭ-723",
+  "file": "Rembrandt van Rijn - Danaë 1636-1643.jpg",
+  "description": "达娜厄向光线伸出手，暖光在身体、床褥与室内陈设间流动。当前数字版本分辨率有限，适合完整构图欣赏。",
+  "looking": "观察伸出的手与入画光线之间的关系，再看床褥和背景的明暗层次。",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+  "license": "Public domain",
+  "sourceWidth": 2499,
+  "sourceHeight": 2278,
+  "variants": [
+    {
+      "url": "/assets/artworks/danae/far.webp",
+      "width": 640,
+      "height": 583,
+      "bytes": 61834
+    },
+    {
+      "url": "/assets/artworks/danae/medium.webp",
+      "width": 1600,
+      "height": 1459,
+      "bytes": 285556
+    },
+    {
+      "url": "/assets/artworks/danae/near.webp",
+      "width": 2499,
+      "height": 2278,
+      "bytes": 519644
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/danae/detail.webp",
+    "width": 2499,
+    "height": 2278,
+    "bytes": 519644,
+    "dzi": "/assets/artworks/danae/detail.dzi",
+    "tileBytes": 1216003
+  },
+  "original": {
+    "width": 2499,
+    "height": 2278,
+    "dzi": "/assets/artworks/danae/detail.dzi"
+  },
+  "hasOriginal": false,
+  "credit": "Rembrandt"
+}

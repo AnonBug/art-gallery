@@ -1,0 +1,927 @@
+{
+  "baertje": {
+    "id": "baertje",
+    "title": "巴尔特耶·马滕斯肖像",
+    "originalTitle": "Portrait of Baertje Martens",
+    "file": "Baertje Martens, by Rembrandt van Rijn.jpg",
+    "date": "1640 年",
+    "description": "画中人是框具与家具工匠赫尔曼·多默的妻子，轻微的笑意使肖像富有亲切感。",
+    "looking": "注意眼神、嘴角与领口的精细处理，观察人物与暗背景之间的关系。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node174",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node174",
+    "source": "https://commons.wikimedia.org/wiki/File:Baertje_Martens,_by_Rembrandt_van_Rijn.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Baertje_Martens%2C_by_Rembrandt_van_Rijn.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 2694,
+    "sourceHeight": 3762,
+    "variants": [
+      {
+        "url": "/artworks/baertje/far.webp",
+        "width": 458,
+        "height": 640,
+        "bytes": 25604
+      },
+      {
+        "url": "/artworks/baertje/medium.webp",
+        "width": 1146,
+        "height": 1600,
+        "bytes": 164534
+      },
+      {
+        "url": "/artworks/baertje/near.webp",
+        "width": 2148,
+        "height": 3000,
+        "bytes": 499696
+      }
+    ],
+    "detail": {
+      "url": "/artworks/baertje/detail.webp",
+      "width": 2694,
+      "height": 3762,
+      "bytes": 651472,
+      "dzi": "/artworks/baertje/detail.dzi",
+      "tileBytes": 1622864
+    },
+    "original": {
+      "width": 2694,
+      "height": 3762,
+      "dzi": "/artworks/baertje/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "danae": {
+    "id": "danae",
+    "title": "达娜厄",
+    "originalTitle": "Danaë",
+    "date": "1636—1643 年",
+    "dimensions": "约 185 × 203 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-723",
+    "file": "Rembrandt van Rijn - Danaë 1636-1643.jpg",
+    "description": "达娜厄向光线伸出手，暖光在身体、床褥与室内陈设间流动。当前数字版本分辨率有限，适合完整构图欣赏。",
+    "looking": "观察伸出的手与入画光线之间的关系，再看床褥和背景的明暗层次。",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+    "license": "Public domain",
+    "sourceWidth": 2499,
+    "sourceHeight": 2278,
+    "variants": [
+      {
+        "url": "/artworks/danae/far.webp",
+        "width": 640,
+        "height": 583,
+        "bytes": 61834
+      },
+      {
+        "url": "/artworks/danae/medium.webp",
+        "width": 1600,
+        "height": 1459,
+        "bytes": 285556
+      },
+      {
+        "url": "/artworks/danae/near.webp",
+        "width": 2499,
+        "height": 2278,
+        "bytes": 519644
+      }
+    ],
+    "detail": {
+      "url": "/artworks/danae/detail.webp",
+      "width": 2499,
+      "height": 2278,
+      "bytes": 519644,
+      "dzi": "/artworks/danae/detail.dzi",
+      "tileBytes": 1216003
+    },
+    "original": {
+      "width": 2499,
+      "height": 2278,
+      "dzi": "/artworks/danae/original.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Rembrandt"
+  },
+  "david-jonathan": {
+    "id": "david-jonathan",
+    "title": "大卫与约拿单",
+    "originalTitle": "David and Jonathan",
+    "date": "1642 年",
+    "author": "伦勃朗·范·莱因",
+    "source": "https://commons.wikimedia.org/wiki/File:Harmensz_van_Rijn_Rembrandt_-_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4_%D0%B8_%D0%98%D0%BE%D0%BD%D0%B0%D1%84%D0%B0%D0%BD_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "description": "两位友人拥抱告别，华丽衣料与低垂姿态形成对照。此件为冬宫馆藏，当前实际陈列位置待确认。本版补充取得3344×4000像素源图。",
+    "looking": "观察拥抱中的手、衣料反光和远处景物之间的明暗关系。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "file": "Harmensz van Rijn Rembrandt - Давид и Ионафан - Google Art Project.jpg",
+    "accession": "待核对",
+    "hallEvidence": "馆藏补充，现行展厅位置待核对",
+    "hallSource": "https://en.wikipedia.org/wiki/David_and_Jonathan_(Rembrandt)",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Harmensz_van_Rijn_Rembrandt_-_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4_%D0%B8_%D0%98%D0%BE%D0%BD%D0%B0%D1%84%D0%B0%D0%BD_-_Google_Art_Project.jpg",
+    "sourceWidth": 3344,
+    "sourceHeight": 4000,
+    "variants": [
+      {
+        "url": "/assets/artworks/david-jonathan/far.webp",
+        "width": 535,
+        "height": 640,
+        "bytes": 74144,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/david-jonathan/medium.webp",
+        "width": 1338,
+        "height": 1600,
+        "bytes": 505498,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/david-jonathan/near.webp",
+        "width": 2508,
+        "height": 3000,
+        "bytes": 1469826,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/david-jonathan/detail.webp",
+      "width": 3344,
+      "height": 4000,
+      "bytes": 1899360,
+      "quality": 94,
+      "dzi": "/assets/artworks/david-jonathan/detail.dzi"
+    },
+    "original": {
+      "width": 3344,
+      "height": 4000,
+      "dzi": "/assets/artworks/david-jonathan/detail.dzi"
+    },
+    "hasOriginal": false,
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 文件页已核查，2026-10-11）",
+    "wall": "south",
+    "offset": -5.8,
+    "height": 1.75,
+    "centerY": 2.6,
+    "originalFile": "originals/david-jonathan.jpg",
+    "originalFileBytes": 3967402,
+    "generatedAt": "2026-10-11T08:44:31.837Z"
+  },
+  "decker": {
+    "id": "decker",
+    "title": "诗人耶雷米亚斯·德·德克肖像",
+    "originalTitle": "Portrait of Jeremias de Decker",
+    "file": "Portrait of the poet Jeremias de Decker, Rembrandt van Rijn, 1656, Hermitage, Saint Petersburg.jpg",
+    "date": "年代待核对",
+    "description": "诗人戴着高帽，帽檐投下的阴影使面容显得沉静。数字文件名与官方全景对年代的表述有差异，暂不定年。",
+    "looking": "从帽檐的半透明阴影看向眼神，再观察脸部怎样从背景中浮现。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node173",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node173",
+    "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_the_poet_Jeremias_de_Decker,_Rembrandt_van_Rijn,_1656,_Hermitage,_Saint_Petersburg.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Portrait_of_the_poet_Jeremias_de_Decker%2C_Rembrandt_van_Rijn%2C_1656%2C_Hermitage%2C_Saint_Petersburg.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 1579,
+    "sourceHeight": 1998,
+    "variants": [
+      {
+        "url": "/artworks/decker/far.webp",
+        "width": 506,
+        "height": 640,
+        "bytes": 14376
+      },
+      {
+        "url": "/artworks/decker/medium.webp",
+        "width": 1264,
+        "height": 1600,
+        "bytes": 78386
+      },
+      {
+        "url": "/artworks/decker/near.webp",
+        "width": 1579,
+        "height": 1998,
+        "bytes": 115882
+      }
+    ],
+    "detail": {
+      "url": "/artworks/decker/detail.webp",
+      "width": 1579,
+      "height": 1998,
+      "bytes": 115882,
+      "dzi": "/artworks/decker/detail.dzi",
+      "tileBytes": 320728
+    },
+    "original": {
+      "width": 1579,
+      "height": 1998,
+      "dzi": "/artworks/decker/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "descent": {
+    "id": "descent",
+    "title": "卸下十字架",
+    "originalTitle": "The Descent from the Cross",
+    "date": "1634 年",
+    "dimensions": "约 158 × 117 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-753",
+    "file": "Descent from the Cross (Rembrant).jpg",
+    "attribution": "伦勃朗及其工作室（归属待核对）",
+    "description": "人们将基督从十字架上放下，光线集中在身体与围绕他的手上。所用文件页归类于伦勃朗工作室，展签保留归属待核对说明。",
+    "looking": "留意光线落在何处，以及暗处的人物怎样共同支撑身体。",
+    "source": "https://commons.wikimedia.org/wiki/File:Descent_from_the_Cross_(Rembrant).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Descent_from_the_Cross_%28Rembrant%29.jpg",
+    "license": "Public domain",
+    "sourceWidth": 2789,
+    "sourceHeight": 3840,
+    "variants": [
+      {
+        "url": "/artworks/descent/far.webp",
+        "width": 465,
+        "height": 640,
+        "bytes": 40642
+      },
+      {
+        "url": "/artworks/descent/medium.webp",
+        "width": 1162,
+        "height": 1600,
+        "bytes": 273686
+      },
+      {
+        "url": "/artworks/descent/near.webp",
+        "width": 2179,
+        "height": 3000,
+        "bytes": 1021060
+      }
+    ],
+    "detail": {
+      "url": "/artworks/descent/detail.webp",
+      "width": 2789,
+      "height": 3840,
+      "bytes": 1372260,
+      "dzi": "/artworks/descent/detail.dzi",
+      "tileBytes": 2779860
+    },
+    "original": {
+      "width": 2789,
+      "height": 3840,
+      "dzi": "/artworks/descent/original.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Workshop of   Rembrandt"
+  },
+  "earrings": {
+    "id": "earrings",
+    "title": "试戴耳环的年轻女子",
+    "originalTitle": "Young Woman with Earrings",
+    "file": "Rembrandt Woman with a Mirror.jpg",
+    "date": "1638 年",
+    "description": "女子面对镜子试戴耳饰，日常动作也被赋予关于虚荣的寓意。",
+    "looking": "观察抬起的手、耳饰与镜面的关系，以及面部微笑的细微变化。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Woman_with_a_Mirror.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Rembrandt_Woman_with_a_Mirror.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 2527,
+    "sourceHeight": 3068,
+    "variants": [
+      {
+        "url": "/artworks/earrings/far.webp",
+        "width": 527,
+        "height": 640,
+        "bytes": 55222
+      },
+      {
+        "url": "/artworks/earrings/medium.webp",
+        "width": 1318,
+        "height": 1600,
+        "bytes": 326882
+      },
+      {
+        "url": "/artworks/earrings/near.webp",
+        "width": 2471,
+        "height": 3000,
+        "bytes": 882680
+      }
+    ],
+    "detail": {
+      "url": "/artworks/earrings/detail.webp",
+      "width": 2527,
+      "height": 3068,
+      "bytes": 817380,
+      "dzi": "/artworks/earrings/detail.dzi",
+      "tileBytes": 1801827
+    },
+    "original": {
+      "width": 2527,
+      "height": 3068,
+      "dzi": "/artworks/earrings/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "flora": {
+    "id": "flora",
+    "title": "花神",
+    "originalTitle": "Flora",
+    "date": "1634 年",
+    "dimensions": "125 × 101 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-732",
+    "file": "Saskia van Uylenburgh (1612-1642) as Flora, by Rembrandt.jpg",
+    "description": "萨斯基娅以花神的形象出现。花冠、衣饰和柔和的侧光，使肖像具有寓意画的气息。",
+    "looking": "观察花冠的层次、衣料的反光，以及面部与暗背景之间的过渡。",
+    "source": "https://commons.wikimedia.org/wiki/File:Saskia_van_Uylenburgh_(1612-1642)_as_Flora,_by_Rembrandt.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Saskia_van_Uylenburgh_%281612-1642%29_as_Flora%2C_by_Rembrandt.jpg",
+    "license": "Public domain",
+    "sourceWidth": 5422,
+    "sourceHeight": 6680,
+    "variants": [
+      {
+        "url": "/artworks/flora/far.webp",
+        "width": 519,
+        "height": 640,
+        "bytes": 74732
+      },
+      {
+        "url": "/artworks/flora/medium.webp",
+        "width": 1299,
+        "height": 1600,
+        "bytes": 562402
+      },
+      {
+        "url": "/artworks/flora/near.webp",
+        "width": 2435,
+        "height": 3000,
+        "bytes": 2472216
+      }
+    ],
+    "detail": {
+      "url": "/artworks/flora/detail.webp",
+      "width": 5422,
+      "height": 6680,
+      "bytes": 10394194,
+      "dzi": "/artworks/flora/detail.dzi",
+      "tileBytes": 15235554
+    },
+    "original": {
+      "width": 5422,
+      "height": 6680,
+      "dzi": "/artworks/flora/original.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Rembrandt"
+  },
+  "haman": {
+    "id": "haman",
+    "title": "哈曼得知自己的命运",
+    "originalTitle": "Haman Recognizes His Fate",
+    "file": "Rembrandt Harmensz. van Rijn 055.jpg",
+    "date": "约 1648—1665 年（画源所列范围）",
+    "description": "人物沉入暗处，前景男子的表情与胸前手势凝聚了叙事。官方全景也介绍了“大卫与乌利亚”的另一种主题解释。",
+    "looking": "比较前景面孔与身后人物的明暗层次，观察手势如何传达内心变化。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node173",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node173",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_055.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Rembrandt_Harmensz._van_Rijn_055.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt   or workshop",
+    "sourceWidth": 2536,
+    "sourceHeight": 2792,
+    "variants": [
+      {
+        "url": "/artworks/haman/far.webp",
+        "width": 581,
+        "height": 640,
+        "bytes": 80596
+      },
+      {
+        "url": "/artworks/haman/medium.webp",
+        "width": 1453,
+        "height": 1600,
+        "bytes": 472950
+      },
+      {
+        "url": "/artworks/haman/near.webp",
+        "width": 2536,
+        "height": 2792,
+        "bytes": 920672
+      }
+    ],
+    "detail": {
+      "url": "/artworks/haman/detail.webp",
+      "width": 2536,
+      "height": 2792,
+      "bytes": 920672,
+      "dzi": "/artworks/haman/detail.dzi",
+      "tileBytes": 1947233
+    },
+    "original": {
+      "width": 2536,
+      "height": 2792,
+      "dzi": "/artworks/haman/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "holy-family": {
+    "id": "holy-family",
+    "title": "圣家族与天使",
+    "originalTitle": "The Holy Family with Angels",
+    "file": "Rembrandt Harmensz. van Rijn - The Holy Family.jpg",
+    "date": "1645 年",
+    "description": "圣母在摇篮旁读书，约瑟在暗处工作，天使从光中降临。",
+    "looking": "先看摇篮与书页，再寻找左上方的天使，体会日常生活与神圣主题的交织。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_The_Holy_Family.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Rembrandt_Harmensz._van_Rijn_-_The_Holy_Family.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 8464,
+    "sourceHeight": 10880,
+    "variants": [
+      {
+        "url": "/artworks/holy-family/far.webp",
+        "width": 498,
+        "height": 640,
+        "bytes": 78080
+      },
+      {
+        "url": "/artworks/holy-family/medium.webp",
+        "width": 1245,
+        "height": 1600,
+        "bytes": 521012
+      },
+      {
+        "url": "/artworks/holy-family/near.webp",
+        "width": 2334,
+        "height": 3000,
+        "bytes": 1850642
+      }
+    ],
+    "detail": {
+      "url": "/artworks/holy-family/detail.webp",
+      "width": 6224,
+      "height": 8000,
+      "bytes": 15239386,
+      "dzi": "/artworks/holy-family/detail.dzi",
+      "tileBytes": 19938002
+    },
+    "original": {
+      "width": 8464,
+      "height": 10880,
+      "dzi": "/artworks/holy-family/original.dzi"
+    },
+    "hasOriginal": true
+  },
+  "isaac": {
+    "id": "isaac",
+    "title": "亚伯拉罕献以撒",
+    "originalTitle": "Abraham’s Sacrifice",
+    "date": "1635 年",
+    "dimensions": "约 193 × 132 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-727",
+    "file": "Rembrandt Abraham's Sacrifice (Hermitage).jpg",
+    "description": "天使在关键时刻制止亚伯拉罕，悬落的刀和交错的手臂将瞬间凝固。此画于 2025 年修复后重回 254 号厅；当前画源为修复前上传的数字版本。",
+    "looking": "沿着天使、手腕和落刀看向以撒，感受动作与明暗如何制造紧张。",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Abraham%27s_Sacrifice_(Hermitage).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt_Abraham%27s_Sacrifice_%28Hermitage%29.jpg",
+    "license": "Public domain",
+    "sourceWidth": 2471,
+    "sourceHeight": 3633,
+    "variants": [
+      {
+        "url": "/artworks/isaac/far.webp",
+        "width": 435,
+        "height": 640,
+        "bytes": 56802
+      },
+      {
+        "url": "/artworks/isaac/medium.webp",
+        "width": 1088,
+        "height": 1600,
+        "bytes": 383954
+      },
+      {
+        "url": "/artworks/isaac/near.webp",
+        "width": 2040,
+        "height": 3000,
+        "bytes": 1167898
+      }
+    ],
+    "detail": {
+      "url": "/artworks/isaac/detail.webp",
+      "width": 2471,
+      "height": 3633,
+      "bytes": 1358626,
+      "dzi": "/artworks/isaac/detail.dzi",
+      "tileBytes": 2749754
+    },
+    "original": {
+      "width": 2471,
+      "height": 3633,
+      "dzi": "/artworks/isaac/original.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Rembrandt"
+  },
+  "magi": {
+    "id": "magi",
+    "title": "三王来拜",
+    "originalTitle": "The Adoration of the Magi",
+    "file": "Rembrandt The Adoration of the Magi.jpg",
+    "date": "1634 年（据画源）",
+    "description": "以灰调描绘的圣经场景，官方历史全景将其表述为伦勃朗工作室作品。 原图服务限流，本版采用标准1920像素宽度版本；未取得更大的原图。",
+    "looking": "在单色层次中寻找光照中心，再观察人物围绕中心的排列。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "attribution": "伦勃朗工作室（据官方历史全景）",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_The_Adoration_of_the_Magi.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Rembrandt_The_Adoration_of_the_Magi.jpg/1920px-Rembrandt_The_Adoration_of_the_Magi.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 1920,
+    "sourceHeight": 2210,
+    "variants": [
+      {
+        "url": "/artworks/magi/far.webp",
+        "width": 556,
+        "height": 640,
+        "bytes": 81908
+      },
+      {
+        "url": "/artworks/magi/medium.webp",
+        "width": 1390,
+        "height": 1600,
+        "bytes": 556744
+      },
+      {
+        "url": "/artworks/magi/near.webp",
+        "width": 1920,
+        "height": 2210,
+        "bytes": 920660
+      }
+    ],
+    "detail": {
+      "url": "/artworks/magi/detail.webp",
+      "width": 1920,
+      "height": 2210,
+      "bytes": 920660,
+      "dzi": "/artworks/magi/detail.dzi",
+      "tileBytes": 1499212
+    },
+    "original": {
+      "width": 1920,
+      "height": 2210,
+      "dzi": "/artworks/magi/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "old-woman": {
+    "id": "old-woman",
+    "title": "老妇人肖像",
+    "originalTitle": "Portrait of an Old Woman",
+    "file": "Rembrandt - Portrait of an Old Woman - WGA19189.jpg",
+    "date": "1654 年",
+    "description": "年长女性的面容在暗背景中显现，光线使神情与肌肤成为观看中心。",
+    "looking": "比较脸部、头巾与衣服的细节密度，体会画家怎样分配注意力。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node173",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node173",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_an_Old_Woman_-_WGA19189.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Rembrandt_-_Portrait_of_an_Old_Woman_-_WGA19189.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 1014,
+    "sourceHeight": 1255,
+    "variants": [
+      {
+        "url": "/artworks/old-woman/far.webp",
+        "width": 517,
+        "height": 640,
+        "bytes": 58670
+      },
+      {
+        "url": "/artworks/old-woman/medium.webp",
+        "width": 1014,
+        "height": 1255,
+        "bytes": 166366
+      },
+      {
+        "url": "/artworks/old-woman/near.webp",
+        "width": 1014,
+        "height": 1255,
+        "bytes": 166366
+      }
+    ],
+    "detail": {
+      "url": "/artworks/old-woman/detail.webp",
+      "width": 1014,
+      "height": 1255,
+      "bytes": 166366,
+      "dzi": "/artworks/old-woman/detail.dzi",
+      "tileBytes": 331527
+    },
+    "original": {
+      "width": 1014,
+      "height": 1255,
+      "dzi": "/artworks/old-woman/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "prodigal": {
+    "id": "prodigal",
+    "title": "浪子回头",
+    "originalTitle": "The Return of the Prodigal Son",
+    "date": "约 1668 年",
+    "dimensions": "262 × 205 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-742",
+    "file": "Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
+    "description": "父亲俯身拥抱归来的儿子，双手停在他的背上。光线将这场安静的重逢从暗处托起。",
+    "looking": "试着从父亲的双手看起，再移向儿子磨损的鞋与衣服，观察光线怎样引导视线。",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "sourceWidth": 22991,
+    "sourceHeight": 30000,
+    "variants": [
+      {
+        "url": "/artworks/prodigal/far.webp",
+        "width": 490,
+        "height": 640,
+        "bytes": 52418
+      },
+      {
+        "url": "/artworks/prodigal/medium.webp",
+        "width": 1226,
+        "height": 1600,
+        "bytes": 343580
+      },
+      {
+        "url": "/artworks/prodigal/near.webp",
+        "width": 2299,
+        "height": 3000,
+        "bytes": 1453728
+      }
+    ],
+    "detail": {
+      "url": "/artworks/prodigal/detail.webp",
+      "width": 6131,
+      "height": 8000,
+      "bytes": 13361354,
+      "dzi": "/artworks/prodigal/detail.dzi",
+      "tileBytes": 17544116
+    },
+    "original": {
+      "width": 22991,
+      "height": 30000,
+      "dzi": "/artworks/prodigal/original.dzi"
+    },
+    "hasOriginal": true,
+    "credit": "Rembrandt"
+  },
+  "red-man": {
+    "id": "red-man",
+    "title": "红衣老人肖像",
+    "originalTitle": "Portrait of an Old Man in Red",
+    "file": "Rembrandt Harmensz. van Rijn - Portrait of an Old Man in Red.jpg",
+    "date": "约 1652—1654 年",
+    "description": "红衣老人安静地坐着，面部与双手以厚重笔触呈现。",
+    "looking": "先观察双手的关节，再比较衣料与面部的笔触。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node174",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node174",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Portrait_of_an_Old_Man_in_Red.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Rembrandt_Harmensz._van_Rijn_-_Portrait_of_an_Old_Man_in_Red.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 6346,
+    "sourceHeight": 8280,
+    "variants": [
+      {
+        "url": "/artworks/red-man/far.webp",
+        "width": 491,
+        "height": 640,
+        "bytes": 25438
+      },
+      {
+        "url": "/artworks/red-man/medium.webp",
+        "width": 1226,
+        "height": 1600,
+        "bytes": 250722
+      },
+      {
+        "url": "/artworks/red-man/near.webp",
+        "width": 2299,
+        "height": 3000,
+        "bytes": 1346820
+      }
+    ],
+    "detail": {
+      "url": "/artworks/red-man/detail.webp",
+      "width": 6131,
+      "height": 8000,
+      "bytes": 13765570,
+      "dzi": "/artworks/red-man/detail.dzi",
+      "tileBytes": 18330837
+    },
+    "original": {
+      "width": 6346,
+      "height": 8280,
+      "dzi": "/artworks/red-man/original.dzi"
+    },
+    "hasOriginal": true
+  },
+  "samaritan": {
+    "id": "samaritan",
+    "title": "基督与撒玛利亚妇人",
+    "originalTitle": "Christ and the Woman of Samaria",
+    "file": "Christ and the Samaritan Woman, Rembrandt van Rijn, 1659, Hermitage, Saint Petersburg.jpg",
+    "date": "1659 年",
+    "description": "井边的相遇以人物对话展开。官方历史全景将此画表述为归于伦勃朗。",
+    "looking": "比较两个人物的手势、姿态与井的空间关系。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "attribution": "归于伦勃朗（据官方历史全景）",
+    "source": "https://commons.wikimedia.org/wiki/File:Christ_and_the_Samaritan_Woman,_Rembrandt_van_Rijn,_1659,_Hermitage,_Saint_Petersburg.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Christ_and_the_Samaritan_Woman%2C_Rembrandt_van_Rijn%2C_1659%2C_Hermitage%2C_Saint_Petersburg.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 1919,
+    "sourceHeight": 1543,
+    "variants": [
+      {
+        "url": "/artworks/samaritan/far.webp",
+        "width": 640,
+        "height": 515,
+        "bytes": 40400
+      },
+      {
+        "url": "/artworks/samaritan/medium.webp",
+        "width": 1600,
+        "height": 1287,
+        "bytes": 254614
+      },
+      {
+        "url": "/artworks/samaritan/near.webp",
+        "width": 1919,
+        "height": 1543,
+        "bytes": 373374
+      }
+    ],
+    "detail": {
+      "url": "/artworks/samaritan/detail.webp",
+      "width": 1919,
+      "height": 1543,
+      "bytes": 373374,
+      "dzi": "/artworks/samaritan/detail.dzi",
+      "tileBytes": 707316
+    },
+    "original": {
+      "width": 1919,
+      "height": 1543,
+      "dzi": "/artworks/samaritan/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "scholar": {
+    "id": "scholar",
+    "title": "书桌前的学者",
+    "originalTitle": "A Scholar at His Desk",
+    "file": "Scholar at his desk (1631), by Rembrandt van Rijn.jpg",
+    "date": "1631 年",
+    "description": "男子从书桌前转过头，书籍与手中的笔使人物仿佛刚刚暂停工作。身份尚不确定。",
+    "looking": "沿着目光看向停住的手，再比较桌布、书页和皮肤的质感。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node176",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node176",
+    "source": "https://commons.wikimedia.org/wiki/File:Scholar_at_his_desk_(1631),_by_Rembrandt_van_Rijn.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Scholar_at_his_desk_%281631%29%2C_by_Rembrandt_van_Rijn.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 3400,
+    "sourceHeight": 3691,
+    "variants": [
+      {
+        "url": "/artworks/scholar/far.webp",
+        "width": 590,
+        "height": 640,
+        "bytes": 77910
+      },
+      {
+        "url": "/artworks/scholar/medium.webp",
+        "width": 1474,
+        "height": 1600,
+        "bytes": 737172
+      },
+      {
+        "url": "/artworks/scholar/near.webp",
+        "width": 2763,
+        "height": 3000,
+        "bytes": 2954980
+      }
+    ],
+    "detail": {
+      "url": "/artworks/scholar/detail.webp",
+      "width": 3400,
+      "height": 3691,
+      "bytes": 4411074,
+      "dzi": "/artworks/scholar/detail.dzi",
+      "tileBytes": 5839060
+    },
+    "original": {
+      "width": 3400,
+      "height": 3691,
+      "dzi": "/artworks/scholar/original.dzi"
+    },
+    "hasOriginal": false
+  },
+  "vineyard": {
+    "id": "vineyard",
+    "title": "葡萄园雇工的比喻",
+    "originalTitle": "Parable of the Labourers in the Vineyard",
+    "file": "Rembrandt - Parable of the Laborers in the Vineyard.jpg",
+    "date": "1637 年",
+    "description": "园主向不同时间前来工作的雇工支付报酬，围绕公平的讨论通过人物手势展开。",
+    "looking": "观察钱币、手势与人物聚集的方向，寻找故事的视觉中心。",
+    "dimensions": "原作尺寸待核对",
+    "medium": "油画（支撑材料待核对）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 1980,
+    "sourceHeight": 1459,
+    "variants": [
+      {
+        "url": "/artworks/vineyard/far.webp",
+        "width": 640,
+        "height": 472,
+        "bytes": 54592
+      },
+      {
+        "url": "/artworks/vineyard/medium.webp",
+        "width": 1600,
+        "height": 1179,
+        "bytes": 168022
+      },
+      {
+        "url": "/artworks/vineyard/near.webp",
+        "width": 1980,
+        "height": 1459,
+        "bytes": 222230
+      }
+    ],
+    "detail": {
+      "url": "/artworks/vineyard/detail.webp",
+      "width": 1980,
+      "height": 1459,
+      "bytes": 222230,
+      "dzi": "/artworks/vineyard/detail.dzi",
+      "tileBytes": 597867
+    },
+    "original": {
+      "width": 1980,
+      "height": 1459,
+      "dzi": "/artworks/vineyard/original.dzi"
+    },
+    "hasOriginal": false
+  }
+}

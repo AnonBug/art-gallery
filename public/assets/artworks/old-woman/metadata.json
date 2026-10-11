@@ -1,0 +1,54 @@
+{
+  "id": "old-woman",
+  "title": "老妇人肖像",
+  "originalTitle": "Portrait of an Old Woman",
+  "file": "Rembrandt - Portrait of an Old Woman - WGA19189.jpg",
+  "date": "1654 年",
+  "description": "年长女性的面容在暗背景中显现，光线使神情与肌肤成为观看中心。",
+  "looking": "比较脸部、头巾与衣服的细节密度，体会画家怎样分配注意力。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node173",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node173",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Portrait_of_an_Old_Woman_-_WGA19189.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/41/Rembrandt_-_Portrait_of_an_Old_Woman_-_WGA19189.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 1014,
+  "sourceHeight": 1255,
+  "variants": [
+    {
+      "url": "/assets/artworks/old-woman/far.webp",
+      "width": 517,
+      "height": 640,
+      "bytes": 58670
+    },
+    {
+      "url": "/assets/artworks/old-woman/medium.webp",
+      "width": 1014,
+      "height": 1255,
+      "bytes": 166366
+    },
+    {
+      "url": "/assets/artworks/old-woman/near.webp",
+      "width": 1014,
+      "height": 1255,
+      "bytes": 166366
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/old-woman/detail.webp",
+    "width": 1014,
+    "height": 1255,
+    "bytes": 166366,
+    "dzi": "/assets/artworks/old-woman/detail.dzi",
+    "tileBytes": 331527
+  },
+  "original": {
+    "width": 1014,
+    "height": 1255,
+    "dzi": "/assets/artworks/old-woman/detail.dzi"
+  },
+  "hasOriginal": false
+}

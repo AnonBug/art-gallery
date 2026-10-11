@@ -1,0 +1,55 @@
+{
+  "id": "magi",
+  "title": "三王来拜",
+  "originalTitle": "The Adoration of the Magi",
+  "file": "Rembrandt The Adoration of the Magi.jpg",
+  "date": "1634 年（据画源）",
+  "description": "以灰调描绘的圣经场景，官方历史全景将其表述为伦勃朗工作室作品。 原图服务限流，本版采用标准1920像素宽度版本；未取得更大的原图。",
+  "looking": "在单色层次中寻找光照中心，再观察人物围绕中心的排列。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node175",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+  "attribution": "伦勃朗工作室（据官方历史全景）",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_The_Adoration_of_the_Magi.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Rembrandt_The_Adoration_of_the_Magi.jpg/1920px-Rembrandt_The_Adoration_of_the_Magi.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 1920,
+  "sourceHeight": 2210,
+  "variants": [
+    {
+      "url": "/assets/artworks/magi/far.webp",
+      "width": 556,
+      "height": 640,
+      "bytes": 81908
+    },
+    {
+      "url": "/assets/artworks/magi/medium.webp",
+      "width": 1390,
+      "height": 1600,
+      "bytes": 556744
+    },
+    {
+      "url": "/assets/artworks/magi/near.webp",
+      "width": 1920,
+      "height": 2210,
+      "bytes": 920660
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/magi/detail.webp",
+    "width": 1920,
+    "height": 2210,
+    "bytes": 920660,
+    "dzi": "/assets/artworks/magi/detail.dzi",
+    "tileBytes": 1499212
+  },
+  "original": {
+    "width": 1920,
+    "height": 2210,
+    "dzi": "/assets/artworks/magi/detail.dzi"
+  },
+  "hasOriginal": false
+}

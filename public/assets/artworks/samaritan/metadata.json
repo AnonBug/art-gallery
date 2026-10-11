@@ -1,0 +1,55 @@
+{
+  "id": "samaritan",
+  "title": "基督与撒玛利亚妇人",
+  "originalTitle": "Christ and the Woman of Samaria",
+  "file": "Christ and the Samaritan Woman, Rembrandt van Rijn, 1659, Hermitage, Saint Petersburg.jpg",
+  "date": "1659 年",
+  "description": "井边的相遇以人物对话展开。官方历史全景将此画表述为归于伦勃朗。",
+  "looking": "比较两个人物的手势、姿态与井的空间关系。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node175",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+  "attribution": "归于伦勃朗（据官方历史全景）",
+  "source": "https://commons.wikimedia.org/wiki/File:Christ_and_the_Samaritan_Woman,_Rembrandt_van_Rijn,_1659,_Hermitage,_Saint_Petersburg.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/17/Christ_and_the_Samaritan_Woman%2C_Rembrandt_van_Rijn%2C_1659%2C_Hermitage%2C_Saint_Petersburg.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 1919,
+  "sourceHeight": 1543,
+  "variants": [
+    {
+      "url": "/assets/artworks/samaritan/far.webp",
+      "width": 640,
+      "height": 515,
+      "bytes": 40400
+    },
+    {
+      "url": "/assets/artworks/samaritan/medium.webp",
+      "width": 1600,
+      "height": 1287,
+      "bytes": 254614
+    },
+    {
+      "url": "/assets/artworks/samaritan/near.webp",
+      "width": 1919,
+      "height": 1543,
+      "bytes": 373374
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/samaritan/detail.webp",
+    "width": 1919,
+    "height": 1543,
+    "bytes": 373374,
+    "dzi": "/assets/artworks/samaritan/detail.dzi",
+    "tileBytes": 707316
+  },
+  "original": {
+    "width": 1919,
+    "height": 1543,
+    "dzi": "/assets/artworks/samaritan/detail.dzi"
+  },
+  "hasOriginal": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "earrings",
+  "title": "试戴耳环的年轻女子",
+  "originalTitle": "Young Woman with Earrings",
+  "file": "Rembrandt Woman with a Mirror.jpg",
+  "date": "1638 年",
+  "description": "女子面对镜子试戴耳饰，日常动作也被赋予关于虚荣的寓意。",
+  "looking": "观察抬起的手、耳饰与镜面的关系，以及面部微笑的细微变化。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node175",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Woman_with_a_Mirror.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Rembrandt_Woman_with_a_Mirror.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 2527,
+  "sourceHeight": 3068,
+  "variants": [
+    {
+      "url": "/assets/artworks/earrings/far.webp",
+      "width": 527,
+      "height": 640,
+      "bytes": 55222
+    },
+    {
+      "url": "/assets/artworks/earrings/medium.webp",
+      "width": 1318,
+      "height": 1600,
+      "bytes": 326882
+    },
+    {
+      "url": "/assets/artworks/earrings/near.webp",
+      "width": 2471,
+      "height": 3000,
+      "bytes": 882680
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/earrings/detail.webp",
+    "width": 2527,
+    "height": 3068,
+    "bytes": 817380,
+    "dzi": "/assets/artworks/earrings/detail.dzi",
+    "tileBytes": 1801827
+  },
+  "original": {
+    "width": 2527,
+    "height": 3068,
+    "dzi": "/assets/artworks/earrings/detail.dzi"
+  },
+  "hasOriginal": false
+}

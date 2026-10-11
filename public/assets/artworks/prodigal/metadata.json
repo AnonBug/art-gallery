@@ -1,0 +1,52 @@
+{
+  "id": "prodigal",
+  "title": "浪子回头",
+  "originalTitle": "The Return of the Prodigal Son",
+  "date": "约 1668 年",
+  "dimensions": "262 × 205 厘米",
+  "medium": "布面油画",
+  "accession": "ГЭ-742",
+  "file": "Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
+  "description": "父亲俯身拥抱归来的儿子，双手停在他的背上。光线将这场安静的重逢从暗处托起。",
+  "looking": "试着从父亲的双手看起，再移向儿子磨损的鞋与衣服，观察光线怎样引导视线。",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+  "license": "Public domain",
+  "sourceWidth": 22991,
+  "sourceHeight": 30000,
+  "variants": [
+    {
+      "url": "/assets/artworks/prodigal/far.webp",
+      "width": 490,
+      "height": 640,
+      "bytes": 52418
+    },
+    {
+      "url": "/assets/artworks/prodigal/medium.webp",
+      "width": 1226,
+      "height": 1600,
+      "bytes": 343580
+    },
+    {
+      "url": "/assets/artworks/prodigal/near.webp",
+      "width": 2299,
+      "height": 3000,
+      "bytes": 1453728
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/prodigal/detail.webp",
+    "width": 6131,
+    "height": 8000,
+    "bytes": 13361354,
+    "dzi": "/assets/artworks/prodigal/detail.dzi",
+    "tileBytes": 17544116
+  },
+  "original": {
+    "width": 22991,
+    "height": 30000,
+    "dzi": "/assets/artworks/prodigal/original.dzi"
+  },
+  "hasOriginal": true,
+  "credit": "Rembrandt"
+}

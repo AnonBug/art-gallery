@@ -1,0 +1,52 @@
+{
+  "id": "isaac",
+  "title": "亚伯拉罕献以撒",
+  "originalTitle": "Abraham’s Sacrifice",
+  "date": "1635 年",
+  "dimensions": "约 193 × 132 厘米",
+  "medium": "布面油画",
+  "accession": "ГЭ-727",
+  "file": "Rembrandt Abraham's Sacrifice (Hermitage).jpg",
+  "description": "天使在关键时刻制止亚伯拉罕，悬落的刀和交错的手臂将瞬间凝固。此画于 2025 年修复后重回 254 号厅；当前画源为修复前上传的数字版本。",
+  "looking": "沿着天使、手腕和落刀看向以撒，感受动作与明暗如何制造紧张。",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Abraham%27s_Sacrifice_(Hermitage).jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt_Abraham%27s_Sacrifice_%28Hermitage%29.jpg",
+  "license": "Public domain",
+  "sourceWidth": 2471,
+  "sourceHeight": 3633,
+  "variants": [
+    {
+      "url": "/assets/artworks/isaac/far.webp",
+      "width": 435,
+      "height": 640,
+      "bytes": 56802
+    },
+    {
+      "url": "/assets/artworks/isaac/medium.webp",
+      "width": 1088,
+      "height": 1600,
+      "bytes": 383954
+    },
+    {
+      "url": "/assets/artworks/isaac/near.webp",
+      "width": 2040,
+      "height": 3000,
+      "bytes": 1167898
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/isaac/detail.webp",
+    "width": 2471,
+    "height": 3633,
+    "bytes": 1358626,
+    "dzi": "/assets/artworks/isaac/detail.dzi",
+    "tileBytes": 2749754
+  },
+  "original": {
+    "width": 2471,
+    "height": 3633,
+    "dzi": "/assets/artworks/isaac/detail.dzi"
+  },
+  "hasOriginal": false,
+  "credit": "Rembrandt"
+}

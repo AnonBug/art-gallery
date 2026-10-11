@@ -1,0 +1,26 @@
+{
+  "name": "manlan-art-gallery",
+  "version": "1.0.11",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0",
+    "assets:check": "node scripts/check-assets.mjs",
+    "images": "node scripts/process-images.mjs",
+    "test": "node --test tests/*.test.mjs",
+    "artwork:add": "node scripts/add-artwork.mjs"
+  },
+  "dependencies": {
+    "three": "^0.180.0",
+    "openseadragon": "^5.0.1"
+  },
+  "devDependencies": {
+    "@types/three": "^0.180.0",
+    "@types/openseadragon": "^4.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.1.9",
+    "sharp": "^0.34.4"
+  }
+}

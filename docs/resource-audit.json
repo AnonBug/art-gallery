@@ -1,0 +1,394 @@
+{
+  "httpChecks": 0,
+  "checkedAt": "2026-10-11T10:37:10.003Z",
+  "artworks": 12,
+  "dzi": 15,
+  "tiles": 6008,
+  "errors": [],
+  "resources": [
+    {
+      "id": "prodigal",
+      "title": "浪子回头",
+      "display": [
+        {
+          "width": 490,
+          "height": 640,
+          "bytes": 52418,
+          "path": "/assets/artworks/prodigal/far.webp"
+        },
+        {
+          "width": 1226,
+          "height": 1600,
+          "bytes": 343580,
+          "path": "/assets/artworks/prodigal/medium.webp"
+        },
+        {
+          "width": 2299,
+          "height": 3000,
+          "bytes": 1453728,
+          "path": "/assets/artworks/prodigal/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 6131,
+        "height": 8000,
+        "bytes": 13361354,
+        "tiles": 266
+      },
+      "original": {
+        "width": 22991,
+        "height": 30000,
+        "tiles": 3599
+      }
+    },
+    {
+      "id": "danae",
+      "title": "达娜厄",
+      "display": [
+        {
+          "width": 640,
+          "height": 583,
+          "bytes": 89962,
+          "path": "/assets/artworks/danae-20261011-v110/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1459,
+          "bytes": 433074,
+          "path": "/assets/artworks/danae-20261011-v110/medium.webp"
+        },
+        {
+          "width": 2499,
+          "height": 2278,
+          "bytes": 777468,
+          "path": "/assets/artworks/danae-20261011-v110/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2499,
+        "height": 2278,
+        "bytes": 3148220,
+        "tiles": 48
+      },
+      "original": {}
+    },
+    {
+      "id": "flora",
+      "title": "花神",
+      "display": [
+        {
+          "width": 519,
+          "height": 640,
+          "bytes": 74732,
+          "path": "/assets/artworks/flora/far.webp"
+        },
+        {
+          "width": 1299,
+          "height": 1600,
+          "bytes": 562402,
+          "path": "/assets/artworks/flora/medium.webp"
+        },
+        {
+          "width": 2435,
+          "height": 3000,
+          "bytes": 2472216,
+          "path": "/assets/artworks/flora/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 5422,
+        "height": 6680,
+        "bytes": 10394194,
+        "tiles": 222
+      },
+      "original": {}
+    },
+    {
+      "id": "isaac",
+      "title": "亚伯拉罕献以撒",
+      "display": [
+        {
+          "width": 435,
+          "height": 640,
+          "bytes": 56802,
+          "path": "/assets/artworks/isaac/far.webp"
+        },
+        {
+          "width": 1088,
+          "height": 1600,
+          "bytes": 383954,
+          "path": "/assets/artworks/isaac/medium.webp"
+        },
+        {
+          "width": 2040,
+          "height": 3000,
+          "bytes": 1167898,
+          "path": "/assets/artworks/isaac/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2471,
+        "height": 3633,
+        "bytes": 1358626,
+        "tiles": 66
+      },
+      "original": {}
+    },
+    {
+      "id": "descent",
+      "title": "卸下十字架",
+      "display": [
+        {
+          "width": 465,
+          "height": 640,
+          "bytes": 40642,
+          "path": "/assets/artworks/descent/far.webp"
+        },
+        {
+          "width": 1162,
+          "height": 1600,
+          "bytes": 273686,
+          "path": "/assets/artworks/descent/medium.webp"
+        },
+        {
+          "width": 2179,
+          "height": 3000,
+          "bytes": 1021060,
+          "path": "/assets/artworks/descent/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2789,
+        "height": 3840,
+        "bytes": 1372260,
+        "tiles": 74
+      },
+      "original": {}
+    },
+    {
+      "id": "david-jonathan",
+      "title": "大卫与约拿单",
+      "display": [
+        {
+          "width": 535,
+          "height": 640,
+          "bytes": 74144,
+          "path": "/assets/artworks/david-jonathan/far.webp"
+        },
+        {
+          "width": 1338,
+          "height": 1600,
+          "bytes": 505498,
+          "path": "/assets/artworks/david-jonathan/medium.webp"
+        },
+        {
+          "width": 2508,
+          "height": 3000,
+          "bytes": 1469826,
+          "path": "/assets/artworks/david-jonathan/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3344,
+        "height": 4000,
+        "bytes": 1899360,
+        "tiles": 86
+      },
+      "original": {}
+    },
+    {
+      "id": "red-man",
+      "title": "红衣老人肖像",
+      "display": [
+        {
+          "width": 491,
+          "height": 640,
+          "bytes": 25438,
+          "path": "/assets/artworks/red-man/far.webp"
+        },
+        {
+          "width": 1226,
+          "height": 1600,
+          "bytes": 250722,
+          "path": "/assets/artworks/red-man/medium.webp"
+        },
+        {
+          "width": 2299,
+          "height": 3000,
+          "bytes": 1346820,
+          "path": "/assets/artworks/red-man/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 6131,
+        "height": 8000,
+        "bytes": 13765570,
+        "tiles": 266
+      },
+      "original": {
+        "width": 6346,
+        "height": 8280,
+        "tiles": 322
+      }
+    },
+    {
+      "id": "holy-family",
+      "title": "圣家族与天使",
+      "display": [
+        {
+          "width": 498,
+          "height": 640,
+          "bytes": 78080,
+          "path": "/assets/artworks/holy-family/far.webp"
+        },
+        {
+          "width": 1245,
+          "height": 1600,
+          "bytes": 521012,
+          "path": "/assets/artworks/holy-family/medium.webp"
+        },
+        {
+          "width": 2334,
+          "height": 3000,
+          "bytes": 1850642,
+          "path": "/assets/artworks/holy-family/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 6224,
+        "height": 8000,
+        "bytes": 15239386,
+        "tiles": 294
+      },
+      "original": {
+        "width": 8464,
+        "height": 10880,
+        "tiles": 526
+      }
+    },
+    {
+      "id": "scholar",
+      "title": "书桌前的学者",
+      "display": [
+        {
+          "width": 590,
+          "height": 640,
+          "bytes": 77910,
+          "path": "/assets/artworks/scholar/far.webp"
+        },
+        {
+          "width": 1474,
+          "height": 1600,
+          "bytes": 737172,
+          "path": "/assets/artworks/scholar/medium.webp"
+        },
+        {
+          "width": 2763,
+          "height": 3000,
+          "bytes": 2954980,
+          "path": "/assets/artworks/scholar/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3400,
+        "height": 3691,
+        "bytes": 4411074,
+        "tiles": 86
+      },
+      "original": {}
+    },
+    {
+      "id": "earrings",
+      "title": "试戴耳环的年轻女子",
+      "display": [
+        {
+          "width": 527,
+          "height": 640,
+          "bytes": 55222,
+          "path": "/assets/artworks/earrings/far.webp"
+        },
+        {
+          "width": 1318,
+          "height": 1600,
+          "bytes": 326882,
+          "path": "/assets/artworks/earrings/medium.webp"
+        },
+        {
+          "width": 2471,
+          "height": 3000,
+          "bytes": 882680,
+          "path": "/assets/artworks/earrings/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2527,
+        "height": 3068,
+        "bytes": 817380,
+        "tiles": 53
+      },
+      "original": {}
+    },
+    {
+      "id": "baertje",
+      "title": "巴尔特耶·马滕斯肖像",
+      "display": [
+        {
+          "width": 458,
+          "height": 640,
+          "bytes": 25604,
+          "path": "/assets/artworks/baertje/far.webp"
+        },
+        {
+          "width": 1146,
+          "height": 1600,
+          "bytes": 164534,
+          "path": "/assets/artworks/baertje/medium.webp"
+        },
+        {
+          "width": 2148,
+          "height": 3000,
+          "bytes": 499696,
+          "path": "/assets/artworks/baertje/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2694,
+        "height": 3762,
+        "bytes": 651472,
+        "tiles": 74
+      },
+      "original": {}
+    },
+    {
+      "id": "vineyard",
+      "title": "葡萄园雇工的比喻",
+      "display": [
+        {
+          "width": 640,
+          "height": 472,
+          "bytes": 54592,
+          "path": "/assets/artworks/vineyard/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1179,
+          "bytes": 168022,
+          "path": "/assets/artworks/vineyard/medium.webp"
+        },
+        {
+          "width": 1980,
+          "height": 1459,
+          "bytes": 222230,
+          "path": "/assets/artworks/vineyard/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 1980,
+        "height": 1459,
+        "bytes": 222230,
+        "tiles": 26
+      },
+      "original": {}
+    }
+  ]
+}

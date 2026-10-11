@@ -1,0 +1,54 @@
+{
+  "id": "red-man",
+  "title": "红衣老人肖像",
+  "originalTitle": "Portrait of an Old Man in Red",
+  "file": "Rembrandt Harmensz. van Rijn - Portrait of an Old Man in Red.jpg",
+  "date": "约 1652—1654 年",
+  "description": "红衣老人安静地坐着，面部与双手以厚重笔触呈现。",
+  "looking": "先观察双手的关节，再比较衣料与面部的笔触。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node174",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node174",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Portrait_of_an_Old_Man_in_Red.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Rembrandt_Harmensz._van_Rijn_-_Portrait_of_an_Old_Man_in_Red.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 6346,
+  "sourceHeight": 8280,
+  "variants": [
+    {
+      "url": "/assets/artworks/red-man/far.webp",
+      "width": 491,
+      "height": 640,
+      "bytes": 25438
+    },
+    {
+      "url": "/assets/artworks/red-man/medium.webp",
+      "width": 1226,
+      "height": 1600,
+      "bytes": 250722
+    },
+    {
+      "url": "/assets/artworks/red-man/near.webp",
+      "width": 2299,
+      "height": 3000,
+      "bytes": 1346820
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/red-man/detail.webp",
+    "width": 6131,
+    "height": 8000,
+    "bytes": 13765570,
+    "dzi": "/assets/artworks/red-man/detail.dzi",
+    "tileBytes": 18330837
+  },
+  "original": {
+    "width": 6346,
+    "height": 8280,
+    "dzi": "/assets/artworks/red-man/original.dzi"
+  },
+  "hasOriginal": true
+}

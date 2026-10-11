@@ -1,0 +1,743 @@
+[
+  {
+    "id": "prodigal",
+    "title": "浪子回头",
+    "originalTitle": "The Return of the Prodigal Son",
+    "date": "约 1668 年",
+    "dimensions": "262 × 205 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-742",
+    "file": "Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
+    "description": "父亲俯身拥抱归来的儿子，双手停在他的背上。光线将这场安静的重逢从暗处托起。",
+    "looking": "试着从父亲的双手看起，再移向儿子磨损的鞋与衣服，观察光线怎样引导视线。",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rembrandt_Harmensz_van_Rijn_-_Return_of_the_Prodigal_Son_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "sourceWidth": 22991,
+    "sourceHeight": 30000,
+    "variants": [
+      {
+        "url": "/assets/artworks/prodigal/far.webp",
+        "width": 490,
+        "height": 640,
+        "bytes": 52418
+      },
+      {
+        "url": "/assets/artworks/prodigal/medium.webp",
+        "width": 1226,
+        "height": 1600,
+        "bytes": 343580
+      },
+      {
+        "url": "/assets/artworks/prodigal/near.webp",
+        "width": 2299,
+        "height": 3000,
+        "bytes": 1453728
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/prodigal/detail.webp",
+      "width": 6131,
+      "height": 8000,
+      "bytes": 13361354,
+      "dzi": "/assets/artworks/prodigal/detail.dzi",
+      "tileBytes": 17544116
+    },
+    "original": {
+      "width": 22991,
+      "height": 30000,
+      "dzi": "/assets/artworks/prodigal/original.dzi"
+    },
+    "hasOriginal": true,
+    "credit": "Rembrandt",
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "north",
+    "offset": 0,
+    "height": 3.4,
+    "centerY": 2.6
+  },
+  {
+    "id": "danae",
+    "title": "达娜厄",
+    "originalTitle": "Danaë",
+    "date": "1636—1643 年",
+    "dimensions": "约 185 × 203 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-723",
+    "file": "Rembrandt van Rijn - Danaë 1636-1643.jpg",
+    "description": "达娜厄向光线伸出手，暖光在身体、床褥与室内陈设间流动。当前数字版本分辨率有限，适合完整构图欣赏。",
+    "looking": "观察伸出的手与入画光线之间的关系，再看床褥和背景的明暗层次。",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+    "license": "Public domain",
+    "sourceWidth": 2499,
+    "sourceHeight": 2278,
+    "variants": [
+      {
+        "url": "/assets/artworks/danae/far.webp",
+        "width": 640,
+        "height": 583,
+        "bytes": 61834
+      },
+      {
+        "url": "/assets/artworks/danae/medium.webp",
+        "width": 1600,
+        "height": 1459,
+        "bytes": 285556
+      },
+      {
+        "url": "/assets/artworks/danae/near.webp",
+        "width": 2499,
+        "height": 2278,
+        "bytes": 519644
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/danae/detail.webp",
+      "width": 2499,
+      "height": 2278,
+      "bytes": 519644,
+      "dzi": "/assets/artworks/danae/detail.dzi",
+      "tileBytes": 1216003
+    },
+    "original": {
+      "width": 2499,
+      "height": 2278,
+      "dzi": "/assets/artworks/danae/detail.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Rembrandt",
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "south",
+    "offset": 0,
+    "height": 2.8,
+    "centerY": 2.6
+  },
+  {
+    "id": "flora",
+    "title": "花神",
+    "originalTitle": "Flora",
+    "date": "1634 年",
+    "dimensions": "125 × 101 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-732",
+    "file": "Saskia van Uylenburgh (1612-1642) as Flora, by Rembrandt.jpg",
+    "description": "萨斯基娅以花神的形象出现。花冠、衣饰和柔和的侧光，使肖像具有寓意画的气息。",
+    "looking": "观察花冠的层次、衣料的反光，以及面部与暗背景之间的过渡。",
+    "source": "https://commons.wikimedia.org/wiki/File:Saskia_van_Uylenburgh_(1612-1642)_as_Flora,_by_Rembrandt.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Saskia_van_Uylenburgh_%281612-1642%29_as_Flora%2C_by_Rembrandt.jpg",
+    "license": "Public domain",
+    "sourceWidth": 5422,
+    "sourceHeight": 6680,
+    "variants": [
+      {
+        "url": "/assets/artworks/flora/far.webp",
+        "width": 519,
+        "height": 640,
+        "bytes": 74732
+      },
+      {
+        "url": "/assets/artworks/flora/medium.webp",
+        "width": 1299,
+        "height": 1600,
+        "bytes": 562402
+      },
+      {
+        "url": "/assets/artworks/flora/near.webp",
+        "width": 2435,
+        "height": 3000,
+        "bytes": 2472216
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/flora/detail.webp",
+      "width": 5422,
+      "height": 6680,
+      "bytes": 10394194,
+      "dzi": "/assets/artworks/flora/detail.dzi",
+      "tileBytes": 15235554
+    },
+    "original": {
+      "width": 5422,
+      "height": 6680,
+      "dzi": "/assets/artworks/flora/detail.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Rembrandt",
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "north",
+    "offset": -5.6,
+    "height": 2.05,
+    "centerY": 2.6
+  },
+  {
+    "id": "isaac",
+    "title": "亚伯拉罕献以撒",
+    "originalTitle": "Abraham’s Sacrifice",
+    "date": "1635 年",
+    "dimensions": "约 193 × 132 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-727",
+    "file": "Rembrandt Abraham's Sacrifice (Hermitage).jpg",
+    "description": "天使在关键时刻制止亚伯拉罕，悬落的刀和交错的手臂将瞬间凝固。此画于 2025 年修复后重回 254 号厅；当前画源为修复前上传的数字版本。",
+    "looking": "沿着天使、手腕和落刀看向以撒，感受动作与明暗如何制造紧张。",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Abraham%27s_Sacrifice_(Hermitage).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/10/Rembrandt_Abraham%27s_Sacrifice_%28Hermitage%29.jpg",
+    "license": "Public domain",
+    "sourceWidth": 2471,
+    "sourceHeight": 3633,
+    "variants": [
+      {
+        "url": "/assets/artworks/isaac/far.webp",
+        "width": 435,
+        "height": 640,
+        "bytes": 56802
+      },
+      {
+        "url": "/assets/artworks/isaac/medium.webp",
+        "width": 1088,
+        "height": 1600,
+        "bytes": 383954
+      },
+      {
+        "url": "/assets/artworks/isaac/near.webp",
+        "width": 2040,
+        "height": 3000,
+        "bytes": 1167898
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/isaac/detail.webp",
+      "width": 2471,
+      "height": 3633,
+      "bytes": 1358626,
+      "dzi": "/assets/artworks/isaac/detail.dzi",
+      "tileBytes": 2749754
+    },
+    "original": {
+      "width": 2471,
+      "height": 3633,
+      "dzi": "/assets/artworks/isaac/detail.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Rembrandt",
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "west",
+    "offset": 0,
+    "height": 2.6,
+    "centerY": 2.6
+  },
+  {
+    "id": "descent",
+    "title": "卸下十字架",
+    "originalTitle": "The Descent from the Cross",
+    "date": "1634 年",
+    "dimensions": "约 158 × 117 厘米",
+    "medium": "布面油画",
+    "accession": "ГЭ-753",
+    "file": "Descent from the Cross (Rembrant).jpg",
+    "attribution": "伦勃朗工作室（据 Commons 文件页；归属存在不同表述）",
+    "description": "人们将基督从十字架上放下，光线集中在身体与围绕他的手上。所用文件页归类于伦勃朗工作室，展签保留归属待核对说明。",
+    "looking": "留意光线落在何处，以及暗处的人物怎样共同支撑身体。",
+    "source": "https://commons.wikimedia.org/wiki/File:Descent_from_the_Cross_(Rembrant).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/67/Descent_from_the_Cross_%28Rembrant%29.jpg",
+    "license": "Public domain",
+    "sourceWidth": 2789,
+    "sourceHeight": 3840,
+    "variants": [
+      {
+        "url": "/assets/artworks/descent/far.webp",
+        "width": 465,
+        "height": 640,
+        "bytes": 40642
+      },
+      {
+        "url": "/assets/artworks/descent/medium.webp",
+        "width": 1162,
+        "height": 1600,
+        "bytes": 273686
+      },
+      {
+        "url": "/assets/artworks/descent/near.webp",
+        "width": 2179,
+        "height": 3000,
+        "bytes": 1021060
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/descent/detail.webp",
+      "width": 2789,
+      "height": 3840,
+      "bytes": 1372260,
+      "dzi": "/assets/artworks/descent/detail.dzi",
+      "tileBytes": 2779860
+    },
+    "original": {
+      "width": 2789,
+      "height": 3840,
+      "dzi": "/assets/artworks/descent/detail.dzi"
+    },
+    "hasOriginal": false,
+    "credit": "Workshop of   Rembrandt",
+    "author": "伦勃朗工作室（据画源归属）",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "east",
+    "offset": 0,
+    "height": 2.6,
+    "centerY": 2.6
+  },
+  {
+    "id": "david-jonathan",
+    "title": "大卫与约拿单",
+    "originalTitle": "David and Jonathan",
+    "date": "1642 年",
+    "author": "伦勃朗·范·莱因",
+    "source": "https://commons.wikimedia.org/wiki/File:Harmensz_van_Rijn_Rembrandt_-_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4_%D0%B8_%D0%98%D0%BE%D0%BD%D0%B0%D1%84%D0%B0%D0%BD_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "description": "两位友人拥抱告别，华丽衣料与低垂姿态形成对照。此件为冬宫馆藏，当前实际陈列位置待确认。本版补充取得3344×4000像素源图。",
+    "looking": "观察拥抱中的手、衣料反光和远处景物之间的明暗关系。",
+    "dimensions": "原作尺寸待确认",
+    "medium": "油画（支撑材料待确认）",
+    "file": "Harmensz van Rijn Rembrandt - Давид и Ионафан - Google Art Project.jpg",
+    "accession": "待核对",
+    "hallEvidence": "馆藏补充，现行展厅位置待核对",
+    "hallSource": "https://en.wikipedia.org/wiki/David_and_Jonathan_(Rembrandt)",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/0f/Harmensz_van_Rijn_Rembrandt_-_%D0%94%D0%B0%D0%B2%D0%B8%D0%B4_%D0%B8_%D0%98%D0%BE%D0%BD%D0%B0%D1%84%D0%B0%D0%BD_-_Google_Art_Project.jpg",
+    "sourceWidth": 3344,
+    "sourceHeight": 4000,
+    "variants": [
+      {
+        "url": "/assets/artworks/david-jonathan/far.webp",
+        "width": 535,
+        "height": 640,
+        "bytes": 74144,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/david-jonathan/medium.webp",
+        "width": 1338,
+        "height": 1600,
+        "bytes": 505498,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/david-jonathan/near.webp",
+        "width": 2508,
+        "height": 3000,
+        "bytes": 1469826,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/david-jonathan/detail.webp",
+      "width": 3344,
+      "height": 4000,
+      "bytes": 1899360,
+      "quality": 94,
+      "dzi": "/assets/artworks/david-jonathan/detail.dzi"
+    },
+    "original": {
+      "width": 3344,
+      "height": 4000,
+      "dzi": "/assets/artworks/david-jonathan/detail.dzi"
+    },
+    "hasOriginal": false,
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（已从 Commons 原文件补充生成，2026-10-11）",
+    "wall": "south",
+    "offset": -5.8,
+    "height": 1.75,
+    "centerY": 2.6,
+    "originalFile": "originals/david-jonathan.jpg",
+    "originalFileBytes": 3967402,
+    "generatedAt": "2026-10-11T08:44:31.837Z"
+  },
+  {
+    "id": "red-man",
+    "title": "红衣老人肖像",
+    "originalTitle": "Portrait of an Old Man in Red",
+    "file": "Rembrandt Harmensz. van Rijn - Portrait of an Old Man in Red.jpg",
+    "date": "约 1652—1654 年",
+    "description": "红衣老人安静地坐着，面部与双手以厚重笔触呈现。",
+    "looking": "先观察双手的关节，再比较衣料与面部的笔触。",
+    "dimensions": "原作尺寸待确认",
+    "medium": "油画（支撑材料待确认）",
+    "accession": "待核对",
+    "hallEvidence": "node174",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node174",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_Portrait_of_an_Old_Man_in_Red.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/c8/Rembrandt_Harmensz._van_Rijn_-_Portrait_of_an_Old_Man_in_Red.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 6346,
+    "sourceHeight": 8280,
+    "variants": [
+      {
+        "url": "/assets/artworks/red-man/far.webp",
+        "width": 491,
+        "height": 640,
+        "bytes": 25438
+      },
+      {
+        "url": "/assets/artworks/red-man/medium.webp",
+        "width": 1226,
+        "height": 1600,
+        "bytes": 250722
+      },
+      {
+        "url": "/assets/artworks/red-man/near.webp",
+        "width": 2299,
+        "height": 3000,
+        "bytes": 1346820
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/red-man/detail.webp",
+      "width": 6131,
+      "height": 8000,
+      "bytes": 13765570,
+      "dzi": "/assets/artworks/red-man/detail.dzi",
+      "tileBytes": 18330837
+    },
+    "original": {
+      "width": 6346,
+      "height": 8280,
+      "dzi": "/assets/artworks/red-man/original.dzi"
+    },
+    "hasOriginal": true,
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "north",
+    "offset": 5.6,
+    "height": 2.25,
+    "centerY": 2.6
+  },
+  {
+    "id": "holy-family",
+    "title": "圣家族与天使",
+    "originalTitle": "The Holy Family with Angels",
+    "file": "Rembrandt Harmensz. van Rijn - The Holy Family.jpg",
+    "date": "1645 年",
+    "description": "圣母在摇篮旁读书，约瑟在暗处工作，天使从光中降临。",
+    "looking": "先看摇篮与书页，再寻找左上方的天使，体会日常生活与神圣主题的交织。",
+    "dimensions": "原作尺寸待确认",
+    "medium": "油画（支撑材料待确认）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Harmensz._van_Rijn_-_The_Holy_Family.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/20/Rembrandt_Harmensz._van_Rijn_-_The_Holy_Family.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 8464,
+    "sourceHeight": 10880,
+    "variants": [
+      {
+        "url": "/assets/artworks/holy-family/far.webp",
+        "width": 498,
+        "height": 640,
+        "bytes": 78080
+      },
+      {
+        "url": "/assets/artworks/holy-family/medium.webp",
+        "width": 1245,
+        "height": 1600,
+        "bytes": 521012
+      },
+      {
+        "url": "/assets/artworks/holy-family/near.webp",
+        "width": 2334,
+        "height": 3000,
+        "bytes": 1850642
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/holy-family/detail.webp",
+      "width": 6224,
+      "height": 8000,
+      "bytes": 15239386,
+      "dzi": "/assets/artworks/holy-family/detail.dzi",
+      "tileBytes": 19938002
+    },
+    "original": {
+      "width": 8464,
+      "height": 10880,
+      "dzi": "/assets/artworks/holy-family/original.dzi"
+    },
+    "hasOriginal": true,
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "south",
+    "offset": 5.8,
+    "height": 2.05,
+    "centerY": 2.6
+  },
+  {
+    "id": "scholar",
+    "title": "书桌前的学者",
+    "originalTitle": "A Scholar at His Desk",
+    "file": "Scholar at his desk (1631), by Rembrandt van Rijn.jpg",
+    "date": "1631 年",
+    "description": "男子从书桌前转过头，书籍与手中的笔使人物仿佛刚刚暂停工作。身份尚不确定。",
+    "looking": "沿着目光看向停住的手，再比较桌布、书页和皮肤的质感。",
+    "dimensions": "104.5 × 92 厘米（高 × 宽）",
+    "medium": "布面油画",
+    "accession": "待核对",
+    "hallEvidence": "node176",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node176",
+    "source": "https://commons.wikimedia.org/wiki/File:Scholar_at_his_desk_(1631),_by_Rembrandt_van_Rijn.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/8/80/Scholar_at_his_desk_%281631%29%2C_by_Rembrandt_van_Rijn.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 3400,
+    "sourceHeight": 3691,
+    "variants": [
+      {
+        "url": "/assets/artworks/scholar/far.webp",
+        "width": 590,
+        "height": 640,
+        "bytes": 77910
+      },
+      {
+        "url": "/assets/artworks/scholar/medium.webp",
+        "width": 1474,
+        "height": 1600,
+        "bytes": 737172
+      },
+      {
+        "url": "/assets/artworks/scholar/near.webp",
+        "width": 2763,
+        "height": 3000,
+        "bytes": 2954980
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/scholar/detail.webp",
+      "width": 3400,
+      "height": 3691,
+      "bytes": 4411074,
+      "dzi": "/assets/artworks/scholar/detail.dzi",
+      "tileBytes": 5839060
+    },
+    "original": {
+      "width": 3400,
+      "height": 3691,
+      "dzi": "/assets/artworks/scholar/detail.dzi"
+    },
+    "hasOriginal": false,
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "east",
+    "offset": -5,
+    "height": 1.9,
+    "centerY": 2.6
+  },
+  {
+    "id": "earrings",
+    "title": "试戴耳环的年轻女子",
+    "originalTitle": "Young Woman with Earrings",
+    "file": "Rembrandt Woman with a Mirror.jpg",
+    "date": "1638 年",
+    "description": "女子面对镜子试戴耳饰，日常动作也被赋予关于虚荣的寓意。",
+    "looking": "观察抬起的手、耳饰与镜面的关系，以及面部微笑的细微变化。",
+    "dimensions": "原作尺寸待确认",
+    "medium": "油画（支撑材料待确认）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_Woman_with_a_Mirror.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Rembrandt_Woman_with_a_Mirror.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 2527,
+    "sourceHeight": 3068,
+    "variants": [
+      {
+        "url": "/assets/artworks/earrings/far.webp",
+        "width": 527,
+        "height": 640,
+        "bytes": 55222
+      },
+      {
+        "url": "/assets/artworks/earrings/medium.webp",
+        "width": 1318,
+        "height": 1600,
+        "bytes": 326882
+      },
+      {
+        "url": "/assets/artworks/earrings/near.webp",
+        "width": 2471,
+        "height": 3000,
+        "bytes": 882680
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/earrings/detail.webp",
+      "width": 2527,
+      "height": 3068,
+      "bytes": 817380,
+      "dzi": "/assets/artworks/earrings/detail.dzi",
+      "tileBytes": 1801827
+    },
+    "original": {
+      "width": 2527,
+      "height": 3068,
+      "dzi": "/assets/artworks/earrings/detail.dzi"
+    },
+    "hasOriginal": false,
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "east",
+    "offset": 5,
+    "height": 1.85,
+    "centerY": 2.6
+  },
+  {
+    "id": "baertje",
+    "title": "巴尔特耶·马滕斯肖像",
+    "originalTitle": "Portrait of Baertje Martens",
+    "file": "Baertje Martens, by Rembrandt van Rijn.jpg",
+    "date": "1640 年",
+    "description": "画中人是框具与家具工匠赫尔曼·多默的妻子，轻微的笑意使肖像富有亲切感。",
+    "looking": "注意眼神、嘴角与领口的精细处理，观察人物与暗背景之间的关系。",
+    "dimensions": "原作尺寸待确认",
+    "medium": "油画（支撑材料待确认）",
+    "accession": "待核对",
+    "hallEvidence": "node174",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node174",
+    "source": "https://commons.wikimedia.org/wiki/File:Baertje_Martens,_by_Rembrandt_van_Rijn.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Baertje_Martens%2C_by_Rembrandt_van_Rijn.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 2694,
+    "sourceHeight": 3762,
+    "variants": [
+      {
+        "url": "/assets/artworks/baertje/far.webp",
+        "width": 458,
+        "height": 640,
+        "bytes": 25604
+      },
+      {
+        "url": "/assets/artworks/baertje/medium.webp",
+        "width": 1146,
+        "height": 1600,
+        "bytes": 164534
+      },
+      {
+        "url": "/assets/artworks/baertje/near.webp",
+        "width": 2148,
+        "height": 3000,
+        "bytes": 499696
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/baertje/detail.webp",
+      "width": 2694,
+      "height": 3762,
+      "bytes": 651472,
+      "dzi": "/assets/artworks/baertje/detail.dzi",
+      "tileBytes": 1622864
+    },
+    "original": {
+      "width": 2694,
+      "height": 3762,
+      "dzi": "/assets/artworks/baertje/detail.dzi"
+    },
+    "hasOriginal": false,
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "west",
+    "offset": -5,
+    "height": 1.75,
+    "centerY": 2.6
+  },
+  {
+    "id": "vineyard",
+    "title": "葡萄园雇工的比喻",
+    "originalTitle": "Parable of the Labourers in the Vineyard",
+    "file": "Rembrandt - Parable of the Laborers in the Vineyard.jpg",
+    "date": "1637 年",
+    "description": "园主向不同时间前来工作的雇工支付报酬，围绕公平的讨论通过人物手势展开。",
+    "looking": "观察钱币、手势与人物聚集的方向，寻找故事的视觉中心。",
+    "dimensions": "原作尺寸待确认",
+    "medium": "油画（支撑材料待确认）",
+    "accession": "待核对",
+    "hallEvidence": "node175",
+    "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+    "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg",
+    "license": "Public domain",
+    "credit": "Rembrandt",
+    "sourceWidth": 1980,
+    "sourceHeight": 1459,
+    "variants": [
+      {
+        "url": "/assets/artworks/vineyard/far.webp",
+        "width": 640,
+        "height": 472,
+        "bytes": 54592
+      },
+      {
+        "url": "/assets/artworks/vineyard/medium.webp",
+        "width": 1600,
+        "height": 1179,
+        "bytes": 168022
+      },
+      {
+        "url": "/assets/artworks/vineyard/near.webp",
+        "width": 1980,
+        "height": 1459,
+        "bytes": 222230
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/vineyard/detail.webp",
+      "width": 1980,
+      "height": 1459,
+      "bytes": 222230,
+      "dzi": "/assets/artworks/vineyard/detail.dzi",
+      "tileBytes": 597867
+    },
+    "original": {
+      "width": 1980,
+      "height": 1459,
+      "dzi": "/assets/artworks/vineyard/detail.dzi"
+    },
+    "hasOriginal": false,
+    "author": "伦勃朗·范·莱因",
+    "collection": "冬宫博物馆馆藏",
+    "displayStatus": "当前是否陈列于254号厅：待确认",
+    "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
+    "wall": "west",
+    "offset": 5,
+    "height": 1.55,
+    "centerY": 2.6
+  }
+]

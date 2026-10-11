@@ -1,0 +1,54 @@
+{
+  "id": "decker",
+  "title": "诗人耶雷米亚斯·德·德克肖像",
+  "originalTitle": "Portrait of Jeremias de Decker",
+  "file": "Portrait of the poet Jeremias de Decker, Rembrandt van Rijn, 1656, Hermitage, Saint Petersburg.jpg",
+  "date": "年代待核对",
+  "description": "诗人戴着高帽，帽檐投下的阴影使面容显得沉静。数字文件名与官方全景对年代的表述有差异，暂不定年。",
+  "looking": "从帽檐的半透明阴影看向眼神，再观察脸部怎样从背景中浮现。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node173",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node173",
+  "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_the_poet_Jeremias_de_Decker,_Rembrandt_van_Rijn,_1656,_Hermitage,_Saint_Petersburg.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/0/04/Portrait_of_the_poet_Jeremias_de_Decker%2C_Rembrandt_van_Rijn%2C_1656%2C_Hermitage%2C_Saint_Petersburg.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 1579,
+  "sourceHeight": 1998,
+  "variants": [
+    {
+      "url": "/assets/artworks/decker/far.webp",
+      "width": 506,
+      "height": 640,
+      "bytes": 14376
+    },
+    {
+      "url": "/assets/artworks/decker/medium.webp",
+      "width": 1264,
+      "height": 1600,
+      "bytes": 78386
+    },
+    {
+      "url": "/assets/artworks/decker/near.webp",
+      "width": 1579,
+      "height": 1998,
+      "bytes": 115882
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/decker/detail.webp",
+    "width": 1579,
+    "height": 1998,
+    "bytes": 115882,
+    "dzi": "/assets/artworks/decker/detail.dzi",
+    "tileBytes": 320728
+  },
+  "original": {
+    "width": 1579,
+    "height": 1998,
+    "dzi": "/assets/artworks/decker/detail.dzi"
+  },
+  "hasOriginal": false
+}

@@ -1,0 +1,54 @@
+{
+  "id": "vineyard",
+  "title": "葡萄园雇工的比喻",
+  "originalTitle": "Parable of the Labourers in the Vineyard",
+  "file": "Rembrandt - Parable of the Laborers in the Vineyard.jpg",
+  "date": "1637 年",
+  "description": "园主向不同时间前来工作的雇工支付报酬，围绕公平的讨论通过人物手势展开。",
+  "looking": "观察钱币、手势与人物聚集的方向，寻找故事的视觉中心。",
+  "dimensions": "原作尺寸待核对",
+  "medium": "油画（支撑材料待核对）",
+  "accession": "待核对",
+  "hallEvidence": "node175",
+  "hallSource": "https://pano.hermitagemuseum.org/newpano/en/main/#node175",
+  "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/42/Rembrandt_-_Parable_of_the_Laborers_in_the_Vineyard.jpg",
+  "license": "Public domain",
+  "credit": "Rembrandt",
+  "sourceWidth": 1980,
+  "sourceHeight": 1459,
+  "variants": [
+    {
+      "url": "/assets/artworks/vineyard/far.webp",
+      "width": 640,
+      "height": 472,
+      "bytes": 54592
+    },
+    {
+      "url": "/assets/artworks/vineyard/medium.webp",
+      "width": 1600,
+      "height": 1179,
+      "bytes": 168022
+    },
+    {
+      "url": "/assets/artworks/vineyard/near.webp",
+      "width": 1980,
+      "height": 1459,
+      "bytes": 222230
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/vineyard/detail.webp",
+    "width": 1980,
+    "height": 1459,
+    "bytes": 222230,
+    "dzi": "/assets/artworks/vineyard/detail.dzi",
+    "tileBytes": 597867
+  },
+  "original": {
+    "width": 1980,
+    "height": 1459,
+    "dzi": "/assets/artworks/vineyard/detail.dzi"
+  },
+  "hasOriginal": false
+}
