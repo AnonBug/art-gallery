@@ -1,0 +1,67 @@
+{
+  "id": "snyders-maid",
+  "title": "有女仆的静物",
+  "originalTitle": "Still Life with a Maid",
+  "date": "约 1633 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://commons.wikimedia.org/wiki/File:LA_FRUTERA_(SNYDERS).jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "成堆水果围绕女仆展开，猴子和鹦鹉的加入，让静物陈设变成富有动感的室内场景。",
+  "looking": "寻找动物藏身的位置，观察圆润果实与织物、篮筐之间的质感对比。",
+  "dimensions": "153 × 214 厘米",
+  "medium": "布面油画",
+  "file": "Snyders-Still-Life-with-a-Maid.jpg",
+  "collection": "普拉多博物馆",
+  "catalogueUrl": "https://www.museodelprado.es/en/the-collection/art-work/still-life-with-a-maid/025b2c33-b378-40da-a40c-a60389cce73c",
+  "wall": "west",
+  "offset": 2.8,
+  "height": 2.2,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/LA_FRUTERA_%28SNYDERS%29.jpg",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 3051,
+  "sourceHeight": 2153,
+  "originalFile": "originals/market-hall/Snyders-Still-Life-with-a-Maid.jpg",
+  "originalFileBytes": 6127908,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-maid/far.webp",
+      "width": 640,
+      "height": 452,
+      "bytes": 79448,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-maid/medium.webp",
+      "width": 1600,
+      "height": 1129,
+      "bytes": 445144,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-maid/near.webp",
+      "width": 3000,
+      "height": 2117,
+      "bytes": 1593896,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-maid/detail.webp",
+    "width": 3051,
+    "height": 2153,
+    "bytes": 1796550,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-maid/detail.dzi"
+  },
+  "original": {
+    "width": 3051,
+    "height": 2153,
+    "dzi": "/assets/artworks/snyders-maid/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:24:58.190Z"
+}

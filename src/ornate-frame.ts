@@ -58,15 +58,16 @@ export class OrnateFrames {
    for(let petal=0;petal<8;petal++)place(leaves,x,y,.06+border*.77,petal*Math.PI/4,border*.36,border*.095,border*.55);
    place(beads,x,y,.06+border*.84,0,border*.065,border*.065,border*.045);
   }
+  const detail=new THREE.Group();group.add(detail);
   for(const [geometry,material,matrices] of [[this.leafGeometry,this.leaf,leaves],[this.beadGeometry,this.gold,beads],[this.fluteGeometry,this.molding,flutes]] as const){
    const instances=new THREE.InstancedMesh(geometry,material,matrices.length);
    matrices.forEach((matrix,i)=>{
     instances.setMatrixAt(i,matrix);
     const shade=.77+.23*((i*37%97)/96);
     instances.setColorAt(i,new THREE.Color().setRGB(shade,shade*.99,shade*.96));
-   });instances.computeBoundingSphere();group.add(instances);
+   });instances.computeBoundingSphere();detail.add(instances);
   }
-  return {group,border,hitMesh:mesh};
+  return {group,border,hitMesh:mesh,detail};
  }
  private profile(width:number,height:number,border:number){
   // Radius, depth and gold tone: a carved scoop between several raised fillets.

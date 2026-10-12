@@ -1,0 +1,66 @@
+{
+  "id": "snyders-fish",
+  "title": "鱼摊",
+  "originalTitle": "Fish Stall",
+  "date": "约 1618—1621 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fish_Stall_-_WGA21521.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "鱼、甲壳类和海产铺满摊面，右侧的商贩正在切鱼。人物的日常劳动与巨量食材形成一场壮观的市场戏剧。",
+  "looking": "先找右侧切鱼的人，再看桌下的海豹；比较鱼鳞、蟹壳和湿润鱼肉的质感。",
+  "dimensions": "209 × 341 厘米",
+  "medium": "布面油画",
+  "file": "Frans-Snyders-Fish-Stall-3840x2358.jpg",
+  "collection": "冬宫博物馆",
+  "wall": "north",
+  "offset": -6,
+  "height": 2.15,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Frans_Snyders_-_Fish_Stall_-_WGA21521.jpg",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 3840,
+  "sourceHeight": 2358,
+  "originalFile": "originals/market-hall/Frans-Snyders-Fish-Stall-3840x2358.jpg",
+  "originalFileBytes": 1305548,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-fish/far.webp",
+      "width": 640,
+      "height": 393,
+      "bytes": 101764,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-fish/medium.webp",
+      "width": 1600,
+      "height": 983,
+      "bytes": 587990,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-fish/near.webp",
+      "width": 3000,
+      "height": 1842,
+      "bytes": 1621960,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-fish/detail.webp",
+    "width": 3840,
+    "height": 2358,
+    "bytes": 1999724,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-fish/detail.dzi"
+  },
+  "original": {
+    "width": 3840,
+    "height": 2358,
+    "dzi": "/assets/artworks/snyders-fish/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:24:36.562Z"
+}

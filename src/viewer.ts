@@ -21,7 +21,7 @@ export class ArtViewer {
  private stage: HTMLElement;
  private status: HTMLElement;
  private diagnostic: HTMLElement;
- constructor(private onInfo: (a:Artwork)=>void, private onChange: (open:boolean)=>void, private collection:Artwork[]) {
+ constructor(private onInfo: (a:Artwork)=>void, private onChange: (open:boolean,resume?:boolean)=>void, private collection:Artwork[]) {
   this.root=document.createElement('section');this.root.className='viewer-overlay';this.root.hidden=true;
   this.root.setAttribute('role','dialog');this.root.setAttribute('aria-modal','true');this.root.setAttribute('aria-label','高清看画');
   this.root.innerHTML=`<div class="viewer-stage" id="osd"></div>
@@ -39,7 +39,7 @@ export class ArtViewer {
   document.body.append(this.root);
   this.stage=this.root.querySelector('.viewer-stage')!;this.status=this.root.querySelector('.viewer-status')!;
   this.diagnostic=this.root.querySelector('.viewer-diagnostics')!;
-  this.root.querySelector('#viewer-close')!.addEventListener('click',()=>this.close());
+  this.root.querySelector('#viewer-close')!.addEventListener('click',()=>this.close(true));
   this.root.querySelector('#viewer-info')!.addEventListener('click',()=>this.artwork&&this.onInfo(this.artwork));
   this.root.querySelector('#viewer-diag')!.addEventListener('click',()=>this.setDiagnostics(this.diagnostic.hidden));
   this.root.querySelector('#original')!.addEventListener('click',()=>{const view=this.captureView();this.original=!this.original;this.mount(view);});
@@ -58,7 +58,7 @@ export class ArtViewer {
  private log(message:string){this.logs.push(`${new Date().toLocaleTimeString()} ${message}`);this.logs=this.logs.slice(-24);this.updateDiagnostic();}
  private updateDiagnostic(){if(!this.diagnostic.hidden)this.diagnostic.textContent=`漫览 v${VERSION}\n${JSON.stringify({...this.state,events:undefined},null,2)}\n${this.logs.join('\n')}`;}
  open(a:Artwork){if(!this.isOpen)this.lastFocus=document.activeElement as HTMLElement;this.artwork=a;this.original=false;this.root.hidden=false;this.onChange(true);this.mount();(this.root.querySelector('#viewer-close') as HTMLElement).focus();}
- close(){if(!this.isOpen)return;this.pendingView=null;this.destroy();this.root.hidden=true;this.onChange(false);this.log('关闭 / viewer 已销毁');this.lastFocus?.focus();}
+ close(resume=false){if(!this.isOpen)return;this.pendingView=null;this.destroy();this.root.hidden=true;this.log('关闭 / viewer 已销毁');this.lastFocus?.focus();this.onChange(false,resume);}
  private captureView():ArtworkView|null {
   if(!this.viewer?.world.getItemCount())return this.pendingView;
   const item=this.viewer.world.getItemAt(0),size=item.getContentSize();

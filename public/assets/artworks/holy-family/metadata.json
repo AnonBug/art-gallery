@@ -50,5 +50,6 @@
     "height": 10880,
     "dzi": "/assets/artworks/holy-family/original.dzi"
   },
-  "hasOriginal": true
+  "hasOriginal": true,
+  "offset": 4.5
 }

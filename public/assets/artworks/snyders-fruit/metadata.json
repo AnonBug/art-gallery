@@ -1,0 +1,66 @@
+{
+  "id": "snyders-fruit",
+  "title": "水果摊",
+  "originalTitle": "Fruit Stall",
+  "date": "约 1618—1621 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21518.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "左侧两位女性交易水果，右侧的葡萄、无花果与瓜果层层展开。市场买卖成为表现丰盛与色彩的舞台。",
+  "looking": "沿着手势看向水果，再寻找下方的小狗；留意篮筐、果皮和叶子的不同触感。",
+  "dimensions": "206 × 342 厘米",
+  "medium": "布面油画",
+  "file": "Frans-Snyders-Fruit-Stall-3840x2313.jpg",
+  "collection": "冬宫博物馆",
+  "wall": "north",
+  "offset": -0.5,
+  "height": 2.15,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Frans_Snyders_-_Fruit_Stall_-_WGA21518.jpg",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 3840,
+  "sourceHeight": 2313,
+  "originalFile": "originals/market-hall/Frans-Snyders-Fruit-Stall-3840x2313.jpg",
+  "originalFileBytes": 1084224,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-fruit/far.webp",
+      "width": 640,
+      "height": 386,
+      "bytes": 94654,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-fruit/medium.webp",
+      "width": 1600,
+      "height": 964,
+      "bytes": 494030,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-fruit/near.webp",
+      "width": 3000,
+      "height": 1807,
+      "bytes": 1364236,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-fruit/detail.webp",
+    "width": 3840,
+    "height": 2313,
+    "bytes": 1698338,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-fruit/detail.dzi"
+  },
+  "original": {
+    "width": 3840,
+    "height": 2313,
+    "dzi": "/assets/artworks/snyders-fruit/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:24:39.546Z"
+}

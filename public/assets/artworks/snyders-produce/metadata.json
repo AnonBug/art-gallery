@@ -1,0 +1,68 @@
+{
+  "id": "snyders-produce",
+  "title": "水果与蔬菜静物",
+  "originalTitle": "Still Life with Fruit and Vegetables",
+  "date": "1625—1635 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Still_life_with_fruit_and_vegetables.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "水果和蔬菜从桌面铺到地上，女人、男孩与动物穿插其中。画家把不同季节的物产组合成想象中的丰盛；人物由科内利斯·德·沃斯绘制。",
+  "looking": "比较地面的根茎与篮中的豌豆、芦笋，再看人物的目光与触碰怎样让静物产生生活气息。",
+  "dimensions": "173.4 × 256.5 厘米",
+  "medium": "布面油画",
+  "file": "Snyders-Still-Life-with-Fruit-and-Vegetables.jpg",
+  "attribution": "人物由科内利斯·德·沃斯绘制",
+  "collection": "诺顿·西蒙博物馆",
+  "catalogueUrl": "https://50.nortonsimon.org/collections/still-life-with-fruit-and-vegetables/",
+  "wall": "east",
+  "offset": -2.2,
+  "height": 2.2,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Frans_Snyders_-_Still_life_with_fruit_and_vegetables.jpg",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 2402,
+  "sourceHeight": 1660,
+  "originalFile": "originals/market-hall/Snyders-Still-Life-with-Fruit-and-Vegetables.jpg",
+  "originalFileBytes": 3580731,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-produce/far.webp",
+      "width": 640,
+      "height": 442,
+      "bytes": 121492,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-produce/medium.webp",
+      "width": 1600,
+      "height": 1106,
+      "bytes": 428630,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-produce/near.webp",
+      "width": 2402,
+      "height": 1660,
+      "bytes": 692394,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-produce/detail.webp",
+    "width": 2402,
+    "height": 1660,
+    "bytes": 692394,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-produce/detail.dzi"
+  },
+  "original": {
+    "width": 2402,
+    "height": 1660,
+    "dzi": "/assets/artworks/snyders-produce/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:24:59.733Z"
+}

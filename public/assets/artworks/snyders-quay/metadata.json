@@ -1,0 +1,67 @@
+{
+  "id": "snyders-quay",
+  "title": "码头市场",
+  "originalTitle": "Market Scene on a Quay",
+  "date": "约 1635—1640 年",
+  "author": "弗兰斯·斯奈德斯及工作室",
+  "source": "https://commons.wikimedia.org/wiki/File:Market_Scene_on_a_Quay_-_Frans_Snyders_and_Workshop_-_Google_Cultural_Institute.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "码头上的食材、猎物和活着的动物密集交错，远处的港口将市场与运输、贸易联系起来。作品署名为斯奈德斯及工作室。",
+  "looking": "从前景摊位慢慢看向港口，追踪人物与动物的动作，体会近景密度与远景开阔之间的变化。",
+  "dimensions": "201.5 × 342.9 厘米",
+  "medium": "布面油画",
+  "file": "Snyders-Market-Scene-on-a-Quay.jpg",
+  "collection": "北卡罗来纳艺术博物馆",
+  "catalogueUrl": "https://artnc.org/works-of-art/market-scene-quay/",
+  "wall": "west",
+  "offset": -3.2,
+  "height": 2.2,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://commons.wikimedia.org/wiki/File:Market_Scene_on_a_Quay_-_Frans_Snyders_and_Workshop_-_Google_Cultural_Institute.jpg",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 4729,
+  "sourceHeight": 2745,
+  "originalFile": "originals/market-hall/Snyders-Market-Scene-on-a-Quay.jpg",
+  "originalFileBytes": 8187093,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-quay/far.webp",
+      "width": 640,
+      "height": 371,
+      "bytes": 109318,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-quay/medium.webp",
+      "width": 1600,
+      "height": 929,
+      "bytes": 667272,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-quay/near.webp",
+      "width": 3000,
+      "height": 1741,
+      "bytes": 2477234,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-quay/detail.webp",
+    "width": 4729,
+    "height": 2745,
+    "bytes": 5999902,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-quay/detail.dzi"
+  },
+  "original": {
+    "width": 4729,
+    "height": 2745,
+    "dzi": "/assets/artworks/snyders-quay/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:24:50.507Z"
+}

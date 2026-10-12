@@ -1,3 +1,4 @@
+import {rooms} from '../museum-layout.mjs';
 export const theme = {
   eyebrow: '第一展厅 / REMBRANDT', tagline: ['在明暗之间，', '遇见人性的温度。'],
   footer: '本展为近似空间 · 现行陈列位置待确认',
@@ -5,9 +6,9 @@ export const theme = {
   id: 'hermitage-rembrandt', title: '光与归途', subtitle: '冬宫 · 伦勃朗馆藏',
   museum: '冬宫博物馆', artist: '伦勃朗·范·莱因',
   note: '以冬宫伦勃朗厅为灵感的近似空间，结合馆藏策展，非精确复原。作品现行陈列位置待确认。',
-  room: { width: 20, depth: 17, height: 6, margin: 1.25, wall: 0x244d3c },
+  room: rooms[0],
   lighting: {ambient:1.3,key:1.1,spotColor:0xffdda7,spotIntensity:48,railInset:1.4,ceilingGap:.48},
   frame: {borderRatio:.11,minBorder:.18,maxBorder:.26},
-  initial: { x: 0, y: 2.6, z: 5.5, yaw: 0 },
+  initial: { x: 0, y: 2.6, z: 3.8, yaw: 0 },
 };
-export const VERSION = '1.0.11 · 20261011';
+export const VERSION = '1.1.0 · 20261013';

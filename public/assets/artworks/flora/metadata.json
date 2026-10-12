@@ -48,5 +48,6 @@
     "dzi": "/assets/artworks/flora/detail.dzi"
   },
   "hasOriginal": false,
-  "credit": "Rembrandt"
+  "credit": "Rembrandt",
+  "offset": -4.3
 }

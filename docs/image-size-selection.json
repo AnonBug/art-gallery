@@ -1,0 +1,50 @@
+{
+  "checkedAt": "2026-10-12T16:17:57.020Z",
+  "minimumBytes": 1000000,
+  "rule": "优先原始文件字节数；无原文件记录时使用最高分辨率完整图，排除展示缩略图及DZI瓦片。仅撤展，原有资源保留。",
+  "removed": [
+    {
+      "id": "earrings",
+      "title": "试戴耳环的年轻女子",
+      "bytes": 817380,
+      "basis": "highestAvailableFullImage",
+      "file": "public/assets/artworks/earrings/detail.webp"
+    },
+    {
+      "id": "baertje",
+      "title": "巴尔特耶·马滕斯肖像",
+      "bytes": 651472,
+      "basis": "highestAvailableFullImage",
+      "file": "public/assets/artworks/baertje/detail.webp"
+    },
+    {
+      "id": "vineyard",
+      "title": "葡萄园雇工的比喻",
+      "bytes": 222230,
+      "basis": "highestAvailableFullImage",
+      "file": "public/assets/artworks/vineyard/detail.webp"
+    },
+    {
+      "id": "snyders-lacma-game",
+      "title": "猎物市场",
+      "bytes": 740318,
+      "basis": "originalFile",
+      "file": "originals/market-hall/Snyders-LACMA-Game-Market.webp"
+    },
+    {
+      "id": "snyders-vienna-fish",
+      "title": "鱼市",
+      "bytes": 378185,
+      "basis": "originalFile",
+      "file": "originals/market-hall/Snyders-Vienna-Fish-Market.jpg"
+    },
+    {
+      "id": "snyders-birds",
+      "title": "鸟的音乐会",
+      "bytes": 654381,
+      "basis": "originalFile",
+      "file": "originals/market-hall/birds.jpg"
+    }
+  ],
+  "retained": 17
+}

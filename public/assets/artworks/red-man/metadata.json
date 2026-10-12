@@ -50,5 +50,6 @@
     "height": 8280,
     "dzi": "/assets/artworks/red-man/original.dzi"
   },
-  "hasOriginal": true
+  "hasOriginal": true,
+  "offset": 4.3
 }

@@ -1,0 +1,47 @@
+import {test} from 'node:test';
+import assert from 'node:assert/strict';
+import fs from 'node:fs/promises';
+import {rooms,passage,wallThickness,isWalkable,clearWalk,moveOnFloor,planWalk,positionOnRoute,roomAt,projectToFloor} from '../src/museum-layout.mjs';
+
+test('两厅只隔普通墙厚，门洞双向通行且完整墙面不可穿过',()=>{
+ assert.equal(passage.length,wallThickness);
+ assert.ok(Math.abs((rooms[0].x-rooms[0].width/2)-(rooms[1].x+rooms[1].width/2)-wallThickness)<1e-8);
+ for(const [a,b] of [[{x:0,z:passage.z},{x:rooms[1].x,z:passage.z}],[{x:rooms[1].x,z:passage.z},{x:0,z:passage.z}]]){
+  assert.ok(clearWalk(a,b));const p=moveOnFloor(a,b);assert.ok(Math.hypot(p.x-b.x,p.z-b.z)<1e-8);
+ }
+ for(const z of [-4,0,4]){
+  const p=moveOnFloor({x:-rooms[0].width/2+1.5,z},{x:rooms[1].x-2,z});assert.ok(p.x>-rooms[0].width/2,'不能从非门口位置穿过第一厅西墙');
+  const q=moveOnFloor({x:rooms[1].x+rooms[1].width/2-1.5,z},{x:0,z});assert.ok(q.x<rooms[1].x+rooms[1].width/2,'不能穿过第二厅东墙');
+ }
+ const p=moveOnFloor({x:passage.x,z:passage.z},{x:passage.x,z:20});assert.ok(p.z<=passage.z+passage.width/2-passage.radius+.001);
+ assert.equal(roomAt({x:0,z:0}).id,'rembrandt');assert.equal(roomAt({x:rooms[1].x,z:0}).id,'market');assert.equal(roomAt({x:passage.x,z:2.6}),null);
+});
+test('跨展厅自动行走穿过薄墙门洞，途中的每一点都在可行走区域',()=>{
+ for(const [a,b] of [[{x:4,z:-3.8},{x:rooms[1].x-4.5,z:4.5}],[{x:rooms[1].x-3,z:-4.5},{x:4,z:3.8}],[{x:passage.x,z:passage.z},{x:rooms[1].x-4.5,z:-4.5}]]){
+  const direct=clearWalk(a,b),route=planWalk(a,b);assert.ok(route.length>0);if(!direct)assert.ok(route.length>1);
+  let last=a;for(const stop of route){assert.ok(clearWalk(last,stop));last=stop;}
+  for(let i=0;i<=1000;i++)assert.ok(isWalkable(positionOnRoute(a,route,i/1000)));
+  const end=positionOnRoute(a,route,1);assert.ok(Math.hypot(end.x-b.x,end.z-b.z)<1e-8);
+ }
+});
+test('门洞边缘限制身体宽度，展厅各自边界不会把相机送回第一厅',()=>{
+ for(const r of rooms){const p=projectToFloor({x:r.x-100,z:100},r.id);assert.ok(isWalkable(p));assert.equal(roomAt(p).id,r.id);}
+ assert.ok(isWalkable({x:passage.x,z:passage.z}));assert.equal(isWalkable({x:passage.x,z:passage.z+passage.width/2}),false);
+ assert.deepEqual(planWalk({x:rooms[1].x,z:0},{x:rooms[1].x,z:-5}),[{x:rooms[1].x,z:-5}]);
+});
+test('17幅作品与展签均留在各自墙面内，与门洞、同墙作品互不重叠',async()=>{
+ const data=JSON.parse(await fs.readFile(new URL('../src/data/artworks.json',import.meta.url),'utf8'));
+ assert.equal(data.filter(a=>a.room==='market').length,8);assert.equal(new Set(data.map(a=>a.id)).size,17);
+ for(const r of rooms)for(const wall of ['north','south','east','west']){
+  const limit=(wall==='north'||wall==='south'?r.width:r.depth)/2;
+  const spans=data.filter(a=>(a.room??'rembrandt')===r.id&&a.wall===wall).map(a=>{
+   const width=a.height*a.sourceWidth/a.sourceHeight,border=Math.max(.18,Math.min(.26,a.height*.11));
+   return {id:a.id,lo:a.offset-width/2-border,hi:a.offset+width/2+border+.24+.78};
+  }).sort((a,b)=>a.lo-b.lo);
+  for(const [i,s] of spans.entries()){
+   assert.ok(s.lo>-limit&&s.hi<limit,`${s.id} 画框/展签不能越过墙角`);
+   if(i)assert.ok(spans[i-1].hi<s.lo,`${s.id} 不能压住上一幅作品或展签`);
+   if(wall===r.door){const center=wall==='west'?-passage.z:passage.z;assert.ok(s.hi<center-passage.width/2-.2||s.lo>center+passage.width/2+.2,`${s.id} 不能挡住门洞`);}
+  }
+ }
+});

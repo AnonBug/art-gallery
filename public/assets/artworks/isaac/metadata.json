@@ -48,5 +48,6 @@
     "dzi": "/assets/artworks/isaac/detail.dzi"
   },
   "hasOriginal": false,
-  "credit": "Rembrandt"
+  "credit": "Rembrandt",
+  "offset": 1
 }

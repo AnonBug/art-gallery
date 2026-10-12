@@ -50,5 +50,6 @@
     "height": 3691,
     "dzi": "/assets/artworks/scholar/detail.dzi"
   },
-  "hasOriginal": false
+  "hasOriginal": false,
+  "offset": -2.8
 }

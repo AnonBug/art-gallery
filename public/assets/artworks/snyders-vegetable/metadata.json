@@ -1,0 +1,66 @@
+{
+  "id": "snyders-vegetable",
+  "title": "蔬菜摊",
+  "originalTitle": "Vegetable Stall",
+  "date": "约 1618—1621 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21520.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "摊前的交易、抱着卷心菜的孩子与成堆蔬菜交织在一起。普通根茎、叶菜在宏大的构图中获得了纪念碑般的存在感。",
+  "looking": "找到孩子手里的卷心菜，再比较叶菜、根茎与豆类；看看远处马车怎样扩展市场空间。",
+  "dimensions": "208 × 341 厘米",
+  "medium": "布面油画",
+  "file": "Frans-Snyders-Vegetable-Stall-3840x2333.jpg",
+  "collection": "冬宫博物馆",
+  "wall": "south",
+  "offset": -3.4,
+  "height": 2.15,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Frans_Snyders_-_Fruit_Stall_-_WGA21520.jpg",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 3840,
+  "sourceHeight": 2333,
+  "originalFile": "originals/market-hall/Frans-Snyders-Vegetable-Stall-3840x2333.jpg",
+  "originalFileBytes": 1292408,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-vegetable/far.webp",
+      "width": 640,
+      "height": 389,
+      "bytes": 107804,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-vegetable/medium.webp",
+      "width": 1600,
+      "height": 972,
+      "bytes": 591364,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-vegetable/near.webp",
+      "width": 3000,
+      "height": 1823,
+      "bytes": 1673440,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-vegetable/detail.webp",
+    "width": 3840,
+    "height": 2333,
+    "bytes": 2097104,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
+  },
+  "original": {
+    "width": 3840,
+    "height": 2333,
+    "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:24:45.806Z"
+}

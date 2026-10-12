@@ -1,0 +1,65 @@
+{
+  "checkedAt": "2026-10-12T16:01:19.212Z",
+  "environment": "Codex in-app browser; 1280×720 CSS pixels; render pixel ratio 1.6",
+  "method": "180 steady camera frame intervals per view. All samples continuously rendered the real Gallery; the post-change probe used a local input adapter to keep roaming active without native Pointer Lock.",
+  "before": {
+    "label": "first",
+    "frames": 180,
+    "frameMsP50": 78.6,
+    "frameMsP95": 88.7,
+    "cpuMsP50": 2.4,
+    "cpuMsP95": 6,
+    "calls": 121,
+    "triangles": 243148,
+    "spots": 25,
+    "lights": 28,
+    "pixelRatio": 1.6
+  },
+  "after": [
+    {
+      "label": "first",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 18.3,
+      "cpuMsP50": 1.2,
+      "cpuMsP95": 2.2,
+      "calls": 65,
+      "triangles": 119368,
+      "spots": 4,
+      "lights": 7,
+      "pixelRatio": 1.6
+    },
+    {
+      "label": "second",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 16.9,
+      "cpuMsP50": 1,
+      "cpuMsP95": 1.6,
+      "calls": 60,
+      "triangles": 38542,
+      "spots": 4,
+      "lights": 7,
+      "textures": 39,
+      "programs": 13,
+      "pixelRatio": 1.6,
+      "room": "market"
+    },
+    {
+      "label": "door",
+      "frames": 180,
+      "frameMsP50": 16.7,
+      "frameMsP95": 17.5,
+      "cpuMsP50": 1.1,
+      "cpuMsP95": 1.9,
+      "calls": 169,
+      "triangles": 104396,
+      "spots": 4,
+      "lights": 7,
+      "textures": 60,
+      "programs": 14,
+      "pixelRatio": 1.6,
+      "room": "rembrandt"
+    }
+  ]
+}

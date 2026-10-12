@@ -1,9 +1,9 @@
 {
-  "httpChecks": 0,
-  "checkedAt": "2026-10-11T10:37:10.003Z",
-  "artworks": 12,
-  "dzi": 15,
-  "tiles": 6008,
+  "httpChecks": 6486,
+  "checkedAt": "2026-10-12T16:32:54.786Z",
+  "artworks": 17,
+  "dzi": 20,
+  "tiles": 6396,
   "errors": [],
   "resources": [
     {
@@ -298,95 +298,250 @@
       "original": {}
     },
     {
-      "id": "earrings",
-      "title": "试戴耳环的年轻女子",
+      "id": "snyders-fish",
+      "title": "鱼摊",
       "display": [
         {
-          "width": 527,
-          "height": 640,
-          "bytes": 55222,
-          "path": "/assets/artworks/earrings/far.webp"
+          "width": 640,
+          "height": 393,
+          "bytes": 101764,
+          "path": "/assets/artworks/snyders-fish/far.webp"
         },
         {
-          "width": 1318,
-          "height": 1600,
-          "bytes": 326882,
-          "path": "/assets/artworks/earrings/medium.webp"
+          "width": 1600,
+          "height": 983,
+          "bytes": 587990,
+          "path": "/assets/artworks/snyders-fish/medium.webp"
         },
         {
-          "width": 2471,
-          "height": 3000,
-          "bytes": 882680,
-          "path": "/assets/artworks/earrings/near.webp"
+          "width": 3000,
+          "height": 1842,
+          "bytes": 1621960,
+          "path": "/assets/artworks/snyders-fish/near.webp"
         }
       ],
       "detail": {
-        "width": 2527,
-        "height": 3068,
-        "bytes": 817380,
+        "width": 3840,
+        "height": 2358,
+        "bytes": 1999724,
+        "tiles": 66
+      },
+      "original": {}
+    },
+    {
+      "id": "snyders-fruit",
+      "title": "水果摊",
+      "display": [
+        {
+          "width": 640,
+          "height": 386,
+          "bytes": 94654,
+          "path": "/assets/artworks/snyders-fruit/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 964,
+          "bytes": 494030,
+          "path": "/assets/artworks/snyders-fruit/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1807,
+          "bytes": 1364236,
+          "path": "/assets/artworks/snyders-fruit/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3840,
+        "height": 2313,
+        "bytes": 1698338,
+        "tiles": 66
+      },
+      "original": {}
+    },
+    {
+      "id": "snyders-game",
+      "title": "猎物摊",
+      "display": [
+        {
+          "width": 640,
+          "height": 388,
+          "bytes": 97168,
+          "path": "/assets/artworks/snyders-game/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 969,
+          "bytes": 521198,
+          "path": "/assets/artworks/snyders-game/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1816,
+          "bytes": 1386822,
+          "path": "/assets/artworks/snyders-game/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3840,
+        "height": 2325,
+        "bytes": 1807838,
+        "tiles": 66
+      },
+      "original": {}
+    },
+    {
+      "id": "snyders-vegetable",
+      "title": "蔬菜摊",
+      "display": [
+        {
+          "width": 640,
+          "height": 389,
+          "bytes": 107804,
+          "path": "/assets/artworks/snyders-vegetable/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 972,
+          "bytes": 591364,
+          "path": "/assets/artworks/snyders-vegetable/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1823,
+          "bytes": 1673440,
+          "path": "/assets/artworks/snyders-vegetable/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3840,
+        "height": 2333,
+        "bytes": 2097104,
+        "tiles": 66
+      },
+      "original": {}
+    },
+    {
+      "id": "snyders-quay",
+      "title": "码头市场",
+      "display": [
+        {
+          "width": 640,
+          "height": 371,
+          "bytes": 109318,
+          "path": "/assets/artworks/snyders-quay/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 929,
+          "bytes": 667272,
+          "path": "/assets/artworks/snyders-quay/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1741,
+          "bytes": 2477234,
+          "path": "/assets/artworks/snyders-quay/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 4729,
+        "height": 2745,
+        "bytes": 5999902,
+        "tiles": 93
+      },
+      "original": {}
+    },
+    {
+      "id": "snyders-kitchen",
+      "title": "女仆与男孩的厨房静物",
+      "display": [
+        {
+          "width": 640,
+          "height": 410,
+          "bytes": 101026,
+          "path": "/assets/artworks/snyders-kitchen/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1024,
+          "bytes": 608672,
+          "path": "/assets/artworks/snyders-kitchen/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1920,
+          "bytes": 2377708,
+          "path": "/assets/artworks/snyders-kitchen/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 4674,
+        "height": 2991,
+        "bytes": 6097630,
+        "tiles": 93
+      },
+      "original": {}
+    },
+    {
+      "id": "snyders-maid",
+      "title": "有女仆的静物",
+      "display": [
+        {
+          "width": 640,
+          "height": 452,
+          "bytes": 79448,
+          "path": "/assets/artworks/snyders-maid/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1129,
+          "bytes": 445144,
+          "path": "/assets/artworks/snyders-maid/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 2117,
+          "bytes": 1593896,
+          "path": "/assets/artworks/snyders-maid/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3051,
+        "height": 2153,
+        "bytes": 1796550,
         "tiles": 53
       },
       "original": {}
     },
     {
-      "id": "baertje",
-      "title": "巴尔特耶·马滕斯肖像",
-      "display": [
-        {
-          "width": 458,
-          "height": 640,
-          "bytes": 25604,
-          "path": "/assets/artworks/baertje/far.webp"
-        },
-        {
-          "width": 1146,
-          "height": 1600,
-          "bytes": 164534,
-          "path": "/assets/artworks/baertje/medium.webp"
-        },
-        {
-          "width": 2148,
-          "height": 3000,
-          "bytes": 499696,
-          "path": "/assets/artworks/baertje/near.webp"
-        }
-      ],
-      "detail": {
-        "width": 2694,
-        "height": 3762,
-        "bytes": 651472,
-        "tiles": 74
-      },
-      "original": {}
-    },
-    {
-      "id": "vineyard",
-      "title": "葡萄园雇工的比喻",
+      "id": "snyders-produce",
+      "title": "水果与蔬菜静物",
       "display": [
         {
           "width": 640,
-          "height": 472,
-          "bytes": 54592,
-          "path": "/assets/artworks/vineyard/far.webp"
+          "height": 442,
+          "bytes": 121492,
+          "path": "/assets/artworks/snyders-produce/far.webp"
         },
         {
           "width": 1600,
-          "height": 1179,
-          "bytes": 168022,
-          "path": "/assets/artworks/vineyard/medium.webp"
+          "height": 1106,
+          "bytes": 428630,
+          "path": "/assets/artworks/snyders-produce/medium.webp"
         },
         {
-          "width": 1980,
-          "height": 1459,
-          "bytes": 222230,
-          "path": "/assets/artworks/vineyard/near.webp"
+          "width": 2402,
+          "height": 1660,
+          "bytes": 692394,
+          "path": "/assets/artworks/snyders-produce/near.webp"
         }
       ],
       "detail": {
-        "width": 1980,
-        "height": 1459,
-        "bytes": 222230,
-        "tiles": 26
+        "width": 2402,
+        "height": 1660,
+        "bytes": 692394,
+        "tiles": 38
       },
       "original": {}
     }
