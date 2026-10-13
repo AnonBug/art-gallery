@@ -1,0 +1,67 @@
+{
+  "id": "snyders-birds",
+  "title": "鸟的音乐会",
+  "originalTitle": "Concert of Birds",
+  "date": "约 1630—1640 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Concert_of_Birds_-_WGA21527.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "不同鸟类聚集在树枝与地面上，猫头鹰坐在打开的乐谱前，像在指挥一场喧闹合唱。馆方展览资料将此作列为斯奈德斯作品。",
+  "looking": "先找乐谱前的猫头鹰，再逐一寻找孔雀、鹦鹉与水鸟；比较长颈、鸟喙和羽毛带来的节奏。",
+  "dimensions": "136.5 × 240 厘米",
+  "medium": "布面油画",
+  "file": "birds.jpg",
+  "collection": "冬宫博物馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Frans_Snyders_-_Concert_of_Birds_-_WGA21527.jpg",
+  "catalogueUrl": "https://www.ngv.vic.gov.au/wp-content/uploads/2015/07/Hermitage-Labels-for-download.pdf",
+  "wall": "east",
+  "offset": -6,
+  "height": 1.95,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 2800,
+  "sourceHeight": 1552,
+  "originalFile": "originals/market-hall/birds.jpg",
+  "originalFileBytes": 654381,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-birds/far.webp",
+      "width": 640,
+      "height": 355,
+      "bytes": 69522,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-birds/medium.webp",
+      "width": 1600,
+      "height": 887,
+      "bytes": 338464,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-birds/near.webp",
+      "width": 2800,
+      "height": 1552,
+      "bytes": 775524,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-birds/detail.webp",
+    "width": 2800,
+    "height": 1552,
+    "bytes": 775524,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-birds/detail.dzi"
+  },
+  "original": {
+    "width": 2800,
+    "height": 1552,
+    "dzi": "/assets/artworks/snyders-birds/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:25:05.128Z"
+}

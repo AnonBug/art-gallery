@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-mona-lisa",
+  "title": "蒙娜丽莎",
+  "originalTitle": "Mona Lisa",
+  "date": "约 1503—1516 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File:Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / C2RMF；经修整的数字图像",
+  "description": "人物在遥远的山水前侧身而坐，双手交叠。脸部轮廓与背景在柔和的明暗过渡中相接。此处使用 C2RMF 的修整数字版本。",
+  "looking": "从嘴角与眼角的柔和边缘看起，再观察两侧地平线和交叠的双手。",
+  "dimensions": "77 × 53 厘米",
+  "medium": "白杨木板油画",
+  "file": "Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+  "collection": "卢浮宫博物馆",
+  "wall": "north",
+  "offset": 0,
+  "height": 2.5,
+  "centerY": 2.6,
+  "room": "leonardo",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+  "sourceWidth": 7479,
+  "sourceHeight": 11146,
+  "originalFile": "originals/renaissance/leonardo-mona-lisa.jpg",
+  "originalFileBytes": 94310471,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-mona-lisa/far.webp",
+      "width": 429,
+      "height": 640,
+      "bytes": 95406,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-mona-lisa/medium.webp",
+      "width": 1074,
+      "height": 1600,
+      "bytes": 806846,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-mona-lisa/near.webp",
+      "width": 2013,
+      "height": 3000,
+      "bytes": 2535196,
+      "quality": 90
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-mona-lisa/detail.webp",
+    "width": 7479,
+    "height": 11146,
+    "bytes": 19938334,
+    "quality": 82,
+    "dzi": "/assets/artworks/leonardo-mona-lisa/detail.dzi"
+  },
+  "original": {
+    "width": 7479,
+    "height": 11146,
+    "dzi": "/assets/artworks/leonardo-mona-lisa/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-13T15:46:56.138Z"
+}

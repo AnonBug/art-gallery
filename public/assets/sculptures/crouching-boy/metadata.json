@@ -1,0 +1,18 @@
+{
+  "title":"蹲伏的男孩",
+  "originalTitle":"Crouching Boy at The State Hermitage Museum, St Petersburg",
+  "author":"米开朗基罗·博那罗蒂",
+  "scanCredit":"Scan-the-World",
+  "source":"https://zenodo.org/records/21353106",
+  "download":"https://zenodo.org/records/21353106/files/ba90119eb3ddd67dab001ee6a6d11caf.glb?download=1",
+  "file":"model.glb",
+  "bytes":6023996,
+  "md5":"733359e94971dd8387aaf446b7d6b548",
+  "license":"CC BY-NC-SA 4.0",
+  "licenseUrl":"https://creativecommons.org/licenses/by-nc-sa/4.0/",
+  "checkedAt":"2026-10-13",
+  "sourceRecordLicense":"cc-by-nc-sa-4.0",
+  "extensionsRequired":["KHR_draco_mesh_compression"],
+  "material":"源模型无材质，浏览器应用统一暖白石材材质",
+  "display":"按包围盒居中与缩放；用于数字展览，非原作尺寸复原"
+}

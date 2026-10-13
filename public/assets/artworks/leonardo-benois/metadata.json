@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-benois",
+  "title": "贝努瓦圣母",
+  "originalTitle": "Benois Madonna",
+  "date": "约 1475—1478 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File:Leonardo%2C_Madonna_Benois.JPG",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Leonardo, Madonna Benois.JPG",
+  "description": "母亲微笑着将小花递到孩子手边。人物之间的注意力被一个小小的物件牵引，亲密关系借由手势呈现。",
+  "looking": "观察小花、孩子的手与母亲的目光组成的细小环路。",
+  "dimensions": "49.5 × 33 厘米",
+  "medium": "木板油画，后转移至画布",
+  "file": "Leonardo,_Madonna_Benois.JPG",
+  "collection": "冬宫博物馆",
+  "wall": "west",
+  "offset": 3.5,
+  "height": 2.3,
+  "centerY": 2.6,
+  "room": "leonardo",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Leonardo%2C_Madonna_Benois.JPG",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+  "sourceWidth": 2864,
+  "sourceHeight": 4588,
+  "originalFile": "originals/renaissance/leonardo-benois.jpg",
+  "originalFileBytes": 6679408,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-benois/far.webp",
+      "width": 400,
+      "height": 640,
+      "bytes": 90226,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-benois/medium.webp",
+      "width": 999,
+      "height": 1600,
+      "bytes": 690146,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-benois/near.webp",
+      "width": 1873,
+      "height": 3000,
+      "bytes": 2369832,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-benois/detail.webp",
+    "width": 2864,
+    "height": 4588,
+    "bytes": 4634778,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
+  },
+  "original": {
+    "width": 2864,
+    "height": 4588,
+    "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-13T15:44:52.245Z"
+}

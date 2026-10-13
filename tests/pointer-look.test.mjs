@@ -62,3 +62,10 @@ test('关闭面板的点击可直接恢复锁定，关闭点击不穿透；触�
  const touch=fixture(false);touch.control.suspend(true);touch.control.suspend(false);touch.control.resume();
  assert.equal(touch.requests,0);assert.equal(touch.control.paused,false);touch.control.dispose();
 });
+test('浏览器拒绝锁定后可以切换拖动模式，恢复面板与下一次点击不再反复请求锁定',async()=>{
+ const f=fixture();f.canvas.requestPointerLock=()=>Promise.reject(new Error('Unsupported'));
+ f.click();await Promise.resolve();assert.equal(f.control.paused,true);
+ f.control.useDrag();assert.equal(f.control.paused,false);assert.equal(f.control.dragMode,true);
+ f.click();f.control.suspend(true);f.control.suspend(false);f.control.resume();
+ assert.equal(f.control.locked,false);assert.equal(f.control.paused,false);assert.equal(f.errors.length,1);assert.deepEqual(f.changes.at(-1),[false,false]);f.control.dispose();
+});

@@ -1,4 +1,10 @@
 export const clamp = (n, a, b) => Math.max(a, Math.min(b, n));
+/** @param {number} distance @param {'floor'|'artwork'} kind */
+export function moveDuration(distance, kind) {
+  // Click navigation is faster than manual walking; artwork focus is twice as fast again.
+  const {speed, minimum} = kind === 'artwork' ? {speed: 12, minimum: 220} : {speed: 6, minimum: 280};
+  return Math.max(minimum, distance / speed * 1000);
+}
 export function mouseLook(yaw, pitch, dx, dy) {
   return {yaw: yaw - dx * .002, pitch: clamp(pitch - dy * .002, -Math.PI / 2 + .05, Math.PI / 2 - .05)};
 }

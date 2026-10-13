@@ -9,6 +9,6 @@ export const theme = {
   room: rooms[0],
   lighting: {ambient:1.3,key:1.1,spotColor:0xffdda7,spotIntensity:48,railInset:1.4,ceilingGap:.48},
   frame: {borderRatio:.11,minBorder:.18,maxBorder:.26},
-  initial: { x: 0, y: 2.6, z: 3.8, yaw: 0 },
+  initial: { x: 0, y: 2.6, z: 0, yaw: 0 },
 };
-export const VERSION = '1.1.0 · 20261013';
+export const VERSION = '1.3.0 · 20261014';

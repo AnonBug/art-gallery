@@ -5,5 +5,5 @@ export interface Artwork {
  description:string; looking:string; source:string; originalUrl:string; license:string; credit:string;
  licenseStatus:string; collection:string; displayStatus:string; attribution?:string;
  sourceWidth:number; sourceHeight:number; variants:ImageAsset[]; detail:ImageAsset; original:ImageAsset;
- hasOriginal:boolean; room?:'rembrandt'|'market'; wall:'north'|'south'|'east'|'west'; offset:number; height:number; centerY:number;
+ hasOriginal:boolean; room?:'rembrandt'|'market'|'leonardo'; wall:'north'|'south'|'east'|'west'; offset:number; height:number; centerY:number;
 }

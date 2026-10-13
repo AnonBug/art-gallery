@@ -2,13 +2,13 @@
 export function installPointerLook(canvas, {onMove, onClick, onChange, onError}, enabled = true) {
   const doc = canvas.ownerDocument, win = doc.defaultView;
   const abort = new AbortController(), options = {signal: abort.signal};
-  let suspended = false, skipClick = false, requesting = false;
+  let suspended = false, skipClick = false, requesting = false, dragMode = false;
   const locked = () => doc.pointerLockElement === canvas;
-  const notify = () => onChange(locked(), enabled);
+  const notify = () => onChange(locked(), enabled && !dragMode);
   const unlock = () => {if (locked()) doc.exitPointerLock();};
   const failure = error => {requesting = false; onError(error); notify();};
   const lock = () => {
-    if (suspended || locked() || requesting) return;
+    if (suspended || locked() || requesting || dragMode) return;
     enabled = true; requesting = true;
     try {
       if (!canvas.requestPointerLock) {failure(new Error('Pointer Lock API unavailable')); return;}
@@ -21,6 +21,7 @@ export function installPointerLook(canvas, {onMove, onClick, onChange, onError},
       if (locked()) unlock(); else if (changed) notify();
       return;
     }
+    if (dragMode) return;
     enabled = true;
     if (e.button === 0 && !locked() && !suspended) {skipClick = true; lock();}
   }, options);
@@ -40,7 +41,9 @@ export function installPointerLook(canvas, {onMove, onClick, onChange, onError},
   return {
     get enabled() {return enabled;},
     get locked() {return locked();},
-    get paused() {return enabled && !locked();},
+    get paused() {return enabled && !dragMode && !locked();},
+    get dragMode() {return dragMode;},
+    useDrag() {dragMode = true; skipClick = false; requesting = false; unlock(); notify();},
     lock,
     // Called synchronously from a panel's close click; touch mode never acquires a mouse lock.
     resume() {if (enabled && !suspended) lock();},

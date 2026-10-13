@@ -13,7 +13,7 @@ async function loadGallery(){
  const win=new EventTarget(),doc=new EventTarget(),exports={};
  const source=await fs.readFile(new URL('../src/gallery.ts',import.meta.url),'utf8');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
- const modules={'three':THREE,'./navigation.mjs':navigation,'./pointer-look.mjs':pointerLook,'./museum-layout.mjs':museumLayout,'./ornate-frame':{},'./data/theme':{theme:{room:{width:20,depth:17,margin:1.25},initial:{y:2.6,z:3.8,yaw:0}}}};
+ const modules={'./sculpture-model':{sculptures:JSON.parse(await fs.readFile(new URL('../src/data/sculptures.json',import.meta.url),'utf8'))},'three':THREE,'./navigation.mjs':navigation,'./pointer-look.mjs':pointerLook,'./museum-layout.mjs':museumLayout,'./ornate-frame':{},'./data/theme':{theme:{room:{width:20,depth:17,margin:1.25},initial:{y:2.6,z:0,yaw:0}}}};
  vm.runInNewContext(code,{exports,require:id=>modules[id],window:win,document:doc,AbortController,performance});
  return {Gallery:exports.Gallery,win,doc};
 }
@@ -31,6 +31,19 @@ function floorGallery(Gallery){
   renderer:{domElement:{getBoundingClientRect:()=>({left:0,top:0,width:800,height:600})}},container:{clientWidth:800,clientHeight:600,classList:{toggle(){}}}});
  return g;
 }
+
+test('两件雕塑本体打开3D细看，展签打开对应介绍，中心射线与直接点按均区分且悬停不打开',async()=>{
+ const {Gallery}=await loadGallery(),g=floorGallery(Gallery);
+ g.camera.position.set(3,2.6,4.3);g.pitch=0;
+ const opened=[];g.onSculpture=id=>opened.push(['3d',id]);g.onSculptureInfo=s=>opened.push(['info',s.id]);
+ for(const id of ['crouching-boy','nefertiti'])for(const kind of ['sculpture','sculpture-label'])for(const center of [true,false]){
+  const proxy=new THREE.Mesh(new THREE.PlaneGeometry(2,3));proxy.position.set(3,2.6,-4);proxy.userData={id,kind};proxy.updateMatrixWorld();g.targets=[proxy];
+  g.pick(400,300,false,center);assert.equal(opened.length,0);
+  assert.equal(g.hoverHighlight.visible,kind==='sculpture-label');
+  g.pick(400,300,true,center);assert.deepEqual(opened,[[kind==='sculpture'?'3d':'info',id]]);opened.length=0;
+  proxy.geometry.dispose();proxy.material.dispose();
+ }
+});
 
 test('桌面拾取始终命中中心射线对应作品，不受原鼠标点击坐标影响',async()=>{
  const {Gallery}=await loadGallery(),g=Object.create(Gallery.prototype);
@@ -102,7 +115,8 @@ test('地板光圈使用中心射线，指向画作或无效位置时消失',asy
  const point=g.floorMarker.point.clone();assert.ok(Math.abs(point.z-(4.3-2.6/Math.tan(.65)))<1e-6);
  g.pick(799,599,false,true);assert.ok(g.floorMarker.point.distanceTo(point)<1e-6,'原鼠标坐标不改变中心目标');
  assert.equal(g.floorWalk,null,'悬停不会启动移动');
- for(const [x,pitch] of [[3,0],[3,.4],[3,-.1],[0,-.55]]) {
+ const seat=museumLayout.benchPosition(museumLayout.rooms[0]);
+ for(const [x,pitch] of [[3,0],[3,.4],[3,-.1],[seat.x,-Math.atan2(2.6,5-seat.z)]]) {
   g.camera.position.set(x,2.6,5);g.pitch=pitch;g.pick(0,0,true,true);
   assert.equal(g.floorMarker.visible,false);assert.equal(g.floorWalk,null,'抬头、墙外或长凳下均不可选择');
  }
@@ -151,10 +165,25 @@ test('第二厅地板可选择，跨厅行走沿门口路线且回到中央保�
  const end=new THREE.Vector3(4,0,-3.5);g.walkTo(end);const walk=g.floorWalk;assert.ok(walk.route.length>1);
  for(let i=0;i<=100;i++){g.updateFloorWalk(walk.startTime+walk.duration*i/100);assert.ok(museumLayout.isWalkable(g.camera.position));assert.equal(g.camera.position.y,2.6);}
  assert.ok(g.camera.position.distanceTo(new THREE.Vector3(4,2.6,-3.5))<1e-6);
- g.camera.position.set(museumLayout.rooms[1].x,2.6,-4);g.reset();assert.deepEqual(g.camera.position.toArray(),[museumLayout.rooms[1].x,2.6,3.8]);
- g.camera.position.set(3,2.6,-4);g.reset();assert.deepEqual(g.camera.position.toArray(),[0,2.6,3.8]);
+ g.camera.position.set(museumLayout.rooms[1].x,2.6,-4);g.reset();assert.deepEqual(g.camera.position.toArray(),[museumLayout.rooms[1].x,2.6,0]);
+ g.camera.position.set(3,2.6,-4);g.reset();assert.deepEqual(g.camera.position.toArray(),[0,2.6,0]);
 });
-test('紧凑双厅中全部17幅画在桌面、手机竖屏与横屏驻足时保留完整画框和看画余量',async()=>{
+test('点击地板比普通步行更快，同厅与跨厅靠近画作都比地板导航更快且沿门洞路线行进',async()=>{
+ const {Gallery}=await loadGallery();
+ for(const room of [museumLayout.rooms[0],museumLayout.rooms[1]]){
+  const g=floorGallery(Gallery);g.camera.position.set(4,2.6,-4.8);g.onSelect=()=>{};
+  const h={a:{id:'speed-check',title:'速度检查',height:2.4,room:room.id},width:2,frameBorder:.22,center:new THREE.Vector3(room.x,2.6,-room.depth/2+.14),normal:new THREE.Vector3(0,0,1)};
+  g.hung=[h];const pose=g.focusPose(h);g.walkTo(pose.position);const walk=g.floorWalk;
+  assert.ok(walk);const length=g.routeLength(g.camera.position,walk.route);
+  assert.ok(walk.duration<length/2.65*1000*.5,'地板导航耗时少于原步行的一半');
+  g.focus(h.a.id);const flight=g.flight;
+  assert.ok(flight);assert.equal(g.floorWalk,null);assert.ok(flight.duration<=walk.duration*.5,'画作靠近耗时最多为同路线地板导航的一半');
+  for(let i=0;i<=100;i++)assert.ok(museumLayout.isWalkable(museumLayout.positionOnRoute(flight.start,flight.route,i/100)));
+  if(room.id==='rembrandt')assert.ok(flight.duration<1050,'同厅靠近不再固定等待1.05秒');
+  else assert.ok(flight.route.length>1,'跨厅加速仍走门洞，不直线穿墙');
+ }
+});
+test('四厅中全部画作在桌面、手机竖屏与横屏驻足时保留完整画框和看画余量',async()=>{
  const {Gallery}=await loadGallery(),g=floorGallery(Gallery),data=JSON.parse(await fs.readFile(new URL('../src/data/artworks.json',import.meta.url),'utf8'));
  for(const [width,height]of [[1280,720],[390,844],[844,390]]){
   g.container.clientWidth=width;g.container.clientHeight=height;g.camera.aspect=width/height;

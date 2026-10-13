@@ -1,17 +1,16 @@
 import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
-import {rooms,passage,roomAt} from './museum-layout.mjs';
+import {rooms,passages,doorsFor,roomAt} from './museum-layout.mjs';
 
-const gates=rooms.map(r=>{
- const x=r.x+(r.door==='west'?-1:1)*r.width/2;
- return new THREE.Box3(new THREE.Vector3(x-.12,0,passage.z-passage.width/2),new THREE.Vector3(x+.12,passage.height,passage.z+passage.width/2));
-});
-/** The other room can only be seen through the doorway on this room's wall. */
+const gates=new Map(passages.map(p=>[p,new THREE.Box3(new THREE.Vector3(p.x-.22,0,p.z-p.width/2),new THREE.Vector3(p.x+.22,p.height,p.z+p.width/2))]));
+/** Conservatively reveal connected rooms only through portals inside the view. */
 export function visibleRooms(position:THREE.Vector3,frustum:THREE.Frustum){
  const current=roomAt(position);
- if(!current)return new Set(rooms.map(r=>r.id));
- const index=rooms.indexOf(current);
- return new Set(rooms.filter((r,i)=>i===index||frustum.intersectsBox(gates[index])).map(r=>r.id));
+ const crossing=passages.find(p=>Math.abs(position.x-p.x)<=p.length/2+.01&&Math.abs(position.z-p.z)<p.width/2);
+ const visible=new Set<string>(current?[current.id]:crossing?[crossing.left,crossing.right]:rooms.map(r=>r.id));
+ const pending=[...visible];
+ while(pending.length){for(const door of doorsFor(pending.shift()!))if(!visible.has(door.next)&&frustum.intersectsBox(gates.get(door.passage)!)){visible.add(door.next);pending.push(door.next);}}
+ return visible;
 }
 
 /** Retain the detached wall meshes for ray picking, with their cached world matrices. */

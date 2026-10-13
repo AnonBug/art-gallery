@@ -26,7 +26,7 @@ export class ArtViewer {
   this.root.setAttribute('role','dialog');this.root.setAttribute('aria-modal','true');this.root.setAttribute('aria-label','高清看画');
   this.root.innerHTML=`<div class="viewer-stage" id="osd"></div>
    <header class="viewer-header">
-    <div class="viewer-heading"><h2 id="viewer-title"></h2><small>v${VERSION.split(' · ')[0]}</small></div>
+    <div class="viewer-heading"><h2 id="viewer-title"></h2></div>
     <div class="viewer-actions"><button id="viewer-info">作品介绍</button><button id="viewer-close" aria-label="关闭高清看画">关闭 ✕</button></div>
    </header>
    <div class="viewer-status" role="status"></div>

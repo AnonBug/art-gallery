@@ -1,0 +1,40 @@
+[
+  {
+    "id": "crouching-boy",
+    "room": "sculpture",
+    "title": "蹲伏的男孩",
+    "author": "米开朗基罗·博那罗蒂",
+    "labelAuthor": "米开朗基罗",
+    "source": "https://zenodo.org/records/21353106",
+    "credit": "Scan-the-World · 摄影测量扫描",
+    "labelCredit": "Scan-the-World",
+    "license": "CC BY-NC-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/4.0/",
+    "model": "/assets/sculptures/crouching-boy/model.glb",
+    "poster": "/assets/sculptures/crouching-boy/poster.webp",
+    "bytes": 6023996,
+    "height": 2.05,
+    "description": "低垂的头、蜷起的腿与紧绷的背部，把身体收束成一个紧凑的形体。可以绕到背面和两侧，对比肌肉的起伏与保留的石面。作品的具体寓意仍有不同解读。",
+    "looking": "先看背部弧线，再沿肩膀、手臂和膝盖寻找形体的转折。旋转视角，观察轮廓如何改变。",
+    "modelNote": "由摄影测量处理得到。原文件无材质，本展使用统一暖白石材材质。数字模型按包围盒缩放，不表示实体原作尺寸。"
+  },
+  {
+    "id": "nefertiti",
+    "room": "nefertiti",
+    "title": "奈费尔提蒂王后半身像",
+    "author": "古埃及 · 阿玛尔纳时期",
+    "labelAuthor": "奈费尔提蒂王后",
+    "source": "https://www.smb.museum/en/museums-institutions/aegyptisches-museum-und-papyrussammlung/collection-research/bust-of-nefertiti/the-replica/",
+    "credit": "Staatliche Museen zu Berlin · Ägyptisches Museum und Papyrussammlung / TrigonArt（2008年扫描）",
+    "labelCredit": "SMB / TrigonArt",
+    "license": "CC BY-NC-SA 3.0 DE",
+    "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+    "model": "/assets/sculptures/nefertiti/model.glb",
+    "poster": "/assets/sculptures/nefertiti/poster.webp",
+    "bytes": 12178252,
+    "height": 2.05,
+    "description": "蓝色高冠、修长的颈部与保存下来的彩绘，让这尊古埃及王后像具有鲜明的轮廓。先从正面观察眼睛，再转向侧面看鼻梁、下颌与颈部的连线。",
+    "looking": "观察蓝冠与肤色的对比、项圈的色带，以及左右眼不同的保存状态；旋转到两侧，留意耳部和冠缘的缺损。",
+    "modelNote": "使用此前制作的12.18 MB压缩GLB，保留200万个三角面和4096×4096彩色贴图。基于博物馆提供的2008年扫描，进行了减面、Draco压缩与贴图JPEG编码；保留源彩绘材质。按包围盒放大展示，不表示原作尺寸。"
+  }
+]

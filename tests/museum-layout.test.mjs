@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import fs from 'node:fs/promises';
-import {rooms,passage,wallThickness,isWalkable,clearWalk,moveOnFloor,planWalk,positionOnRoute,roomAt,projectToFloor} from '../src/museum-layout.mjs';
+import {rooms,passage,passages,doorsFor,sculpturePosition,sculpturePositions,benchPosition,wallThickness,isWalkable,clearWalk,moveOnFloor,planWalk,positionOnRoute,roomAt,projectToFloor} from '../src/museum-layout.mjs';
 
 test('两厅只隔普通墙厚，门洞双向通行且完整墙面不可穿过',()=>{
  assert.equal(passage.length,wallThickness);
@@ -9,7 +9,7 @@ test('两厅只隔普通墙厚，门洞双向通行且完整墙面不可穿过',
  for(const [a,b] of [[{x:0,z:passage.z},{x:rooms[1].x,z:passage.z}],[{x:rooms[1].x,z:passage.z},{x:0,z:passage.z}]]){
   assert.ok(clearWalk(a,b));const p=moveOnFloor(a,b);assert.ok(Math.hypot(p.x-b.x,p.z-b.z)<1e-8);
  }
- for(const z of [-4,0,4]){
+ for(const z of [-4,-2.5,4]){
   const p=moveOnFloor({x:-rooms[0].width/2+1.5,z},{x:rooms[1].x-2,z});assert.ok(p.x>-rooms[0].width/2,'不能从非门口位置穿过第一厅西墙');
   const q=moveOnFloor({x:rooms[1].x+rooms[1].width/2-1.5,z},{x:0,z});assert.ok(q.x<rooms[1].x+rooms[1].width/2,'不能穿过第二厅东墙');
  }
@@ -29,9 +29,9 @@ test('门洞边缘限制身体宽度，展厅各自边界不会把相机送回�
  assert.ok(isWalkable({x:passage.x,z:passage.z}));assert.equal(isWalkable({x:passage.x,z:passage.z+passage.width/2}),false);
  assert.deepEqual(planWalk({x:rooms[1].x,z:0},{x:rooms[1].x,z:-5}),[{x:rooms[1].x,z:-5}]);
 });
-test('17幅作品与展签均留在各自墙面内，与门洞、同墙作品互不重叠',async()=>{
+test('22幅作品与展签均留在各自墙面内，与所有门洞、同墙作品互不重叠',async()=>{
  const data=JSON.parse(await fs.readFile(new URL('../src/data/artworks.json',import.meta.url),'utf8'));
- assert.equal(data.filter(a=>a.room==='market').length,8);assert.equal(new Set(data.map(a=>a.id)).size,17);
+ assert.equal(data.filter(a=>a.room==='market').length,8);assert.equal(data.filter(a=>a.room==='leonardo').length,5);assert.equal(new Set(data.map(a=>a.id)).size,22);
  for(const r of rooms)for(const wall of ['north','south','east','west']){
   const limit=(wall==='north'||wall==='south'?r.width:r.depth)/2;
   const spans=data.filter(a=>(a.room??'rembrandt')===r.id&&a.wall===wall).map(a=>{
@@ -41,7 +41,27 @@ test('17幅作品与展签均留在各自墙面内，与门洞、同墙作品互
   for(const [i,s] of spans.entries()){
    assert.ok(s.lo>-limit&&s.hi<limit,`${s.id} 画框/展签不能越过墙角`);
    if(i)assert.ok(spans[i-1].hi<s.lo,`${s.id} 不能压住上一幅作品或展签`);
-   if(wall===r.door){const center=wall==='west'?-passage.z:passage.z;assert.ok(s.hi<center-passage.width/2-.2||s.lo>center+passage.width/2+.2,`${s.id} 不能挡住门洞`);}
+   for(const {side,passage:p}of doorsFor(r.id))if(wall===side){const center=wall==='west'?-(p.z-r.z):p.z-r.z;assert.ok(s.hi<center-p.width/2-.2||s.lo>center+p.width/2+.2,`${s.id} 不能挡住门洞`);}
   }
  }
+});
+test('五厅四门连通，任意两厅路线均可通行，雕塑展台不可穿越且会绕行',()=>{
+ assert.equal(rooms.length,5);assert.equal(passages.length,4);
+ for(const start of rooms)for(const end of rooms){
+  const a={x:start.x,z:0},b={x:end.x+2.2,z:-3.8};const route=planWalk(a,b);assert.ok(route.length,`${start.id} → ${end.id}`);
+  let previous=a;for(const stop of route){assert.ok(clearWalk(previous,stop));previous=stop;}
+  for(let i=0;i<=500;i++)assert.ok(isWalkable(positionOnRoute(a,route,i/500)));
+  assert.ok(Math.hypot(previous.x-b.x,previous.z-b.z)<1e-8);
+ }
+ for(const [room,position]of Object.entries(sculpturePositions)){
+  assert.equal(isWalkable(position),false);
+  const a={x:position.x,z:0},b={x:position.x,z:position.z-1.4};assert.equal(clearWalk(a,b),false);assert.ok(planWalk(a,b).length>1);
+  const stopped=moveOnFloor(a,b);assert.ok(stopped.z>position.z+1.29,'身体不能穿过展台');
+  assert.ok(isWalkable(projectToFloor(position,room)));
+ }
+
+});
+test('中央起始位留空，长凳偏置，3.6米门洞居中且8米挑高下灯轨仍在顶内',()=>{
+ for(const r of rooms){assert.equal(r.height,8);assert.ok(isWalkable({x:r.x,z:r.z}));if(!sculpturePositions[r.id]){const seat=benchPosition(r);assert.ok(Math.abs(seat.x-r.x)>1.82);assert.ok(Math.hypot(seat.x-r.x,seat.z-r.z)>3);}}
+ for(const p of passages){assert.equal(p.z,0);assert.equal(p.width,3.6);assert.equal(p.height,4.8);assert.ok(p.height<rooms[0].height);}
 });

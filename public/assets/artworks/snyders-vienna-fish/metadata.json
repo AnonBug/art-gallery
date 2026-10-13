@@ -1,0 +1,66 @@
+{
+  "id": "snyders-vienna-fish",
+  "title": "鱼市",
+  "originalTitle": "Fish Market",
+  "date": "约 1620—1630 年",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://www.khm.at/kunstwerke/fischmarkt-1797",
+  "license": "馆方图片：私人用途；其他用途条件见来源页",
+  "credit": "Kunsthistorisches Museum Wien",
+  "description": "这幅维也纳馆藏以密集的鱼类、甲壳类与人物展示市场的丰盛，可与冬宫《鱼摊》比较构图和细节。当前所得图像清晰度较低。",
+  "looking": "比较本作与冬宫《鱼摊》的鱼类排列和人物位置；放大时留意所得图像的清晰度限制。",
+  "dimensions": "225 × 365 厘米",
+  "medium": "布面油画",
+  "file": "Snyders-Vienna-Fish-Market.jpg",
+  "collection": "维也纳艺术史博物馆",
+  "wall": "west",
+  "offset": 5,
+  "height": 2.05,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://www.khm.at/kunstwerke/fischmarkt-1797",
+  "licenseStatus": "馆方图片：私人用途；其他用途条件见来源页",
+  "sourceWidth": 1674,
+  "sourceHeight": 1034,
+  "originalFile": "originals/market-hall/Snyders-Vienna-Fish-Market.jpg",
+  "originalFileBytes": 378185,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-vienna-fish/far.webp",
+      "width": 640,
+      "height": 395,
+      "bytes": 108294,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-vienna-fish/medium.webp",
+      "width": 1600,
+      "height": 988,
+      "bytes": 520176,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-vienna-fish/near.webp",
+      "width": 1674,
+      "height": 1034,
+      "bytes": 496756,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-vienna-fish/detail.webp",
+    "width": 1674,
+    "height": 1034,
+    "bytes": 496756,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-vienna-fish/detail.dzi"
+  },
+  "original": {
+    "width": 1674,
+    "height": 1034,
+    "dzi": "/assets/artworks/snyders-vienna-fish/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:25:02.284Z"
+}

@@ -1,6 +1,7 @@
 import fs from 'node:fs/promises';
 import path from 'node:path';
 import sharp from 'sharp';
+import crypto from 'node:crypto';
 const artworks=JSON.parse(await fs.readFile('src/data/artworks.json','utf8'));
 const errors=[],report=[],urls=new Set(['/','/favicon.svg']);let tiles=0;
 const checked=new Set();
@@ -30,8 +31,23 @@ for(const a of artworks){
  }
  report.push(row);
 }
+// Sculpture resources and the local Draco decoder are part of the static site too.
+const sculptures=JSON.parse(await fs.readFile('src/data/sculptures.json','utf8')),sculptureReport=[];
+for(const s of sculptures){
+ const sculptureMeta=JSON.parse(await fs.readFile(`public/assets/sculptures/${s.id}/metadata.json`,'utf8'));
+ for(const url of [s.model,s.poster]){urls.add(url);try{if(!(await fs.stat(path.join('public',url))).size)errors.push(`${url} 空资源`);}catch(e){errors.push(e.message);}}
+ try{
+  const model=await fs.readFile(path.join('public',s.model));
+  if(model.toString('utf8',0,4)!=='glTF'||model.readUInt32LE(4)!==2||model.readUInt32LE(8)!==model.length)errors.push(`${s.id} 不是完整的 glTF 2.0 GLB`);
+  if(model.length!==sculptureMeta.bytes||model.length!==s.bytes||crypto.createHash('md5').update(model).digest('hex')!==sculptureMeta.md5)errors.push(`${s.id} 模型与来源校验值不一致`);
+  if(model.length>20_000_000)errors.push(`${s.id} 雕塑超过20MB`);
+  await sharp(path.join('public',s.poster)).metadata();
+ }catch(e){errors.push(`${s.id}: ${e.message}`);}
+ sculptureReport.push({id:s.id,title:s.title,bytes:s.bytes,license:s.license});
+}
+for(const url of ['/assets/draco/draco_decoder.js','/assets/draco/draco_decoder.wasm','/assets/draco/draco_wasm_wrapper.js']){urls.add(url);try{if(!(await fs.stat(path.join('public',url))).size)errors.push(`${url} 空资源`);}catch(e){errors.push(e.message);}}
 const httpIndex=process.argv.indexOf('--http');let httpChecks=0;
-if(httpIndex>=0){const base=process.argv[httpIndex+1];const pending=[...urls];await Promise.all(Array.from({length:16},async()=>{while(pending.length){const url=pending.pop();try{const response=await fetch(new URL(url,base),{method:'HEAD',signal:AbortSignal.timeout(10000)});if(!response.ok)errors.push('HTTP '+response.status+' '+url);httpChecks++;}catch(e){errors.push('HTTP '+url+': '+e.message);}}}));}
-const result={httpChecks,checkedAt:new Date().toISOString(),artworks:report.length,dzi:checked.size,tiles,errors,resources:report};
+if(httpIndex>=0){const base=process.argv[httpIndex+1];const pending=[...urls];await Promise.all(Array.from({length:16},async()=>{while(pending.length){const url=pending.pop();try{const response=await fetch(new URL(url.replace(/^\/+/,''),base.endsWith('/')?base:base+'/'),{method:'HEAD',signal:AbortSignal.timeout(10000)});if(!response.ok)errors.push('HTTP '+response.status+' '+url);else if(url!=='/'&&response.headers.get('content-type')?.includes('text/html'))errors.push('HTTP 返回页面而非资源 '+url);httpChecks++;}catch(e){errors.push('HTTP '+url+': '+e.message);}}}));}
+const result={httpChecks,checkedAt:new Date().toISOString(),artworks:report.length,sculptures:sculptureReport,dzi:checked.size,tiles,errors,resources:report};
 await fs.mkdir('docs',{recursive:true});await fs.writeFile('docs/resource-audit.json',JSON.stringify(result,null,2)+'\n');
-console.log(JSON.stringify({artworks:report.length,dzi:checked.size,tiles,httpChecks,errors},null,2));if(errors.length)process.exitCode=1;
+console.log(JSON.stringify({artworks:report.length,sculptures:sculptureReport.length,dzi:checked.size,tiles,httpChecks,errors},null,2));if(errors.length)process.exitCode=1;

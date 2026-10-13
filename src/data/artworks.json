@@ -246,7 +246,7 @@
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "west",
-    "offset": 1,
+    "offset": -4.4,
     "height": 2.6,
     "centerY": 2.6
   },
@@ -306,8 +306,8 @@
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
-    "wall": "east",
-    "offset": 2.5,
+    "wall": "west",
+    "offset": 4.2,
     "height": 2.6,
     "centerY": 2.6
   },
@@ -561,7 +561,7 @@
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "east",
-    "offset": -2.8,
+    "offset": -4.9,
     "height": 1.9,
     "centerY": 2.6
   },
@@ -900,17 +900,17 @@
     "id": "snyders-kitchen",
     "title": "女仆与男孩的厨房静物",
     "originalTitle": "Kitchen Still Life with a Maid and Young Boy",
-    "date": "17 世纪中叶",
-    "author": "弗兰斯·斯奈德斯",
+    "date": "1636—1638 年",
+    "author": "弗兰斯·斯奈德斯及工作室、鲁本斯工作室",
     "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders,_with_figures_attributed_to_Jan_Boeckhorst_-_Kitchen_Still_Life_with_a_Maid_and_Young_Boy_-_78.PA.207_-_J._Paul_Getty_Museum.jpg",
     "license": "Public domain（来源页 PD-Art 标记）",
     "credit": "Wikimedia Commons；图像作者及来源见作品链接",
-    "description": "男孩伸手拿葡萄，女仆伸手制止他；围绕人物展开的水果和禽鸟，让厨房静物充满叙事。人物部分归于扬·博克霍斯特。",
+    "description": "男孩伸手拿葡萄，女管家将手放在他的肩上制止他；水果、禽鸟和猫狗的动作，使储藏室静物充满叙事。盖蒂现行记录署为斯奈德斯及工作室、鲁本斯工作室。",
     "looking": "先看两人的手与目光，再沿着葡萄和禽鸟看向桌面；分辨静物细节与人物动作如何相互呼应。",
-    "dimensions": "152.4 × 240 厘米",
+    "dimensions": "157.4 × 243.3 厘米（无框）",
     "medium": "布面油画",
     "file": "Snyders-Kitchen-Still-Life-with-a-Maid-and-Young-Boy.jpg",
-    "attribution": "人物归于扬·博克霍斯特",
+    "attribution": "盖蒂现行记录：斯奈德斯及工作室、鲁本斯工作室；旧目录将人物归于扬·博克霍斯特。",
     "collection": "J. 保罗·盖蒂博物馆",
     "wall": "south",
     "offset": 2.4,
@@ -961,7 +961,8 @@
       "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
     },
     "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:55.573Z"
+    "generatedAt": "2026-10-12T15:24:55.573Z",
+    "catalogueUrl": "https://www.getty.edu/art/collection/object/103RDT"
   },
   {
     "id": "snyders-maid",
@@ -1048,7 +1049,7 @@
     "collection": "诺顿·西蒙博物馆",
     "catalogueUrl": "https://50.nortonsimon.org/collections/still-life-with-fruit-and-vegetables/",
     "wall": "east",
-    "offset": -2.2,
+    "offset": -5.6,
     "height": 2.2,
     "room": "market",
     "centerY": 2.8,
@@ -1097,5 +1098,336 @@
     },
     "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:59.733Z"
+  },
+  {
+    "id": "leonardo-ermine",
+    "title": "抱银貂的女子",
+    "originalTitle": "Lady with an Ermine",
+    "date": "约 1490 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_%E2%80%93_Portrait_of_Cecilia_Gallerani_(ca._1473%E2%80%931536)_-_MNK_XII-209_-_National_Museum_Krak%C3%B3w.jpg",
+    "license": "CC0 1.0 / Public domain · https://creativecommons.org/publicdomain/zero/1.0/",
+    "credit": "Leonardo da Vinci / 克拉科夫国家博物馆摄影工作室（Pracownia Fotograficzna MNK）；馆藏编号 MNK XII-209；本项目缩放、转换 WebP 并生成瓦片",
+    "description": "年轻女子转向画外，怀中的银貂也朝同一方向抬起头。面孔、手与动物形成连续的明暗节奏。",
+    "looking": "比较女子和银貂的转头方向，观察手指如何贴合动物身体。",
+    "dimensions": "53.4 × 39.3 厘米",
+    "medium": "木板油画",
+    "file": "Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_–_Portrait_of_Cecilia_Gallerani_(ca._1473–1536)_-_MNK_XII-209_-_National_Museum_Kraków.jpg",
+    "collection": "克拉科夫恰尔托雷斯基博物馆",
+    "wall": "west",
+    "offset": 4.3,
+    "height": 2.5,
+    "centerY": 2.6,
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_%E2%80%93_Portrait_of_Cecilia_Gallerani_(ca._1473%E2%80%931536)_-_MNK_XII-209_-_National_Museum_Krak%C3%B3w.jpg",
+    "licenseStatus": "CC0 1.0 / Public domain（Commons 博物馆提供文件页核查：2026-10-14）",
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 2936,
+    "sourceHeight": 4000,
+    "originalFile": "originals/renaissance/leonardo-ermine.jpg",
+    "originalFileBytes": 3395227,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-ermine/far.webp",
+        "width": 470,
+        "height": 640,
+        "bytes": 47560,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-ermine/medium.webp",
+        "width": 1174,
+        "height": 1600,
+        "bytes": 332240,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-ermine/near.webp",
+        "width": 2202,
+        "height": 3000,
+        "bytes": 1181072,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-ermine/detail.webp",
+      "width": 2936,
+      "height": 4000,
+      "bytes": 2118232,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-ermine/detail.dzi"
+    },
+    "original": {
+      "width": 2936,
+      "height": 4000,
+      "dzi": "/assets/artworks/leonardo-ermine/detail.dzi"
+    },
+    "hasOriginal": false,
+    "generatedAt": "2026-10-13T16:22:55.708Z"
+  },
+  {
+    "id": "leonardo-saint-anne",
+    "title": "圣母子与圣安娜",
+    "originalTitle": "The Virgin and Child with Saint Anne",
+    "date": "约 1503—1519 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File:Sainte_Anne_Leonard.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Sainte Anne Leonard.jpg",
+    "description": "圣安娜、圣母与孩子相互依偎，动作在一个稳定而流动的三角形中展开，远景逐渐消隐于蓝色山峦。",
+    "looking": "沿人物的视线与手臂移动，观察三个人物如何连成一体。",
+    "dimensions": "约 168 × 130 厘米",
+    "medium": "木板油画",
+    "file": "Sainte_Anne_Leonard.jpg",
+    "collection": "卢浮宫博物馆",
+    "wall": "east",
+    "offset": 4.1,
+    "height": 2.8,
+    "centerY": 2.6,
+    "room": "leonardo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sainte_Anne_Leonard.jpg",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+    "sourceWidth": 5565,
+    "sourceHeight": 7359,
+    "originalFile": "originals/renaissance/leonardo-saint-anne.jpg",
+    "originalFileBytes": 8207390,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-saint-anne/far.webp",
+        "width": 484,
+        "height": 640,
+        "bytes": 93156,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-saint-anne/medium.webp",
+        "width": 1210,
+        "height": 1600,
+        "bytes": 554392,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-saint-anne/near.webp",
+        "width": 2269,
+        "height": 3000,
+        "bytes": 2170084,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-saint-anne/detail.webp",
+      "width": 5565,
+      "height": 7359,
+      "bytes": 10350770,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
+    },
+    "original": {
+      "width": 5565,
+      "height": 7359,
+      "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
+    },
+    "hasOriginal": false,
+    "generatedAt": "2026-10-13T15:44:42.323Z"
+  },
+  {
+    "id": "leonardo-benois",
+    "title": "贝努瓦圣母",
+    "originalTitle": "Benois Madonna",
+    "date": "约 1475—1478 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo%2C_Madonna_Benois.JPG",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Leonardo, Madonna Benois.JPG",
+    "description": "母亲微笑着将小花递到孩子手边。人物之间的注意力被一个小小的物件牵引，亲密关系借由手势呈现。",
+    "looking": "观察小花、孩子的手与母亲的目光组成的细小环路。",
+    "dimensions": "49.5 × 33 厘米",
+    "medium": "木板油画，后转移至画布",
+    "file": "Leonardo,_Madonna_Benois.JPG",
+    "collection": "冬宫博物馆",
+    "wall": "south",
+    "offset": -2.8,
+    "height": 2.3,
+    "centerY": 2.6,
+    "room": "leonardo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Leonardo%2C_Madonna_Benois.JPG",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+    "sourceWidth": 2864,
+    "sourceHeight": 4588,
+    "originalFile": "originals/renaissance/leonardo-benois.jpg",
+    "originalFileBytes": 6679408,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-benois/far.webp",
+        "width": 400,
+        "height": 640,
+        "bytes": 90226,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-benois/medium.webp",
+        "width": 999,
+        "height": 1600,
+        "bytes": 690146,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-benois/near.webp",
+        "width": 1873,
+        "height": 3000,
+        "bytes": 2369832,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-benois/detail.webp",
+      "width": 2864,
+      "height": 4588,
+      "bytes": 4634778,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
+    },
+    "original": {
+      "width": 2864,
+      "height": 4588,
+      "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
+    },
+    "hasOriginal": false,
+    "generatedAt": "2026-10-13T15:44:52.245Z"
+  },
+  {
+    "id": "leonardo-litta",
+    "title": "丽塔圣母",
+    "originalTitle": "Madonna Litta",
+    "date": "约 1490 年代中期",
+    "author": "归于列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+    "license": "Public domain",
+    "credit": "Attributed to Leonardo da Vinci / Wikimedia Commons；冬宫数字图像",
+    "description": "母亲低头哺育孩子，两侧窗户打开通往远景。作品传统上与达芬奇联系，但作者归属存在讨论，本展保留来源页的“归于”表述。",
+    "looking": "观察母亲低垂的眼睛、衣褶和两扇窗口之间的平衡。",
+    "dimensions": "42 × 33 厘米",
+    "medium": "木板蛋彩画，后转移至画布",
+    "file": "Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+    "collection": "冬宫博物馆",
+    "attribution": "作者归属存在讨论，来源文件页标注为归于达芬奇。",
+    "wall": "south",
+    "offset": 2.4,
+    "height": 2.3,
+    "centerY": 2.6,
+    "room": "leonardo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+    "sourceWidth": 6346,
+    "sourceHeight": 8096,
+    "originalFile": "originals/renaissance/leonardo-litta.jpg",
+    "originalFileBytes": 62292852,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-litta/far.webp",
+        "width": 502,
+        "height": 640,
+        "bytes": 114314,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-litta/medium.webp",
+        "width": 1254,
+        "height": 1600,
+        "bytes": 761358,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-litta/near.webp",
+        "width": 2352,
+        "height": 3000,
+        "bytes": 2796134,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-litta/detail.webp",
+      "width": 6346,
+      "height": 8096,
+      "bytes": 16332984,
+      "quality": 90,
+      "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
+    },
+    "original": {
+      "width": 6346,
+      "height": 8096,
+      "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
+    },
+    "hasOriginal": false,
+    "generatedAt": "2026-10-13T15:46:00.260Z"
+  },
+  {
+    "id": "leonardo-mona-lisa",
+    "title": "蒙娜丽莎",
+    "originalTitle": "Mona Lisa",
+    "date": "约 1503—1516 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File:Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / C2RMF；经修整的数字图像",
+    "description": "人物在遥远的山水前侧身而坐，双手交叠。脸部轮廓与背景在柔和的明暗过渡中相接。此处使用 C2RMF 的修整数字版本。",
+    "looking": "从嘴角与眼角的柔和边缘看起，再观察两侧地平线和交叠的双手。",
+    "dimensions": "77 × 53 厘米",
+    "medium": "白杨木板油画",
+    "file": "Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
+    "collection": "卢浮宫博物馆",
+    "wall": "north",
+    "offset": 0,
+    "height": 2.5,
+    "centerY": 2.6,
+    "room": "leonardo",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+    "sourceWidth": 7479,
+    "sourceHeight": 11146,
+    "originalFile": "originals/renaissance/leonardo-mona-lisa.jpg",
+    "originalFileBytes": 94310471,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-mona-lisa/far.webp",
+        "width": 429,
+        "height": 640,
+        "bytes": 95406,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-mona-lisa/medium.webp",
+        "width": 1074,
+        "height": 1600,
+        "bytes": 806846,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-mona-lisa/near.webp",
+        "width": 2013,
+        "height": 3000,
+        "bytes": 2535196,
+        "quality": 90
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-mona-lisa/detail.webp",
+      "width": 7479,
+      "height": 11146,
+      "bytes": 19938334,
+      "quality": 82,
+      "dzi": "/assets/artworks/leonardo-mona-lisa/detail.dzi"
+    },
+    "original": {
+      "width": 7479,
+      "height": 11146,
+      "dzi": "/assets/artworks/leonardo-mona-lisa/detail.dzi"
+    },
+    "hasOriginal": false,
+    "generatedAt": "2026-10-13T15:46:56.138Z"
   }
 ]

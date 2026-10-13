@@ -1,9 +1,23 @@
 {
-  "httpChecks": 6486,
-  "checkedAt": "2026-10-12T16:32:54.786Z",
-  "artworks": 17,
-  "dzi": 20,
-  "tiles": 6396,
+  "httpChecks": 0,
+  "checkedAt": "2026-10-13T17:19:26.107Z",
+  "artworks": 22,
+  "sculptures": [
+    {
+      "id": "crouching-boy",
+      "title": "蹲伏的男孩",
+      "bytes": 6023996,
+      "license": "CC BY-NC-SA 4.0"
+    },
+    {
+      "id": "nefertiti",
+      "title": "奈费尔提蒂王后半身像",
+      "bytes": 12178252,
+      "license": "CC BY-NC-SA 3.0 DE"
+    }
+  ],
+  "dzi": 25,
+  "tiles": 7550,
   "errors": [],
   "resources": [
     {
@@ -542,6 +556,161 @@
         "height": 1660,
         "bytes": 692394,
         "tiles": 38
+      },
+      "original": {}
+    },
+    {
+      "id": "leonardo-ermine",
+      "title": "抱银貂的女子",
+      "display": [
+        {
+          "width": 470,
+          "height": 640,
+          "bytes": 47560,
+          "path": "/assets/artworks/leonardo-ermine/far.webp"
+        },
+        {
+          "width": 1174,
+          "height": 1600,
+          "bytes": 332240,
+          "path": "/assets/artworks/leonardo-ermine/medium.webp"
+        },
+        {
+          "width": 2202,
+          "height": 3000,
+          "bytes": 1181072,
+          "path": "/assets/artworks/leonardo-ermine/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2936,
+        "height": 4000,
+        "bytes": 2118232,
+        "tiles": 74
+      },
+      "original": {}
+    },
+    {
+      "id": "leonardo-saint-anne",
+      "title": "圣母子与圣安娜",
+      "display": [
+        {
+          "width": 484,
+          "height": 640,
+          "bytes": 93156,
+          "path": "/assets/artworks/leonardo-saint-anne/far.webp"
+        },
+        {
+          "width": 1210,
+          "height": 1600,
+          "bytes": 554392,
+          "path": "/assets/artworks/leonardo-saint-anne/medium.webp"
+        },
+        {
+          "width": 2269,
+          "height": 3000,
+          "bytes": 2170084,
+          "path": "/assets/artworks/leonardo-saint-anne/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 5565,
+        "height": 7359,
+        "bytes": 10350770,
+        "tiles": 239
+      },
+      "original": {}
+    },
+    {
+      "id": "leonardo-benois",
+      "title": "贝努瓦圣母",
+      "display": [
+        {
+          "width": 400,
+          "height": 640,
+          "bytes": 90226,
+          "path": "/assets/artworks/leonardo-benois/far.webp"
+        },
+        {
+          "width": 999,
+          "height": 1600,
+          "bytes": 690146,
+          "path": "/assets/artworks/leonardo-benois/medium.webp"
+        },
+        {
+          "width": 1873,
+          "height": 3000,
+          "bytes": 2369832,
+          "path": "/assets/artworks/leonardo-benois/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2864,
+        "height": 4588,
+        "bytes": 4634778,
+        "tiles": 87
+      },
+      "original": {}
+    },
+    {
+      "id": "leonardo-litta",
+      "title": "丽塔圣母",
+      "display": [
+        {
+          "width": 502,
+          "height": 640,
+          "bytes": 114314,
+          "path": "/assets/artworks/leonardo-litta/far.webp"
+        },
+        {
+          "width": 1254,
+          "height": 1600,
+          "bytes": 761358,
+          "path": "/assets/artworks/leonardo-litta/medium.webp"
+        },
+        {
+          "width": 2352,
+          "height": 3000,
+          "bytes": 2796134,
+          "path": "/assets/artworks/leonardo-litta/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 6346,
+        "height": 8096,
+        "bytes": 16332984,
+        "tiles": 294
+      },
+      "original": {}
+    },
+    {
+      "id": "leonardo-mona-lisa",
+      "title": "蒙娜丽莎",
+      "display": [
+        {
+          "width": 429,
+          "height": 640,
+          "bytes": 95406,
+          "path": "/assets/artworks/leonardo-mona-lisa/far.webp"
+        },
+        {
+          "width": 1074,
+          "height": 1600,
+          "bytes": 806846,
+          "path": "/assets/artworks/leonardo-mona-lisa/medium.webp"
+        },
+        {
+          "width": 2013,
+          "height": 3000,
+          "bytes": 2535196,
+          "path": "/assets/artworks/leonardo-mona-lisa/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 7479,
+        "height": 11146,
+        "bytes": 19938334,
+        "tiles": 460
       },
       "original": {}
     }

@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-saint-anne",
+  "title": "圣母子与圣安娜",
+  "originalTitle": "The Virgin and Child with Saint Anne",
+  "date": "约 1503—1519 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File:Sainte_Anne_Leonard.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Sainte Anne Leonard.jpg",
+  "description": "圣安娜、圣母与孩子相互依偎，动作在一个稳定而流动的三角形中展开，远景逐渐消隐于蓝色山峦。",
+  "looking": "沿人物的视线与手臂移动，观察三个人物如何连成一体。",
+  "dimensions": "约 168 × 130 厘米",
+  "medium": "木板油画",
+  "file": "Sainte_Anne_Leonard.jpg",
+  "collection": "卢浮宫博物馆",
+  "wall": "south",
+  "offset": 0,
+  "height": 2.8,
+  "centerY": 2.6,
+  "room": "leonardo",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sainte_Anne_Leonard.jpg",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+  "sourceWidth": 5565,
+  "sourceHeight": 7359,
+  "originalFile": "originals/renaissance/leonardo-saint-anne.jpg",
+  "originalFileBytes": 8207390,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-saint-anne/far.webp",
+      "width": 484,
+      "height": 640,
+      "bytes": 93156,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-saint-anne/medium.webp",
+      "width": 1210,
+      "height": 1600,
+      "bytes": 554392,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-saint-anne/near.webp",
+      "width": 2269,
+      "height": 3000,
+      "bytes": 2170084,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-saint-anne/detail.webp",
+    "width": 5565,
+    "height": 7359,
+    "bytes": 10350770,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
+  },
+  "original": {
+    "width": 5565,
+    "height": 7359,
+    "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-13T15:44:42.323Z"
+}

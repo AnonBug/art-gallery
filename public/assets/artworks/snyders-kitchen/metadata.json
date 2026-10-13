@@ -2,17 +2,17 @@
   "id": "snyders-kitchen",
   "title": "女仆与男孩的厨房静物",
   "originalTitle": "Kitchen Still Life with a Maid and Young Boy",
-  "date": "17 世纪中叶",
-  "author": "弗兰斯·斯奈德斯",
+  "date": "1636—1638 年",
+  "author": "弗兰斯·斯奈德斯及工作室、鲁本斯工作室",
   "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders,_with_figures_attributed_to_Jan_Boeckhorst_-_Kitchen_Still_Life_with_a_Maid_and_Young_Boy_-_78.PA.207_-_J._Paul_Getty_Museum.jpg",
   "license": "Public domain（来源页 PD-Art 标记）",
   "credit": "Wikimedia Commons；图像作者及来源见作品链接",
-  "description": "男孩伸手拿葡萄，女仆伸手制止他；围绕人物展开的水果和禽鸟，让厨房静物充满叙事。人物部分归于扬·博克霍斯特。",
+  "description": "男孩伸手拿葡萄，女管家将手放在他的肩上制止他；水果、禽鸟和猫狗的动作，使储藏室静物充满叙事。盖蒂现行记录署为斯奈德斯及工作室、鲁本斯工作室。",
   "looking": "先看两人的手与目光，再沿着葡萄和禽鸟看向桌面；分辨静物细节与人物动作如何相互呼应。",
-  "dimensions": "152.4 × 240 厘米",
+  "dimensions": "157.4 × 243.3 厘米（无框）",
   "medium": "布面油画",
   "file": "Snyders-Kitchen-Still-Life-with-a-Maid-and-Young-Boy.jpg",
-  "attribution": "人物归于扬·博克霍斯特",
+  "attribution": "盖蒂现行记录：斯奈德斯及工作室、鲁本斯工作室；旧目录将人物归于扬·博克霍斯特。",
   "collection": "J. 保罗·盖蒂博物馆",
   "wall": "south",
   "offset": 2.4,
@@ -63,5 +63,6 @@
     "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
   },
   "hasOriginal": false,
-  "generatedAt": "2026-10-12T15:24:55.573Z"
+  "generatedAt": "2026-10-12T15:24:55.573Z",
+  "catalogueUrl": "https://www.getty.edu/art/collection/object/103RDT"
 }

@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-ermine",
+  "title": "抱银貂的女子",
+  "originalTitle": "Lady with an Ermine",
+  "date": "约 1490 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_%E2%80%93_Portrait_of_Cecilia_Gallerani_(ca._1473%E2%80%931536)_-_MNK_XII-209_-_National_Museum_Krak%C3%B3w.jpg",
+  "license": "CC0 1.0 / Public domain · https://creativecommons.org/publicdomain/zero/1.0/",
+  "credit": "Leonardo da Vinci / 克拉科夫国家博物馆摄影工作室（Pracownia Fotograficzna MNK）；馆藏编号 MNK XII-209；本项目缩放、转换 WebP 并生成瓦片",
+  "description": "年轻女子转向画外，怀中的银貂也朝同一方向抬起头。面孔、手与动物形成连续的明暗节奏。",
+  "looking": "比较女子和银貂的转头方向，观察手指如何贴合动物身体。",
+  "dimensions": "53.4 × 39.3 厘米",
+  "medium": "木板油画",
+  "file": "Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_–_Portrait_of_Cecilia_Gallerani_(ca._1473–1536)_-_MNK_XII-209_-_National_Museum_Kraków.jpg",
+  "collection": "克拉科夫恰尔托雷斯基博物馆",
+  "wall": "west",
+  "offset": 4.3,
+  "height": 2.5,
+  "centerY": 2.6,
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_%E2%80%93_Portrait_of_Cecilia_Gallerani_(ca._1473%E2%80%931536)_-_MNK_XII-209_-_National_Museum_Krak%C3%B3w.jpg",
+  "licenseStatus": "CC0 1.0 / Public domain（Commons 博物馆提供文件页核查：2026-10-14）",
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 2936,
+  "sourceHeight": 4000,
+  "originalFile": "originals/renaissance/leonardo-ermine.jpg",
+  "originalFileBytes": 3395227,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-ermine/far.webp",
+      "width": 470,
+      "height": 640,
+      "bytes": 47560,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-ermine/medium.webp",
+      "width": 1174,
+      "height": 1600,
+      "bytes": 332240,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-ermine/near.webp",
+      "width": 2202,
+      "height": 3000,
+      "bytes": 1181072,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-ermine/detail.webp",
+    "width": 2936,
+    "height": 4000,
+    "bytes": 2118232,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-ermine/detail.dzi"
+  },
+  "original": {
+    "width": 2936,
+    "height": 4000,
+    "dzi": "/assets/artworks/leonardo-ermine/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-13T16:22:55.708Z"
+}

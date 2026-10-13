@@ -14,7 +14,7 @@ const {visibleRooms,batchArchitecture,PictureLightPool}=exports;
 function view(x,z,yaw=0){const camera=new THREE.PerspectiveCamera(52,1280/720,.05,80);camera.position.set(x,2.6,z);camera.rotation.set(0,yaw,0,'YXZ');camera.updateMatrixWorld();return {camera,frustum:new THREE.Frustum().setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse))};}
 
 test('只有门洞进入视野时才绘制相邻展厅，薄墙门洞中双厅可见',()=>{
- for(const [x,z,yaw,ids]of [[0,3.8,0,['rembrandt']],[layout.rooms[1].x,3.8,0,['market']],[-2.5,layout.passage.z,Math.PI/2,['market','rembrandt']],[layout.rooms[1].x+4,layout.passage.z,-Math.PI/2,['market','rembrandt']],[layout.passage.x,layout.passage.z,0,['market','rembrandt']]]){
+ for(const [x,z,yaw,ids]of [[0,3.8,0,['rembrandt']],[layout.rooms[1].x,3.8,0,['market']],[-2.5,layout.passage.z,Math.PI/2,['market','rembrandt']],[layout.rooms[1].x+4,layout.passage.z,-Math.PI/2,['market','rembrandt','leonardo','sculpture','nefertiti']],[layout.passage.x,layout.passage.z,0,['market','rembrandt']],[layout.rooms[2].x,3.8,0,['leonardo']],[layout.rooms[3].x,3.8,0,['sculpture']],[layout.rooms[4].x,3.8,0,['nefertiti']]]){
   const {camera,frustum}=view(x,z,yaw);assert.deepEqual([...visibleRooms(camera.position,frustum)].sort(),ids.sort());
  }
 });

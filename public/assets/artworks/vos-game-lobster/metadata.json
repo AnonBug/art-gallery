@@ -1,0 +1,66 @@
+{
+  "id": "vos-game-lobster",
+  "title": "猎物与龙虾静物",
+  "originalTitle": "Still Life with Dead Game and Lobster",
+  "date": "1640—1660 年",
+  "author": "保罗·德·沃斯",
+  "source": "https://commons.wikimedia.org/wiki/File:Paul_de_Vos_-_Still-Life_with_Dead_Game_and_Lobster_-_WGA25328.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "猎物与龙虾被组合在同一静物场景中，羽毛、皮毛和甲壳相互映衬。作品由保罗·德·沃斯绘制，与斯奈德斯的静物画形成呼应。",
+  "looking": "比较龙虾外壳与猎物羽毛的光泽，观察物体重叠怎样制造前后空间。",
+  "dimensions": "121 × 181 厘米",
+  "medium": "布面油画",
+  "file": "lobster.jpg",
+  "collection": "冬宫博物馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Paul_de_Vos_-_Still-Life_with_Dead_Game_and_Lobster_-_WGA25328.jpg",
+  "wall": "west",
+  "offset": 8,
+  "height": 1.9,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 1998,
+  "sourceHeight": 1317,
+  "originalFile": "originals/market-hall/lobster.jpg",
+  "originalFileBytes": 2391558,
+  "variants": [
+    {
+      "url": "/assets/artworks/vos-game-lobster/far.webp",
+      "width": 640,
+      "height": 422,
+      "bytes": 98808,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/vos-game-lobster/medium.webp",
+      "width": 1600,
+      "height": 1055,
+      "bytes": 508958,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/vos-game-lobster/near.webp",
+      "width": 1998,
+      "height": 1317,
+      "bytes": 747444,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/vos-game-lobster/detail.webp",
+    "width": 1998,
+    "height": 1317,
+    "bytes": 747444,
+    "quality": 94,
+    "dzi": "/assets/artworks/vos-game-lobster/detail.dzi"
+  },
+  "original": {
+    "width": 1998,
+    "height": 1317,
+    "dzi": "/assets/artworks/vos-game-lobster/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:25:03.542Z"
+}

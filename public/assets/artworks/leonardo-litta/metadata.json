@@ -1,0 +1,67 @@
+{
+  "id": "leonardo-litta",
+  "title": "丽塔圣母",
+  "originalTitle": "Madonna Litta",
+  "date": "约 1490 年代中期",
+  "author": "归于列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File:Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+  "license": "Public domain",
+  "credit": "Attributed to Leonardo da Vinci / Wikimedia Commons；冬宫数字图像",
+  "description": "母亲低头哺育孩子，两侧窗户打开通往远景。作品传统上与达芬奇联系，但作者归属存在讨论，本展保留来源页的“归于”表述。",
+  "looking": "观察母亲低垂的眼睛、衣褶和两扇窗口之间的平衡。",
+  "dimensions": "42 × 33 厘米",
+  "medium": "木板蛋彩画，后转移至画布",
+  "file": "Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+  "collection": "冬宫博物馆",
+  "attribution": "作者归属存在讨论，来源文件页标注为归于达芬奇。",
+  "wall": "east",
+  "offset": -3.5,
+  "height": 2.3,
+  "centerY": 2.6,
+  "room": "leonardo",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "licenseStatus": "Public domain（来源页核查：2026-10-13）",
+  "sourceWidth": 6346,
+  "sourceHeight": 8096,
+  "originalFile": "originals/renaissance/leonardo-litta.jpg",
+  "originalFileBytes": 62292852,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-litta/far.webp",
+      "width": 502,
+      "height": 640,
+      "bytes": 114314,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-litta/medium.webp",
+      "width": 1254,
+      "height": 1600,
+      "bytes": 761358,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-litta/near.webp",
+      "width": 2352,
+      "height": 3000,
+      "bytes": 2796134,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-litta/detail.webp",
+    "width": 6346,
+    "height": 8096,
+    "bytes": 16332984,
+    "quality": 90,
+    "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
+  },
+  "original": {
+    "width": 6346,
+    "height": 8096,
+    "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-13T15:46:00.260Z"
+}

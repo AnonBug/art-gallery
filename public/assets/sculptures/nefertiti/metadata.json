@@ -1,0 +1,41 @@
+{
+  "title": "奈费尔提蒂王后半身像",
+  "author": "古埃及 · 阿玛尔纳时期",
+  "source": "https://www.smb.museum/en/museums-institutions/aegyptisches-museum-und-papyrussammlung/collection-research/bust-of-nefertiti/the-replica/",
+  "bytes": 12178252,
+  "license": "CC BY-NC-SA 3.0 DE",
+  "licenseUrl": "https://creativecommons.org/licenses/by-nc-sa/3.0/de/",
+  "originalTitle": "Bust of Nefertiti",
+  "scanCredit": "Staatliche Museen zu Berlin · Ägyptisches Museum und Papyrussammlung / TrigonArt（2008年扫描）",
+  "file": "model.glb",
+  "md5": "78b83877c317653d98001ef8c43351a7",
+  "sha256": "105083faaf8b936823dc8c5d33c737642ac7bf9411a0210c5e723630d79e188a",
+  "checkedAt": "2026-10-14",
+  "extensionsRequired": [
+    "KHR_draco_mesh_compression"
+  ],
+  "material": "保留原扫描彩色贴图及KHR_materials_unlit材质",
+  "display": "按包围盒居中与缩放；数字展览非实体原作尺寸",
+  "modifications": "从原始OBJ转换为GLB，减面及Draco压缩，贴图编码为JPEG；衍生模型遵循相同许可",
+  "compression": {
+    "bytes": 12178252,
+    "megabytes": 12.178252,
+    "sourceTriangles": 6421238,
+    "triangles": 2000000,
+    "vertices": 1131882,
+    "texture": {
+      "width": 4096,
+      "height": 4096,
+      "jpegQuality": 95,
+      "chromaSubsampling": "4:4:4"
+    },
+    "draco": {
+      "positionBits": 16,
+      "normalBits": 12,
+      "uvBits": 16
+    },
+    "relativeSimplifierError": 0.00014950490731280297,
+    "verified": true
+  },
+  "download": "https://www.smb.museum/fileadmin/website/Museen_und_Sammlungen/Aegyptisches_Museum_Papyrussammlung/02_Sammeln_Forschen/Sammlung/Nofretete/Scan/Nofretete_3D_Modell.zip"
+}

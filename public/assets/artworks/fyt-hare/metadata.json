@@ -1,0 +1,66 @@
+{
+  "id": "fyt-hare",
+  "title": "野兔、水果与鹦鹉静物",
+  "originalTitle": "Hare, Fruit and Parrot",
+  "date": "1647 年",
+  "author": "扬·费特",
+  "source": "https://commons.wikimedia.org/wiki/File:Jan_Fyt_-_Hare,_Fruit,_and_Parrot.jpg",
+  "license": "Public domain（来源页 PD-Art 标记）",
+  "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+  "description": "野兔、水果和鹦鹉组成更集中的静物场景。相较宏大的市场画，这里更适合近看毛皮、果实和羽毛的细密变化。",
+  "looking": "沿着野兔、水果到鹦鹉的顺序看过去，比较静止的猎物与活着的鸟之间的姿态差异。",
+  "dimensions": "70.5 × 97 厘米",
+  "medium": "布面油画",
+  "file": "hare.jpg",
+  "collection": "冬宫博物馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Jan_Fyt_-_Hare%2C_Fruit%2C_and_Parrot.jpg",
+  "wall": "east",
+  "offset": 8,
+  "height": 1.7,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+  "sourceWidth": 3840,
+  "sourceHeight": 2778,
+  "originalFile": "originals/market-hall/hare.jpg",
+  "originalFileBytes": 1448287,
+  "variants": [
+    {
+      "url": "/assets/artworks/fyt-hare/far.webp",
+      "width": 640,
+      "height": 463,
+      "bytes": 100844,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/fyt-hare/medium.webp",
+      "width": 1600,
+      "height": 1158,
+      "bytes": 629252,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/fyt-hare/near.webp",
+      "width": 3000,
+      "height": 2170,
+      "bytes": 1801492,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/fyt-hare/detail.webp",
+    "width": 3840,
+    "height": 2778,
+    "bytes": 2346364,
+    "quality": 94,
+    "dzi": "/assets/artworks/fyt-hare/detail.dzi"
+  },
+  "original": {
+    "width": 3840,
+    "height": 2778,
+    "dzi": "/assets/artworks/fyt-hare/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:25:08.494Z"
+}

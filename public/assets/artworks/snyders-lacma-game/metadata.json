@@ -1,0 +1,67 @@
+{
+  "id": "snyders-lacma-game",
+  "title": "猎物市场",
+  "originalTitle": "Game Market",
+  "date": "1630 年代",
+  "author": "弗兰斯·斯奈德斯",
+  "source": "https://collections.lacma.org/object/199039",
+  "license": "图像使用条件见 LACMA 来源页",
+  "credit": "Museum Associates / LACMA；Gift of The Ahmanson Foundation",
+  "description": "禽鸟、兽类和水果组成宏大的摊位场景。馆方记录指出，斯奈德斯负责静物，科内利斯·德·沃斯绘制人物。",
+  "looking": "从商贩的表情移向悬挂的猎物，再比较不同羽毛、皮毛与水果表面的反光。",
+  "dimensions": "204.95 × 341 厘米",
+  "medium": "布面油画",
+  "file": "Snyders-LACMA-Game-Market.webp",
+  "attribution": "人物由科内利斯·德·沃斯绘制",
+  "collection": "洛杉矶郡艺术博物馆",
+  "wall": "west",
+  "offset": -5,
+  "height": 2.15,
+  "room": "market",
+  "centerY": 2.8,
+  "displayStatus": "主题策展；不代表实体馆当前陈列",
+  "originalUrl": "https://collections.lacma.org/object/199039",
+  "licenseStatus": "图像使用条件见 LACMA 来源页",
+  "sourceWidth": 2560,
+  "sourceHeight": 1535,
+  "originalFile": "originals/market-hall/Snyders-LACMA-Game-Market.webp",
+  "originalFileBytes": 740318,
+  "variants": [
+    {
+      "url": "/assets/artworks/snyders-lacma-game/far.webp",
+      "width": 640,
+      "height": 384,
+      "bytes": 104766,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-lacma-game/medium.webp",
+      "width": 1600,
+      "height": 959,
+      "bytes": 598120,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/snyders-lacma-game/near.webp",
+      "width": 2560,
+      "height": 1535,
+      "bytes": 973418,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/snyders-lacma-game/detail.webp",
+    "width": 2560,
+    "height": 1535,
+    "bytes": 973418,
+    "quality": 94,
+    "dzi": "/assets/artworks/snyders-lacma-game/detail.dzi"
+  },
+  "original": {
+    "width": 2560,
+    "height": 1535,
+    "dzi": "/assets/artworks/snyders-lacma-game/detail.dzi"
+  },
+  "hasOriginal": false,
+  "generatedAt": "2026-10-12T15:25:01.344Z"
+}
