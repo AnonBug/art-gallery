@@ -4,7 +4,7 @@
     "title": "浪子回头",
     "originalTitle": "The Return of the Prodigal Son",
     "date": "约 1668 年",
-    "dimensions": "262 × 205 厘米",
+    "dimensions": "262 × 205 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "accession": "ГЭ-742",
     "file": "Rembrandt Harmensz van Rijn - Return of the Prodigal Son - Google Art Project.jpg",
@@ -43,12 +43,6 @@
       "dzi": "/assets/artworks/prodigal/detail.dzi",
       "tileBytes": 17544116
     },
-    "original": {
-      "width": 22991,
-      "height": 30000,
-      "dzi": "/assets/artworks/prodigal/original.dzi"
-    },
-    "hasOriginal": true,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
@@ -56,15 +50,21 @@
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "north",
     "offset": 0,
-    "height": 3.4,
-    "centerY": 2.6
+    "centerY": 3.96,
+    "physicalSize": {
+      "heightCm": 262,
+      "widthCm": 205,
+      "source": "https://www.hermitagemuseum.org/digital-collection/43413",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "danae",
     "title": "达娜厄",
     "originalTitle": "Danaë",
     "date": "1636—1643 年",
-    "dimensions": "约 185 × 203 厘米",
+    "dimensions": "185 × 202.5 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "accession": "ГЭ-723",
     "file": "Rembrandt-Danae-2499x2278.jpg",
@@ -106,12 +106,6 @@
       "dzi": "/assets/artworks/danae-20261011-v110/detail.dzi",
       "tileBytes": 2791993
     },
-    "original": {
-      "width": 2499,
-      "height": 2278,
-      "dzi": "/assets/artworks/danae-20261011-v110/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
@@ -119,8 +113,7 @@
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "south",
     "offset": 0,
-    "height": 2.8,
-    "centerY": 2.6,
+    "centerY": 3.19,
     "importedFrom": "Rembrandt-Danae-2499x2278.jpg",
     "importedAt": "2026-10-11",
     "sourceSha256": "88d790aa42d0833a77e0455bf67ab8228ad1dbbd322f1ada589edd99ca80dec6",
@@ -128,14 +121,21 @@
     "originalFile": "originals/danae-20261011-v110.jpg",
     "originalFileBytes": 3148220,
     "generatedAt": "2026-10-11T10:27:15.778Z",
-    "processingNote": "默认细看完整源直接保留用户JPEG，无二次编码；DZI直接从原始JPEG生成，512像素瓦片、1像素重叠、JPEG质量96、4:4:4。展厅WebP质量94。"
+    "processingNote": "默认细看完整源直接保留用户JPEG，无二次编码；DZI直接从原始JPEG生成，512像素瓦片、1像素重叠、JPEG质量96、4:4:4。展厅WebP质量94。",
+    "physicalSize": {
+      "heightCm": 185,
+      "widthCm": 202.5,
+      "source": "https://commons.wikimedia.org/wiki/File:Rembrandt_van_Rijn_-_Dana%C3%AB_1636-1643.jpg",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "flora",
     "title": "花神",
     "originalTitle": "Flora",
     "date": "1634 年",
-    "dimensions": "125 × 101 厘米",
+    "dimensions": "125 × 101 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "accession": "ГЭ-732",
     "file": "Saskia van Uylenburgh (1612-1642) as Flora, by Rembrandt.jpg",
@@ -174,28 +174,28 @@
       "dzi": "/assets/artworks/flora/detail.dzi",
       "tileBytes": 15235554
     },
-    "original": {
-      "width": 5422,
-      "height": 6680,
-      "dzi": "/assets/artworks/flora/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "north",
-    "offset": -4.3,
-    "height": 2.05,
-    "centerY": 2.6
+    "offset": -6.02,
+    "centerY": 3.96,
+    "physicalSize": {
+      "heightCm": 125,
+      "widthCm": 101,
+      "source": "https://www.hermitagemuseum.org/digital-collection/43371",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "isaac",
     "title": "亚伯拉罕献以撒",
     "originalTitle": "Abraham’s Sacrifice",
     "date": "1635 年",
-    "dimensions": "约 193 × 132 厘米",
+    "dimensions": "193 × 132.5 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "accession": "ГЭ-727",
     "file": "Rembrandt Abraham's Sacrifice (Hermitage).jpg",
@@ -234,28 +234,28 @@
       "dzi": "/assets/artworks/isaac/detail.dzi",
       "tileBytes": 2749754
     },
-    "original": {
-      "width": 2471,
-      "height": 3633,
-      "dzi": "/assets/artworks/isaac/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "west",
-    "offset": -4.4,
-    "height": 2.6,
-    "centerY": 2.6
+    "offset": -6.16,
+    "centerY": 3.27,
+    "physicalSize": {
+      "heightCm": 193,
+      "widthCm": 132.5,
+      "source": "https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "descent",
     "title": "卸下十字架",
     "originalTitle": "The Descent from the Cross",
     "date": "1634 年",
-    "dimensions": "约 158 × 117 厘米",
+    "dimensions": "158 × 117 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "accession": "ГЭ-753",
     "file": "Descent from the Cross (Rembrant).jpg",
@@ -295,21 +295,21 @@
       "dzi": "/assets/artworks/descent/detail.dzi",
       "tileBytes": 2779860
     },
-    "original": {
-      "width": 2789,
-      "height": 3840,
-      "dzi": "/assets/artworks/descent/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Workshop of   Rembrandt",
     "author": "伦勃朗工作室（据画源归属）",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "west",
-    "offset": 4.2,
-    "height": 2.6,
-    "centerY": 2.6
+    "offset": 5.88,
+    "centerY": 3.27,
+    "physicalSize": {
+      "heightCm": 158,
+      "widthCm": 117,
+      "source": "https://commons.wikimedia.org/wiki/File:Descent_from_the_Cross_(Rembrant).jpg",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "david-jonathan",
@@ -322,7 +322,7 @@
     "credit": "Rembrandt",
     "description": "两位友人拥抱告别，华丽衣料与低垂姿态形成对照。此件为冬宫馆藏，当前实际陈列位置待确认。本版补充取得3344×4000像素源图。",
     "looking": "观察拥抱中的手、衣料反光和远处景物之间的明暗关系。",
-    "dimensions": "原作尺寸待确认",
+    "dimensions": "73 × 61.5 厘米（高 × 宽，无框）",
     "medium": "油画（支撑材料待确认）",
     "file": "Harmensz van Rijn Rembrandt - Давид и Ионафан - Google Art Project.jpg",
     "accession": "待核对",
@@ -362,22 +362,22 @@
       "quality": 94,
       "dzi": "/assets/artworks/david-jonathan/detail.dzi"
     },
-    "original": {
-      "width": 3344,
-      "height": 4000,
-      "dzi": "/assets/artworks/david-jonathan/detail.dzi"
-    },
-    "hasOriginal": false,
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（已从 Commons 原文件补充生成，2026-10-11）",
     "wall": "south",
-    "offset": -4.5,
-    "height": 1.75,
-    "centerY": 2.6,
+    "offset": -6.3,
+    "centerY": 3.19,
     "originalFile": "originals/david-jonathan.jpg",
     "originalFileBytes": 3967402,
-    "generatedAt": "2026-10-11T08:44:31.837Z"
+    "generatedAt": "2026-10-11T08:44:31.837Z",
+    "physicalSize": {
+      "heightCm": 73,
+      "widthCm": 61.5,
+      "source": "https://www.hermitagemuseum.org/digital-collection/43281",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "red-man",
@@ -387,7 +387,7 @@
     "date": "约 1652—1654 年",
     "description": "红衣老人安静地坐着，面部与双手以厚重笔触呈现。",
     "looking": "先观察双手的关节，再比较衣料与面部的笔触。",
-    "dimensions": "原作尺寸待确认",
+    "dimensions": "108 × 86 厘米（高 × 宽，无框）",
     "medium": "油画（支撑材料待确认）",
     "accession": "待核对",
     "hallEvidence": "node174",
@@ -426,20 +426,20 @@
       "dzi": "/assets/artworks/red-man/detail.dzi",
       "tileBytes": 18330837
     },
-    "original": {
-      "width": 6346,
-      "height": 8280,
-      "dzi": "/assets/artworks/red-man/original.dzi"
-    },
-    "hasOriginal": true,
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "north",
-    "offset": 4.3,
-    "height": 2.25,
-    "centerY": 2.6
+    "offset": 6.02,
+    "centerY": 3.96,
+    "physicalSize": {
+      "heightCm": 108,
+      "widthCm": 86,
+      "source": "https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "holy-family",
@@ -449,7 +449,7 @@
     "date": "1645 年",
     "description": "圣母在摇篮旁读书，约瑟在暗处工作，天使从光中降临。",
     "looking": "先看摇篮与书页，再寻找左上方的天使，体会日常生活与神圣主题的交织。",
-    "dimensions": "原作尺寸待确认",
+    "dimensions": "117 × 91 厘米（高 × 宽，无框）",
     "medium": "油画（支撑材料待确认）",
     "accession": "待核对",
     "hallEvidence": "node175",
@@ -488,20 +488,20 @@
       "dzi": "/assets/artworks/holy-family/detail.dzi",
       "tileBytes": 19938002
     },
-    "original": {
-      "width": 8464,
-      "height": 10880,
-      "dzi": "/assets/artworks/holy-family/original.dzi"
-    },
-    "hasOriginal": true,
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "south",
-    "offset": 4.5,
-    "height": 2.05,
-    "centerY": 2.6
+    "offset": 6.3,
+    "centerY": 3.19,
+    "physicalSize": {
+      "heightCm": 117,
+      "widthCm": 91,
+      "source": "https://www.hermitagemuseum.org/digital-collection/43400",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "scholar",
@@ -511,7 +511,7 @@
     "date": "1631 年",
     "description": "男子从书桌前转过头，书籍与手中的笔使人物仿佛刚刚暂停工作。身份尚不确定。",
     "looking": "沿着目光看向停住的手，再比较桌布、书页和皮肤的质感。",
-    "dimensions": "104.5 × 92 厘米（高 × 宽）",
+    "dimensions": "104.5 × 92 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "accession": "待核对",
     "hallEvidence": "node176",
@@ -550,20 +550,20 @@
       "dzi": "/assets/artworks/scholar/detail.dzi",
       "tileBytes": 5839060
     },
-    "original": {
-      "width": 3400,
-      "height": 3691,
-      "dzi": "/assets/artworks/scholar/detail.dzi"
-    },
-    "hasOriginal": false,
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（Commons 来源页已核查，2026-10-11；本地衍生文件依用户提供的对应关系）",
     "wall": "east",
-    "offset": -4.9,
-    "height": 1.9,
-    "centerY": 2.6
+    "offset": -6.86,
+    "centerY": 2.385,
+    "physicalSize": {
+      "heightCm": 104.5,
+      "widthCm": 92,
+      "source": "https://www.theleidencollection.com/artwork/man-with-a-book/",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2
   },
   {
     "id": "snyders-fish",
@@ -576,15 +576,14 @@
     "credit": "Wikimedia Commons；图像作者及来源见作品链接",
     "description": "鱼、甲壳类和海产铺满摊面，右侧的商贩正在切鱼。人物的日常劳动与巨量食材形成一场壮观的市场戏剧。",
     "looking": "先找右侧切鱼的人，再看桌下的海豹；比较鱼鳞、蟹壳和湿润鱼肉的质感。",
-    "dimensions": "209 × 341 厘米",
+    "dimensions": "207 × 341 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "file": "Frans-Snyders-Fish-Stall-3840x2358.jpg",
     "collection": "冬宫博物馆",
     "wall": "north",
-    "offset": -6,
-    "height": 2.15,
+    "offset": 5.5,
     "room": "market",
-    "centerY": 2.8,
+    "centerY": 3.42,
     "displayStatus": "主题策展；不代表实体馆当前陈列",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Frans_Snyders_-_Fish_Stall_-_WGA21521.jpg",
     "licenseStatus": "Public domain（来源页 PD-Art 标记）",
@@ -623,13 +622,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-fish/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2358,
-      "dzi": "/assets/artworks/snyders-fish/detail.dzi"
+    "generatedAt": "2026-10-12T15:24:36.562Z",
+    "physicalSize": {
+      "heightCm": 207,
+      "widthCm": 341,
+      "source": "https://www.hermitagemuseum.org/digital-collection/48298",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:36.562Z"
+    "displayScale": 2
   },
   {
     "id": "snyders-fruit",
@@ -642,15 +642,14 @@
     "credit": "Wikimedia Commons；图像作者及来源见作品链接",
     "description": "左侧两位女性交易水果，右侧的葡萄、无花果与瓜果层层展开。市场买卖成为表现丰盛与色彩的舞台。",
     "looking": "沿着手势看向水果，再寻找下方的小狗；留意篮筐、果皮和叶子的不同触感。",
-    "dimensions": "206 × 342 厘米",
+    "dimensions": "206 × 342 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "file": "Frans-Snyders-Fruit-Stall-3840x2313.jpg",
     "collection": "冬宫博物馆",
     "wall": "north",
-    "offset": -0.5,
-    "height": 2.15,
+    "offset": -5.5,
     "room": "market",
-    "centerY": 2.8,
+    "centerY": 3.42,
     "displayStatus": "主题策展；不代表实体馆当前陈列",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/98/Frans_Snyders_-_Fruit_Stall_-_WGA21518.jpg",
     "licenseStatus": "Public domain（来源页 PD-Art 标记）",
@@ -689,13 +688,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-fruit/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2313,
-      "dzi": "/assets/artworks/snyders-fruit/detail.dzi"
+    "generatedAt": "2026-10-12T15:24:39.546Z",
+    "physicalSize": {
+      "heightCm": 206,
+      "widthCm": 342,
+      "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21518.jpg",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:39.546Z"
+    "displayScale": 2
   },
   {
     "id": "snyders-game",
@@ -708,15 +708,14 @@
     "credit": "Wikimedia Commons；图像作者及来源见作品链接",
     "description": "天鹅、禽鸟与兽类形成层叠的猎物摊位。动物的身体和商贩、狗的动作共同组织出富有张力的构图。 作品由斯奈德斯与扬·维尔登斯合作绘制。",
     "looking": "从中央展开的白色翅膀看起，移向右侧站起的狗，观察明暗怎样把拥挤的物体分开。",
-    "dimensions": "207 × 341 厘米",
+    "dimensions": "207 × 341 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "file": "Frans-Snyders-Game-Stall-3840x2325.jpg",
     "collection": "冬宫博物馆",
-    "wall": "north",
-    "offset": 5,
-    "height": 2.15,
+    "wall": "south",
+    "offset": 5.5,
     "room": "market",
-    "centerY": 2.8,
+    "centerY": 3.42,
     "displayStatus": "主题策展；不代表实体馆当前陈列",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/26/Frans_Snyders_and_Jan_Wildens_-_Game_Stall.jpg",
     "licenseStatus": "Public domain（来源页 PD-Art 标记）",
@@ -755,13 +754,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-game/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2325,
-      "dzi": "/assets/artworks/snyders-game/detail.dzi"
+    "generatedAt": "2026-10-12T15:24:42.788Z",
+    "physicalSize": {
+      "heightCm": 207,
+      "widthCm": 341,
+      "source": "https://www.hermitagemuseum.org/digital-collection/48292",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:42.788Z"
+    "displayScale": 2
   },
   {
     "id": "snyders-vegetable",
@@ -774,15 +774,14 @@
     "credit": "Wikimedia Commons；图像作者及来源见作品链接",
     "description": "摊前的交易、抱着卷心菜的孩子与成堆蔬菜交织在一起。普通根茎、叶菜在宏大的构图中获得了纪念碑般的存在感。",
     "looking": "找到孩子手里的卷心菜，再比较叶菜、根茎与豆类；看看远处马车怎样扩展市场空间。",
-    "dimensions": "208 × 341 厘米",
+    "dimensions": "208 × 341 厘米（高 × 宽，无框）",
     "medium": "布面油画",
     "file": "Frans-Snyders-Vegetable-Stall-3840x2333.jpg",
     "collection": "冬宫博物馆",
     "wall": "south",
-    "offset": -3.4,
-    "height": 2.15,
+    "offset": -5.5,
     "room": "market",
-    "centerY": 2.8,
+    "centerY": 3.42,
     "displayStatus": "主题策展；不代表实体馆当前陈列",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/79/Frans_Snyders_-_Fruit_Stall_-_WGA21520.jpg",
     "licenseStatus": "Public domain（来源页 PD-Art 标记）",
@@ -821,283 +820,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2333,
-      "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
+    "generatedAt": "2026-10-12T15:24:45.806Z",
+    "physicalSize": {
+      "heightCm": 208,
+      "widthCm": 341,
+      "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21520.jpg",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:45.806Z"
-  },
-  {
-    "id": "snyders-quay",
-    "title": "码头市场",
-    "originalTitle": "Market Scene on a Quay",
-    "date": "约 1635—1640 年",
-    "author": "弗兰斯·斯奈德斯及工作室",
-    "source": "https://commons.wikimedia.org/wiki/File:Market_Scene_on_a_Quay_-_Frans_Snyders_and_Workshop_-_Google_Cultural_Institute.jpg",
-    "license": "Public domain（来源页 PD-Art 标记）",
-    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
-    "description": "码头上的食材、猎物和活着的动物密集交错，远处的港口将市场与运输、贸易联系起来。作品署名为斯奈德斯及工作室。",
-    "looking": "从前景摊位慢慢看向港口，追踪人物与动物的动作，体会近景密度与远景开阔之间的变化。",
-    "dimensions": "201.5 × 342.9 厘米",
-    "medium": "布面油画",
-    "file": "Snyders-Market-Scene-on-a-Quay.jpg",
-    "collection": "北卡罗来纳艺术博物馆",
-    "catalogueUrl": "https://artnc.org/works-of-art/market-scene-quay/",
-    "wall": "west",
-    "offset": -3.2,
-    "height": 2.2,
-    "room": "market",
-    "centerY": 2.8,
-    "displayStatus": "主题策展；不代表实体馆当前陈列",
-    "originalUrl": "https://commons.wikimedia.org/wiki/File:Market_Scene_on_a_Quay_-_Frans_Snyders_and_Workshop_-_Google_Cultural_Institute.jpg",
-    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
-    "sourceWidth": 4729,
-    "sourceHeight": 2745,
-    "originalFile": "originals/market-hall/Snyders-Market-Scene-on-a-Quay.jpg",
-    "originalFileBytes": 8187093,
-    "variants": [
-      {
-        "url": "/assets/artworks/snyders-quay/far.webp",
-        "width": 640,
-        "height": 371,
-        "bytes": 109318,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-quay/medium.webp",
-        "width": 1600,
-        "height": 929,
-        "bytes": 667272,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-quay/near.webp",
-        "width": 3000,
-        "height": 1741,
-        "bytes": 2477234,
-        "quality": 94
-      }
-    ],
-    "detail": {
-      "url": "/assets/artworks/snyders-quay/detail.webp",
-      "width": 4729,
-      "height": 2745,
-      "bytes": 5999902,
-      "quality": 94,
-      "dzi": "/assets/artworks/snyders-quay/detail.dzi"
-    },
-    "original": {
-      "width": 4729,
-      "height": 2745,
-      "dzi": "/assets/artworks/snyders-quay/detail.dzi"
-    },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:50.507Z"
-  },
-  {
-    "id": "snyders-kitchen",
-    "title": "女仆与男孩的厨房静物",
-    "originalTitle": "Kitchen Still Life with a Maid and Young Boy",
-    "date": "1636—1638 年",
-    "author": "弗兰斯·斯奈德斯及工作室、鲁本斯工作室",
-    "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders,_with_figures_attributed_to_Jan_Boeckhorst_-_Kitchen_Still_Life_with_a_Maid_and_Young_Boy_-_78.PA.207_-_J._Paul_Getty_Museum.jpg",
-    "license": "Public domain（来源页 PD-Art 标记）",
-    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
-    "description": "男孩伸手拿葡萄，女管家将手放在他的肩上制止他；水果、禽鸟和猫狗的动作，使储藏室静物充满叙事。盖蒂现行记录署为斯奈德斯及工作室、鲁本斯工作室。",
-    "looking": "先看两人的手与目光，再沿着葡萄和禽鸟看向桌面；分辨静物细节与人物动作如何相互呼应。",
-    "dimensions": "157.4 × 243.3 厘米（无框）",
-    "medium": "布面油画",
-    "file": "Snyders-Kitchen-Still-Life-with-a-Maid-and-Young-Boy.jpg",
-    "attribution": "盖蒂现行记录：斯奈德斯及工作室、鲁本斯工作室；旧目录将人物归于扬·博克霍斯特。",
-    "collection": "J. 保罗·盖蒂博物馆",
-    "wall": "south",
-    "offset": 2.4,
-    "height": 2.2,
-    "room": "market",
-    "centerY": 2.8,
-    "displayStatus": "主题策展；不代表实体馆当前陈列",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Frans_Snyders%2C_with_figures_attributed_to_Jan_Boeckhorst_-_Kitchen_Still_Life_with_a_Maid_and_Young_Boy_-_78.PA.207_-_J._Paul_Getty_Museum.jpg",
-    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
-    "sourceWidth": 4674,
-    "sourceHeight": 2991,
-    "originalFile": "originals/market-hall/Snyders-Kitchen-Still-Life-with-a-Maid-and-Young-Boy.jpg",
-    "originalFileBytes": 22772919,
-    "variants": [
-      {
-        "url": "/assets/artworks/snyders-kitchen/far.webp",
-        "width": 640,
-        "height": 410,
-        "bytes": 101026,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-kitchen/medium.webp",
-        "width": 1600,
-        "height": 1024,
-        "bytes": 608672,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-kitchen/near.webp",
-        "width": 3000,
-        "height": 1920,
-        "bytes": 2377708,
-        "quality": 94
-      }
-    ],
-    "detail": {
-      "url": "/assets/artworks/snyders-kitchen/detail.webp",
-      "width": 4674,
-      "height": 2991,
-      "bytes": 6097630,
-      "quality": 94,
-      "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
-    },
-    "original": {
-      "width": 4674,
-      "height": 2991,
-      "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
-    },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:55.573Z",
-    "catalogueUrl": "https://www.getty.edu/art/collection/object/103RDT"
-  },
-  {
-    "id": "snyders-maid",
-    "title": "有女仆的静物",
-    "originalTitle": "Still Life with a Maid",
-    "date": "约 1633 年",
-    "author": "弗兰斯·斯奈德斯",
-    "source": "https://commons.wikimedia.org/wiki/File:LA_FRUTERA_(SNYDERS).jpg",
-    "license": "Public domain（来源页 PD-Art 标记）",
-    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
-    "description": "成堆水果围绕女仆展开，猴子和鹦鹉的加入，让静物陈设变成富有动感的室内场景。",
-    "looking": "寻找动物藏身的位置，观察圆润果实与织物、篮筐之间的质感对比。",
-    "dimensions": "153 × 214 厘米",
-    "medium": "布面油画",
-    "file": "Snyders-Still-Life-with-a-Maid.jpg",
-    "collection": "普拉多博物馆",
-    "catalogueUrl": "https://www.museodelprado.es/en/the-collection/art-work/still-life-with-a-maid/025b2c33-b378-40da-a40c-a60389cce73c",
-    "wall": "west",
-    "offset": 2.8,
-    "height": 2.2,
-    "room": "market",
-    "centerY": 2.8,
-    "displayStatus": "主题策展；不代表实体馆当前陈列",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/LA_FRUTERA_%28SNYDERS%29.jpg",
-    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
-    "sourceWidth": 3051,
-    "sourceHeight": 2153,
-    "originalFile": "originals/market-hall/Snyders-Still-Life-with-a-Maid.jpg",
-    "originalFileBytes": 6127908,
-    "variants": [
-      {
-        "url": "/assets/artworks/snyders-maid/far.webp",
-        "width": 640,
-        "height": 452,
-        "bytes": 79448,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-maid/medium.webp",
-        "width": 1600,
-        "height": 1129,
-        "bytes": 445144,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-maid/near.webp",
-        "width": 3000,
-        "height": 2117,
-        "bytes": 1593896,
-        "quality": 94
-      }
-    ],
-    "detail": {
-      "url": "/assets/artworks/snyders-maid/detail.webp",
-      "width": 3051,
-      "height": 2153,
-      "bytes": 1796550,
-      "quality": 94,
-      "dzi": "/assets/artworks/snyders-maid/detail.dzi"
-    },
-    "original": {
-      "width": 3051,
-      "height": 2153,
-      "dzi": "/assets/artworks/snyders-maid/detail.dzi"
-    },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:58.190Z"
-  },
-  {
-    "id": "snyders-produce",
-    "title": "水果与蔬菜静物",
-    "originalTitle": "Still Life with Fruit and Vegetables",
-    "date": "1625—1635 年",
-    "author": "弗兰斯·斯奈德斯",
-    "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Still_life_with_fruit_and_vegetables.jpg",
-    "license": "Public domain（来源页 PD-Art 标记）",
-    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
-    "description": "水果和蔬菜从桌面铺到地上，女人、男孩与动物穿插其中。画家把不同季节的物产组合成想象中的丰盛；人物由科内利斯·德·沃斯绘制。",
-    "looking": "比较地面的根茎与篮中的豌豆、芦笋，再看人物的目光与触碰怎样让静物产生生活气息。",
-    "dimensions": "173.4 × 256.5 厘米",
-    "medium": "布面油画",
-    "file": "Snyders-Still-Life-with-Fruit-and-Vegetables.jpg",
-    "attribution": "人物由科内利斯·德·沃斯绘制",
-    "collection": "诺顿·西蒙博物馆",
-    "catalogueUrl": "https://50.nortonsimon.org/collections/still-life-with-fruit-and-vegetables/",
-    "wall": "east",
-    "offset": -5.6,
-    "height": 2.2,
-    "room": "market",
-    "centerY": 2.8,
-    "displayStatus": "主题策展；不代表实体馆当前陈列",
-    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Frans_Snyders_-_Still_life_with_fruit_and_vegetables.jpg",
-    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
-    "sourceWidth": 2402,
-    "sourceHeight": 1660,
-    "originalFile": "originals/market-hall/Snyders-Still-Life-with-Fruit-and-Vegetables.jpg",
-    "originalFileBytes": 3580731,
-    "variants": [
-      {
-        "url": "/assets/artworks/snyders-produce/far.webp",
-        "width": 640,
-        "height": 442,
-        "bytes": 121492,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-produce/medium.webp",
-        "width": 1600,
-        "height": 1106,
-        "bytes": 428630,
-        "quality": 94
-      },
-      {
-        "url": "/assets/artworks/snyders-produce/near.webp",
-        "width": 2402,
-        "height": 1660,
-        "bytes": 692394,
-        "quality": 94
-      }
-    ],
-    "detail": {
-      "url": "/assets/artworks/snyders-produce/detail.webp",
-      "width": 2402,
-      "height": 1660,
-      "bytes": 692394,
-      "quality": 94,
-      "dzi": "/assets/artworks/snyders-produce/detail.dzi"
-    },
-    "original": {
-      "width": 2402,
-      "height": 1660,
-      "dzi": "/assets/artworks/snyders-produce/detail.dzi"
-    },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-12T15:24:59.733Z"
+    "displayScale": 2
   },
   {
     "id": "leonardo-ermine",
@@ -1110,14 +840,14 @@
     "credit": "Leonardo da Vinci / 克拉科夫国家博物馆摄影工作室（Pracownia Fotograficzna MNK）；馆藏编号 MNK XII-209；本项目缩放、转换 WebP 并生成瓦片",
     "description": "年轻女子转向画外，怀中的银貂也朝同一方向抬起头。面孔、手与动物形成连续的明暗节奏。",
     "looking": "比较女子和银貂的转头方向，观察手指如何贴合动物身体。",
-    "dimensions": "53.4 × 39.3 厘米",
+    "dimensions": "53.4 × 39.3 厘米（高 × 宽，无框）",
     "medium": "木板油画",
     "file": "Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_–_Portrait_of_Cecilia_Gallerani_(ca._1473–1536)_-_MNK_XII-209_-_National_Museum_Kraków.jpg",
     "collection": "克拉科夫恰尔托雷斯基博物馆",
     "wall": "west",
-    "offset": 4.3,
+    "offset": 5.7,
     "height": 2.5,
-    "centerY": 2.6,
+    "centerY": 2.1,
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Leonardo_da_Vinci_(1452-1519)_-_Lady_with_an_Ermine_%E2%80%93_Portrait_of_Cecilia_Gallerani_(ca._1473%E2%80%931536)_-_MNK_XII-209_-_National_Museum_Krak%C3%B3w.jpg",
     "licenseStatus": "CC0 1.0 / Public domain（Commons 博物馆提供文件页核查：2026-10-14）",
     "room": "leonardo",
@@ -1157,13 +887,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/leonardo-ermine/detail.dzi"
     },
-    "original": {
-      "width": 2936,
-      "height": 4000,
-      "dzi": "/assets/artworks/leonardo-ermine/detail.dzi"
+    "generatedAt": "2026-10-13T16:22:55.708Z",
+    "physicalSize": {
+      "heightCm": 53.4,
+      "widthCm": 39.3,
+      "source": "https://zbiory.mnk.pl/en/catalog/157417",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-13T16:22:55.708Z"
+    "displayScale": 2
   },
   {
     "id": "leonardo-saint-anne",
@@ -1176,14 +907,14 @@
     "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Sainte Anne Leonard.jpg",
     "description": "圣安娜、圣母与孩子相互依偎，动作在一个稳定而流动的三角形中展开，远景逐渐消隐于蓝色山峦。",
     "looking": "沿人物的视线与手臂移动，观察三个人物如何连成一体。",
-    "dimensions": "约 168 × 130 厘米",
+    "dimensions": "168 × 130 厘米（高 × 宽，无框）",
     "medium": "木板油画",
     "file": "Sainte_Anne_Leonard.jpg",
     "collection": "卢浮宫博物馆",
     "wall": "east",
-    "offset": 4.1,
+    "offset": 0.4,
     "height": 2.8,
-    "centerY": 2.6,
+    "centerY": 3.02,
     "room": "leonardo",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sainte_Anne_Leonard.jpg",
     "displayStatus": "数字主题策展，非实体展厅复原",
@@ -1223,13 +954,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
     },
-    "original": {
-      "width": 5565,
-      "height": 7359,
-      "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
+    "generatedAt": "2026-10-13T15:44:42.323Z",
+    "physicalSize": {
+      "heightCm": 168,
+      "widthCm": 130,
+      "source": "https://collections.louvre.fr/ark:/53355/cl010066107",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-13T15:44:42.323Z"
+    "displayScale": 2
   },
   {
     "id": "leonardo-benois",
@@ -1242,14 +974,14 @@
     "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Leonardo, Madonna Benois.JPG",
     "description": "母亲微笑着将小花递到孩子手边。人物之间的注意力被一个小小的物件牵引，亲密关系借由手势呈现。",
     "looking": "观察小花、孩子的手与母亲的目光组成的细小环路。",
-    "dimensions": "49.5 × 33 厘米",
+    "dimensions": "49.5 × 33 厘米（高 × 宽，无框）",
     "medium": "木板油画，后转移至画布",
     "file": "Leonardo,_Madonna_Benois.JPG",
     "collection": "冬宫博物馆",
-    "wall": "south",
-    "offset": -2.8,
+    "wall": "west",
+    "offset": -9.3,
     "height": 2.3,
-    "centerY": 2.6,
+    "centerY": 2.1,
     "room": "leonardo",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Leonardo%2C_Madonna_Benois.JPG",
     "displayStatus": "数字主题策展，非实体展厅复原",
@@ -1289,13 +1021,14 @@
       "quality": 94,
       "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
     },
-    "original": {
-      "width": 2864,
-      "height": 4588,
-      "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
+    "generatedAt": "2026-10-13T15:44:52.245Z",
+    "physicalSize": {
+      "heightCm": 49.5,
+      "widthCm": 33,
+      "source": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-13T15:44:52.245Z"
+    "displayScale": 2
   },
   {
     "id": "leonardo-litta",
@@ -1308,15 +1041,15 @@
     "credit": "Attributed to Leonardo da Vinci / Wikimedia Commons；冬宫数字图像",
     "description": "母亲低头哺育孩子，两侧窗户打开通往远景。作品传统上与达芬奇联系，但作者归属存在讨论，本展保留来源页的“归于”表述。",
     "looking": "观察母亲低垂的眼睛、衣褶和两扇窗口之间的平衡。",
-    "dimensions": "42 × 33 厘米",
+    "dimensions": "42 × 33 厘米（高 × 宽，无框）",
     "medium": "木板蛋彩画，后转移至画布",
     "file": "Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
     "collection": "冬宫博物馆",
     "attribution": "作者归属存在讨论，来源文件页标注为归于达芬奇。",
-    "wall": "south",
-    "offset": 2.4,
+    "wall": "west",
+    "offset": -6.6,
     "height": 2.3,
-    "centerY": 2.6,
+    "centerY": 2.1,
     "room": "leonardo",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
     "displayStatus": "数字主题策展，非实体展厅复原",
@@ -1356,13 +1089,14 @@
       "quality": 90,
       "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
     },
-    "original": {
-      "width": 6346,
-      "height": 8096,
-      "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
+    "generatedAt": "2026-10-13T15:46:00.260Z",
+    "physicalSize": {
+      "heightCm": 42,
+      "widthCm": 33,
+      "source": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-13T15:46:00.260Z"
+    "displayScale": 2
   },
   {
     "id": "leonardo-mona-lisa",
@@ -1375,14 +1109,14 @@
     "credit": "Leonardo da Vinci / C2RMF；经修整的数字图像",
     "description": "人物在遥远的山水前侧身而坐，双手交叠。脸部轮廓与背景在柔和的明暗过渡中相接。此处使用 C2RMF 的修整数字版本。",
     "looking": "从嘴角与眼角的柔和边缘看起，再观察两侧地平线和交叠的双手。",
-    "dimensions": "77 × 53 厘米",
+    "dimensions": "79.4 × 53.4 厘米（高 × 宽，无框）",
     "medium": "白杨木板油画",
     "file": "Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.jpg",
     "collection": "卢浮宫博物馆",
-    "wall": "north",
-    "offset": 0,
+    "wall": "west",
+    "offset": 3,
     "height": 2.5,
-    "centerY": 2.6,
+    "centerY": 2.1,
     "room": "leonardo",
     "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg",
     "displayStatus": "数字主题策展，非实体展厅复原",
@@ -1422,12 +1156,610 @@
       "quality": 82,
       "dzi": "/assets/artworks/leonardo-mona-lisa/detail.dzi"
     },
-    "original": {
-      "width": 7479,
-      "height": 11146,
-      "dzi": "/assets/artworks/leonardo-mona-lisa/detail.dzi"
+    "generatedAt": "2026-10-13T15:46:56.138Z",
+    "physicalSize": {
+      "heightCm": 79.4,
+      "widthCm": 53.4,
+      "source": "https://collections.louvre.fr/ark:/53355/cl010062370",
+      "checkedAt": "2026-10-24"
     },
-    "hasOriginal": false,
-    "generatedAt": "2026-10-13T15:46:56.138Z"
+    "displayScale": 2
+  },
+  {
+    "id": "leonardo-last-supper",
+    "title": "最后的晚餐",
+    "originalTitle": "The Last Supper",
+    "date": "1495—1498 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALast_Supper_by_Leonardo_da_Vinci.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci；摄影：Paris Orlando / Wikimedia Commons",
+    "description": "长桌横贯画面，基督居中，十二位门徒的手势与神态向两侧展开。数字展厅按原作尺寸呈现这幅壁画。",
+    "looking": "先找透视线汇聚的位置，再沿长桌观察各组三人的反应。",
+    "dimensions": "460 × 880 厘米（高 × 宽，无框）",
+    "medium": "干壁画",
+    "file": "Last_Supper_by_Leonardo_da_Vinci.jpg",
+    "collection": "米兰恩宠圣母院餐厅",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Last_Supper_by_Leonardo_da_Vinci.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "north",
+    "offset": 0,
+    "centerY": 3.64,
+    "physicalSize": {
+      "heightCm": 460,
+      "widthCm": 880,
+      "source": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 1,
+    "displayNote": "原作本身为大型壁画，本展按原大（1倍）展示。",
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 10256,
+    "sourceHeight": 5696,
+    "originalFile": "originals/renaissance/leonardo-last-supper.jpg",
+    "originalFileBytes": 61233069,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-last-supper/far.webp",
+        "width": 640,
+        "height": 355,
+        "bytes": 100500,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-last-supper/medium.webp",
+        "width": 1600,
+        "height": 889,
+        "bytes": 729568,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-last-supper/near.webp",
+        "width": 3000,
+        "height": 1666,
+        "bytes": 2765574,
+        "quality": 90
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-last-supper/detail.webp",
+      "width": 10256,
+      "height": 5696,
+      "bytes": 19230070,
+      "quality": 86,
+      "dzi": "/assets/artworks/leonardo-last-supper/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:54:21.020Z"
+  },
+  {
+    "id": "leonardo-annunciation",
+    "title": "天使报喜",
+    "originalTitle": "Annunciation",
+    "date": "约 1472 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Google Arts & Culture / Wikimedia Commons",
+    "description": "天使与圣母分处横幅两端，花园、石质书案与远山把宗教场景安置在可感的自然空间中。",
+    "looking": "比较天使翅膀、草地花朵和远山的清晰程度，沿两人的手势横向观看。",
+    "dimensions": "90 × 222 厘米（高 × 宽，无框）",
+    "medium": "木板油画",
+    "file": "Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "collection": "乌菲齐美术馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "south",
+    "offset": 5,
+    "centerY": 2.45,
+    "physicalSize": {
+      "heightCm": 90,
+      "widthCm": 222,
+      "source": "https://www.uffizi.it/en/artworks/annunciation",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 4057,
+    "sourceHeight": 1840,
+    "originalFile": "originals/renaissance/leonardo-annunciation.jpg",
+    "originalFileBytes": 7886923,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-annunciation/far.webp",
+        "width": 640,
+        "height": 290,
+        "bytes": 72702,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-annunciation/medium.webp",
+        "width": 1600,
+        "height": 726,
+        "bytes": 462722,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-annunciation/near.webp",
+        "width": 3000,
+        "height": 1361,
+        "bytes": 1664600,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-annunciation/detail.webp",
+      "width": 4057,
+      "height": 1840,
+      "bytes": 2915198,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-annunciation/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:51:51.153Z"
+  },
+  {
+    "id": "leonardo-rocks-louvre",
+    "title": "岩间圣母（卢浮宫版）",
+    "originalTitle": "The Virgin of the Rocks — Louvre",
+    "date": "约 1483—1494 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Wikimedia Commons",
+    "description": "圣母、基督、幼年施洗者约翰与天使围成一组，手势在幽暗岩洞中连接人物。",
+    "looking": "与旁边伦敦版对照：先找天使的眼神和指向，再看人物之间的手势。",
+    "dimensions": "199.5 × 122 厘米（高 × 宽，无框）",
+    "medium": "木板油画，后转移至画布",
+    "file": "Leonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg",
+    "collection": "卢浮宫博物馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "east",
+    "offset": -8.7,
+    "centerY": 3.335,
+    "physicalSize": {
+      "heightCm": 199.5,
+      "widthCm": 122,
+      "source": "https://collections.louvre.fr/ark:/53355/cl010062373",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 3460,
+    "sourceHeight": 5487,
+    "originalFile": "originals/renaissance/leonardo-rocks-louvre.jpg",
+    "originalFileBytes": 7057896,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-rocks-louvre/far.webp",
+        "width": 404,
+        "height": 640,
+        "bytes": 93934,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-rocks-louvre/medium.webp",
+        "width": 1009,
+        "height": 1600,
+        "bytes": 537164,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-rocks-louvre/near.webp",
+        "width": 1892,
+        "height": 3000,
+        "bytes": 1939718,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-rocks-louvre/detail.webp",
+      "width": 3460,
+      "height": 5487,
+      "bytes": 7117142,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-rocks-louvre/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:52:07.928Z"
+  },
+  {
+    "id": "leonardo-rocks-london",
+    "title": "岩间圣母（伦敦版）",
+    "originalTitle": "The Virgin of the Rocks — London",
+    "date": "约 1491/1492—1499 年、1506—1508 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_Virgin_of_the_Rocks_(National_Gallery_London).jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / National Gallery, London / Wikimedia Commons",
+    "description": "人物仍围绕基督而聚，天使、衣袍色彩与岩洞的处理却与卢浮宫版有所不同。",
+    "looking": "比较两版天使的手、约翰的十字架以及圣母衣袍的颜色。",
+    "dimensions": "189.5 × 120 厘米（高 × 宽，无框）",
+    "medium": "白杨木板油画",
+    "file": "Leonardo_da_Vinci_Virgin_of_the_Rocks_(National_Gallery_London).jpg",
+    "collection": "伦敦国家美术馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "east",
+    "offset": -4.2,
+    "centerY": 3.335,
+    "physicalSize": {
+      "heightCm": 189.5,
+      "widthCm": 120,
+      "source": "https://www.nationalgallery.org.uk/paintings/leonardo-da-vinci-the-virgin-of-the-rocks",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "attribution": "伦敦国家美术馆署名达芬奇；画室参与问题仍有研究讨论。",
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 2692,
+    "sourceHeight": 4150,
+    "originalFile": "originals/renaissance/leonardo-rocks-london.jpg",
+    "originalFileBytes": 1492882,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-rocks-london/far.webp",
+        "width": 415,
+        "height": 640,
+        "bytes": 78660,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-rocks-london/medium.webp",
+        "width": 1038,
+        "height": 1600,
+        "bytes": 452468,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-rocks-london/near.webp",
+        "width": 1946,
+        "height": 3000,
+        "bytes": 1486950,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-rocks-london/detail.webp",
+      "width": 2692,
+      "height": 4150,
+      "bytes": 2255058,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-rocks-london/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:52:14.731Z"
+  },
+  {
+    "id": "leonardo-adoration",
+    "title": "三博士来朝",
+    "originalTitle": "Adoration of the Magi",
+    "date": "约 1481—1482 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3AAdoration_of_the_Magi_(Leonardo).jpg",
+    "license": "CC BY-SA 4.0",
+    "credit": "Leonardo da Vinci；摄影：Justin Benttinen / Wikimedia Commons；本项目缩放、转换 WebP 并生成瓦片，衍生图像沿用 CC BY-SA 4.0",
+    "description": "圣母与孩子位于密集人物的中心，远处的建筑、骑士和未完成线条同时显露构思过程。",
+    "looking": "从中央人物向外看，比较不同区域的线稿、阴影和完成程度。",
+    "dimensions": "244 × 240 厘米（高 × 宽，无框）",
+    "medium": "木板上炭笔、墨色与油彩，未完成",
+    "file": "Adoration_of_the_Magi_(Leonardo).jpg",
+    "collection": "乌菲齐美术馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Adoration_of_the_Magi_%28Leonardo%29.jpg",
+    "licenseStatus": "CC BY-SA 4.0（Commons 来源页核查：2026-10-24）",
+    "wall": "east",
+    "offset": 7.2,
+    "centerY": 3.78,
+    "physicalSize": {
+      "heightCm": 244,
+      "widthCm": 240,
+      "source": "https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 5256,
+    "sourceHeight": 5196,
+    "originalFile": "originals/renaissance/leonardo-adoration.jpg",
+    "originalFileBytes": 29110005,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-adoration/far.webp",
+        "width": 640,
+        "height": 633,
+        "bytes": 185600,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-adoration/medium.webp",
+        "width": 1600,
+        "height": 1582,
+        "bytes": 1114008,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-adoration/near.webp",
+        "width": 3000,
+        "height": 2966,
+        "bytes": 2748396,
+        "quality": 90
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-adoration/detail.webp",
+      "width": 5256,
+      "height": 5196,
+      "bytes": 9568528,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-adoration/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:52:57.066Z",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "id": "leonardo-john-baptist",
+    "title": "施洗者圣约翰",
+    "originalTitle": "Saint John the Baptist",
+    "date": "约 1508—1519 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / C2RMF；经修整的数字图像 / Wikimedia Commons",
+    "description": "人物从深暗背景里转出，弯起的手臂与向上的食指把视线引向画外。",
+    "looking": "观察嘴角、眼睛和卷发如何在暗色中逐渐出现，再追随食指的方向。",
+    "dimensions": "72.9 × 56.3 厘米（高 × 宽，无框）",
+    "medium": "胡桃木板油画",
+    "file": "Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "collection": "卢浮宫博物馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "west",
+    "offset": -12,
+    "centerY": 2.1,
+    "physicalSize": {
+      "heightCm": 72.9,
+      "widthCm": 56.3,
+      "source": "https://collections.louvre.fr/ark:/53355/cl010062374",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 10446,
+    "sourceHeight": 13522,
+    "originalFile": "originals/renaissance/leonardo-john-baptist.jpg",
+    "originalFileBytes": 94507636,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-john-baptist/far.webp",
+        "width": 494,
+        "height": 640,
+        "bytes": 49116,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-john-baptist/medium.webp",
+        "width": 1236,
+        "height": 1600,
+        "bytes": 402646,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-john-baptist/near.webp",
+        "width": 2318,
+        "height": 3000,
+        "bytes": 1857150,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-john-baptist/detail.webp",
+      "width": 10446,
+      "height": 13522,
+      "bytes": 15338940,
+      "quality": 86,
+      "dzi": "/assets/artworks/leonardo-john-baptist/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:57:29.960Z"
+  },
+  {
+    "id": "leonardo-belle-ferronniere",
+    "title": "美丽的费罗妮叶",
+    "originalTitle": "Portrait of a Woman, known as La Belle Ferronnière",
+    "date": "约 1490—1497 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALa_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Google Arts & Culture / Wikimedia Commons",
+    "description": "女子侧转身体，目光越过观众，额间的饰带和红色衣袖强化了脸部的清晰轮廓。",
+    "looking": "比较头部、肩膀和目光的方向，留意脸颊从明到暗的变化。",
+    "dimensions": "63 × 45 厘米（高 × 宽，无框）",
+    "medium": "胡桃木板油画",
+    "file": "La_Belle_Ferronière_-_Google_Arts.jpg",
+    "collection": "卢浮宫博物馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/La_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "west",
+    "offset": 11.1,
+    "centerY": 2.1,
+    "physicalSize": {
+      "heightCm": 63,
+      "widthCm": 45,
+      "source": "https://collections.louvre.fr/ark:/53355/cl010062372",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 2758,
+    "sourceHeight": 4000,
+    "originalFile": "originals/renaissance/leonardo-belle-ferronniere.jpg",
+    "originalFileBytes": 1753111,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-belle-ferronniere/far.webp",
+        "width": 441,
+        "height": 640,
+        "bytes": 42460,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-belle-ferronniere/medium.webp",
+        "width": 1103,
+        "height": 1600,
+        "bytes": 359438,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-belle-ferronniere/near.webp",
+        "width": 2069,
+        "height": 3000,
+        "bytes": 1338898,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-belle-ferronniere/detail.webp",
+      "width": 2758,
+      "height": 4000,
+      "bytes": 1886716,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-belle-ferronniere/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:54:27.179Z"
+  },
+  {
+    "id": "leonardo-ginevra",
+    "title": "吉内薇拉·德·本奇肖像",
+    "originalTitle": "Ginevra de’ Benci",
+    "date": "约 1474—1478 年",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3AGinevra_de'_Benci_-_National_Gallery_of_ArtFXD.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / National Gallery of Art, Washington；Commons 调整版",
+    "description": "年轻女子以近乎正面的姿态出现在杜松树前，苍白面容与浓密枝叶形成对比。",
+    "looking": "看面部与卷发的边界，再比较近处树叶和远处水面的细节。",
+    "dimensions": "38.1 × 37 厘米（高 × 宽，无框）",
+    "medium": "木板油画",
+    "file": "Ginevra_de'_Benci_-_National_Gallery_of_ArtFXD.jpg",
+    "collection": "美国国家美术馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Ginevra_de%27_Benci_-_National_Gallery_of_ArtFXD.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "west",
+    "offset": 8.4,
+    "centerY": 2.1,
+    "physicalSize": {
+      "heightCm": 38.1,
+      "widthCm": 37,
+      "source": "https://www.nga.gov/artworks/50724-ginevra-de-benci-obverse",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 10000,
+    "sourceHeight": 10315,
+    "originalFile": "originals/renaissance/leonardo-ginevra.jpg",
+    "originalFileBytes": 23648384,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-ginevra/far.webp",
+        "width": 620,
+        "height": 640,
+        "bytes": 148684,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-ginevra/medium.webp",
+        "width": 1551,
+        "height": 1600,
+        "bytes": 940388,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-ginevra/near.webp",
+        "width": 2908,
+        "height": 3000,
+        "bytes": 2639510,
+        "quality": 90
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-ginevra/detail.webp",
+      "width": 10000,
+      "height": 10315,
+      "bytes": 19428702,
+      "quality": 82,
+      "dzi": "/assets/artworks/leonardo-ginevra/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:58:18.767Z"
+  },
+  {
+    "id": "leonardo-vitruvian",
+    "title": "维特鲁威人",
+    "originalTitle": "Vitruvian Man",
+    "date": "1498 年（馆方2025年展览定年）",
+    "author": "列奥纳多·达·芬奇",
+    "source": "https://commons.wikimedia.org/wiki/File%3AUomo_Vitruviano.jpg",
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Museo Galileo 图像 / Wikimedia Commons",
+    "description": "双重姿态的人体置于圆与方形之间，周围的文字记录身体比例的研究。",
+    "looking": "比较两组手脚的位置，以及圆心、方形和人体之间的对应关系。",
+    "dimensions": "34.5 × 24.6 厘米（高 × 宽，纸页）",
+    "medium": "纸上银尖笔、蘸水笔与墨水",
+    "file": "Uomo_Vitruviano.jpg",
+    "collection": "威尼斯学院美术馆",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Uomo_Vitruviano.jpg",
+    "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+    "wall": "west",
+    "offset": -3.9,
+    "centerY": 2.1,
+    "physicalSize": {
+      "heightCm": 34.5,
+      "widthCm": 24.6,
+      "source": "https://www.gallerieaccademia.it/mostra/corpi-moderni-la-costruzione-del-corpo-nella-venezia-del-rinascimento-leonardo-michelangelo-durer-giorgione/",
+      "checkedAt": "2026-10-24"
+    },
+    "displayScale": 2,
+    "room": "leonardo",
+    "displayStatus": "数字主题策展，非实体展厅复原",
+    "sourceWidth": 2131,
+    "sourceHeight": 2953,
+    "originalFile": "originals/renaissance/leonardo-vitruvian.jpg",
+    "originalFileBytes": 7254048,
+    "variants": [
+      {
+        "url": "/assets/artworks/leonardo-vitruvian/far.webp",
+        "width": 462,
+        "height": 640,
+        "bytes": 122930,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-vitruvian/medium.webp",
+        "width": 1155,
+        "height": 1600,
+        "bytes": 780486,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/leonardo-vitruvian/near.webp",
+        "width": 2131,
+        "height": 2953,
+        "bytes": 2334820,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/leonardo-vitruvian/detail.webp",
+      "width": 2131,
+      "height": 2953,
+      "bytes": 2334820,
+      "quality": 94,
+      "dzi": "/assets/artworks/leonardo-vitruvian/detail.dzi"
+    },
+    "generatedAt": "2026-10-24T09:57:39.943Z"
   }
 ]

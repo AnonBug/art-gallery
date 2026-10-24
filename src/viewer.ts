@@ -10,7 +10,6 @@ export class ArtViewer {
  private jobs=new Set<TileJob>();
  private viewer: OpenSeadragon.Viewer | null = null;
  private artwork: Artwork | null = null;
- private original = false;
  private pendingView: ArtworkView | null = null;
  private generation = 0;
  private timer = 0;
@@ -34,7 +33,7 @@ export class ArtViewer {
    <footer class="viewer-footer" aria-label="看画工具栏">
     <button id="previous-art" aria-label="上一幅作品" title="上一幅作品">‹</button><button id="next-art" aria-label="下一幅作品" title="下一幅作品">›</button>
     <button id="zoom-out" aria-label="缩小" title="缩小">−</button><button id="zoom-home" title="显示完整画作">全画</button><button id="zoom-in" aria-label="放大" title="放大">＋</button>
-    <button id="original">查看原画</button><button id="viewer-diag" aria-label="切换高清诊断" title="高清诊断">诊断</button>
+    <button id="viewer-diag" aria-label="切换高清诊断" title="高清诊断">诊断</button>
    </footer><pre class="viewer-diagnostics" hidden></pre>`;
   document.body.append(this.root);
   this.stage=this.root.querySelector('.viewer-stage')!;this.status=this.root.querySelector('.viewer-status')!;
@@ -42,7 +41,6 @@ export class ArtViewer {
   this.root.querySelector('#viewer-close')!.addEventListener('click',()=>this.close(true));
   this.root.querySelector('#viewer-info')!.addEventListener('click',()=>this.artwork&&this.onInfo(this.artwork));
   this.root.querySelector('#viewer-diag')!.addEventListener('click',()=>this.setDiagnostics(this.diagnostic.hidden));
-  this.root.querySelector('#original')!.addEventListener('click',()=>{const view=this.captureView();this.original=!this.original;this.mount(view);});
   this.root.querySelector('#zoom-in')!.addEventListener('click',()=>{this.viewer?.viewport.zoomBy(1.5);this.viewer?.viewport.applyConstraints();});
   for(const [id,delta] of [['previous-art',-1],['next-art',1]] as const)this.root.querySelector('#'+id)!.addEventListener('click',()=>{if(this.artwork){const index=this.collection.findIndex(a=>a.id===this.artwork!.id);this.open(this.collection[(index+delta+this.collection.length)%this.collection.length]);}});
   this.root.querySelector('#zoom-out')!.addEventListener('click',()=>{this.viewer?.viewport.zoomBy(1/1.5);this.viewer?.viewport.applyConstraints();});
@@ -53,11 +51,11 @@ export class ArtViewer {
   window.addEventListener('orientationchange',()=>requestAnimationFrame(()=>this.resize()));
  }
  get isOpen(){return !this.root.hidden;}
- get state(){const view=this.captureView();return {activeViewers:this.viewer?1:0,pendingTiles:this.jobs.size,artwork:this.artwork?.id,source:this.original?'original':'detail',zoom:view?.zoom,center:view?[view.x,view.y]:undefined,viewport:[this.stage.clientWidth,this.stage.clientHeight],events:this.logs};}
+ get state(){const view=this.captureView();return {activeViewers:this.viewer?1:0,pendingTiles:this.jobs.size,artwork:this.artwork?.id,source:'detail',zoom:view?.zoom,center:view?[view.x,view.y]:undefined,viewport:[this.stage.clientWidth,this.stage.clientHeight],events:this.logs};}
  setDiagnostics(show:boolean){this.diagnostic.hidden=!show;this.updateDiagnostic();}
  private log(message:string){this.logs.push(`${new Date().toLocaleTimeString()} ${message}`);this.logs=this.logs.slice(-24);this.updateDiagnostic();}
  private updateDiagnostic(){if(!this.diagnostic.hidden)this.diagnostic.textContent=`漫览 v${VERSION}\n${JSON.stringify({...this.state,events:undefined},null,2)}\n${this.logs.join('\n')}`;}
- open(a:Artwork){if(!this.isOpen)this.lastFocus=document.activeElement as HTMLElement;this.artwork=a;this.original=false;this.root.hidden=false;this.onChange(true);this.mount();(this.root.querySelector('#viewer-close') as HTMLElement).focus();}
+ open(a:Artwork){if(!this.isOpen)this.lastFocus=document.activeElement as HTMLElement;this.artwork=a;this.root.hidden=false;this.onChange(true);this.mount();(this.root.querySelector('#viewer-close') as HTMLElement).focus();}
  close(resume=false){if(!this.isOpen)return;this.pendingView=null;this.destroy();this.root.hidden=true;this.log('关闭 / viewer 已销毁');this.lastFocus?.focus();this.onChange(false,resume);}
  private captureView():ArtworkView|null {
   if(!this.viewer?.world.getItemCount())return this.pendingView;
@@ -68,7 +66,7 @@ export class ArtViewer {
  private restoreView(view:ArtworkView){
   const viewer=this.viewer;if(!viewer?.world.getItemCount())return;
   const item=viewer.world.getItemAt(0),size=item.getContentSize();
-  // Image fractions preserve the same subject even when source pixel dimensions differ.
+  // Restore the same subject and zoom after retrying the tiled image.
   viewer.viewport.zoomTo(view.zoom,undefined,true);
   viewer.viewport.panTo(item.imageToViewportCoordinates(view.x*size.x,view.y*size.y,true),true);
   viewer.viewport.applyConstraints(true);
@@ -95,12 +93,9 @@ export class ArtViewer {
  private mount(view:ArtworkView|null=null){
   this.pendingView=view;
   this.destroy();const a=this.artwork;if(!a)return;
-  const generation=this.generation;const source=this.original?a.original:a.detail;
+  const generation=this.generation;const source=a.detail;
   this.root.querySelector('#viewer-title')!.textContent=a.title;
-  (this.root.querySelector('#viewer-title') as HTMLElement).title=`${this.original?'最高分辨率数字图像':'默认细看'} · ${source.width} × ${source.height} 像素`;
-  const originalButton=this.root.querySelector('#original') as HTMLButtonElement;
-  originalButton.hidden=!(a.hasOriginal && (a.original.width>a.detail.width || a.original.height>a.detail.height));
-  originalButton.textContent=this.original?'返回细看':'查看原画';
+  (this.root.querySelector('#viewer-title') as HTMLElement).title=`高清细看 · ${source.width} × ${source.height} 像素`;
   (this.root.querySelector('.viewer-map') as HTMLElement).hidden=false;
   this.status.hidden=false;this.status.textContent='正在载入高清瓦片…';
   // Canvas drawer only: keep individual tile surfaces small even for gigapixel originals.

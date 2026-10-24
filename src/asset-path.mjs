@@ -5,5 +5,5 @@ export function assetPath(url, base = '/') {
 }
 export function artworkWithBase(artwork, base = '/') {
  const resolve = asset => ({...asset, url:assetPath(asset.url,base), dzi:assetPath(asset.dzi,base)});
- return {...artwork, variants:artwork.variants.map(resolve), detail:resolve(artwork.detail), original:resolve(artwork.original)};
+ return {...artwork, variants:artwork.variants.map(resolve), detail:resolve(artwork.detail)};
 }

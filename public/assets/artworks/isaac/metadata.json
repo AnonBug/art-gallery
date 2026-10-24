@@ -42,12 +42,6 @@
     "dzi": "/assets/artworks/isaac/detail.dzi",
     "tileBytes": 2749754
   },
-  "original": {
-    "width": 2471,
-    "height": 3633,
-    "dzi": "/assets/artworks/isaac/detail.dzi"
-  },
-  "hasOriginal": false,
   "credit": "Rembrandt",
   "offset": 1
 }

@@ -9,14 +9,14 @@
   "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Leonardo, Madonna Benois.JPG",
   "description": "母亲微笑着将小花递到孩子手边。人物之间的注意力被一个小小的物件牵引，亲密关系借由手势呈现。",
   "looking": "观察小花、孩子的手与母亲的目光组成的细小环路。",
-  "dimensions": "49.5 × 33 厘米",
+  "dimensions": "49.5 × 33 厘米（高 × 宽，无框）",
   "medium": "木板油画，后转移至画布",
   "file": "Leonardo,_Madonna_Benois.JPG",
   "collection": "冬宫博物馆",
   "wall": "west",
-  "offset": 3.5,
+  "offset": -9.3,
   "height": 2.3,
-  "centerY": 2.6,
+  "centerY": 2.1,
   "room": "leonardo",
   "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/78/Leonardo%2C_Madonna_Benois.JPG",
   "displayStatus": "数字主题策展，非实体展厅复原",
@@ -56,11 +56,12 @@
     "quality": 94,
     "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
   },
-  "original": {
-    "width": 2864,
-    "height": 4588,
-    "dzi": "/assets/artworks/leonardo-benois/detail.dzi"
+  "generatedAt": "2026-10-13T15:44:52.245Z",
+  "physicalSize": {
+    "heightCm": 49.5,
+    "widthCm": 33,
+    "source": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf",
+    "checkedAt": "2026-10-24"
   },
-  "hasOriginal": false,
-  "generatedAt": "2026-10-13T15:44:52.245Z"
+  "displayScale": 2
 }

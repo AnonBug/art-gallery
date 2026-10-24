@@ -43,12 +43,6 @@
     "dzi": "/assets/artworks/descent/detail.dzi",
     "tileBytes": 2779860
   },
-  "original": {
-    "width": 2789,
-    "height": 3840,
-    "dzi": "/assets/artworks/descent/detail.dzi"
-  },
-  "hasOriginal": false,
   "credit": "Workshop of   Rembrandt",
   "offset": 2.5
 }

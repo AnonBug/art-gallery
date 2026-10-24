@@ -1,0 +1,102 @@
+[
+  {
+    "id": "leonardo-last-supper",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALast_Supper_by_Leonardo_da_Vinci.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Last_Supper_by_Leonardo_da_Vinci.jpg",
+    "sourceWidth": 10256,
+    "sourceHeight": 5696,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci；摄影：Paris Orlando / Wikimedia Commons",
+    "sizeSource": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-annunciation",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+    "sourceWidth": 4057,
+    "sourceHeight": 1840,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Google Arts & Culture / Wikimedia Commons",
+    "sizeSource": "https://www.uffizi.it/en/artworks/annunciation",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-rocks-louvre",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_Da_Vinci_-_Vergine_delle_Rocce_(Louvre).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Leonardo_Da_Vinci_-_Vergine_delle_Rocce_%28Louvre%29.jpg",
+    "sourceWidth": 3460,
+    "sourceHeight": 5487,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Wikimedia Commons",
+    "sizeSource": "https://collections.louvre.fr/ark:/53355/cl010062373",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-rocks-london",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_Virgin_of_the_Rocks_(National_Gallery_London).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg",
+    "sourceWidth": 2692,
+    "sourceHeight": 4150,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / National Gallery, London / Wikimedia Commons",
+    "sizeSource": "https://www.nationalgallery.org.uk/paintings/leonardo-da-vinci-the-virgin-of-the-rocks",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-adoration",
+    "source": "https://commons.wikimedia.org/wiki/File%3AAdoration_of_the_Magi_(Leonardo).jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Adoration_of_the_Magi_%28Leonardo%29.jpg",
+    "sourceWidth": 5256,
+    "sourceHeight": 5196,
+    "license": "CC BY-SA 4.0",
+    "credit": "Leonardo da Vinci；摄影：Justin Benttinen / Wikimedia Commons；本项目缩放、转换 WebP 并生成瓦片，衍生图像沿用 CC BY-SA 4.0",
+    "sizeSource": "https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi",
+    "checkedAt": "2026-10-24",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+  },
+  {
+    "id": "leonardo-john-baptist",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+    "sourceWidth": 10446,
+    "sourceHeight": 13522,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / C2RMF；经修整的数字图像 / Wikimedia Commons",
+    "sizeSource": "https://collections.louvre.fr/ark:/53355/cl010062374",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-belle-ferronniere",
+    "source": "https://commons.wikimedia.org/wiki/File%3ALa_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/La_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg",
+    "sourceWidth": 2758,
+    "sourceHeight": 4000,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Google Arts & Culture / Wikimedia Commons",
+    "sizeSource": "https://collections.louvre.fr/ark:/53355/cl010062372",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-ginevra",
+    "source": "https://commons.wikimedia.org/wiki/File%3AGinevra_de'_Benci_-_National_Gallery_of_ArtFXD.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b7/Ginevra_de%27_Benci_-_National_Gallery_of_ArtFXD.jpg",
+    "sourceWidth": 10000,
+    "sourceHeight": 10315,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / National Gallery of Art, Washington；Commons 调整版",
+    "sizeSource": "https://www.nga.gov/artworks/50724-ginevra-de-benci-obverse",
+    "checkedAt": "2026-10-24"
+  },
+  {
+    "id": "leonardo-vitruvian",
+    "source": "https://commons.wikimedia.org/wiki/File%3AUomo_Vitruviano.jpg",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Uomo_Vitruviano.jpg",
+    "sourceWidth": 2131,
+    "sourceHeight": 2953,
+    "license": "Public domain",
+    "credit": "Leonardo da Vinci / Museo Galileo 图像 / Wikimedia Commons",
+    "sizeSource": "https://www.gallerieaccademia.it/mostra/corpi-moderni-la-costruzione-del-corpo-nella-venezia-del-rinascimento-leonardo-michelangelo-durer-giorgione/",
+    "checkedAt": "2026-10-24"
+  }
+]

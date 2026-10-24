@@ -7,14 +7,15 @@ import {createGalleryBench} from './bench';
 import {createArtworkLabel} from './artwork-label';
 import {FloorMarker} from './floor-marker';
 import {HoverHighlight} from './hover-highlight';
+import {createDoorwayGuide,type DoorwayTarget} from './doorway-guide';
 import {installPointerLook} from './pointer-look.mjs';
 import {rooms,passages,doorsFor,roomFor,roomAt,sculpturePositions,sculpturePedestalHeight,benchPosition,isWalkable,projectToFloor,moveOnFloor,planWalk,positionOnRoute} from './museum-layout.mjs';
 import {loadSculpture,sculptures,type Sculpture} from './sculpture-model';
 import {createSculpturePedestal} from './sculpture-pedestal';
 import {batchArchitecture,visibleRooms,PictureLightPool,type PictureLight} from './render-budget';
 interface Hung {a:Artwork; group:THREE.Group; center:THREE.Vector3; normal:THREE.Vector3; width:number; frameBorder:number; mesh:THREE.Mesh; detail:THREE.Group; sphere:THREE.Sphere;lod:number; textures:Map<number,THREE.Texture>}
-interface Flight {start:THREE.Vector3;end:THREE.Vector3;fromYaw:number;toYaw:number;fromPitch:number;startTime:number;id:string;route:{x:number;z:number}[];duration:number}
-interface FloorWalk {start:THREE.Vector3;end:THREE.Vector3;startTime:number;duration:number;route:{x:number;z:number}[]}
+interface Flight {start:THREE.Vector3;end:THREE.Vector3;fromYaw:number;toYaw:number;fromPitch:number;toPitch:number;startTime:number;id:string;route:{x:number;z:number}[];duration:number}
+interface FloorWalk {roomId?:string;start:THREE.Vector3;end:THREE.Vector3;startTime:number;duration:number;route:{x:number;z:number}[]}
 export class Gallery {
  readonly renderer: THREE.WebGLRenderer;
  readonly camera=new THREE.PerspectiveCamera(52,1,.05,80);
@@ -22,6 +23,7 @@ export class Gallery {
  private targets:THREE.Object3D[]=[];private clock=new THREE.Clock();private yaw=0;private pitch=0;
  private keys=new Set<string>();private stick={x:0,y:0};private flight:Flight|null=null;private selected:string|null=null;
  private drag:{id:number;x:number;y:number;lastX:number;lastY:number;max:number}|null=null;
+ private mousePosition:{x:number;y:number}|null=null;
  private touches=new Set<number>();private suspended=false;private lodClock=0;private manual=false;
  private mouseControls:ReturnType<typeof installPointerLook>;
  private pointerLockError:string|null=null;
@@ -31,7 +33,7 @@ export class Gallery {
  private floorBlockers:THREE.Object3D[]=[];
  private floorMarker=new FloorMarker();private destinationMarker=new FloorMarker(true);
  private hoverHighlight=new HoverHighlight(matchMedia('(prefers-reduced-motion: reduce)').matches);
- private floorWalk:FloorWalk|null=null;
+ private floorWalk:FloorWalk|null=null;private hoveredDoorway:DoorwayTarget|null=null;
  private roomRoots=new Map<string,THREE.Group>();private viewProjection=new THREE.Matrix4();private frustum=new THREE.Frustum();
  private pictureLights:PictureLight[]=[];private lightPool:PictureLightPool;
  private activeRooms=new Set<string>();private lightingClock=1;
@@ -43,7 +45,7 @@ export class Gallery {
   this.lightPool=new PictureLightPool(this.scene);
   this.renderer.setPixelRatio(Math.min(devicePixelRatio,1.6));this.renderer.setClearColor(0x18392e);
   this.renderer.outputColorSpace=THREE.SRGBColorSpace;this.renderer.toneMapping=THREE.ACESFilmicToneMapping;this.renderer.toneMappingExposure=1.2;
-  container.append(this.renderer.domElement);this.renderer.domElement.tabIndex=0;this.renderer.domElement.setAttribute('aria-label','3D展厅，点击进入后隐藏鼠标，上下左右移动鼠标转向，中心瞄准地板出现光圈，点击光圈走过去；点击画作驻足，点击展签读介绍，Esc显示鼠标并暂停漫游');
+  container.append(this.renderer.domElement);this.renderer.domElement.tabIndex=0;this.renderer.domElement.setAttribute('aria-label','3D展厅，点击进入后隐藏鼠标，上下左右移动鼠标转向，中心瞄准地板出现光圈，点击光圈走过去；点击门口箭头走到下一展厅中央；点击画作驻足，点击展签读介绍，Esc显示鼠标并暂停漫游');
   this.camera.position.set(theme.initial.x,theme.initial.y,theme.initial.z);this.camera.rotation.order='YXZ';this.yaw=theme.initial.yaw;
   this.mouseControls=installPointerLook(this.renderer.domElement,{
    onMove:(dx:number,dy:number)=>this.turnView(dx,dy),
@@ -55,13 +57,24 @@ export class Gallery {
   this.observer=new ResizeObserver(()=>this.resize());this.observer.observe(container);this.resize();this.renderer.setAnimationLoop(()=>this.frame());
  }
  get state(){return {room:roomAt(this.camera.position)?.id??'passage',position:this.camera.position.toArray(),yaw:this.yaw,pitch:this.pitch,selected:this.selected,moving:!!(this.flight||this.floorWalk),floorDestination:this.floorWalk?.end.toArray()??null,suspended:this.suspended,sculptures:Object.fromEntries([...this.sculptureDisplays].map(([id,d])=>[id,d.state])),pointerLocked:this.mouseControls.locked,pointerLockError:this.pointerLockError,mousePaused:this.mouseControls.paused,stick:this.stick,loadedTextures:this.hung.reduce((n,h)=>n+h.textures.size,0),render:{calls:this.renderer.info.render.calls,triangles:this.renderer.info.render.triangles,pictureLights:this.lightPool.lights.length,visibleRooms:[...this.activeRooms],pixelRatio:this.renderer.getPixelRatio()}};}
- private clearInput(){this.keys.clear();this.stick={x:0,y:0};this.drag=null;this.touches.clear();this.floorMarker.hide();this.setHover(null,true);this.container.classList.toggle('is-aiming',false);}
+ private clearInput(){this.keys.clear();this.stick={x:0,y:0};this.drag=null;this.mousePosition=null;this.touches.clear();this.floorMarker.hide();this.setHover(null,true);this.container.classList.toggle('is-aiming',false);}
  enter(){this.mouseControls.lock();}
  resume(){if(!this.suspended)this.mouseControls.resume();}
  suspend(value:boolean){this.renderDirty=true;this.suspended=value;this.clearInput();this.mouseControls.suspend(value);if(value&&(this.flight||this.floorWalk))this.cancel();}
  setStick(x:number,y:number){this.stick={x,y};if(x||y)this.cancel();}
- reset(){this.goToRoom((roomAt(this.camera.position)??[...rooms].sort((a,b)=>Math.abs(a.x-this.camera.position.x)-Math.abs(b.x-this.camera.position.x))[0]).id);}
- goToRoom(id:string){this.cancel();this.clearInput();const r=roomFor(id);this.camera.position.set(r.x,theme.initial.y,r.z);this.yaw=0;this.pitch=0;this.selected=null;this.renderDirty=true;this.onRoam();this.onStatus(`${r.name} · ${sculptures.some(s=>s.room===id)?'点击雕塑，旋转细看':'点击画作，驻足审视'}`);const exhibit=sculptures.find(s=>s.room===id);if(exhibit)void this.ensureSculpture(exhibit).catch(()=>{});}
+ reset(){this.goToRoom((roomAt(this.camera.position)??[...rooms].sort((a,b)=>Math.hypot(a.x-this.camera.position.x,a.z-this.camera.position.z)-Math.hypot(b.x-this.camera.position.x,b.z-this.camera.position.z))[0]).id);}
+ goToRoom(id:string){
+  this.cancel();this.clearInput();const r=roomFor(id);this.camera.position.set(r.x,theme.initial.y,r.z);
+  const featured=this.hung.find(h=>h.a.id===r.entryArtwork),exhibit=sculptures.find(s=>s.room===id);
+  if(exhibit){this.camera.position.x+=r.width*.22;this.camera.position.z+=r.depth*.22;}
+  if(id==='leonardo')this.camera.position.z+=r.depth*.25;
+  const pedestal=sculpturePositions[id as keyof typeof sculpturePositions];
+  const target=featured?.center??(exhibit&&pedestal?new THREE.Vector3(pedestal.x,(sculpturePedestalHeight+exhibit.height)/2,pedestal.z):null);
+  this.yaw=target?Math.atan2(this.camera.position.x-target.x,this.camera.position.z-target.z):0;
+  this.pitch=target?Math.atan2(target.y-this.camera.position.y,Math.hypot(target.x-this.camera.position.x,target.z-this.camera.position.z)):0;
+  this.selected=null;this.renderDirty=true;this.onRoam();this.onStatus(`${r.name} · ${sculptures.some(s=>s.room===id)?'点击雕塑，旋转细看':'点击画作，驻足审视'}`);
+  if(exhibit)void this.ensureSculpture(exhibit).catch(()=>{});
+ }
  async preview(id:string){
   const r=roomFor(id),exhibit=sculptures.find(s=>s.room===id);if(exhibit)await this.ensureSculpture(exhibit);
   await Promise.all(this.hung.filter(h=>(h.a.room??'rembrandt')===id).map(h=>this.previewTexture(h)));
@@ -86,14 +99,18 @@ export class Gallery {
   const box=(w:number,h:number,d:number,m:THREE.Material,x:number,y:number,z:number)=>{const mesh=this.box(w,h,d,m,x,y,z,root);pieces.push(mesh);return mesh;};
   const solid=(w:number,h:number,d:number,m:THREE.Material,x:number,y:number,z:number)=>{const mesh=box(w,h,d,m,x,y,z);this.floorBlockers.push(mesh);return mesh;};
   const wall=new THREE.MeshStandardMaterial({color,roughness:.9});const trim=new THREE.MeshStandardMaterial({color:0xa58b55,metalness:.45,roughness:.55});const dark=new THREE.MeshStandardMaterial({color:0x152e25});
-  solid(w,h,.2,wall,0,h/2,-d/2-.1);solid(w,h,.2,wall,0,h/2,d/2+.1);
   const doors=doorsFor(r.id);
-  for(const side of [-1,1]){
-   const door=doors.find(door=>(door.side==='west'?-1:1)===side);
-   if(!door){solid(.2,h,d,wall,side*(w/2+.1),h/2,0);continue;}
-   const p=door.passage,opening=p.z-r.z,half=p.width/2,t=p.length/2;
-   for(const [lo,hi]of [[-d/2,opening-half],[opening+half,d/2]])solid(t,h,hi-lo,wall,side*(w/2+t/2),h/2,(lo+hi)/2);
-   solid(t,h-p.height,p.width,wall,side*(w/2+t/2),(h+p.height)/2,opening);
+  const sides=[{side:'north',axis:'z',sign:-1,span:w,edge:d/2},{side:'south',axis:'z',sign:1,span:w,edge:d/2},{side:'west',axis:'x',sign:-1,span:d,edge:w/2},{side:'east',axis:'x',sign:1,span:d,edge:w/2}];
+  const wallBox=(s:typeof sides[number],span:number,height:number,thickness:number,material:THREE.Material,along:number,y:number,inset:number,blocker=false)=>{
+   const across=s.sign*(s.edge+inset);
+   return s.axis==='x'?(blocker?solid:box)(thickness,height,span,material,across,y,along):(blocker?solid:box)(span,height,thickness,material,along,y,across);
+  };
+  for(const s of sides){
+   const door=doors.find(door=>door.side===s.side);
+   if(!door){wallBox(s,s.span,h,.2,wall,0,h/2,.1,true);continue;}
+   const p=door.passage,opening=s.axis==='x'?p.z-r.z:p.x-r.x,half=p.width/2,t=p.length/2;
+   for(const [lo,hi]of [[-s.span/2,opening-half],[opening+half,s.span/2]])wallBox(s,hi-lo,h,t,wall,(lo+hi)/2,h/2,t/2,true);
+   wallBox(s,p.width,h-p.height,t,wall,opening,(h+p.height)/2,t/2,true);
   }
   // Parquet is a small repeat texture generated locally, never a network image.
   const c=document.createElement('canvas');c.width=512;c.height=512;const ctx=c.getContext('2d')!;ctx.fillStyle='#63503a';ctx.fillRect(0,0,512,512);
@@ -102,7 +119,12 @@ export class Gallery {
   const tex=new THREE.CanvasTexture(c);tex.colorSpace=THREE.SRGBColorSpace;tex.wrapS=tex.wrapT=THREE.RepeatWrapping;tex.repeat.set(w/2,d/2);
   const floor=new THREE.MeshStandardMaterial({map:tex,roughness:.7});box(w,.16,d,floor,0,-.08,0);
   const ceiling=new THREE.MeshStandardMaterial({color:0xd8cfbc,roughness:.85});box(w,.15,d,ceiling,0,h+.07,0);
-  for(const y of [.18,1.02,h-.45,h-.2]){const thickness=y>5?.12:.035,m=y===.18?dark:trim;box(w,thickness,.09,m,0,y,-d/2+.045);box(w,thickness,.09,m,0,y,d/2-.045);for(const side of [-1,1]){const door=doors.find(door=>(door.side==='west'?-1:1)===side),p=door?.passage;const spans=p&&y<p.height?[[-d/2,p.z-r.z-p.width/2],[p.z-r.z+p.width/2,d/2]]:[[-d/2,d/2]];for(const [lo,hi]of spans)box(.09,thickness,hi-lo,m,side*(w/2-.045),y,(lo+hi)/2);}}
+  for(const y of [.18,1.02,h-.45,h-.2])for(const s of sides){
+   const thickness=y>5?.12:.035,m=y===.18?dark:trim,p=doors.find(door=>door.side===s.side)?.passage;
+   const opening=p?(s.axis==='x'?p.z-r.z:p.x-r.x):0;
+   const spans=p&&y<p.height?[[-s.span/2,opening-p.width/2],[opening+p.width/2,s.span/2]]:[[-s.span/2,s.span/2]];
+   for(const [lo,hi]of spans)wallBox(s,hi-lo,thickness,.09,m,(lo+hi)/2,y,-.045);
+  }
   for(let x=-w/2+2;x<w/2;x+=4)box(.1,.12,d,ceiling,x,h-.06,0);
   for(let z=-d/2+2;z<d/2;z+=4)box(w,.12,.1,ceiling,0,h-.06,z);
   if(r===rooms[0]){this.scene.add(new THREE.HemisphereLight(0xffefd2,0x676048,theme.lighting.ambient));const light=new THREE.DirectionalLight(0xffe4b5,theme.lighting.key);light.position.set(0,h-1,2);this.scene.add(light);}
@@ -115,34 +137,37 @@ export class Gallery {
   }
   // Warm ceiling luminaires, restrained geometry.
   const luminous=new THREE.MeshBasicMaterial({color:0xffe5ac});
-  for(const z of [-4,3]){box(2.6,.04,.5,luminous,0,h-.3,z);box(2.7,.08,.6,trim,0,h-.23,z);}
+  for(const z of [-d*.28,d*.23]){box(2.6,.04,.5,luminous,0,h-.3,z);box(2.7,.08,.6,trim,0,h-.23,z);}
   if(!sculptures.some(s=>s.room===r.id)){
   const seat=benchPosition(r),bench=createGalleryBench(this.renderer.capabilities.getMaxAnisotropy());bench.position.set(seat.x-r.x,0,seat.z-r.z);root.add(bench);
   // A picking proxy prevents a floor marker shining through the seat or selecting beneath it.
   const benchBlocker=new THREE.Mesh(new THREE.BoxGeometry(3.52,.62,.94));benchBlocker.position.set(seat.x,.31,seat.z);benchBlocker.updateMatrixWorld();this.floorBlockers.push(benchBlocker);
   }
   // Both sides of the opening are visibly framed; no panel or trim crosses the clear doorway.
-  for(const door of doors){const p=door.passage,opening=p.z-r.z,half=p.width/2,doorSide=door.side==='west'?-1:1,face=doorSide*(w/2-.07);
-  for(const z of [opening-half-.11,opening+half+.11]){box(.18,p.height+.12,.2,trim,face,(p.height+.12)/2,z);box(.25,.2,.28,trim,face,.1,z);}
-  box(.22,.18,p.width+.44,trim,face,p.height+.12,opening);
+  for(const door of doors){const p=door.passage,s=sides.find(s=>s.side===door.side)!,opening=s.axis==='x'?p.z-r.z:p.x-r.x,half=p.width/2;
+  for(const along of [opening-half-.11,opening+half+.11]){wallBox(s,.2,p.height+.12,.18,trim,along,(p.height+.12)/2,-.07);wallBox(s,.28,.2,.25,trim,along,.1,-.07);}
+  wallBox(s,p.width+.44,.18,.22,trim,opening,p.height+.12,-.07);
   const next=roomFor(door.next);
   const sign=document.createElement('canvas');sign.width=1200;sign.height=240;const sc=sign.getContext('2d')!;
-  sc.fillStyle='#d8c291';sc.textAlign='center';sc.font='48px "Songti SC",serif';sc.fillText(`${next.number}  ·  ${next.name}`,600,92);sc.fillStyle='#c0ae8a';sc.font='25px sans-serif';sc.fillText(next.artist,600,155);
+  sc.fillStyle='#f2dfb1';sc.textAlign='center';sc.font='600 76px "PingFang SC",sans-serif';sc.fillText(next.name,600,100,1120);sc.fillStyle='#d0bd92';sc.font='32px sans-serif';sc.fillText(next.subtitle??`${next.number} · ${next.artist}`,600,175);
   const signTexture=new THREE.CanvasTexture(sign);signTexture.colorSpace=THREE.SRGBColorSpace;
-  const signMesh=new THREE.Mesh(new THREE.PlaneGeometry(2.8,.56),new THREE.MeshBasicMaterial({map:signTexture,transparent:true,depthWrite:false}));signMesh.position.set(doorSide*(w/2-.015),p.height+.55,opening);signMesh.rotation.y=-doorSide*Math.PI/2;root.add(signMesh);
+  const signMesh=new THREE.Mesh(new THREE.PlaneGeometry(2.8,.56),new THREE.MeshBasicMaterial({map:signTexture,transparent:true,depthWrite:false}));
+  signMesh.position.set(s.axis==='x'?s.sign*(s.edge-.015):opening,p.height+.55,s.axis==='z'?s.sign*(s.edge-.015):opening);
+  signMesh.rotation.y=s.axis==='x'?-s.sign*Math.PI/2:s.sign===-1?0:Math.PI;root.add(signMesh);
+  const guide=createDoorwayGuide(r,door,this.renderer.capabilities.getMaxAnisotropy());root.add(guide);this.targets.push(guide.getObjectByName('doorway-direction-arrow')!);
   }
   batchArchitecture(pieces,root,new Set(this.floorBlockers));
   // Bench intentionally has no collision collider: visitors can never become trapped.
  }
  private connectRooms(){
-  for(const {x,z,length,width,height}of passages){
+  for(const {x,z,length,width,height,axis}of passages){
   const wall=new THREE.MeshStandardMaterial({color:0x393c2e,roughness:.9}),stone=new THREE.MeshStandardMaterial({color:0x8b7c61,roughness:.8});
-  this.box(length,.16,width,stone,x,-.08,z);this.box(length,.16,width,stone,x,height+.08,z);
-  for(const side of [-1,1]){const mesh=this.box(length,height,.2,wall,x,height/2,z+side*(width/2+.1));mesh.updateMatrixWorld();this.floorBlockers.push(mesh);}
+  this.box(axis==='x'?length:width,.16,axis==='x'?width:length,stone,x,-.08,z);this.box(axis==='x'?length:width,.16,axis==='x'?width:length,stone,x,height+.08,z);
+  for(const side of [-1,1]){const mesh=this.box(axis==='x'?length:.2,height,axis==='x'?.2:length,wall,x+(axis==='z'?side*(width/2+.1):0),height/2,z+(axis==='x'?side*(width/2+.1):0));mesh.updateMatrixWorld();this.floorBlockers.push(mesh);}
   }
  }
  private sculpture(s:Sculpture){
-  const {x,z}=sculpturePositions[s.room as keyof typeof sculpturePositions],root=new THREE.Group();root.position.set(x,0,z);this.scene.add(root);
+  const {x,z,yaw}=sculpturePositions[s.room as keyof typeof sculpturePositions],root=new THREE.Group();root.position.set(x,0,z);root.rotation.y=yaw;this.scene.add(root);
   this.sculptureDisplays.set(s.id,{root,loading:null,state:'idle'});
   const pedestal=createSculpturePedestal(s,this.renderer.capabilities.getMaxAnisotropy());root.add(pedestal.root);this.targets.push(pedestal.label);
  }
@@ -161,7 +186,7 @@ export class Gallery {
   const group=new THREE.Group();let center:THREE.Vector3;let rotation:number;
   if(a.wall==='north'){center=new THREE.Vector3(a.offset,a.centerY,-r.depth/2+.14);rotation=0;}else if(a.wall==='south'){center=new THREE.Vector3(-a.offset,a.centerY,r.depth/2-.14);rotation=Math.PI;}else if(a.wall==='east'){center=new THREE.Vector3(r.width/2-.14,a.centerY,a.offset);rotation=-Math.PI/2;}else{center=new THREE.Vector3(-r.width/2+.14,a.centerY,-a.offset);rotation=Math.PI/2;}center.x+=r.x;center.z+=r.z;
   const normal=new THREE.Vector3(0,0,1).applyAxisAngle(new THREE.Vector3(0,1,0),rotation);group.position.copy(center);group.rotation.y=rotation;this.scene.add(group);
-  const height=a.height,width=height*a.sourceWidth/a.sourceHeight;
+  const {height,width}=a;
   const frame=this.frames.create(width,height);group.add(frame.group);frame.hitMesh.userData={id:a.id,kind:'art'};this.targets.push(frame.hitMesh);
   const mat=new THREE.MeshBasicMaterial({color:0xffffff});const mesh=new THREE.Mesh(new THREE.PlaneGeometry(width,height),mat);mesh.position.z=.085;mesh.userData={id:a.id,kind:'art'};group.add(mesh);this.targets.push(mesh);
   const label=createArtworkLabel(a,this.renderer.capabilities.getMaxAnisotropy());
@@ -175,7 +200,7 @@ export class Gallery {
  }
  private pictureLight(parent:THREE.Group,width:number,height:number,centerY:number,room:string,center:THREE.Vector3,normal:THREE.Vector3,sphere:THREE.Sphere){
   const {railInset,ceilingGap}=theme.lighting;
-  const railY=theme.room.height-ceilingGap-centerY;
+  const railY=roomFor(room).height-ceilingGap-centerY;
   const z=railInset-.14;
   const metal=new THREE.MeshStandardMaterial({color:0x292c25,metalness:.65,roughness:.42});
   this.box(.16,.06,.18,metal,0,railY,z,parent);
@@ -209,8 +234,14 @@ export class Gallery {
  private loadLOD(h:Hung,level:number){if(h.lod===level)return;h.lod=level;const existing=h.textures.get(level);if(existing){(h.mesh.material as THREE.MeshBasicMaterial).map=existing;(h.mesh.material as THREE.MeshBasicMaterial).needsUpdate=true;this.renderDirty=true;return;}
   new THREE.TextureLoader().load(h.a.variants[level].url!,texture=>{texture.colorSpace=THREE.SRGBColorSpace;texture.anisotropy=Math.min(4,this.renderer.capabilities.getMaxAnisotropy());if(h.lod!==level){texture.dispose();return;}h.textures.set(level,texture);if(h.lod===level){const m=h.mesh.material as THREE.MeshBasicMaterial;m.map=texture;m.needsUpdate=true;this.renderDirty=true;for(const [oldLevel,oldTexture]of h.textures){if(oldLevel!==level){oldTexture.dispose();h.textures.delete(oldLevel);}}}},undefined,()=>{h.lod=-1;this.onStatus(`${h.a.title}展示图载入失败，请刷新重试`);});
  }
- private focusPose(h:Hung){const uiAllowance=this.container.clientHeight<=520?1.4:this.container.clientWidth<=700&&this.camera.aspect>=1?1.3:1;const distance=fitDistance(h.width+2*h.frameBorder,h.a.height+2*h.frameBorder,this.camera.aspect,this.camera.fov)*uiAllowance;const position=h.center.clone().addScaledVector(h.normal,distance);this.bound(position,h.a.room??'rembrandt');return {position,yaw:Math.atan2(h.normal.x,h.normal.z)};}
- focus(id:string){const h=this.hung.find(x=>x.a.id===id);if(!h)return;const pose=this.focusPose(h),route=planWalk(this.camera.position,pose.position);if(!route.length)return;this.floorWalk=null;this.destinationMarker.hide();this.selected=id;this.manual=false;this.keys.clear();this.stick={x:0,y:0};const duration=moveDuration(this.routeLength(this.camera.position,route),'artwork');this.flight={start:this.camera.position.clone(),end:pose.position,fromYaw:this.yaw,toYaw:shortestAngle(this.yaw,pose.yaw),fromPitch:this.pitch,startTime:performance.now(),id,route,duration};this.onSelect(h.a,false,true);this.onStatus(`走向《${h.a.title}》 · 拖动或移动可取消`);}
+ private focusPose(h:Hung){
+  const uiAllowance=this.container.clientHeight<=520?1.4:this.container.clientWidth<=700&&this.camera.aspect>=1?1.3:1;
+  const distance=fitDistance(h.width+2*h.frameBorder,h.a.height+2*h.frameBorder,this.camera.aspect,this.camera.fov)*uiAllowance;
+  const position=h.center.clone().addScaledVector(h.normal,distance);position.y=theme.initial.y;this.bound(position,h.a.room??'rembrandt');
+  const pitch=Math.atan2(h.center.y-position.y,Math.hypot(position.x-h.center.x,position.z-h.center.z));
+  return {position,yaw:Math.atan2(h.normal.x,h.normal.z),pitch};
+ }
+ focus(id:string){const h=this.hung.find(x=>x.a.id===id);if(!h)return;const pose=this.focusPose(h),route=planWalk(this.camera.position,pose.position);if(!route.length)return;this.floorWalk=null;this.destinationMarker.hide();this.selected=id;this.manual=false;this.keys.clear();this.stick={x:0,y:0};const duration=moveDuration(this.routeLength(this.camera.position,route),'artwork');this.flight={start:this.camera.position.clone(),end:pose.position,fromYaw:this.yaw,toYaw:shortestAngle(this.yaw,pose.yaw),fromPitch:this.pitch,toPitch:pose.pitch,startTime:performance.now(),id,route,duration};this.onSelect(h.a,false,true);this.onStatus(`走向《${h.a.title}》 · 拖动或移动可取消`);}
  private cancel(){this.flight=null;this.floorWalk=null;this.destinationMarker.hide();if(!this.manual&&this.selected){const h=this.hung.find(h=>h.a.id===this.selected);if(h)this.onSelect(h.a,false,false);}this.manual=true;}
  private turnView(dx:number,dy:number,touch=false){
   if(touch){
@@ -232,20 +263,27 @@ export class Gallery {
   if(rooms.some(r=>{const seat=benchPosition(r);return !sculptures.some(s=>s.room===r.id)&&Math.abs(point.x-seat.x)<1.82&&Math.abs(point.z-seat.z)<.55;}))return null;
   return point;
  }
- private walkTo(point:THREE.Vector3){
+ private walkTo(point:THREE.Vector3,roomId?:string){
   const route=planWalk(this.camera.position,point);if(!route.length)return;
   this.cancel();this.selected=null;this.onRoam();this.keys.clear();this.stick={x:0,y:0};
   const end=new THREE.Vector3(point.x,this.camera.position.y,point.z);
-  this.floorWalk={start:this.camera.position.clone(),end,route,startTime:performance.now(),duration:moveDuration(this.routeLength(this.camera.position,route),'floor')};
-  this.destinationMarker.show(point);this.floorMarker.hide();this.onStatus('走向光圈 · 可环顾，按方向键或 Esc 停止');
+  this.floorWalk={roomId,start:this.camera.position.clone(),end,route,startTime:performance.now(),duration:moveDuration(this.routeLength(this.camera.position,route),'floor')};
+  this.destinationMarker.show(point);this.floorMarker.hide();this.onStatus(roomId?`前往${roomFor(roomId).name} · 按方向键或 Esc 停止`:'走向光圈 · 可环顾，按方向键或 Esc 停止');
  }
  private updateFloorWalk(now:number){
   const walk=this.floorWalk;if(!walk)return;
   const t=clamp((now-walk.startTime)/walk.duration,0,1),ease=t*t*(3-2*t);
   const point=positionOnRoute(walk.start,walk.route,ease);this.camera.position.set(point.x,walk.start.y,point.z);
-  if(t===1){this.floorWalk=null;this.destinationMarker.hide();this.onStatus('已到达 · 看向地板可继续选择位置');}
+  if(t===1){this.floorWalk=null;this.destinationMarker.hide();this.onStatus(walk.roomId?`已到达${roomFor(walk.roomId).name}中央`:'已到达 · 看向地板可继续选择位置');}
  }
  private setHover(hit:THREE.Object3D|null,immediate=false){
+  const doorway=hit?.userData.kind==='doorway'?hit as DoorwayTarget:null;
+  if(doorway!==this.hoveredDoorway){
+   if(this.hoveredDoorway)this.hoveredDoorway.setHovered(false);
+   if(doorway)doorway.setHovered(true);
+   this.hoveredDoorway=doorway;this.renderDirty=true;
+  }
+  this.container.classList.toggle('is-hovering-doorway',!!doorway);
   const h=hit?this.hung.find(h=>h.a.id===hit.userData.id):undefined;
   const label=!!hit&&(hit.userData.kind==='sculpture-label'||!!h&&hit.userData.kind==='label');
   this.container.classList.toggle('is-hovering-artwork',!!h&&!label);
@@ -257,12 +295,21 @@ export class Gallery {
  private pick(x:number,y:number,click:boolean,center=false){
   if(this.suspended||this.mouseControls.paused){this.floorMarker.hide();this.setHover(null,true);return;}
   const r=this.renderer.domElement.getBoundingClientRect();if(center)this.pointer.set(0,0);else this.pointer.set((x-r.left)/r.width*2-1,-(y-r.top)/r.height*2+1);this.camera.rotation.set(this.pitch,this.yaw,0,'YXZ');this.camera.updateMatrixWorld();this.ray.setFromCamera(this.pointer,this.camera);
-  const hit=this.ray.intersectObjects([...this.targets,...this.floorBlockers])[0];
+  // The return arrow belongs to visitors approaching from the other room.
+  const currentRoom=roomAt(this.camera.position)?.id;
+  const targets=this.targets.filter(target=>target.userData.kind!=='doorway'||target.userData.from===currentRoom);
+  const hit=this.ray.intersectObjects([...targets,...this.floorBlockers])[0];
   const floor=this.floorTarget();
   const isFloor=!!floor&&(!hit||this.camera.position.distanceTo(floor)<hit.distance);
+  const isDoorway=!!hit&&hit.object.userData.kind==='doorway'&&!isFloor;
   const isArtwork=!!hit&&!!hit.object.userData.id&&!isFloor;
-  this.setHover(isArtwork?hit.object:null);
-  this.container.classList.toggle('is-aiming',isFloor||isArtwork);
+  this.setHover(isArtwork||isDoorway?hit.object:null);
+  this.container.classList.toggle('is-aiming',isFloor||isArtwork||isDoorway);
+  if(isDoorway){
+   this.floorMarker.hide();
+   if(click){const next=roomFor(hit.object.userData.to);this.walkTo(new THREE.Vector3(next.x,0,next.z),next.id);}
+   return;
+  }
   if(isFloor){
    if(!this.floorWalk||floor.distanceTo(new THREE.Vector3(this.floorWalk.end.x,0,this.floorWalk.end.z))>.45)this.floorMarker.show(floor);else this.floorMarker.hide();
    if(click)this.walkTo(floor);return;
@@ -275,10 +322,16 @@ export class Gallery {
   const pose=this.focusPose(h);
   if(canOpen(this.selected,h.a.id,!!this.flight||this.manual,this.camera.position.distanceTo(pose.position)))this.onOpen(h.a);else this.focus(h.a.id);
  }
+ private updateHover(){
+  if(this.mouseControls.locked)this.pick(0,0,false,true);
+  else if(this.mouseControls.dragMode&&this.mousePosition&&!this.drag&&!this.mouseControls.paused)this.pick(this.mousePosition.x,this.mousePosition.y,false);
+  else{this.floorMarker.hide();this.setHover(null);}
+ }
  private bind(){const c=this.renderer.domElement;const signal=this.abort.signal;
   // Mouse look/clicks are handled by pointer lock; touch keeps its independent drag and tap controls.
-  c.addEventListener('pointerdown',e=>{if((e.pointerType==='mouse'&&!this.mouseControls.dragMode)||this.suspended)return;this.touches.add(e.pointerId);if(this.touches.size>1){this.drag=null;return;}if(e.button!==0)return;c.setPointerCapture(e.pointerId);this.pick(e.clientX,e.clientY,false);this.drag={id:e.pointerId,x:e.clientX,y:e.clientY,lastX:e.clientX,lastY:e.clientY,max:0};},{signal});
-  c.addEventListener('pointermove',e=>{if((e.pointerType==='mouse'&&!this.mouseControls.dragMode)||this.suspended)return;const d=this.drag;if(!d||d.id!==e.pointerId)return;d.max=Math.max(d.max,Math.hypot(e.clientX-d.x,e.clientY-d.y));if(d.max>6)this.turnView(e.clientX-d.lastX,e.clientY-d.lastY,true);d.lastX=e.clientX;d.lastY=e.clientY;},{signal});
+  c.addEventListener('pointerdown',e=>{if((e.pointerType==='mouse'&&!this.mouseControls.dragMode)||this.suspended)return;this.mousePosition=e.pointerType==='mouse'?{x:e.clientX,y:e.clientY}:null;this.touches.add(e.pointerId);if(this.touches.size>1){this.drag=null;return;}if(e.button!==0)return;c.setPointerCapture(e.pointerId);this.pick(e.clientX,e.clientY,false);this.drag={id:e.pointerId,x:e.clientX,y:e.clientY,lastX:e.clientX,lastY:e.clientY,max:0};},{signal});
+  c.addEventListener('pointermove',e=>{if((e.pointerType==='mouse'&&!this.mouseControls.dragMode)||this.suspended)return;if(e.pointerType==='mouse')this.mousePosition={x:e.clientX,y:e.clientY};const d=this.drag;if(!d||d.id!==e.pointerId)return;d.max=Math.max(d.max,Math.hypot(e.clientX-d.x,e.clientY-d.y));if(d.max>6)this.turnView(e.clientX-d.lastX,e.clientY-d.lastY,true);d.lastX=e.clientX;d.lastY=e.clientY;},{signal});
+  c.addEventListener('pointerleave',()=>{this.mousePosition=null;this.floorMarker.hide();this.setHover(null,true);},{signal});
   const end=(e:PointerEvent)=>{if(e.pointerType==='mouse'&&!this.mouseControls.dragMode)return;const d=this.drag;this.touches.delete(e.pointerId);if(d?.id===e.pointerId){this.drag=null;if(e.type==='pointerup'&&d.max<=6&&!this.suspended)this.pick(e.clientX,e.clientY,true);this.setHover(null);}};
   c.addEventListener('pointerup',end,{signal});c.addEventListener('pointercancel',end,{signal});c.addEventListener('lostpointercapture',()=>{this.drag=null;},{signal});
   window.addEventListener('keydown',e=>{if(this.suspended||this.mouseControls.paused||/^(INPUT|TEXTAREA|SELECT|BUTTON|A)$/.test((e.target as HTMLElement).tagName))return;if(['KeyW','KeyA','KeyS','KeyD','ArrowUp','ArrowDown','ArrowLeft','ArrowRight'].includes(e.code)){e.preventDefault();this.keys.add(e.code);this.cancel();}if(e.code==='Escape'&&(this.flight||this.floorWalk))this.cancel();},{signal});
@@ -292,13 +345,13 @@ export class Gallery {
  if(this.mouseControls.paused&&!this.renderDirty&&this.lastRenderPosition.equals(this.camera.position)&&this.lastRenderYaw===this.yaw&&this.lastRenderPitch===this.pitch)return;
  if(!this.mouseControls.paused){
   this.updateFloorWalk(performance.now());
-  if(this.flight){const f=this.flight;const t=clamp((performance.now()-f.startTime)/f.duration,0,1);const ease=t*t*(3-2*t);const point=positionOnRoute(f.start,f.route,ease);this.camera.position.set(point.x,THREE.MathUtils.lerp(f.start.y,f.end.y,ease),point.z);this.yaw=THREE.MathUtils.lerp(f.fromYaw,f.toYaw,ease);this.pitch=f.fromPitch*(1-ease);if(t===1){this.flight=null;this.manual=false;const h=this.hung.find(h=>h.a.id===f.id)!;this.onSelect(h.a,true,false);this.onStatus(`驻足审视 · 再点画面进入高清 / 点击展签读介绍`);}}
+  if(this.flight){const f=this.flight;const t=clamp((performance.now()-f.startTime)/f.duration,0,1);const ease=t*t*(3-2*t);const point=positionOnRoute(f.start,f.route,ease);this.camera.position.set(point.x,THREE.MathUtils.lerp(f.start.y,f.end.y,ease),point.z);this.yaw=THREE.MathUtils.lerp(f.fromYaw,f.toYaw,ease);this.pitch=THREE.MathUtils.lerp(f.fromPitch,f.toPitch,ease);if(t===1){this.flight=null;this.manual=false;const h=this.hung.find(h=>h.a.id===f.id)!;this.onSelect(h.a,true,false);this.onStatus(`驻足审视 · 再点画面进入高清 / 点击展签读介绍`);}}
   let forward=(this.keys.has('KeyW')||this.keys.has('ArrowUp')?1:0)-(this.keys.has('KeyS')||this.keys.has('ArrowDown')?1:0)-this.stick.y;
   let side=(this.keys.has('KeyD')||this.keys.has('ArrowRight')?1:0)-(this.keys.has('KeyA')||this.keys.has('ArrowLeft')?1:0)+this.stick.x;
   const length=Math.hypot(forward,side);if(length){if(length>1){forward/=length;side/=length;}const s=dt*2.65,p=this.camera.position;const next=moveOnFloor(p,{x:p.x+(-Math.sin(this.yaw)*forward+Math.cos(this.yaw)*side)*s,z:p.z+(-Math.cos(this.yaw)*forward-Math.sin(this.yaw)*side)*s});p.x=next.x;p.z=next.z;this.manual=true;this.onStatus('自由漫游 · 点击画作，驻足审视');}
  }
  this.camera.rotation.set(this.pitch,this.yaw,0,'YXZ');this.updateVisibility(dt);this.lodClock+=dt;if(this.lodClock>.7){this.lodClock=0;for(const h of this.hung){if(!h.group.visible)continue;const distance=this.camera.position.distanceTo(h.center);const projectedPixels=h.a.height/distance*this.container.clientHeight/(2*Math.tan(this.camera.fov*Math.PI/360))*this.renderer.getPixelRatio();this.loadLOD(h,projectedPixels>1450?2:projectedPixels>500?1:0);}}
- if(this.mouseControls.locked)this.pick(0,0,false,true);else{this.floorMarker.hide();if(!this.drag)this.setHover(null);}const now=performance.now();this.floorMarker.animate(now);this.destinationMarker.animate(now);this.hoverHighlight.animate(dt,now);this.renderer.render(this.scene,this.camera);
+ this.updateHover();const now=performance.now();this.floorMarker.animate(now);this.destinationMarker.animate(now);this.hoverHighlight.animate(dt,now);this.renderer.render(this.scene,this.camera);
  this.renderDirty=false;this.lastRenderPosition.copy(this.camera.position);this.lastRenderYaw=this.yaw;this.lastRenderPitch=this.pitch;
  }
 }

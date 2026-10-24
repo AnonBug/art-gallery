@@ -1,0 +1,67 @@
+{
+  "id": "leonardo-last-supper",
+  "title": "最后的晚餐",
+  "originalTitle": "The Last Supper",
+  "date": "1495—1498 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALast_Supper_by_Leonardo_da_Vinci.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci；摄影：Paris Orlando / Wikimedia Commons",
+  "description": "长桌横贯画面，基督居中，十二位门徒的手势与神态向两侧展开。数字展厅按原作尺寸呈现这幅壁画。",
+  "looking": "先找透视线汇聚的位置，再沿长桌观察各组三人的反应。",
+  "dimensions": "460 × 880 厘米（高 × 宽，无框）",
+  "medium": "干壁画",
+  "file": "Last_Supper_by_Leonardo_da_Vinci.jpg",
+  "collection": "米兰恩宠圣母院餐厅",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Last_Supper_by_Leonardo_da_Vinci.jpg",
+  "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+  "wall": "north",
+  "offset": 0,
+  "centerY": 3.64,
+  "physicalSize": {
+    "heightCm": 460,
+    "widthCm": 880,
+    "source": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 1,
+  "displayNote": "原作本身为大型壁画，本展按原大（1倍）展示。",
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 10256,
+  "sourceHeight": 5696,
+  "originalFile": "originals/renaissance/leonardo-last-supper.jpg",
+  "originalFileBytes": 61233069,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-last-supper/far.webp",
+      "width": 640,
+      "height": 355,
+      "bytes": 100500,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-last-supper/medium.webp",
+      "width": 1600,
+      "height": 889,
+      "bytes": 729568,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-last-supper/near.webp",
+      "width": 3000,
+      "height": 1666,
+      "bytes": 2765574,
+      "quality": 90
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-last-supper/detail.webp",
+    "width": 10256,
+    "height": 5696,
+    "bytes": 19230070,
+    "quality": 86,
+    "dzi": "/assets/artworks/leonardo-last-supper/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:54:21.020Z"
+}

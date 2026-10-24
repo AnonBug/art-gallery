@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-belle-ferronniere",
+  "title": "美丽的费罗妮叶",
+  "originalTitle": "Portrait of a Woman, known as La Belle Ferronnière",
+  "date": "约 1490—1497 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALa_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / Google Arts & Culture / Wikimedia Commons",
+  "description": "女子侧转身体，目光越过观众，额间的饰带和红色衣袖强化了脸部的清晰轮廓。",
+  "looking": "比较头部、肩膀和目光的方向，留意脸颊从明到暗的变化。",
+  "dimensions": "63 × 45 厘米（高 × 宽，无框）",
+  "medium": "胡桃木板油画",
+  "file": "La_Belle_Ferronière_-_Google_Arts.jpg",
+  "collection": "卢浮宫博物馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/4d/La_Belle_Ferroni%C3%A8re_-_Google_Arts.jpg",
+  "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+  "wall": "west",
+  "offset": 11.1,
+  "centerY": 2.1,
+  "physicalSize": {
+    "heightCm": 63,
+    "widthCm": 45,
+    "source": "https://collections.louvre.fr/ark:/53355/cl010062372",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 2,
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 2758,
+  "sourceHeight": 4000,
+  "originalFile": "originals/renaissance/leonardo-belle-ferronniere.jpg",
+  "originalFileBytes": 1753111,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-belle-ferronniere/far.webp",
+      "width": 441,
+      "height": 640,
+      "bytes": 42460,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-belle-ferronniere/medium.webp",
+      "width": 1103,
+      "height": 1600,
+      "bytes": 359438,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-belle-ferronniere/near.webp",
+      "width": 2069,
+      "height": 3000,
+      "bytes": 1338898,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-belle-ferronniere/detail.webp",
+    "width": 2758,
+    "height": 4000,
+    "bytes": 1886716,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-belle-ferronniere/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:54:27.179Z"
+}

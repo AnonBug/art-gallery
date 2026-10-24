@@ -57,11 +57,5 @@
     "quality": 94,
     "dzi": "/assets/artworks/snyders-lacma-game/detail.dzi"
   },
-  "original": {
-    "width": 2560,
-    "height": 1535,
-    "dzi": "/assets/artworks/snyders-lacma-game/detail.dzi"
-  },
-  "hasOriginal": false,
   "generatedAt": "2026-10-12T15:25:01.344Z"
 }

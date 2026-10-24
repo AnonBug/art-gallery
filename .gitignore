@@ -6,3 +6,7 @@ originals/
 .env
 .env.*
 !.env.example
+
+# Local previews and working files
+/output/
+/tmp/

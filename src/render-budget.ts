@@ -2,11 +2,11 @@ import * as THREE from 'three';
 import {mergeGeometries} from 'three/addons/utils/BufferGeometryUtils.js';
 import {rooms,passages,doorsFor,roomAt} from './museum-layout.mjs';
 
-const gates=new Map(passages.map(p=>[p,new THREE.Box3(new THREE.Vector3(p.x-.22,0,p.z-p.width/2),new THREE.Vector3(p.x+.22,p.height,p.z+p.width/2))]));
+const gates=new Map(passages.map(p=>{const dx=p.axis==='x'?p.length/2+.12:p.width/2,dz=p.axis==='z'?p.length/2+.12:p.width/2;return [p,new THREE.Box3(new THREE.Vector3(p.x-dx,0,p.z-dz),new THREE.Vector3(p.x+dx,p.height,p.z+dz))];}));
 /** Conservatively reveal connected rooms only through portals inside the view. */
 export function visibleRooms(position:THREE.Vector3,frustum:THREE.Frustum){
  const current=roomAt(position);
- const crossing=passages.find(p=>Math.abs(position.x-p.x)<=p.length/2+.01&&Math.abs(position.z-p.z)<p.width/2);
+ const crossing=passages.find(p=>p.axis==='x'?Math.abs(position.x-p.x)<=p.length/2+.01&&Math.abs(position.z-p.z)<p.width/2:Math.abs(position.z-p.z)<=p.length/2+.01&&Math.abs(position.x-p.x)<p.width/2);
  const visible=new Set<string>(current?[current.id]:crossing?[crossing.left,crossing.right]:rooms.map(r=>r.id));
  const pending=[...visible];
  while(pending.length){for(const door of doorsFor(pending.shift()!))if(!visible.has(door.next)&&frustum.intersectsBox(gates.get(door.passage)!)){visible.add(door.next);pending.push(door.next);}}

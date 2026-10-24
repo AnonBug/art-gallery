@@ -8,7 +8,7 @@ test('根目录与Pages子目录下所有作品图片、DZI及其相对瓦片地
  for(const base of ['/','/art-gallery/'])for(const artwork of artworks){
   const resolved=artworkWithBase(artwork,base);
   assert.equal(resolved.id,artwork.id);
-  for(const [original,asset]of [...artwork.variants.map((v,i)=>[v,resolved.variants[i]]),[artwork.detail,resolved.detail],[artwork.original,resolved.original]]){
+  for(const [original,asset]of [...artwork.variants.map((v,i)=>[v,resolved.variants[i]]),[artwork.detail,resolved.detail]]){
    for(const key of ['url','dzi'])if(original[key])assert.equal(asset[key],base+original[key].slice(1));
   }
   const tile=new URL(resolved.detail.dzi.replace(/\.dzi$/,'_files/12/0_0.jpg'),'https://example.com');

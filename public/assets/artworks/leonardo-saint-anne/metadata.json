@@ -9,14 +9,14 @@
   "credit": "Leonardo da Vinci / Wikimedia Commons 文件 Sainte Anne Leonard.jpg",
   "description": "圣安娜、圣母与孩子相互依偎，动作在一个稳定而流动的三角形中展开，远景逐渐消隐于蓝色山峦。",
   "looking": "沿人物的视线与手臂移动，观察三个人物如何连成一体。",
-  "dimensions": "约 168 × 130 厘米",
+  "dimensions": "168 × 130 厘米（高 × 宽，无框）",
   "medium": "木板油画",
   "file": "Sainte_Anne_Leonard.jpg",
   "collection": "卢浮宫博物馆",
-  "wall": "south",
-  "offset": 0,
+  "wall": "east",
+  "offset": 0.4,
   "height": 2.8,
-  "centerY": 2.6,
+  "centerY": 3.02,
   "room": "leonardo",
   "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Sainte_Anne_Leonard.jpg",
   "displayStatus": "数字主题策展，非实体展厅复原",
@@ -56,11 +56,12 @@
     "quality": 94,
     "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
   },
-  "original": {
-    "width": 5565,
-    "height": 7359,
-    "dzi": "/assets/artworks/leonardo-saint-anne/detail.dzi"
+  "generatedAt": "2026-10-13T15:44:42.323Z",
+  "physicalSize": {
+    "heightCm": 168,
+    "widthCm": 130,
+    "source": "https://collections.louvre.fr/ark:/53355/cl010066107",
+    "checkedAt": "2026-10-24"
   },
-  "hasOriginal": false,
-  "generatedAt": "2026-10-13T15:44:42.323Z"
+  "displayScale": 2
 }

@@ -6,12 +6,12 @@ const artworks=JSON.parse(await fs.readFile('src/data/artworks.json','utf8'));
 const errors=[],report=[],urls=new Set(['/','/favicon.svg']);let tiles=0;
 const checked=new Set();
 for(const a of artworks){
- const row={id:a.id,title:a.title,display:[],detail:{},original:{}};
+ const row={id:a.id,title:a.title,display:[],detail:{}};
  for(const [i,v]of a.variants.entries()){
   urls.add(v.url);const file=path.join('public',v.url);try{const size=(await fs.stat(file)).size;const m=await sharp(file).metadata();if(size>3_000_000)errors.push(`${a.id} 展示图超过3MB`);if(m.width!==v.width||m.height!==v.height)errors.push(`${a.id} 展示尺寸不匹配`);row.display.push({width:m.width,height:m.height,bytes:size,path:v.url});}catch(e){errors.push(`${file}: ${e.message}`);}
  }
- try{urls.add(a.detail.url);const file=path.join('public',a.detail.url);const m=await sharp(file).metadata();const size=(await fs.stat(file)).size;row.detail={width:m.width,height:m.height,bytes:size};if(size>20_000_000)errors.push(`${a.id} 细看超过20MB`);if(m.width!==a.detail.width||m.height!==a.detail.height)errors.push(`${a.id} 细看尺寸不匹配`);}catch(e){errors.push(e.message);}
- for(const asset of [a.detail,...(a.hasOriginal?[a.original]:[])]){
+ try{if(!a.detail.dzi)urls.add(a.detail.url);const file=path.join('public',a.detail.url);const m=await sharp(file).metadata();const size=(await fs.stat(file)).size;row.detail={width:m.width,height:m.height,bytes:size};if(size>20_000_000)errors.push(`${a.id} 细看超过20MB`);if(m.width!==a.detail.width||m.height!==a.detail.height)errors.push(`${a.id} 细看尺寸不匹配`);}catch(e){errors.push(e.message);}
+ for(const asset of [a.detail]){
   if(checked.has(asset.dzi))continue;checked.add(asset.dzi);urls.add(asset.dzi);const file=path.join('public',asset.dzi);
   try{
    const xml=await fs.readFile(file,'utf8');const attr=name=>Number(xml.match(new RegExp(`${name}="(\\d+)"`))?.[1]);
@@ -26,7 +26,7 @@ for(const a of artworks){
    const edge=await sharp(file.replace(/\.dzi$/,'_files')+`/${maxLevel}/${x}_${y}.${ext}`).metadata();
    const ew=w-x*tile+(x?overlap:0),eh=h-y*tile+(y?overlap:0);
    if(edge.width!==ew||edge.height!==eh)errors.push(`${file} 边缘瓦片尺寸异常 ${edge.width}x${edge.height} expected ${ew}x${eh}`);
-   tiles+=count;if(asset===a.original)row.original={width:w,height:h,tiles:count};else row.detail={...row.detail,tiles:count};
+   tiles+=count;row.detail={...row.detail,tiles:count};
   }catch(e){errors.push(`${file}: ${e.message}`);}
  }
  report.push(row);

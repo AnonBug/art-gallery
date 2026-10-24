@@ -3,7 +3,9 @@ export interface ArtworkStory {title:string;paragraphs:string[];sources:{label:s
 export interface Artwork {
  id:string; title:string; originalTitle:string; author:string; date:string; dimensions:string; medium:string;
  description:string; looking:string; source:string; originalUrl:string; license:string; credit:string;
- licenseStatus:string; collection:string; displayStatus:string; attribution?:string;
- sourceWidth:number; sourceHeight:number; variants:ImageAsset[]; detail:ImageAsset; original:ImageAsset;
- hasOriginal:boolean; room?:'rembrandt'|'market'|'leonardo'; wall:'north'|'south'|'east'|'west'; offset:number; height:number; centerY:number;
+ licenseStatus:string; licenseUrl?:string; collection:string; displayStatus:string; attribution?:string;
+ sourceWidth:number; sourceHeight:number; variants:ImageAsset[]; detail:ImageAsset;
+ physicalSize:{heightCm:number;widthCm:number;source:string;checkedAt:string};
+ displayScale?:number;
+ room?:'rembrandt'|'market'|'leonardo'; wall:'north'|'south'|'east'|'west'; offset:number; height:number; width:number; centerY:number;
 }

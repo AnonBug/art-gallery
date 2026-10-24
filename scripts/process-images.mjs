@@ -15,6 +15,7 @@ sharp.cache({memory:64,files:20,items:30});sharp.concurrency(2);
 const prefix=`/assets/artworks/${id}`;
 try{
  const meta=metadataPath?JSON.parse(await fs.readFile(metadataPath,'utf8')):{};
+ delete meta.original;delete meta.hasOriginal;
  // Auto-orient first. A disk-backed, tiled TIFF preserves the oriented master losslessly.
  const master=path.join(scratch,'oriented.tif');
  console.log('应用 EXIF 方向并保存临时无损母版…');
@@ -22,7 +23,7 @@ try{
  const dimensions=await sharp(master,{limitInputPixels:false}).metadata();
  const width=dimensions.width,height=dimensions.height;
  async function boundedWebp(name,maxEdge,limit){
-  // WebP has a 16383px side limit. The full oriented master still feeds original DZI.
+  // WebP has a 16383px side limit. Generate only the bounded detail image and its DZI.
   let edge=Math.min(maxEdge,16383,Math.max(width,height));
   for(let attempt=0;attempt<20;attempt++){
    for(const quality of [94,90,86,82]){
@@ -43,9 +44,7 @@ try{
   return `${prefix}/${name}.dzi`;
  }
  detail.dzi=await pyramid(path.join(staging,'detail.webp'),'detail');
- const hasOriginal=width>detail.width||height>detail.height;
- const original={width,height,dzi:hasOriginal?await pyramid(master,'original'):detail.dzi};
- const manifest={id,title:'作品名称待确认',originalTitle:'待确认',date:'待确认',author:'待确认',source:'待确认',license:'待确认',credit:'待确认',description:'待补充',looking:'待补充',dimensions:'待确认',medium:'待确认',...meta,id,sourceWidth:width,sourceHeight:height,originalFile:path.relative(process.cwd(),source),originalFileBytes:(await fs.stat(source)).size,variants,detail,original,hasOriginal,generatedAt:new Date().toISOString()};
+ const manifest={id,title:'作品名称待确认',originalTitle:'待确认',date:'待确认',author:'待确认',source:'待确认',license:'待确认',credit:'待确认',description:'待补充',looking:'待补充',dimensions:'待确认',medium:'待确认',...meta,id,sourceWidth:width,sourceHeight:height,originalFile:path.relative(process.cwd(),source),originalFileBytes:(await fs.stat(source)).size,variants,detail,generatedAt:new Date().toISOString()};
  await fs.writeFile(path.join(staging,'metadata.json'),JSON.stringify(manifest,null,2)+'\n');
  // Keep prior generated output recoverable; never touch the user-supplied input.
  try{await fs.access(dest);const backup=path.resolve('originals/generated-backups',`${id}-${Date.now()}`);await fs.mkdir(path.dirname(backup),{recursive:true});await fs.rename(dest,backup);console.log(`旧输出保留于 ${backup}`);}catch(error){if(error.code!=='ENOENT')throw error;}

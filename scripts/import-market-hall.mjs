@@ -7,7 +7,7 @@ if(!input)throw new Error('用法：node scripts/import-market-hall.mjs <会话�
 const catalog=JSON.parse(await fs.readFile('docs/market-hall-catalog.json','utf8'));
 for(const a of catalog){
  const dir=path.join('public/assets/artworks',a.id);
- const metadata={medium:'布面油画',license:'Public domain（来源页 PD-Art 标记）',credit:'Wikimedia Commons；图像作者及来源见作品链接',...a,room:'market',centerY:2.8,displayStatus:'主题策展；不代表实体馆当前陈列',originalUrl:a.originalUrl??a.source};
+ const metadata={medium:'布面油画',license:'Public domain（来源页 PD-Art 标记）',credit:'Wikimedia Commons；图像作者及来源见作品链接',...a,room:'market',displayStatus:'主题策展；不代表实体馆当前陈列',originalUrl:a.originalUrl??a.source};
  metadata.licenseStatus=metadata.license;
  try{const old=JSON.parse(await fs.readFile(path.join(dir,'metadata.json'),'utf8'));await fs.writeFile(path.join(dir,'metadata.json'),JSON.stringify({...old,...metadata},null,2)+'\n');continue;}catch(error){if(error.code!=='ENOENT')throw error;}
  const source=await fs.access(path.join(input,a.file)).then(()=>path.join(input,a.file)).catch(()=>path.join('originals/market-hall',a.file));

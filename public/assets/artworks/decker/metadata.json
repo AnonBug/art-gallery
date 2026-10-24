@@ -44,11 +44,5 @@
     "bytes": 115882,
     "dzi": "/assets/artworks/decker/detail.dzi",
     "tileBytes": 320728
-  },
-  "original": {
-    "width": 1579,
-    "height": 1998,
-    "dzi": "/assets/artworks/decker/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

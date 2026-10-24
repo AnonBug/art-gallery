@@ -45,11 +45,5 @@
     "dzi": "/assets/artworks/holy-family/detail.dzi",
     "tileBytes": 19938002
   },
-  "original": {
-    "width": 8464,
-    "height": 10880,
-    "dzi": "/assets/artworks/holy-family/original.dzi"
-  },
-  "hasOriginal": true,
   "offset": 4.5
 }

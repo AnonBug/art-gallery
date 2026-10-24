@@ -44,11 +44,5 @@
     "bytes": 166366,
     "dzi": "/assets/artworks/old-woman/detail.dzi",
     "tileBytes": 331527
-  },
-  "original": {
-    "width": 1014,
-    "height": 1255,
-    "dzi": "/assets/artworks/old-woman/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

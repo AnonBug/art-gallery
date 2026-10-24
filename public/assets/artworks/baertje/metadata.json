@@ -44,11 +44,5 @@
     "bytes": 651472,
     "dzi": "/assets/artworks/baertje/detail.dzi",
     "tileBytes": 1622864
-  },
-  "original": {
-    "width": 2694,
-    "height": 3762,
-    "dzi": "/assets/artworks/baertje/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

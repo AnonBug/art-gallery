@@ -56,11 +56,5 @@
     "quality": 94,
     "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
   },
-  "original": {
-    "width": 3840,
-    "height": 2333,
-    "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
-  },
-  "hasOriginal": false,
   "generatedAt": "2026-10-12T15:24:45.806Z"
 }

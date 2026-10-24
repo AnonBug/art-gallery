@@ -29,7 +29,7 @@ test('首次加载不显示展厅选择或生成预览，首次手动打开也�
  assert.equal(browser.isOpen,false);assert.deepEqual(captures,[]);assert.deepEqual(changes,[]);
  browser.open('nefertiti');await Promise.resolve();
  assert.equal(browser.isOpen,true);assert.deepEqual(captures,['nefertiti']);assert.equal(browser.root.querySelector('#halls-close').hidden,false);
- assert.equal(browser.root.querySelector('#hall-selected-title').textContent,'蓝冠下的凝望');
+ assert.equal(browser.root.querySelector('#hall-selected-title').textContent,'图特摩斯厅');
  browser.close();assert.equal(browser.isOpen,false);assert.deepEqual(changes,[true,false]);assert.equal(focus.focused,true);
  browser.close();assert.deepEqual(changes,[true,false],'重复关闭不改变漫游状态');
 });

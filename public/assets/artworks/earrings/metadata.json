@@ -44,11 +44,5 @@
     "bytes": 817380,
     "dzi": "/assets/artworks/earrings/detail.dzi",
     "tileBytes": 1801827
-  },
-  "original": {
-    "width": 2527,
-    "height": 3068,
-    "dzi": "/assets/artworks/earrings/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

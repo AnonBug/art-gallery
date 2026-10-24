@@ -45,11 +45,5 @@
     "bytes": 373374,
     "dzi": "/assets/artworks/samaritan/detail.dzi",
     "tileBytes": 707316
-  },
-  "original": {
-    "width": 1919,
-    "height": 1543,
-    "dzi": "/assets/artworks/samaritan/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

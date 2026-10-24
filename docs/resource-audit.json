@@ -1,7 +1,7 @@
 {
-  "httpChecks": 0,
-  "checkedAt": "2026-10-13T17:19:26.107Z",
-  "artworks": 22,
+  "httpChecks": 5234,
+  "checkedAt": "2026-10-24T10:42:29.609Z",
+  "artworks": 27,
   "sculptures": [
     {
       "id": "crouching-boy",
@@ -16,8 +16,8 @@
       "license": "CC BY-NC-SA 3.0 DE"
     }
   ],
-  "dzi": 25,
-  "tiles": 7550,
+  "dzi": 27,
+  "tiles": 5117,
   "errors": [],
   "resources": [
     {
@@ -48,11 +48,6 @@
         "height": 8000,
         "bytes": 13361354,
         "tiles": 266
-      },
-      "original": {
-        "width": 22991,
-        "height": 30000,
-        "tiles": 3599
       }
     },
     {
@@ -83,8 +78,7 @@
         "height": 2278,
         "bytes": 3148220,
         "tiles": 48
-      },
-      "original": {}
+      }
     },
     {
       "id": "flora",
@@ -114,8 +108,7 @@
         "height": 6680,
         "bytes": 10394194,
         "tiles": 222
-      },
-      "original": {}
+      }
     },
     {
       "id": "isaac",
@@ -145,8 +138,7 @@
         "height": 3633,
         "bytes": 1358626,
         "tiles": 66
-      },
-      "original": {}
+      }
     },
     {
       "id": "descent",
@@ -176,8 +168,7 @@
         "height": 3840,
         "bytes": 1372260,
         "tiles": 74
-      },
-      "original": {}
+      }
     },
     {
       "id": "david-jonathan",
@@ -207,8 +198,7 @@
         "height": 4000,
         "bytes": 1899360,
         "tiles": 86
-      },
-      "original": {}
+      }
     },
     {
       "id": "red-man",
@@ -238,11 +228,6 @@
         "height": 8000,
         "bytes": 13765570,
         "tiles": 266
-      },
-      "original": {
-        "width": 6346,
-        "height": 8280,
-        "tiles": 322
       }
     },
     {
@@ -273,11 +258,6 @@
         "height": 8000,
         "bytes": 15239386,
         "tiles": 294
-      },
-      "original": {
-        "width": 8464,
-        "height": 10880,
-        "tiles": 526
       }
     },
     {
@@ -308,8 +288,7 @@
         "height": 3691,
         "bytes": 4411074,
         "tiles": 86
-      },
-      "original": {}
+      }
     },
     {
       "id": "snyders-fish",
@@ -339,8 +318,7 @@
         "height": 2358,
         "bytes": 1999724,
         "tiles": 66
-      },
-      "original": {}
+      }
     },
     {
       "id": "snyders-fruit",
@@ -370,8 +348,7 @@
         "height": 2313,
         "bytes": 1698338,
         "tiles": 66
-      },
-      "original": {}
+      }
     },
     {
       "id": "snyders-game",
@@ -401,8 +378,7 @@
         "height": 2325,
         "bytes": 1807838,
         "tiles": 66
-      },
-      "original": {}
+      }
     },
     {
       "id": "snyders-vegetable",
@@ -432,132 +408,7 @@
         "height": 2333,
         "bytes": 2097104,
         "tiles": 66
-      },
-      "original": {}
-    },
-    {
-      "id": "snyders-quay",
-      "title": "码头市场",
-      "display": [
-        {
-          "width": 640,
-          "height": 371,
-          "bytes": 109318,
-          "path": "/assets/artworks/snyders-quay/far.webp"
-        },
-        {
-          "width": 1600,
-          "height": 929,
-          "bytes": 667272,
-          "path": "/assets/artworks/snyders-quay/medium.webp"
-        },
-        {
-          "width": 3000,
-          "height": 1741,
-          "bytes": 2477234,
-          "path": "/assets/artworks/snyders-quay/near.webp"
-        }
-      ],
-      "detail": {
-        "width": 4729,
-        "height": 2745,
-        "bytes": 5999902,
-        "tiles": 93
-      },
-      "original": {}
-    },
-    {
-      "id": "snyders-kitchen",
-      "title": "女仆与男孩的厨房静物",
-      "display": [
-        {
-          "width": 640,
-          "height": 410,
-          "bytes": 101026,
-          "path": "/assets/artworks/snyders-kitchen/far.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1024,
-          "bytes": 608672,
-          "path": "/assets/artworks/snyders-kitchen/medium.webp"
-        },
-        {
-          "width": 3000,
-          "height": 1920,
-          "bytes": 2377708,
-          "path": "/assets/artworks/snyders-kitchen/near.webp"
-        }
-      ],
-      "detail": {
-        "width": 4674,
-        "height": 2991,
-        "bytes": 6097630,
-        "tiles": 93
-      },
-      "original": {}
-    },
-    {
-      "id": "snyders-maid",
-      "title": "有女仆的静物",
-      "display": [
-        {
-          "width": 640,
-          "height": 452,
-          "bytes": 79448,
-          "path": "/assets/artworks/snyders-maid/far.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1129,
-          "bytes": 445144,
-          "path": "/assets/artworks/snyders-maid/medium.webp"
-        },
-        {
-          "width": 3000,
-          "height": 2117,
-          "bytes": 1593896,
-          "path": "/assets/artworks/snyders-maid/near.webp"
-        }
-      ],
-      "detail": {
-        "width": 3051,
-        "height": 2153,
-        "bytes": 1796550,
-        "tiles": 53
-      },
-      "original": {}
-    },
-    {
-      "id": "snyders-produce",
-      "title": "水果与蔬菜静物",
-      "display": [
-        {
-          "width": 640,
-          "height": 442,
-          "bytes": 121492,
-          "path": "/assets/artworks/snyders-produce/far.webp"
-        },
-        {
-          "width": 1600,
-          "height": 1106,
-          "bytes": 428630,
-          "path": "/assets/artworks/snyders-produce/medium.webp"
-        },
-        {
-          "width": 2402,
-          "height": 1660,
-          "bytes": 692394,
-          "path": "/assets/artworks/snyders-produce/near.webp"
-        }
-      ],
-      "detail": {
-        "width": 2402,
-        "height": 1660,
-        "bytes": 692394,
-        "tiles": 38
-      },
-      "original": {}
+      }
     },
     {
       "id": "leonardo-ermine",
@@ -587,8 +438,7 @@
         "height": 4000,
         "bytes": 2118232,
         "tiles": 74
-      },
-      "original": {}
+      }
     },
     {
       "id": "leonardo-saint-anne",
@@ -618,8 +468,7 @@
         "height": 7359,
         "bytes": 10350770,
         "tiles": 239
-      },
-      "original": {}
+      }
     },
     {
       "id": "leonardo-benois",
@@ -649,8 +498,7 @@
         "height": 4588,
         "bytes": 4634778,
         "tiles": 87
-      },
-      "original": {}
+      }
     },
     {
       "id": "leonardo-litta",
@@ -680,8 +528,7 @@
         "height": 8096,
         "bytes": 16332984,
         "tiles": 294
-      },
-      "original": {}
+      }
     },
     {
       "id": "leonardo-mona-lisa",
@@ -711,8 +558,277 @@
         "height": 11146,
         "bytes": 19938334,
         "tiles": 460
-      },
-      "original": {}
+      }
+    },
+    {
+      "id": "leonardo-last-supper",
+      "title": "最后的晚餐",
+      "display": [
+        {
+          "width": 640,
+          "height": 355,
+          "bytes": 100500,
+          "path": "/assets/artworks/leonardo-last-supper/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 889,
+          "bytes": 729568,
+          "path": "/assets/artworks/leonardo-last-supper/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1666,
+          "bytes": 2765574,
+          "path": "/assets/artworks/leonardo-last-supper/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 10256,
+        "height": 5696,
+        "bytes": 19230070,
+        "tiles": 354
+      }
+    },
+    {
+      "id": "leonardo-annunciation",
+      "title": "天使报喜",
+      "display": [
+        {
+          "width": 640,
+          "height": 290,
+          "bytes": 72702,
+          "path": "/assets/artworks/leonardo-annunciation/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 726,
+          "bytes": 462722,
+          "path": "/assets/artworks/leonardo-annunciation/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 1361,
+          "bytes": 1664600,
+          "path": "/assets/artworks/leonardo-annunciation/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 4057,
+        "height": 1840,
+        "bytes": 2915198,
+        "tiles": 52
+      }
+    },
+    {
+      "id": "leonardo-rocks-louvre",
+      "title": "岩间圣母（卢浮宫版）",
+      "display": [
+        {
+          "width": 404,
+          "height": 640,
+          "bytes": 93934,
+          "path": "/assets/artworks/leonardo-rocks-louvre/far.webp"
+        },
+        {
+          "width": 1009,
+          "height": 1600,
+          "bytes": 537164,
+          "path": "/assets/artworks/leonardo-rocks-louvre/medium.webp"
+        },
+        {
+          "width": 1892,
+          "height": 3000,
+          "bytes": 1939718,
+          "path": "/assets/artworks/leonardo-rocks-louvre/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 3460,
+        "height": 5487,
+        "bytes": 7117142,
+        "tiles": 119
+      }
+    },
+    {
+      "id": "leonardo-rocks-london",
+      "title": "岩间圣母（伦敦版）",
+      "display": [
+        {
+          "width": 415,
+          "height": 640,
+          "bytes": 78660,
+          "path": "/assets/artworks/leonardo-rocks-london/far.webp"
+        },
+        {
+          "width": 1038,
+          "height": 1600,
+          "bytes": 452468,
+          "path": "/assets/artworks/leonardo-rocks-london/medium.webp"
+        },
+        {
+          "width": 1946,
+          "height": 3000,
+          "bytes": 1486950,
+          "path": "/assets/artworks/leonardo-rocks-london/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2692,
+        "height": 4150,
+        "bytes": 2255058,
+        "tiles": 87
+      }
+    },
+    {
+      "id": "leonardo-adoration",
+      "title": "三博士来朝",
+      "display": [
+        {
+          "width": 640,
+          "height": 633,
+          "bytes": 185600,
+          "path": "/assets/artworks/leonardo-adoration/far.webp"
+        },
+        {
+          "width": 1600,
+          "height": 1582,
+          "bytes": 1114008,
+          "path": "/assets/artworks/leonardo-adoration/medium.webp"
+        },
+        {
+          "width": 3000,
+          "height": 2966,
+          "bytes": 2748396,
+          "path": "/assets/artworks/leonardo-adoration/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 5256,
+        "height": 5196,
+        "bytes": 9568528,
+        "tiles": 180
+      }
+    },
+    {
+      "id": "leonardo-john-baptist",
+      "title": "施洗者圣约翰",
+      "display": [
+        {
+          "width": 494,
+          "height": 640,
+          "bytes": 49116,
+          "path": "/assets/artworks/leonardo-john-baptist/far.webp"
+        },
+        {
+          "width": 1236,
+          "height": 1600,
+          "bytes": 402646,
+          "path": "/assets/artworks/leonardo-john-baptist/medium.webp"
+        },
+        {
+          "width": 2318,
+          "height": 3000,
+          "bytes": 1857150,
+          "path": "/assets/artworks/leonardo-john-baptist/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 10446,
+        "height": 13522,
+        "bytes": 15338940,
+        "tiles": 789
+      }
+    },
+    {
+      "id": "leonardo-belle-ferronniere",
+      "title": "美丽的费罗妮叶",
+      "display": [
+        {
+          "width": 441,
+          "height": 640,
+          "bytes": 42460,
+          "path": "/assets/artworks/leonardo-belle-ferronniere/far.webp"
+        },
+        {
+          "width": 1103,
+          "height": 1600,
+          "bytes": 359438,
+          "path": "/assets/artworks/leonardo-belle-ferronniere/medium.webp"
+        },
+        {
+          "width": 2069,
+          "height": 3000,
+          "bytes": 1338898,
+          "path": "/assets/artworks/leonardo-belle-ferronniere/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2758,
+        "height": 4000,
+        "bytes": 1886716,
+        "tiles": 74
+      }
+    },
+    {
+      "id": "leonardo-ginevra",
+      "title": "吉内薇拉·德·本奇肖像",
+      "display": [
+        {
+          "width": 620,
+          "height": 640,
+          "bytes": 148684,
+          "path": "/assets/artworks/leonardo-ginevra/far.webp"
+        },
+        {
+          "width": 1551,
+          "height": 1600,
+          "bytes": 940388,
+          "path": "/assets/artworks/leonardo-ginevra/medium.webp"
+        },
+        {
+          "width": 2908,
+          "height": 3000,
+          "bytes": 2639510,
+          "path": "/assets/artworks/leonardo-ginevra/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 10000,
+        "height": 10315,
+        "bytes": 19428702,
+        "tiles": 583
+      }
+    },
+    {
+      "id": "leonardo-vitruvian",
+      "title": "维特鲁威人",
+      "display": [
+        {
+          "width": 462,
+          "height": 640,
+          "bytes": 122930,
+          "path": "/assets/artworks/leonardo-vitruvian/far.webp"
+        },
+        {
+          "width": 1155,
+          "height": 1600,
+          "bytes": 780486,
+          "path": "/assets/artworks/leonardo-vitruvian/medium.webp"
+        },
+        {
+          "width": 2131,
+          "height": 2953,
+          "bytes": 2334820,
+          "path": "/assets/artworks/leonardo-vitruvian/near.webp"
+        }
+      ],
+      "detail": {
+        "width": 2131,
+        "height": 2953,
+        "bytes": 2334820,
+        "tiles": 53
+      }
     }
   ]
 }

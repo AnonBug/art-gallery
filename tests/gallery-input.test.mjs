@@ -7,13 +7,21 @@ import * as THREE from 'three';
 import * as navigation from '../src/navigation.mjs';
 import * as pointerLook from '../src/pointer-look.mjs';
 import * as museumLayout from '../src/museum-layout.mjs';
+import {withPhysicalSize,artworkFrameBorder} from '../src/artwork-scale.mjs';
 
 // Exercise the actual Gallery picking/bind methods without allocating a WebGL renderer.
-async function loadGallery(){
+async function loadGallery(eyeHeight=2.6){
  const win=new EventTarget(),doc=new EventTarget(),exports={};
  const source=await fs.readFile(new URL('../src/gallery.ts',import.meta.url),'utf8');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText;
- const modules={'./sculpture-model':{sculptures:JSON.parse(await fs.readFile(new URL('../src/data/sculptures.json',import.meta.url),'utf8'))},'three':THREE,'./navigation.mjs':navigation,'./pointer-look.mjs':pointerLook,'./museum-layout.mjs':museumLayout,'./ornate-frame':{},'./data/theme':{theme:{room:{width:20,depth:17,margin:1.25},initial:{y:2.6,z:0,yaw:0}}}};
+ const modules={'./sculpture-model':{sculptures:JSON.parse(await fs.readFile(new URL('../src/data/sculptures.json',import.meta.url),'utf8'))},'three':THREE,'./navigation.mjs':navigation,'./pointer-look.mjs':pointerLook,'./museum-layout.mjs':museumLayout,'./ornate-frame':{},'./data/theme':{theme:{room:{width:20,depth:17,margin:1.25},initial:{y:eyeHeight,z:0,yaw:0}}}};
+ modules['./bench']={createGalleryBench:()=>new THREE.Group()};
+ modules['./render-budget']={batchArchitecture(){}};
+ modules['./data/theme'].theme.lighting={ambient:1.3,key:1.1,ceilingGap:.48,railInset:1.4};
+ doc.createElement=()=>({width:0,height:0,getContext:()=>new Proxy({},{get:()=>()=>{}})});
+ const guideSource=await fs.readFile(new URL('../src/doorway-guide.ts',import.meta.url),'utf8'),guideExports={};
+ vm.runInNewContext(ts.transpileModule(guideSource,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022}}).outputText,{exports:guideExports,require:id=>modules[id],document:doc});
+ modules['./doorway-guide']=guideExports;
  vm.runInNewContext(code,{exports,require:id=>modules[id],window:win,document:doc,AbortController,performance});
  return {Gallery:exports.Gallery,win,doc};
 }
@@ -31,6 +39,89 @@ function floorGallery(Gallery){
   renderer:{domElement:{getBoundingClientRect:()=>({left:0,top:0,width:800,height:600})}},container:{clientWidth:800,clientHeight:600,classList:{toggle(){}}}});
  return g;
 }
+
+test('实际建筑在四向门洞处没有实体墙遮挡，转角门外仍有墙且小厅射灯位于天花内',async()=>{
+ const {Gallery}=await loadGallery(1.65),g=floorGallery(Gallery);
+ Object.assign(g,{scene:new THREE.Scene(),roomRoots:new Map(),pictureLights:[]});g.renderer.capabilities={getMaxAnisotropy:()=>1};
+ for(const r of museumLayout.rooms)g.room(r);g.connectRooms();g.scene.updateMatrixWorld(true);
+ let guideCount=0;
+ for(const room of museumLayout.rooms)for(const door of museumLayout.doorsFor(room.id)){
+  const guide=g.roomRoots.get(room.id).children.find(c=>c.name==='doorway-floor-guide'&&c.userData.to===door.next);assert.ok(guide,`${room.id} → ${door.next} 缺少地面导视`);guideCount++;
+  assert.equal(guide.children.length,1,'每侧仅保留一个箭头和目标厅名，不显示当前厅');
+  for(const name of ['doorway-direction-arrow']){
+   const label=guide.getObjectByName(name),bounds=new THREE.Box3().setFromObject(label);
+   assert.ok(bounds.min.x>room.x-room.width/2&&bounds.max.x<room.x+room.width/2&&bounds.min.z>room.z-room.depth/2&&bounds.max.z<room.z+room.depth/2,'地面标识不能越墙');
+   assert.ok(bounds.min.y>0&&bounds.max.y<.03,'标识应贴地');assert.equal(g.floorBlockers.includes(label),false,'导视不阻挡点击行走');
+   assert.ok(new THREE.Vector3(0,0,1).transformDirection(label.matrixWorld).y>.99,'文字正面朝上');
+  }
+  const arrow=guide.getObjectByName('doorway-direction-arrow'),base=arrow.localToWorld(new THREE.Vector3()),tip=arrow.localToWorld(new THREE.Vector3(0,.48,0));
+  assert.ok(g.targets.includes(arrow),'地面箭头可以点击');
+  assert.equal(arrow.material.transparent,true);assert.ok(arrow.material.opacity<.5,'标记保持半透明');
+  assert.ok(Math.abs((door.passage.axis==='x'?base.z:base.x)-(door.passage.axis==='x'?door.passage.z:door.passage.x))<1e-6,'箭头位于门洞正中');
+  const towards=new THREE.Vector3(door.passage.x,base.y,door.passage.z).sub(base).normalize();assert.ok(tip.sub(base).normalize().dot(towards)>.9999,'箭头必须指向本门洞，不能指向侧墙或相反方向');
+ }
+ assert.equal(guideCount,8,'四道门的往返两面均有导视');
+ for(const p of museumLayout.passages){
+  const normal=p.axis==='x'?new THREE.Vector3(1,0,0):new THREE.Vector3(0,0,1),along=new THREE.Vector3(normal.z,0,normal.x);
+  for(const sign of [-1,1]){
+   const point=new THREE.Vector3(p.x,1.65,p.z),direction=normal.clone().multiplyScalar(sign);
+   const ray=new THREE.Raycaster(point.clone().addScaledVector(direction,-.9),direction,0,1.8);
+   assert.equal(ray.intersectObjects(g.floorBlockers).length,0,`${p.left} → ${p.right} 门洞应真正敞开`);
+   ray.ray.origin.addScaledVector(along,p.width/2+.5);
+   assert.ok(ray.intersectObjects(g.floorBlockers).length,`${p.left} → ${p.right} 门外墙面应挡住射线`);
+  }
+ }
+ const r=museumLayout.roomFor('leonardo'),parent=new THREE.Group();parent.position.set(r.x,3.02,r.z);g.scene.add(parent);
+ g.pictureLight(parent,2.6,3.36,3.02,r.id,parent.position.clone(),new THREE.Vector3(0,0,1),new THREE.Sphere(parent.position.clone(),2));
+ assert.ok(g.pictureLights[0].position.y<r.height&&g.pictureLights[0].position.y>4.5,'射灯随小厅层高降低');
+ g.ensureSculpture=async()=>{};
+ for(const id of ['sculpture','nefertiti']){
+  g.goToRoom(id);const sculpture=museumLayout.sculpturePositions[id];
+  assert.ok(museumLayout.isWalkable(g.camera.position));assert.equal(museumLayout.roomAt(g.camera.position).id,id);
+  assert.ok(Math.hypot(g.camera.position.x-sculpture.x,g.camera.position.z-sculpture.z)>5,'小雕塑厅初始位置能退后看完整作品');
+  assert.equal(g.camera.position.y,1.65);
+  g.camera.rotation.set(g.pitch,g.yaw,0,'YXZ');g.camera.updateMatrixWorld();
+  for(const y of [0,museumLayout.sculpturePedestalHeight+2.05])assert.ok(Math.abs(new THREE.Vector3(sculpture.x,y,sculpture.z).project(g.camera).y)<.85,'初始视野包含雕塑顶部和底座底部并留有余量');
+ }
+});
+
+test('八个方向的门口箭头只在点击后沿门洞引导到目标厅中央，墙体遮挡与暂停仍有效',async()=>{
+ const {Gallery}=await loadGallery(1.65),g=floorGallery(Gallery);
+ Object.assign(g,{scene:new THREE.Scene(),roomRoots:new Map(),pictureLights:[]});g.renderer.capabilities={getMaxAnisotropy:()=>1};
+ for(const r of museumLayout.rooms)g.room(r);g.connectRooms();g.scene.updateMatrixWorld(true);
+ const aim=point=>{g.yaw=Math.atan2(g.camera.position.x-point.x,g.camera.position.z-point.z);g.pitch=Math.atan2(point.y-g.camera.position.y,Math.hypot(point.x-g.camera.position.x,point.z-g.camera.position.z));};
+ for(const room of museumLayout.rooms)for(const door of museumLayout.doorsFor(room.id))for(const center of [true,false]){
+  const arrow=g.targets.find(t=>t.userData.kind==='doorway'&&t.userData.from===room.id&&t.userData.to===door.next);
+  const target=arrow.getWorldPosition(new THREE.Vector3()),inward=target.clone().sub(new THREE.Vector3(door.passage.x,target.y,door.passage.z)).normalize();
+  g.camera.position.copy(target).addScaledVector(inward,2.5);g.camera.position.y=1.65;aim(target);
+  const idle=arrow.material.opacity;
+  g.pick(400,300,false,center);assert.equal(g.floorWalk,null,'悬停不能启动行走');assert.equal(g.hoveredDoorway,arrow);assert.ok(arrow.material.opacity>idle);
+  assert.equal(g.floorMarker.visible,false,'箭头不叠加地板光圈');assert.equal(g.hoverHighlight.visible,false,'箭头不出现矩形边框');
+  g.pick(400,300,true,center);const walk=g.floorWalk,next=museumLayout.roomFor(door.next);assert.ok(walk);
+  assert.equal(walk.roomId,next.id);assert.deepEqual(walk.end.toArray(),[next.x,1.65,next.z]);
+  for(let i=0;i<=100;i++){g.updateFloorWalk(walk.startTime+walk.duration*i/100);assert.ok(museumLayout.isWalkable(g.camera.position),'自动导航不能穿墙或穿过雕塑底座');assert.equal(g.camera.position.y,1.65);}
+  g.updateFloorWalk(walk.startTime+walk.duration+1);assert.ok(g.camera.position.distanceTo(walk.end)<1e-6);assert.equal(g.floorWalk,null);
+  g.setHover(null);assert.equal(arrow.material.opacity,idle);
+  // Even when this arrow is visible from its reverse side, it cannot navigate back to its own room.
+  aim(target);g.pick(400,300,false,center);assert.notEqual(g.hoveredDoorway,arrow);g.setHover(null);
+ }
+ const arrow=g.targets.find(t=>t.userData.from==='rembrandt'&&t.userData.to==='leonardo');
+ g.camera.position.set(5,1.65,0);const target=arrow.getWorldPosition(new THREE.Vector3());aim(target);
+ const canvas=new EventTarget();canvas.tagName='CANVAS';canvas.getBoundingClientRect=()=>({left:0,top:0,width:800,height:600});
+ g.renderer.domElement=canvas;g.abort=new AbortController();g.mouseControls.dragMode=true;g.bind();
+ const idleMap=arrow.material.map,idleOpacity=arrow.material.opacity,position=g.camera.position.clone();
+ const hover=()=>{canvas.dispatchEvent(Object.assign(new Event('pointermove'),{pointerType:'mouse',pointerId:1,clientX:400,clientY:300}));g.updateHover();};
+ hover();assert.equal(g.hoveredDoorway,arrow);assert.notEqual(arrow.material.map,idleMap,'普通鼠标悬停显示含厅名的纹理');
+ assert.ok(arrow.material.opacity>idleOpacity);assert.equal(g.floorWalk,null);assert.ok(g.camera.position.equals(position),'不按鼠标也能悬停，且不会移动相机');
+ g.updateHover();assert.equal(g.hoveredDoorway,arrow,'指针静止时保持高亮');
+ canvas.dispatchEvent(new Event('pointerleave'));g.updateHover();assert.equal(g.hoveredDoorway,null);assert.equal(arrow.material.map,idleMap);assert.equal(arrow.material.opacity,idleOpacity);
+ hover();g.suspend(true);assert.equal(arrow.material.map,idleMap);assert.equal(g.mousePosition,null);g.suspend(false);g.abort.abort();
+ const blocker=new THREE.Mesh(new THREE.BoxGeometry(.3,3,3));blocker.position.set(6.5,1.5,0);blocker.updateMatrixWorld();g.floorBlockers.push(blocker);
+ g.pick(400,300,true);assert.equal(g.floorWalk,null,'遮挡时不能点穿墙体选择箭头');assert.equal(g.hoveredDoorway,null);
+ g.floorBlockers.pop();g.mouseControls.paused=true;g.pick(400,300,true);assert.equal(g.floorWalk,null,'暂停时点击无效');
+ g.mouseControls.paused=false;g.pick(400,300,true);assert.equal(g.floorWalk.roomId,'leonardo');g.suspend(true);assert.equal(g.floorWalk,null);
+ blocker.geometry.dispose();blocker.material.dispose();
+});
 
 test('两件雕塑本体打开3D细看，展签打开对应介绍，中心射线与直接点按均区分且悬停不打开',async()=>{
  const {Gallery}=await loadGallery(),g=floorGallery(Gallery);
@@ -162,9 +253,9 @@ test('暂停、手动移动和失焦停止地板自动行走，暂停时点击�
 test('第二厅地板可选择，跨厅行走沿门口路线且回到中央保留所在展厅',async()=>{
  const {Gallery}=await loadGallery(),g=floorGallery(Gallery);
  g.camera.position.set(museumLayout.rooms[1].x,2.6,5);g.pick(0,0,false,true);assert.equal(g.floorMarker.visible,true);
- const end=new THREE.Vector3(4,0,-3.5);g.walkTo(end);const walk=g.floorWalk;assert.ok(walk.route.length>1);
+ const end=new THREE.Vector3(4,0,5);g.walkTo(end);const walk=g.floorWalk;assert.ok(walk.route.length>1);
  for(let i=0;i<=100;i++){g.updateFloorWalk(walk.startTime+walk.duration*i/100);assert.ok(museumLayout.isWalkable(g.camera.position));assert.equal(g.camera.position.y,2.6);}
- assert.ok(g.camera.position.distanceTo(new THREE.Vector3(4,2.6,-3.5))<1e-6);
+ assert.ok(g.camera.position.distanceTo(new THREE.Vector3(end.x,2.6,end.z))<1e-6);
  g.camera.position.set(museumLayout.rooms[1].x,2.6,-4);g.reset();assert.deepEqual(g.camera.position.toArray(),[museumLayout.rooms[1].x,2.6,0]);
  g.camera.position.set(3,2.6,-4);g.reset();assert.deepEqual(g.camera.position.toArray(),[0,2.6,0]);
 });
@@ -183,16 +274,24 @@ test('点击地板比普通步行更快，同厅与跨厅靠近画作都比地�
   else assert.ok(flight.route.length>1,'跨厅加速仍走门洞，不直线穿墙');
  }
 });
-test('四厅中全部画作在桌面、手机竖屏与横屏驻足时保留完整画框和看画余量',async()=>{
- const {Gallery}=await loadGallery(),g=floorGallery(Gallery),data=JSON.parse(await fs.readFile(new URL('../src/data/artworks.json',import.meta.url),'utf8'));
+test('原作尺寸的全部画作在横竖屏驻足时保持成人眼高、对准画心并保留完整画框',async()=>{
+ const {Gallery}=await loadGallery(1.65),g=floorGallery(Gallery),data=JSON.parse(await fs.readFile(new URL('../src/data/artworks.json',import.meta.url),'utf8')).map(withPhysicalSize);
  for(const [width,height]of [[1280,720],[390,844],[844,390]]){
   g.container.clientWidth=width;g.container.clientHeight=height;g.camera.aspect=width/height;
   for(const a of data){
    const r=museumLayout.roomFor(a.room),normal={north:new THREE.Vector3(0,0,1),south:new THREE.Vector3(0,0,-1),east:new THREE.Vector3(-1,0,0),west:new THREE.Vector3(1,0,0)}[a.wall];
    const center=new THREE.Vector3(r.x-normal.x*r.width/2,a.centerY,r.z-normal.z*r.depth/2).addScaledVector(normal,.14).addScaledVector(new THREE.Vector3(normal.z,0,-normal.x),a.offset);
-   const h={a,normal,center,width:a.height*a.sourceWidth/a.sourceHeight,frameBorder:Math.max(.18,Math.min(.26,a.height*.11))};
+   const h={a,normal,center,width:a.width,frameBorder:artworkFrameBorder(a.width,a.height)};
    const pose=g.focusPose(h),distance=pose.position.clone().sub(center).dot(normal),visibleHeight=2*distance*Math.tan(g.camera.fov*Math.PI/360);
    assert.ok(museumLayout.isWalkable(pose.position),`${a.id} 驻足位置应可行走`);
+   assert.equal(pose.position.y,1.65,'靠近小幅画不会降低身体，靠近大幅画不会升高身体');
+   const camera=new THREE.PerspectiveCamera(52,width/height,.05,80);camera.position.copy(pose.position);camera.rotation.set(pose.pitch,pose.yaw,0,'YXZ');camera.updateMatrixWorld();
+   const target=center.clone().project(camera);assert.ok(Math.abs(target.x)<1e-6&&Math.abs(target.y)<1e-6,`${a.id} 看向画心`);
+   const horizontal=new THREE.Vector3(normal.z,0,-normal.x);
+   for(const x of [-1,1])for(const y of [-1,1]){
+    const corner=center.clone().addScaledVector(horizontal,x*(a.width/2+h.frameBorder));corner.y+=y*(a.height/2+h.frameBorder);corner.project(camera);
+    assert.ok(Math.abs(corner.x)<.8&&Math.abs(corner.y)<.8,`${width}×${height} ${a.id} 画框四角留白`);
+   }
    assert.ok((h.width+h.frameBorder*2)<visibleHeight*g.camera.aspect*.8,`${width}×${height} ${a.id} 画框宽度应留白`);
    assert.ok((a.height+h.frameBorder*2)<visibleHeight*.8,`${width}×${height} ${a.id} 画框高度应留白`);
   }

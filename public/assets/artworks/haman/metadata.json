@@ -44,11 +44,5 @@
     "bytes": 920672,
     "dzi": "/assets/artworks/haman/detail.dzi",
     "tileBytes": 1947233
-  },
-  "original": {
-    "width": 2536,
-    "height": 2792,
-    "dzi": "/assets/artworks/haman/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

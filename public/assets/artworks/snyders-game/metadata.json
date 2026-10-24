@@ -56,11 +56,5 @@
     "quality": 94,
     "dzi": "/assets/artworks/snyders-game/detail.dzi"
   },
-  "original": {
-    "width": 3840,
-    "height": 2325,
-    "dzi": "/assets/artworks/snyders-game/detail.dzi"
-  },
-  "hasOriginal": false,
   "generatedAt": "2026-10-12T15:24:42.788Z"
 }

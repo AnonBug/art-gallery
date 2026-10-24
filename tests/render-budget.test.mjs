@@ -14,9 +14,18 @@ const {visibleRooms,batchArchitecture,PictureLightPool}=exports;
 function view(x,z,yaw=0){const camera=new THREE.PerspectiveCamera(52,1280/720,.05,80);camera.position.set(x,2.6,z);camera.rotation.set(0,yaw,0,'YXZ');camera.updateMatrixWorld();return {camera,frustum:new THREE.Frustum().setFromProjectionMatrix(new THREE.Matrix4().multiplyMatrices(camera.projectionMatrix,camera.matrixWorldInverse))};}
 
 test('只有门洞进入视野时才绘制相邻展厅，薄墙门洞中双厅可见',()=>{
- for(const [x,z,yaw,ids]of [[0,3.8,0,['rembrandt']],[layout.rooms[1].x,3.8,0,['market']],[-2.5,layout.passage.z,Math.PI/2,['market','rembrandt']],[layout.rooms[1].x+4,layout.passage.z,-Math.PI/2,['market','rembrandt','leonardo','sculpture','nefertiti']],[layout.passage.x,layout.passage.z,0,['market','rembrandt']],[layout.rooms[2].x,3.8,0,['leonardo']],[layout.rooms[3].x,3.8,0,['sculpture']],[layout.rooms[4].x,3.8,0,['nefertiti']]]){
+ for(const [x,z,yaw,ids]of [[0,3.8,0,['rembrandt']],[layout.rooms[1].x,3.8,0,['market']],[-2.5,layout.passage.z,Math.PI/2,['market','rembrandt']],[layout.rooms[1].x+4,layout.passage.z,-Math.PI/2,['market','rembrandt','leonardo','sculpture','nefertiti']],[layout.passage.x,layout.passage.z,0,['market','rembrandt']],[layout.rooms[2].x,3.8,0,['leonardo']],[layout.rooms[3].x,layout.rooms[3].z,Math.PI/2,['sculpture']],[layout.rooms[4].x,layout.rooms[4].z,Math.PI/2,['nefertiti']]]){
   const {camera,frustum}=view(x,z,yaw);assert.deepEqual([...visibleRooms(camera.position,frustum)].sort(),ids.sort());
  }
+});
+test('转角南北门洞中可见相连双厅，达芬奇厅转向右侧时显露雕塑翼',()=>{
+ for(const p of layout.passages.filter(p=>p.axis==='z')){
+  const {camera,frustum}=view(p.x,p.z,-Math.PI/2);
+  const visible=visibleRooms(camera.position,frustum);assert.ok(visible.has(p.left)&&visible.has(p.right));
+ }
+ const r=layout.rooms[2],north=view(r.x,r.z,0),south=view(r.x,r.z,Math.PI);
+ assert.equal(visibleRooms(north.camera.position,north.frustum).has('sculpture'),false);
+ assert.ok(visibleRooms(south.camera.position,south.frustum).has('sculpture'));
 });
 test('按材质合并静态建筑，同时保留墙体世界位置与拾取遮挡',()=>{
  const root=new THREE.Group();root.position.x=-30;

@@ -43,12 +43,6 @@
       "dzi": "/assets/artworks/prodigal/detail.dzi",
       "tileBytes": 17544116
     },
-    "original": {
-      "width": 22991,
-      "height": 30000,
-      "dzi": "/assets/artworks/prodigal/original.dzi"
-    },
-    "hasOriginal": true,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
@@ -103,12 +97,6 @@
       "dzi": "/assets/artworks/danae/detail.dzi",
       "tileBytes": 1216003
     },
-    "original": {
-      "width": 2499,
-      "height": 2278,
-      "dzi": "/assets/artworks/danae/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
@@ -163,12 +151,6 @@
       "dzi": "/assets/artworks/flora/detail.dzi",
       "tileBytes": 15235554
     },
-    "original": {
-      "width": 5422,
-      "height": 6680,
-      "dzi": "/assets/artworks/flora/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
@@ -223,12 +205,6 @@
       "dzi": "/assets/artworks/isaac/detail.dzi",
       "tileBytes": 2749754
     },
-    "original": {
-      "width": 2471,
-      "height": 3633,
-      "dzi": "/assets/artworks/isaac/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Rembrandt",
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
@@ -284,12 +260,6 @@
       "dzi": "/assets/artworks/descent/detail.dzi",
       "tileBytes": 2779860
     },
-    "original": {
-      "width": 2789,
-      "height": 3840,
-      "dzi": "/assets/artworks/descent/detail.dzi"
-    },
-    "hasOriginal": false,
     "credit": "Workshop of   Rembrandt",
     "author": "伦勃朗工作室（据画源归属）",
     "collection": "冬宫博物馆馆藏",
@@ -351,12 +321,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/david-jonathan/detail.dzi"
     },
-    "original": {
-      "width": 3344,
-      "height": 4000,
-      "dzi": "/assets/artworks/david-jonathan/detail.dzi"
-    },
-    "hasOriginal": false,
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
     "licenseStatus": "Public domain（已从 Commons 原文件补充生成，2026-10-11）",
@@ -415,12 +379,6 @@
       "dzi": "/assets/artworks/red-man/detail.dzi",
       "tileBytes": 18330837
     },
-    "original": {
-      "width": 6346,
-      "height": 8280,
-      "dzi": "/assets/artworks/red-man/original.dzi"
-    },
-    "hasOriginal": true,
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
@@ -477,12 +435,6 @@
       "dzi": "/assets/artworks/holy-family/detail.dzi",
       "tileBytes": 19938002
     },
-    "original": {
-      "width": 8464,
-      "height": 10880,
-      "dzi": "/assets/artworks/holy-family/original.dzi"
-    },
-    "hasOriginal": true,
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
@@ -539,12 +491,6 @@
       "dzi": "/assets/artworks/scholar/detail.dzi",
       "tileBytes": 5839060
     },
-    "original": {
-      "width": 3400,
-      "height": 3691,
-      "dzi": "/assets/artworks/scholar/detail.dzi"
-    },
-    "hasOriginal": false,
     "author": "伦勃朗·范·莱因",
     "collection": "冬宫博物馆馆藏",
     "displayStatus": "当前是否陈列于254号厅：待确认",
@@ -612,12 +558,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-fish/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2358,
-      "dzi": "/assets/artworks/snyders-fish/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:36.562Z"
   },
   {
@@ -678,12 +618,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-fruit/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2313,
-      "dzi": "/assets/artworks/snyders-fruit/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:39.546Z"
   },
   {
@@ -744,12 +678,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-game/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2325,
-      "dzi": "/assets/artworks/snyders-game/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:42.788Z"
   },
   {
@@ -810,12 +738,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
     },
-    "original": {
-      "width": 3840,
-      "height": 2333,
-      "dzi": "/assets/artworks/snyders-vegetable/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:45.806Z"
   },
   {
@@ -877,12 +799,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-quay/detail.dzi"
     },
-    "original": {
-      "width": 4729,
-      "height": 2745,
-      "dzi": "/assets/artworks/snyders-quay/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:50.507Z"
   },
   {
@@ -944,12 +860,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
     },
-    "original": {
-      "width": 4674,
-      "height": 2991,
-      "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:55.573Z"
   },
   {
@@ -1011,12 +921,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-maid/detail.dzi"
     },
-    "original": {
-      "width": 3051,
-      "height": 2153,
-      "dzi": "/assets/artworks/snyders-maid/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:58.190Z"
   },
   {
@@ -1079,12 +983,6 @@
       "quality": 94,
       "dzi": "/assets/artworks/snyders-produce/detail.dzi"
     },
-    "original": {
-      "width": 2402,
-      "height": 1660,
-      "dzi": "/assets/artworks/snyders-produce/detail.dzi"
-    },
-    "hasOriginal": false,
     "generatedAt": "2026-10-12T15:24:59.733Z"
   }
 ]

@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-annunciation",
+  "title": "天使报喜",
+  "originalTitle": "Annunciation",
+  "date": "约 1472 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / Google Arts & Culture / Wikimedia Commons",
+  "description": "天使与圣母分处横幅两端，花园、石质书案与远山把宗教场景安置在可感的自然空间中。",
+  "looking": "比较天使翅膀、草地花朵和远山的清晰程度，沿两人的手势横向观看。",
+  "dimensions": "90 × 222 厘米（高 × 宽，无框）",
+  "medium": "木板油画",
+  "file": "Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+  "collection": "乌菲齐美术馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/9/93/Leonardo_da_Vinci_-_Annunciazione_-_Google_Art_Project.jpg",
+  "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+  "wall": "south",
+  "offset": 5,
+  "centerY": 2.45,
+  "physicalSize": {
+    "heightCm": 90,
+    "widthCm": 222,
+    "source": "https://www.uffizi.it/en/artworks/annunciation",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 2,
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 4057,
+  "sourceHeight": 1840,
+  "originalFile": "originals/renaissance/leonardo-annunciation.jpg",
+  "originalFileBytes": 7886923,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-annunciation/far.webp",
+      "width": 640,
+      "height": 290,
+      "bytes": 72702,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-annunciation/medium.webp",
+      "width": 1600,
+      "height": 726,
+      "bytes": 462722,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-annunciation/near.webp",
+      "width": 3000,
+      "height": 1361,
+      "bytes": 1664600,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-annunciation/detail.webp",
+    "width": 4057,
+    "height": 1840,
+    "bytes": 2915198,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-annunciation/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:51:51.153Z"
+}

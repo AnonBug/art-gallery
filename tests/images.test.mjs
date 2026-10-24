@@ -14,13 +14,14 @@ test('图片脚本处理EXIF方向，生成有效DZI，重复执行保留原文�
   assert.equal((await fs.readdir(path.join(tmp,'originals/generated-backups'))).length,1);
  }finally{await fs.rm(tmp,{recursive:true,force:true});}
 });
-test('超过WebP单边上限的输入仍保留完整原画DZI',async()=>{
+test('超大输入只生成受限高清DZI，不生成额外原画瓦片且保留源尺寸',async()=>{
  const tmp=await fs.mkdtemp(path.join(os.tmpdir(),'manlan-large-side-'));
  try{
   const original=path.join(tmp,'large.png');await sharp({create:{width:17,height:17000,channels:3,background:'#664a33'}}).png().toFile(original);
   const result=spawnSync(process.execPath,[path.resolve('scripts/process-images.mjs'),original,'large'],{cwd:tmp,encoding:'utf8',timeout:60000});assert.equal(result.status,0,result.stderr);
   const dir=path.join(tmp,'public/assets/artworks/large'),m=JSON.parse(await fs.readFile(path.join(dir,'metadata.json')));
-  assert.ok(m.detail.height<=16383);assert.equal(m.hasOriginal,true);assert.equal(m.original.height,17000);assert.equal(m.original.width,17);
-  assert.match(await fs.readFile(path.join(dir,'original.dzi'),'utf8'),/Height="17000"/);
+  assert.ok(m.detail.height<=16383);assert.equal(m.hasOriginal,undefined);assert.equal(m.original,undefined);assert.equal(m.sourceHeight,17000);assert.equal(m.sourceWidth,17);
+  assert.match(await fs.readFile(path.join(dir,'detail.dzi'),'utf8'),new RegExp(`Height="${m.detail.height}"`));
+  await assert.rejects(fs.access(path.join(dir,'original.dzi')));await assert.rejects(fs.access(path.join(dir,'original_files')));
  }finally{await fs.rm(tmp,{recursive:true,force:true});}
 });

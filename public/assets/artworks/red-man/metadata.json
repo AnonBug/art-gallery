@@ -45,11 +45,5 @@
     "dzi": "/assets/artworks/red-man/detail.dzi",
     "tileBytes": 18330837
   },
-  "original": {
-    "width": 6346,
-    "height": 8280,
-    "dzi": "/assets/artworks/red-man/original.dzi"
-  },
-  "hasOriginal": true,
   "offset": 4.3
 }

@@ -42,12 +42,6 @@
     "dzi": "/assets/artworks/flora/detail.dzi",
     "tileBytes": 15235554
   },
-  "original": {
-    "width": 5422,
-    "height": 6680,
-    "dzi": "/assets/artworks/flora/detail.dzi"
-  },
-  "hasOriginal": false,
   "credit": "Rembrandt",
   "offset": -4.3
 }

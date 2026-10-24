@@ -9,15 +9,15 @@
   "credit": "Attributed to Leonardo da Vinci / Wikimedia Commons；冬宫数字图像",
   "description": "母亲低头哺育孩子，两侧窗户打开通往远景。作品传统上与达芬奇联系，但作者归属存在讨论，本展保留来源页的“归于”表述。",
   "looking": "观察母亲低垂的眼睛、衣褶和两扇窗口之间的平衡。",
-  "dimensions": "42 × 33 厘米",
+  "dimensions": "42 × 33 厘米（高 × 宽，无框）",
   "medium": "木板蛋彩画，后转移至画布",
   "file": "Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
   "collection": "冬宫博物馆",
   "attribution": "作者归属存在讨论，来源文件页标注为归于达芬奇。",
-  "wall": "east",
-  "offset": -3.5,
+  "wall": "west",
+  "offset": -6.6,
   "height": 2.3,
-  "centerY": 2.6,
+  "centerY": 2.1,
   "room": "leonardo",
   "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/6/6f/Leonardo_da_Vinci_attributed_-_Madonna_Litta.jpg",
   "displayStatus": "数字主题策展，非实体展厅复原",
@@ -57,11 +57,12 @@
     "quality": 90,
     "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
   },
-  "original": {
-    "width": 6346,
-    "height": 8096,
-    "dzi": "/assets/artworks/leonardo-litta/detail.dzi"
+  "generatedAt": "2026-10-13T15:46:00.260Z",
+  "physicalSize": {
+    "heightCm": 42,
+    "widthCm": 33,
+    "source": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf",
+    "checkedAt": "2026-10-24"
   },
-  "hasOriginal": false,
-  "generatedAt": "2026-10-13T15:46:00.260Z"
+  "displayScale": 2
 }

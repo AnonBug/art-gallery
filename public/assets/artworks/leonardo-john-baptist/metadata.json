@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-john-baptist",
+  "title": "施洗者圣约翰",
+  "originalTitle": "Saint John the Baptist",
+  "date": "约 1508—1519 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / C2RMF；经修整的数字图像 / Wikimedia Commons",
+  "description": "人物从深暗背景里转出，弯起的手臂与向上的食指把视线引向画外。",
+  "looking": "观察嘴角、眼睛和卷发如何在暗色中逐渐出现，再追随食指的方向。",
+  "dimensions": "72.9 × 56.3 厘米（高 × 宽，无框）",
+  "medium": "胡桃木板油画",
+  "file": "Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+  "collection": "卢浮宫博物馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/b/b8/Leonardo_da_Vinci_-_Saint_John_the_Baptist_C2RMF_retouched.jpg",
+  "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+  "wall": "west",
+  "offset": -12,
+  "centerY": 2.1,
+  "physicalSize": {
+    "heightCm": 72.9,
+    "widthCm": 56.3,
+    "source": "https://collections.louvre.fr/ark:/53355/cl010062374",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 2,
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 10446,
+  "sourceHeight": 13522,
+  "originalFile": "originals/renaissance/leonardo-john-baptist.jpg",
+  "originalFileBytes": 94507636,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-john-baptist/far.webp",
+      "width": 494,
+      "height": 640,
+      "bytes": 49116,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-john-baptist/medium.webp",
+      "width": 1236,
+      "height": 1600,
+      "bytes": 402646,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-john-baptist/near.webp",
+      "width": 2318,
+      "height": 3000,
+      "bytes": 1857150,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-john-baptist/detail.webp",
+    "width": 10446,
+    "height": 13522,
+    "bytes": 15338940,
+    "quality": 86,
+    "dzi": "/assets/artworks/leonardo-john-baptist/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:57:29.960Z"
+}

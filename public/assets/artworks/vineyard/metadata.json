@@ -44,11 +44,5 @@
     "bytes": 222230,
     "dzi": "/assets/artworks/vineyard/detail.dzi",
     "tileBytes": 597867
-  },
-  "original": {
-    "width": 1980,
-    "height": 1459,
-    "dzi": "/assets/artworks/vineyard/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }

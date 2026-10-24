@@ -7,8 +7,8 @@ await fs.mkdir('originals/renaissance',{recursive:true});
 function run(command,args){return new Promise((resolve,reject)=>{const child=spawn(command,args,{stdio:['ignore','pipe','pipe']});let output='';child.stdout.on('data',d=>output+=d);child.stderr.on('data',d=>output+=d);child.on('error',reject);child.on('close',code=>code?reject(new Error(output)):resolve(output));});}
 async function importArtwork(a){
  const hash=crypto.createHash('md5').update(a.file).digest('hex');
- const originalUrl=`https://upload.wikimedia.org/wikipedia/commons/${hash[0]}/${hash.slice(0,2)}/${encodeURIComponent(a.file)}`;
- const source=`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(a.file)}`;
+ const originalUrl=a.originalUrl??`https://upload.wikimedia.org/wikipedia/commons/${hash[0]}/${hash.slice(0,2)}/${encodeURIComponent(a.file)}`;
+ const source=a.source??`https://commons.wikimedia.org/wiki/File:${encodeURIComponent(a.file)}`;
  const input=`originals/renaissance/${a.id}.jpg`,metaFile=`originals/renaissance/${a.id}.json`;
  const meta={...a,room:'leonardo',source,originalUrl,displayStatus:'数字主题策展，非实体展厅复原',licenseStatus:a.licenseStatus??`${a.license}（来源页核查：2026-10-13）`};
  await fs.writeFile(metaFile,JSON.stringify(meta,null,2)+'\n');
@@ -19,13 +19,16 @@ async function importArtwork(a){
  }
  const generated=`public/assets/artworks/${a.id}/metadata.json`;
  try{await fs.access(generated);}catch{console.log(`生成《${a.title}》展示图与高清瓦片…`);await run(process.execPath,['scripts/process-images.mjs',input,a.id,metaFile]);}
- return {...JSON.parse(await fs.readFile(generated,'utf8')),...meta};
+ const previous=await fs.readFile(generated,'utf8');
+ const current={...JSON.parse(previous),...meta},serialized=JSON.stringify(current,null,2)+'\n';
+ if(serialized!==previous)await fs.writeFile(generated,serialized);
+ return current;
 }
-const imported=[];
+const imported=new Map();
 // Limit concurrent original downloads and image processing to two.
 const queue=[...catalog];
-await Promise.all(Array.from({length:2},async()=>{while(queue.length){const a=queue.shift();imported.push(await importArtwork(a));console.log(`完成《${a.title}》`);}}));
+await Promise.all(Array.from({length:2},async()=>{while(queue.length){const a=queue.shift();imported.set(a.id,await importArtwork(a));console.log(`完成《${a.title}》`);}}));
 const file='src/data/artworks.json',artworks=JSON.parse(await fs.readFile(file,'utf8'));
-for(const a of imported){const i=artworks.findIndex(x=>x.id===a.id);if(i<0)artworks.push(a);else artworks[i]=a;}
+for(const entry of catalog){const a=imported.get(entry.id);const i=artworks.findIndex(x=>x.id===a.id);if(i<0)artworks.push(a);else artworks[i]=a;}
 await fs.writeFile(file,JSON.stringify(artworks,null,2)+'\n');
-console.log('已导入达芬奇厅五幅作品。');
+console.log(`已导入达芬奇厅 ${imported.size} 件作品。`);

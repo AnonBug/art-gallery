@@ -7,11 +7,26 @@
       "创作晚期的生活背景也值得知道：伦勃朗在1656年申请破产，儿子提图斯又于1668年去世。结合他长期关注这一寓言的经历，可以把晚年重画理解为对失落、尊严与无条件宽恕的深入思考。不过，现有核查资料没有他的亲述动机，画作约1668年的断代也不足以证明它在提图斯死后才动笔；不能把这种解读写成一次确定的丧亲委托。"
     ],
     "sources": [
-      {"label":"冬宫馆藏说明：《浪子回头》（俄文）","url":"https://www.hermitagemuseum.org/digital-collection/43413"},
-      {"label":"《路加福音》15:11—32：浪子与父亲、长子","url":"https://www.biblegateway.com/passage/?search=Luke+15%3A11-32&version=NIV"},
-      {"label":"荷兰国立博物馆：1636年《浪子回头》蚀刻画","url":"https://id.rijksmuseum.nl/200125037"},
-      {"label":"英国国家美术馆：伦勃朗生平与1656年破产","url":"https://www.nationalgallery.org.uk/artists/rembrandt"},
-      {"label":"美国国家美术馆：伦勃朗生平与提图斯之死","url":"https://www.nga.gov/artists/1822-rembrandt-van-rijn"}
+      {
+        "label": "冬宫馆藏说明：《浪子回头》（俄文）",
+        "url": "https://www.hermitagemuseum.org/digital-collection/43413"
+      },
+      {
+        "label": "《路加福音》15:11—32：浪子与父亲、长子",
+        "url": "https://www.biblegateway.com/passage/?search=Luke+15%3A11-32&version=NIV"
+      },
+      {
+        "label": "荷兰国立博物馆：1636年《浪子回头》蚀刻画",
+        "url": "https://id.rijksmuseum.nl/200125037"
+      },
+      {
+        "label": "英国国家美术馆：伦勃朗生平与1656年破产",
+        "url": "https://www.nationalgallery.org.uk/artists/rembrandt"
+      },
+      {
+        "label": "美国国家美术馆：伦勃朗生平与提图斯之死",
+        "url": "https://www.nga.gov/artists/1822-rembrandt-van-rijn"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -22,8 +37,14 @@
       "传统画家常把这次降临画成金雨或金币，伦勃朗的画面却让我们先看到一个伸手迎向光亮的女人，而非清楚可见的神。结合神话，可以把照进床边的暖光理解为神的到来；这是读画的线索，并不等于画家留下的解释。知道她曾被父亲隔绝，再看她的手势，期待、惊讶与封闭空间之间便有了更具体的张力。"
     ],
     "sources": [
-      {"label":"冬宫：提香《达娜厄》的神话题材说明（用于核对故事，并非本画）","url":"https://www.hermitagemuseum.org/digital-collection/32194"},
-      {"label":"英国国家美术馆：珀尔修斯故事教学材料","url":"https://www.nationalgallery.org.uk/learning/teachers-and-schools/teaching-english-and-drama/out-of-art-into-storytelling/stories-for-use-in-class/out-of-art-into-storytelling-the-adventures-of-perseus"}
+      {
+        "label": "冬宫：提香《达娜厄》的神话题材说明（用于核对故事，并非本画）",
+        "url": "https://www.hermitagemuseum.org/digital-collection/32194"
+      },
+      {
+        "label": "英国国家美术馆：珀尔修斯故事教学材料",
+        "url": "https://www.nationalgallery.org.uk/learning/teachers-and-schools/teaching-english-and-drama/out-of-art-into-storytelling/stories-for-use-in-class/out-of-art-into-storytelling-the-adventures-of-perseus"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -33,7 +54,12 @@
       "芙洛拉是古罗马与花朵、春季繁盛相关的女神。因此，这里的花冠与花枝不只是装饰，也让人物进入一个古典寓意：青春、盛放和生命的丰盈。它并不表现一段女神冒险的情节，而是让现实人物扮演神话角色。",
       "冬宫将画中人物辨认为伦勃朗的妻子萨斯基娅。作品作于1634年，正是两人成婚之年，也是他在阿姆斯特丹事业上升的时期。馆方把这一形象与他新婚时的幸福相联系。这样看，画面既是古典扮装，也是私人生活与职业成功的交汇；但不必进一步替花冠中的每一种花指定未经核实的婚姻寓意。"
     ],
-    "sources": [{"label":"冬宫馆藏说明：《花神》（俄文）","url":"https://www.hermitagemuseum.org/digital-collection/43371"}],
+    "sources": [
+      {
+        "label": "冬宫馆藏说明：《花神》（俄文）",
+        "url": "https://www.hermitagemuseum.org/digital-collection/43371"
+      }
+    ],
     "checkedAt": "2026-10-11"
   },
   "isaac": {
@@ -42,7 +68,12 @@
       "题材来自《创世记》22章。亚伯拉罕接受考验，带着儿子以撒前往献祭；就在他准备下手时，天使阻止了他，公羊随后代替以撒成为祭品。故事的关键是献祭被制止，而不是儿子已经被杀。画中的落刀说明我们看到的正是这个转折。",
       "冬宫的修复展说明指出，伦勃朗借鉴过老师彼得·拉斯特曼和鲁本斯处理同一题材的方式，却让天使直接抓住亚伯拉罕的手腕。于是，神的命令成为能够感到力量的身体接触：父亲遮住孩子的脸，天使扭转动作，刀失去支撑。它体现了1630年代伦勃朗对巴洛克戏剧性的探索，也把抽象的信仰考验变成父亲与孩子之间的困境。"
     ],
-    "sources": [{"label":"冬宫修复展：《亚伯拉罕献以撒》的题材与创作背景（俄文）","url":"https://hermitagemuseum.org/what-s-on/abraham"}],
+    "sources": [
+      {
+        "label": "冬宫修复展：《亚伯拉罕献以撒》的题材与创作背景（俄文）",
+        "url": "https://hermitagemuseum.org/what-s-on/abraham"
+      }
+    ],
     "checkedAt": "2026-10-11"
   },
   "descent": {
@@ -52,8 +83,14 @@
       "冬宫学术目录把1634年的构图与伦勃朗此前为奥兰治亲王制作的受难题材作品联系起来；这不等于本展这幅1634年画作本身就是那件宫廷委托。观看时可以留意：重力与照护取代了胜利者的姿态，死亡通过人们如何接住身体而被感知。本地图源存在工作室归属的不同表述，仍保留待核对说明，不据此认定每一处都出自伦勃朗本人。"
     ],
     "sources": [
-      {"label":"《约翰福音》19:38—42：领取与安葬遗体","url":"https://www.biblegateway.com/passage/?search=John19%3A38-42&version=NIV"},
-      {"label":"冬宫伦勃朗学术目录：《卸下十字架》条目（俄文PDF）","url":"https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf"}
+      {
+        "label": "《约翰福音》19:38—42：领取与安葬遗体",
+        "url": "https://www.biblegateway.com/passage/?search=John19%3A38-42&version=NIV"
+      },
+      {
+        "label": "冬宫伦勃朗学术目录：《卸下十字架》条目（俄文PDF）",
+        "url": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -64,8 +101,14 @@
       "画面省略了追杀的激烈动作，把紧张留在分别的一刻；可以将华丽衣饰与依靠对方的姿态，看作身份与脆弱并存的线索。另一个可核实的背景是：冬宫记载此画于1716年在阿姆斯特丹为彼得大帝购得，是第一件被带到俄罗斯的伦勃朗作品。它在俄罗斯的收藏史，远早于今天的冬宫展厅。"
     ],
     "sources": [
-      {"label":"冬宫馆藏说明：《大卫与约拿单》（俄文）","url":"https://www.hermitagemuseum.org/digital-collection/43281"},
-      {"label":"《撒母耳记上》20:35—42：暗号与告别","url":"https://www.biblegateway.com/passage/?search=1+Samuel+20%3A35-42&version=NIV"}
+      {
+        "label": "冬宫馆藏说明：《大卫与约拿单》（俄文）",
+        "url": "https://www.hermitagemuseum.org/digital-collection/43281"
+      },
+      {
+        "label": "《撒母耳记上》20:35—42：暗号与告别",
+        "url": "https://www.biblegateway.com/passage/?search=1+Samuel+20%3A35-42&version=NIV"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -76,8 +119,14 @@
       "冬宫学术目录将它与伦勃朗1650年代追求清晰、简练、纪念碑感的单人构图联系起来。画中没有需要破解的激烈动作，叙事被压缩在面部、双手和长久的静坐中。可以把它看成对老年经验的凝视；这是一种观看角度，而非已核实的模特传记。"
     ],
     "sources": [
-      {"label":"冬宫：荷兰绘画收藏概述（晚期作品分期）","url":"https://www.hermitagemuseum.org/explore/collections/category_2/element_20"},
-      {"label":"冬宫伦勃朗学术目录：《红衣老人》条目（俄文PDF）","url":"https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf"}
+      {
+        "label": "冬宫：荷兰绘画收藏概述（晚期作品分期）",
+        "url": "https://www.hermitagemuseum.org/explore/collections/category_2/element_20"
+      },
+      {
+        "label": "冬宫伦勃朗学术目录：《红衣老人》条目（俄文PDF）",
+        "url": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -88,8 +137,14 @@
       "冬宫提供的作品说明特别指出，飞来的天使中有一位张开双臂，姿态令人想到十字架。这让安静的育儿场景含有另一层时间：观众知道婴儿未来的受难，而母亲此刻只是关心他是否安睡。家庭温暖与未来命运同时存在，天使也因此不只是装饰。"
     ],
     "sources": [
-      {"label":"冬宫提供的《圣家族》说明（Google Arts & Culture）","url":"https://artsandculture.google.com/asset/pwHUt3tLKCyq2w?hl=en"},
-      {"label":"冬宫伦勃朗学术目录：《圣家族》题材说明（俄文PDF）","url":"https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf"}
+      {
+        "label": "冬宫提供的《圣家族》说明（Google Arts & Culture）",
+        "url": "https://artsandculture.google.com/asset/pwHUt3tLKCyq2w?hl=en"
+      },
+      {
+        "label": "冬宫伦勃朗学术目录：《圣家族》题材说明（俄文PDF）",
+        "url": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731920442.pdf"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -99,7 +154,12 @@
       "1631年前后，伦勃朗正把事业重心转向阿姆斯特丹。大都会博物馆与冬宫的联合展览目录，把这幅通常称作“学者肖像”的作品列入他早期重要的肖像委托，并指出构图参照了鲁本斯的《卡斯帕·格瓦尔蒂乌斯肖像》。这说明年轻画家不仅在观察模特，也在学习怎样用成熟的肖像语言获得新客户。",
       "书本、笔和书桌把人物呈现为一个正在思考、写作的人，转头的动作则使正式肖像像一段被打断的工作。展名“学者”不等于身份已确定；本展未能核实模特姓名。我们可以理解这些物件如何塑造有学识的形象，但不能据此替他指定某项学术成就。"
     ],
-    "sources": [{"label":"大都会博物馆／冬宫：《冬宫荷兰与佛兰德绘画》展览目录（英文PDF）","url":"https://resources.metmuseum.org/resources/metpublications/pdf/Dutch_and_Flemish_Paintings_from_the_Hermitage.pdf"}],
+    "sources": [
+      {
+        "label": "大都会博物馆／冬宫：《冬宫荷兰与佛兰德绘画》展览目录（英文PDF）",
+        "url": "https://resources.metmuseum.org/resources/metpublications/pdf/Dutch_and_Flemish_Paintings_from_the_Hermitage.pdf"
+      }
+    ],
     "checkedAt": "2026-10-11"
   },
   "earrings": {
@@ -109,8 +169,14 @@
       "它的文献也提醒我们，画作档案会改变：本地图源页记为1638年，NGV的2015年冬宫展签记为1657年。年代存在冲突，本展标为待确认，不据此编排某一年的私人故事。认识这一点，也能避免把一个日常人物轻率认定为特定恋人或某位神话女性。"
     ],
     "sources": [
-      {"label":"维多利亚国家美术馆：2015年冬宫展签，第121页（英文PDF）","url":"https://www.ngv.vic.gov.au/wp-content/uploads/2015/07/Hermitage_Labels.pdf#page=121"},
-      {"label":"本地图源的作品信息与年代（Commons）","url":"https://commons.wikimedia.org/wiki/File:Rembrandt_Woman_with_a_Mirror.jpg"}
+      {
+        "label": "维多利亚国家美术馆：2015年冬宫展签，第121页（英文PDF）",
+        "url": "https://www.ngv.vic.gov.au/wp-content/uploads/2015/07/Hermitage_Labels.pdf#page=121"
+      },
+      {
+        "label": "本地图源的作品信息与年代（Commons）",
+        "url": "https://commons.wikimedia.org/wiki/File:Rembrandt_Woman_with_a_Mirror.jpg"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -120,7 +186,12 @@
       "巴尔特耶·马滕斯是阿姆斯特丹家具工匠赫尔曼·多默的妻子。伦勃朗为夫妻两人画了成对肖像：她的这一幅在冬宫，丈夫的肖像如今在纽约大都会博物馆。把两幅作为一对来理解，会发现这并非孤立的老妇人形象，而是一个工匠家庭希望被长久记住的面貌。",
       "大都会博物馆记载，多默善于使用当时流行的进口硬木；两幅肖像创作前后，他们的儿子兰伯特也在伦勃朗画室学习。这使人物与画家的关系不只停在顾客层面，还连接到工艺、家庭和画室传承。她朴素的衣着与轻微笑意，可以放在这种具体的社会联系中观看，而不必依靠宏大的寓言。"
     ],
-    "sources": [{"label":"大都会博物馆：《赫尔曼·多默》，含妻子配对肖像与儿子学艺背景","url":"https://www.metmuseum.org/art/collection/search/437392"}],
+    "sources": [
+      {
+        "label": "大都会博物馆：《赫尔曼·多默》，含妻子配对肖像与儿子学艺背景",
+        "url": "https://www.metmuseum.org/art/collection/search/437392"
+      }
+    ],
     "checkedAt": "2026-10-11"
   },
   "vineyard": {
@@ -130,8 +201,14 @@
       "寓言把按劳动时长计算报酬的直觉，与超出功劳计算的恩典放在一起。它首先是关于天国的比喻，不宜直接当成现实雇佣制度的主张。带着这个冲突看画，钱币与争论的手势便不只是市井细节：不同人物正在面对同一个问题——别人的意外所得，是否会使自己的所得显得不足？"
     ],
     "sources": [
-      {"label":"《马太福音》20:1—16：葡萄园雇工的比喻","url":"https://www.biblegateway.com/passage/?search=Matthew+20.1-16"},
-      {"label":"冬宫馆藏记录：《葡萄园雇工的比喻》（俄文）","url":"https://www.hermitagemuseum.org/digital-collection/43532"}
+      {
+        "label": "《马太福音》20:1—16：葡萄园雇工的比喻",
+        "url": "https://www.biblegateway.com/passage/?search=Matthew+20.1-16"
+      },
+      {
+        "label": "冬宫馆藏记录：《葡萄园雇工的比喻》（俄文）",
+        "url": "https://www.hermitagemuseum.org/digital-collection/43532"
+      }
     ],
     "checkedAt": "2026-10-11"
   },
@@ -142,8 +219,14 @@
       "这幅画的故事藏在劳动与物产的关系里：商贩正在处理鱼，湿润的鱼身、坚硬的外壳与桌下动物挤进同一个空间。观看时，可以沿着切鱼的动作进入画面，再比较不同生物的身体与质感。它既有市场的生活气息，也把丰盛安排得像一场经过精心编排的演出，而非随手记录的一天。"
     ],
     "sources": [
-      {"label":"冬宫：斯奈德斯与佛兰德静物展，市场画系列及其艺术背景（俄文）","url":"https://support.hermitagemuseum.org/ru/news/view/293"},
-      {"label":"本展所用《鱼摊》图源及作品记录","url":"https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fish_Stall_-_WGA21521.jpg"}
+      {
+        "label": "冬宫：斯奈德斯与佛兰德静物展，市场画系列及其艺术背景（俄文）",
+        "url": "https://support.hermitagemuseum.org/ru/news/view/293"
+      },
+      {
+        "label": "本展所用《鱼摊》图源及作品记录",
+        "url": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fish_Stall_-_WGA21521.jpg"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -154,8 +237,14 @@
       "画面左侧的交易让我们认出这是市场，但大部分空间留给了成堆的果实。人的手势把视线送向篮筐，果皮、叶子与容器又把目光引向更深处。可以把这种从一笔买卖扩展到整片物产的观看，理解为画家对富足的想象；画中的丰盛不等于每个普通家庭都能拥有这样的日常餐桌。"
     ],
     "sources": [
-      {"label":"冬宫馆藏导览：《水果摊》、四幅摊位画系列及1779年收藏来源（英文PDF）","url":"https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf"},
-      {"label":"本展所用《水果摊》图源及作品记录","url":"https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21518.jpg"}
+      {
+        "label": "冬宫馆藏导览：《水果摊》、四幅摊位画系列及1779年收藏来源（英文PDF）",
+        "url": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf"
+      },
+      {
+        "label": "本展所用《水果摊》图源及作品记录",
+        "url": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21518.jpg"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -165,7 +254,12 @@
       "这幅猎物摊位画不是一个人独自完成的作品。冬宫馆藏记录同时列出斯奈德斯与扬·维尔登斯，并明确注明维尔登斯负责风景。在当时的佛兰德，擅长不同题材的画家可以合作：静物、动物、人物和风景并不一定都由同一只手绘制。",
       "知道这层分工，再看前景堆叠的猎物与远处展开的空间，会发现两种专长如何接合成一个完整场景。白色翅膀让沉重的动物身体仿佛仍在运动，商贩与狗又把猎物重新带回买卖的世界。馆方还记载，这幅画于1779年随沃波尔的霍顿庄园收藏进入冬宫；眼前的市场图像，也曾是英国私人收藏中的一幅巨画。"
     ],
-    "sources": [{"label":"冬宫馆藏记录：《猎物摊》，维尔登斯负责风景及1779年入藏信息（俄文）","url":"https://www.hermitagemuseum.org/digital-collection/48292"}],
+    "sources": [
+      {
+        "label": "冬宫馆藏记录：《猎物摊》，维尔登斯负责风景及1779年入藏信息（俄文）",
+        "url": "https://www.hermitagemuseum.org/digital-collection/48292"
+      }
+    ],
     "checkedAt": "2026-10-14"
   },
   "snyders-vegetable": {
@@ -175,8 +269,14 @@
       "抱着卷心菜的孩子，使蔬菜不只是被陈列的物件，而是人与物之间正在发生的关系。顺着摊前人物的动作看向远处，再回到前景的叶片与根茎，可以读出一条从运输、交易到家庭生活的线索。这是依据画面提出的观看方式，不需要把每一棵菜都强行对应为某种固定寓意。"
     ],
     "sources": [
-      {"label":"冬宫：大型摊位画与佛兰德静物的艺术背景（俄文）","url":"https://support.hermitagemuseum.org/ru/news/view/293"},
-      {"label":"本展蔬菜摊图源；文件名虽含Fruit Stall，记录对应本画","url":"https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21520.jpg"}
+      {
+        "label": "冬宫：大型摊位画与佛兰德静物的艺术背景（俄文）",
+        "url": "https://support.hermitagemuseum.org/ru/news/view/293"
+      },
+      {
+        "label": "本展蔬菜摊图源；文件名虽含Fruit Stall，记录对应本画",
+        "url": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Fruit_Stall_-_WGA21520.jpg"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -187,8 +287,14 @@
       "远处的船只让这片物产与更大的世界相连。馆方记录，背景同时出现悬挂荷兰与西班牙旗帜的船，而作品完成于尼德兰冲突仍在持续的年代。于是，前景的充足与远景的贸易、政治现实可以被放在一起观看；这种联系提供了历史语境，却不意味着每一件货物都是画家预设的政治暗号。"
     ],
     "sources": [
-      {"label":"北卡罗来纳艺术博物馆：《码头市场》馆藏记录与展签","url":"https://collection.ncartmuseum.org/objects/38/market-scene-on-a-quay"},
-      {"label":"北卡罗来纳艺术博物馆教育资源：市场画的宏大尺度","url":"https://artnc.org/works-of-art/market-scene-quay/"}
+      {
+        "label": "北卡罗来纳艺术博物馆：《码头市场》馆藏记录与展签",
+        "url": "https://collection.ncartmuseum.org/objects/38/market-scene-on-a-quay"
+      },
+      {
+        "label": "北卡罗来纳艺术博物馆教育资源：市场画的宏大尺度",
+        "url": "https://artnc.org/works-of-art/market-scene-quay/"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -199,8 +305,14 @@
       "这幅画也讲述了艺术史档案如何变化。旧目录把人物部分归于扬·博克霍斯特；盖蒂现行馆藏记录则署为“斯奈德斯及工作室、鲁本斯工作室”，年代为1636—1638年。与其想象一位画家独自安排每个细节，不如把它放回安特卫普画室合作的环境中理解。本展采用现行记录，同时保留旧归属的说明。"
     ],
     "sources": [
-      {"label":"盖蒂现行馆藏记录：78.PA.207，含作者、年代及旧归属","url":"https://www.getty.edu/art/collection/object/103RDT"},
-      {"label":"盖蒂1997年欧洲绘画简目：旧题名及博克霍斯特归属（英文PDF）","url":"https://www.getty.edu/publications/resources/virtuallibrary/0892364815.pdf"}
+      {
+        "label": "盖蒂现行馆藏记录：78.PA.207，含作者、年代及旧归属",
+        "url": "https://www.getty.edu/art/collection/object/103RDT"
+      },
+      {
+        "label": "盖蒂1997年欧洲绘画简目：旧题名及博克霍斯特归属（英文PDF）",
+        "url": "https://www.getty.edu/publications/resources/virtuallibrary/0892364815.pdf"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -210,7 +322,12 @@
       "普拉多博物馆把这幅作品放在佛兰德富裕收藏者的趣味中介绍：斯奈德斯的贵族与富裕市民顾客，既欣赏绘画技巧，也看重它对财富和繁荣的呈现。因此，女仆身边的果实不只是厨房存货；画面本身也能成为主人希望营造的富足形象。",
       "女仆让我们想到食物将被照料和使用，猴子、鹦鹉又给整齐的陈设带来不安分的生命。观看时，可以先把它看作一场人、动物与食物相遇的小戏，再回头欣赏那些几乎让人想触摸的表面。这样的静物把装饰、生活与观看的欲望编织到一起，远比单纯的物品清单丰富。"
     ],
-    "sources": [{"label":"普拉多博物馆：《有女仆的静物》，收藏者趣味与财富主题","url":"https://www.museodelprado.es/en/the-collection/art-work/still-life-with-a-maid/025b2c33-b378-40da-a40c-a60389cce73c"}],
+    "sources": [
+      {
+        "label": "普拉多博物馆：《有女仆的静物》，收藏者趣味与财富主题",
+        "url": "https://www.museodelprado.es/en/the-collection/art-work/still-life-with-a-maid/025b2c33-b378-40da-a40c-a60389cce73c"
+      }
+    ],
     "checkedAt": "2026-10-14"
   },
   "snyders-produce": {
@@ -219,7 +336,12 @@
       "诺顿·西蒙博物馆与植物学者核对画中物产时发现，它们成熟于不同季节。看似准确描绘的场景，实际上是一种被画家组合出来的丰盛。物品的位置也有当时的价值次序：较普通的根茎放在地上，受珍视的豌豆与芦笋则进入右侧篮筐。",
       "斯奈德斯负责静物，人物由他的姻亲、肖像画家科内利斯·德·沃斯绘制。女人与男孩通过触碰和目光相连，使食材的陈列成为生活场景。馆方还记录，这幅作品曾与另外三幅大型市场、储藏室画一起，悬挂在英国纽卡斯尔公爵克伦伯庄园的正式餐厅中；图像里的富足，曾直接回应一处贵族用餐空间。"
     ],
-    "sources": [{"label":"诺顿·西蒙博物馆：季节、物产价值次序、合作作者与餐厅陈列史","url":"https://50.nortonsimon.org/collections/still-life-with-fruit-and-vegetables/"}],
+    "sources": [
+      {
+        "label": "诺顿·西蒙博物馆：季节、物产价值次序、合作作者与餐厅陈列史",
+        "url": "https://50.nortonsimon.org/collections/still-life-with-fruit-and-vegetables/"
+      }
+    ],
     "checkedAt": "2026-10-14"
   },
   "leonardo-mona-lisa": {
@@ -229,8 +351,14 @@
       "这种漫长的制作，与他想让肖像仿佛拥有生命有关。卢浮宫介绍，面部柔和的轮廓来自一层层极薄的油彩罩染，即常说的“晕涂法”。微笑没有被一条明确的线固定，人物也就像随观看而变化。它的吸引力不必依靠某个秘密身份：一位真实的女性，成为画家探索表情、光线和观看关系的长期课题。"
     ],
     "sources": [
-      {"label":"卢浮宫：《蒙娜丽莎》沉浸展，人物身份、委托与流传","url":"https://www.louvre.fr/decouvrir/vie-du-musee/la-joconde-exposition-immersive"},
-      {"label":"卢浮宫：达芬奇专题，长期创作与晕涂技法","url":"https://www.louvre.fr/louvreplus/autour-de-leonard-de-vinci"}
+      {
+        "label": "卢浮宫：《蒙娜丽莎》沉浸展，人物身份、委托与流传",
+        "url": "https://www.louvre.fr/decouvrir/vie-du-musee/la-joconde-exposition-immersive"
+      },
+      {
+        "label": "卢浮宫：达芬奇专题，长期创作与晕涂技法",
+        "url": "https://www.louvre.fr/louvreplus/autour-de-leonard-de-vinci"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -241,8 +369,14 @@
       "银貂可以有不止一层指向。馆方介绍，卢多维科在1488年获得银貂骑士勋章，动物因而可能暗示公爵；它的希腊语名称gale又与加莱拉尼的姓氏相近。这些是有文献支持的解释，而不是一份已经破译完毕的密码。再留意今天的黑色背景：馆方说明它曾在19世纪被重绘，原本的明暗层次更加丰富。"
     ],
     "sources": [
-      {"label":"克拉科夫国家博物馆：人物身份、银貂寓意与背景重绘","url":"https://mnk.pl/en/collections/lady-with-an-ermine/"},
-      {"label":"克拉科夫国家博物馆数字馆藏：MNK XII-209","url":"https://zbiory.mnk.pl/en/catalog/157417"}
+      {
+        "label": "克拉科夫国家博物馆：人物身份、银貂寓意与背景重绘",
+        "url": "https://mnk.pl/en/collections/lady-with-an-ermine/"
+      },
+      {
+        "label": "克拉科夫国家博物馆数字馆藏：MNK XII-209",
+        "url": "https://zbiory.mnk.pl/en/catalog/157417"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -252,7 +386,12 @@
       "圣安娜是圣母玛利亚的母亲。画中三代人物相依，孩子正与小羊玩耍，玛利亚则俯身伸手。卢浮宫2019年达芬奇展的资料指出，画家从1503年起不断研究这一构图，直到生命末期仍在调整人物姿态、发式与衣服；亲密而自然的组合，其实经历了很长时间的推敲。",
       "红外影像让这段创作过程变得可见：较早的方案中，圣安娜曾伸出手臂，阻止玛利亚把孩子与小羊分开，后来画家放弃了这个动作。卢浮宫把最终构图解读为母亲带着悲伤的微笑，接受孩子未来的牺牲。知道这些变化，再看眼前彼此牵连的手和目光，就能同时看见家庭的亲密与宗教叙事中的命运。"
     ],
-    "sources": [{"label":"卢浮宫2019年达芬奇展：圣安娜的创作时间、红外影像与构图变化","url":"https://mini-site.louvre.fr/trimestriel/2019/l%C3%A9onard_de_vinciGB/102/"}],
+    "sources": [
+      {
+        "label": "卢浮宫2019年达芬奇展：圣安娜的创作时间、红外影像与构图变化",
+        "url": "https://mini-site.louvre.fr/trimestriel/2019/l%C3%A9onard_de_vinciGB/102/"
+      }
+    ],
     "checkedAt": "2026-10-14"
   },
   "leonardo-benois": {
@@ -262,8 +401,14 @@
       "花也保留了宗教意义。冬宫资料把四片花瓣与十字架、基督将来的受难联系起来；眼前轻松的游戏，因此含有未来命运的回声。“贝努瓦”则不是画中人物的名字，而来自收藏史：作品曾属贝努瓦家族，1914年由该家族收藏进入冬宫。它的两个名称，一个记住画中的花，一个记住画外的流传。"
     ],
     "sources": [
-      {"label":"冬宫馆藏导览：《持花圣母》的母子互动、花朵与收藏来源（英文PDF）","url":"https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf"},
-      {"label":"冬宫博物馆导览：1914年从贝努瓦家族购藏（英文PDF）","url":"https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921615.pdf"}
+      {
+        "label": "冬宫馆藏导览：《持花圣母》的母子互动、花朵与收藏来源（英文PDF）",
+        "url": "https://hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921599.pdf"
+      },
+      {
+        "label": "冬宫博物馆导览：1914年从贝努瓦家族购藏（英文PDF）",
+        "url": "https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921615.pdf"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -274,8 +419,14 @@
       "这幅画的作者问题仍值得保留。冬宫长期以达芬奇作品介绍它；卢浮宫在讨论相关的米兰乳哺圣母图像时，则认为构图可能由达芬奇设计，实际绘制可能出自学生之手，并提出马尔科·德·奥焦诺的可能性。因此，本展保留“归于达芬奇”的署名。认识这种分歧，能帮助我们把作品放进达芬奇与米兰画室共同发展的传统，而不把归属争论简化成真或假的二选一。"
     ],
     "sources": [
-      {"label":"冬宫博物馆导览：1865年购藏《丽塔圣母》（英文PDF）","url":"https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921615.pdf"},
-      {"label":"卢浮宫《绿垫圣母》馆藏研究：丽塔圣母与达芬奇画室的归属问题","url":"https://collections.louvre.fr/en/ark:/53355/cl010060911"}
+      {
+        "label": "冬宫博物馆导览：1865年购藏《丽塔圣母》（英文PDF）",
+        "url": "https://www.hermitagemuseum.org/uploads/files/publications/d41d8cd98f00b204e9800998ecf8427e1731921615.pdf"
+      },
+      {
+        "label": "卢浮宫《绿垫圣母》馆藏研究：丽塔圣母与达芬奇画室的归属问题",
+        "url": "https://collections.louvre.fr/en/ark:/53355/cl010060911"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
@@ -287,16 +438,25 @@
       "作品还有一段离开意大利的收藏经历。冬宫的馆史记载，叶卡捷琳娜二世时期的西欧雕塑曾被安置在沙皇村，《蹲伏的男孩》也在其中。今天本展呈现的是Scan-the-World制作的摄影测量模型：雕塑自身的历史，与后来把它记录为可旋转数字形体的过程，是前后相接的两段故事。"
     ],
     "sources": [
-      {"label":"冬宫馆藏精选：米开朗基罗《蹲伏的男孩》的年代与材料","url":"https://hermitagemuseum.org/explore?745=&lng=en"},
-      {"label":"冬宫馆史：叶卡捷琳娜二世时期的雕塑收藏与沙皇村","url":"https://hermitagemuseum.org/panorama/virtual_visit/new_hermitage/history/history_2/?lng=en"},
-      {"label":"Scan-the-World／Zenodo：作品说明、不同寓意与摄影测量来源","url":"https://zenodo.org/records/21353106"}
+      {
+        "label": "冬宫馆藏精选：米开朗基罗《蹲伏的男孩》的年代与材料",
+        "url": "https://hermitagemuseum.org/explore?745=&lng=en"
+      },
+      {
+        "label": "冬宫馆史：叶卡捷琳娜二世时期的雕塑收藏与沙皇村",
+        "url": "https://hermitagemuseum.org/panorama/virtual_visit/new_hermitage/history/history_2/?lng=en"
+      },
+      {
+        "label": "Scan-the-World／Zenodo：作品说明、不同寓意与摄影测量来源",
+        "url": "https://zenodo.org/records/21353106"
+      }
     ],
     "checkedAt": "2026-10-14"
   },
   "nefertiti": {
     "title": "从阿玛尔纳的画室，到可以绕行的数字肖像",
     "paragraphs": [
-      "奈费尔提蒂是古埃及法老阿肯那顿的王后。这尊半身像属于阿玛尔纳时期，1912年在阿玛尔纳发掘时被发现；它与阿肯那顿半身像的残片出自同一房间。今天，蓝冠、修长的颈部和安静的神态，仍让观者能够辨认这位王后的形象。",
+      "奈费尔提蒂是古埃及法老阿肯那顿的王后。这尊半身像属于阿玛尔纳时期，1912年在阿玛尔纳发掘时被发现；它与阿肯那顿半身像的残片出自同一房间。馆方依据铭文将这一作坊遗址归于雕刻家图特摩斯，因此本展以图特摩斯工作室标注其归属。今天，蓝冠、修长的颈部和安静的神态，仍让观者能够辨认这位王后的形象。",
       "作品以石灰岩为核心，再覆上灰泥完成造型和彩绘。左眼的镶嵌物在发现时就不存在；它是否曾经装上过，仍不能简单地下定论。看眼前的数字模型时，可以把缺损也当作作品保存历史的一部分。",
       "本展的彩色模型来自博物馆开放下载的2008年TrigonArt扫描。为了让网页更容易载入，这里使用此前压缩的GLB版本。旋转观看提供了观察侧面、冠缘与颈部轮廓的机会，但展厅中的放大比例并不等同于原作尺寸。"
     ],
@@ -318,6 +478,132 @@
         "url": "https://www.smb.museum/en/museums-institutions/aegyptisches-museum-und-papyrussammlung/collection-research/bust-of-nefertiti/the-replica/"
       }
     ],
-    "checkedAt": "2026-10-14"
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-last-supper": {
+    "title": "最后的晚餐",
+    "paragraphs": [
+      "这幅作品绘于米兰恩宠圣母院的餐厅墙上。基督宣布将有人背叛自己，画面把门徒的反应组织成连续的群像，建筑透视则把视线带回中央。",
+      "达芬奇采用在干燥墙面上作画的方式，而非传统湿壁画技法。画面经历了漫长的损坏与修复；本展使用现存壁画的摄影图像，保留缺损，不以完整的后世摹本代替。"
+    ],
+    "sources": [
+      {
+        "label": "米兰恩宠圣母院餐厅：作品与尺寸",
+        "url": "https://cenacolovinciano.org/en/museum/the-works/the-last-supper-leonardo-da-vinci-1452-1519/"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-annunciation": {
+    "title": "天使报喜",
+    "paragraphs": [
+      "这是达芬奇青年时期的作品，创作时仍与韦罗基奥的画室有关。报喜发生在封闭的花园里，天使递出百合，圣母从书本前抬起手回应。",
+      "前景的草木和衣褶细致，远处景物则逐渐融入空气。石质书案与人物的空间关系也体现了画家对透视和观看位置的持续探索。"
+    ],
+    "sources": [
+      {
+        "label": "乌菲齐美术馆：作品与尺寸",
+        "url": "https://www.uffizi.it/en/artworks/annunciation"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-rocks-louvre": {
+    "title": "岩间圣母（卢浮宫版）",
+    "paragraphs": [
+      "《岩间圣母》源于米兰一座教堂祭坛画的委托。卢浮宫收藏的这一版，把人物放在岩石与水构成的环境里，明暗的柔和过渡使面部从阴影中浮现。",
+      "两版构图相近，但天使的目光与手势等细节并不相同。把它们相邻陈列，可以直接比较画家对人物关系、色彩和空间所作的调整。"
+    ],
+    "sources": [
+      {
+        "label": "卢浮宫博物馆：作品与尺寸",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010062373"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-rocks-london": {
+    "title": "岩间圣母（伦敦版）",
+    "paragraphs": [
+      "伦敦国家美术馆将此作认定为《岩间圣母》的第二版。作品与米兰祭坛画的委托和报酬争议相关，完成过程跨越多个阶段。",
+      "技术研究显示，画面曾经调整人物位置。与卢浮宫版并看时，留意天使不再向观众指出约翰，人物之间的联系也因此呈现另一种节奏。"
+    ],
+    "sources": [
+      {
+        "label": "伦敦国家美术馆：作品与尺寸",
+        "url": "https://www.nationalgallery.org.uk/paintings/leonardo-da-vinci-the-virgin-of-the-rocks"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-adoration": {
+    "title": "三博士来朝",
+    "paragraphs": [
+      "1481年，佛罗伦萨圣多纳托修院委托达芬奇绘制这幅祭坛画。他后来前往米兰，作品停留在未完成的阶段，修院最终另请画家制作替代作品。",
+      "未完成的表面保留了寻找姿态与空间关系的痕迹。前景人物围绕圣母子，背景出现建筑与骑士，让观看者同时看到一个宗教场景和它形成中的结构。"
+    ],
+    "sources": [
+      {
+        "label": "乌菲齐美术馆：作品与尺寸",
+        "url": "https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-john-baptist": {
+    "title": "施洗者圣约翰",
+    "paragraphs": [
+      "这幅作品的最初委托情况尚不明确。卢浮宫认为达芬奇约在1508年开始构思，并长期保留在身边继续绘制，直到生命末期。",
+      "人物几乎没有明确的背景，只凭脸部、手臂和手指的亮度建立空间。画中柔和的轮廓使表情难以被一句话概括，也让指向画外的动作格外突出。"
+    ],
+    "sources": [
+      {
+        "label": "卢浮宫博物馆：作品与尺寸",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010062374"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-belle-ferronniere": {
+    "title": "美丽的费罗妮叶",
+    "paragraphs": [
+      "这幅女性肖像通常以《美丽的费罗妮叶》之名流传，但馆方指出这个传统名称并不能可靠地确定画中人物的身份。作品与达芬奇在米兰的活动时期相关。",
+      "女子的身体、头部与目光并不朝向同一点。前方的低矮栏板把她与观看者分开，鲜明的服饰和深暗背景则把注意力集中到面容上。"
+    ],
+    "sources": [
+      {
+        "label": "卢浮宫博物馆：作品与尺寸",
+        "url": "https://collections.louvre.fr/ark:/53355/cl010062372"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-ginevra": {
+    "title": "吉内薇拉·德·本奇肖像",
+    "paragraphs": [
+      "画中人物被认为是佛罗伦萨女子吉内薇拉·德·本奇。这幅早期肖像现藏美国国家美术馆，作品背面也有独立的象征图案；本展展示正面。",
+      "图像保留了脸部与树叶之间细微的明暗层次。本展尺寸采用馆方公布的原木板高38.1厘米、宽37厘米，未把后来增加的底部木条计入画面。"
+    ],
+    "sources": [
+      {
+        "label": "美国国家美术馆：作品与尺寸",
+        "url": "https://www.nga.gov/artworks/50724-ginevra-de-benci-obverse"
+      }
+    ],
+    "checkedAt": "2026-10-24"
+  },
+  "leonardo-vitruvian": {
+    "title": "维特鲁威人",
+    "paragraphs": [
+      "这是一张有关人体比例的研究图，不是油画。达芬奇把身体放进圆与方形中，将观察、几何和建筑比例联系起来。",
+      "纸面的文字、辅助线与叠加姿态共同构成作品。本展保留完整纸页，采用威尼斯学院美术馆公布的34.5×24.6厘米尺寸；年代沿用馆方2025年展览资料的定年。"
+    ],
+    "sources": [
+      {
+        "label": "威尼斯学院美术馆：作品与尺寸",
+        "url": "https://www.gallerieaccademia.it/mostra/corpi-moderni-la-costruzione-del-corpo-nella-venezia-del-rinascimento-leonardo-michelangelo-durer-giorgione/"
+      }
+    ],
+    "checkedAt": "2026-10-24"
   }
 }

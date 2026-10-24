@@ -42,11 +42,5 @@
     "dzi": "/assets/artworks/danae/detail.dzi",
     "tileBytes": 1216003
   },
-  "original": {
-    "width": 2499,
-    "height": 2278,
-    "dzi": "/assets/artworks/danae/detail.dzi"
-  },
-  "hasOriginal": false,
   "credit": "Rembrandt"
 }

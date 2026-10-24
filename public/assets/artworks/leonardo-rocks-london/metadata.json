@@ -1,0 +1,67 @@
+{
+  "id": "leonardo-rocks-london",
+  "title": "岩间圣母（伦敦版）",
+  "originalTitle": "The Virgin of the Rocks — London",
+  "date": "约 1491/1492—1499 年、1506—1508 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3ALeonardo_da_Vinci_Virgin_of_the_Rocks_(National_Gallery_London).jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / National Gallery, London / Wikimedia Commons",
+  "description": "人物仍围绕基督而聚，天使、衣袍色彩与岩洞的处理却与卢浮宫版有所不同。",
+  "looking": "比较两版天使的手、约翰的十字架以及圣母衣袍的颜色。",
+  "dimensions": "189.5 × 120 厘米（高 × 宽，无框）",
+  "medium": "白杨木板油画",
+  "file": "Leonardo_da_Vinci_Virgin_of_the_Rocks_(National_Gallery_London).jpg",
+  "collection": "伦敦国家美术馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/49/Leonardo_da_Vinci_Virgin_of_the_Rocks_%28National_Gallery_London%29.jpg",
+  "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+  "wall": "east",
+  "offset": -4.2,
+  "centerY": 3.335,
+  "physicalSize": {
+    "heightCm": 189.5,
+    "widthCm": 120,
+    "source": "https://www.nationalgallery.org.uk/paintings/leonardo-da-vinci-the-virgin-of-the-rocks",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 2,
+  "attribution": "伦敦国家美术馆署名达芬奇；画室参与问题仍有研究讨论。",
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 2692,
+  "sourceHeight": 4150,
+  "originalFile": "originals/renaissance/leonardo-rocks-london.jpg",
+  "originalFileBytes": 1492882,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-rocks-london/far.webp",
+      "width": 415,
+      "height": 640,
+      "bytes": 78660,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-rocks-london/medium.webp",
+      "width": 1038,
+      "height": 1600,
+      "bytes": 452468,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-rocks-london/near.webp",
+      "width": 1946,
+      "height": 3000,
+      "bytes": 1486950,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-rocks-london/detail.webp",
+    "width": 2692,
+    "height": 4150,
+    "bytes": 2255058,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-rocks-london/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:52:14.731Z"
+}

@@ -45,11 +45,5 @@
     "dzi": "/assets/artworks/scholar/detail.dzi",
     "tileBytes": 5839060
   },
-  "original": {
-    "width": 3400,
-    "height": 3691,
-    "dzi": "/assets/artworks/scholar/detail.dzi"
-  },
-  "hasOriginal": false,
   "offset": -2.8
 }

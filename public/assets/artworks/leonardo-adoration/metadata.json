@@ -1,0 +1,67 @@
+{
+  "id": "leonardo-adoration",
+  "title": "三博士来朝",
+  "originalTitle": "Adoration of the Magi",
+  "date": "约 1481—1482 年",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3AAdoration_of_the_Magi_(Leonardo).jpg",
+  "license": "CC BY-SA 4.0",
+  "credit": "Leonardo da Vinci；摄影：Justin Benttinen / Wikimedia Commons；本项目缩放、转换 WebP 并生成瓦片，衍生图像沿用 CC BY-SA 4.0",
+  "description": "圣母与孩子位于密集人物的中心，远处的建筑、骑士和未完成线条同时显露构思过程。",
+  "looking": "从中央人物向外看，比较不同区域的线稿、阴影和完成程度。",
+  "dimensions": "244 × 240 厘米（高 × 宽，无框）",
+  "medium": "木板上炭笔、墨色与油彩，未完成",
+  "file": "Adoration_of_the_Magi_(Leonardo).jpg",
+  "collection": "乌菲齐美术馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/29/Adoration_of_the_Magi_%28Leonardo%29.jpg",
+  "licenseStatus": "CC BY-SA 4.0（Commons 来源页核查：2026-10-24）",
+  "wall": "east",
+  "offset": 7.2,
+  "centerY": 3.78,
+  "physicalSize": {
+    "heightCm": 244,
+    "widthCm": 240,
+    "source": "https://www.uffizi.it/en/artworks/leonardo-adoration-of-the-magi",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 2,
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 5256,
+  "sourceHeight": 5196,
+  "originalFile": "originals/renaissance/leonardo-adoration.jpg",
+  "originalFileBytes": 29110005,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-adoration/far.webp",
+      "width": 640,
+      "height": 633,
+      "bytes": 185600,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-adoration/medium.webp",
+      "width": 1600,
+      "height": 1582,
+      "bytes": 1114008,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-adoration/near.webp",
+      "width": 3000,
+      "height": 2966,
+      "bytes": 2748396,
+      "quality": 90
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-adoration/detail.webp",
+    "width": 5256,
+    "height": 5196,
+    "bytes": 9568528,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-adoration/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:52:57.066Z",
+  "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+}

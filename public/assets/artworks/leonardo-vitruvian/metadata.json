@@ -1,0 +1,66 @@
+{
+  "id": "leonardo-vitruvian",
+  "title": "维特鲁威人",
+  "originalTitle": "Vitruvian Man",
+  "date": "1498 年（馆方2025年展览定年）",
+  "author": "列奥纳多·达·芬奇",
+  "source": "https://commons.wikimedia.org/wiki/File%3AUomo_Vitruviano.jpg",
+  "license": "Public domain",
+  "credit": "Leonardo da Vinci / Museo Galileo 图像 / Wikimedia Commons",
+  "description": "双重姿态的人体置于圆与方形之间，周围的文字记录身体比例的研究。",
+  "looking": "比较两组手脚的位置，以及圆心、方形和人体之间的对应关系。",
+  "dimensions": "34.5 × 24.6 厘米（高 × 宽，纸页）",
+  "medium": "纸上银尖笔、蘸水笔与墨水",
+  "file": "Uomo_Vitruviano.jpg",
+  "collection": "威尼斯学院美术馆",
+  "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/1/11/Uomo_Vitruviano.jpg",
+  "licenseStatus": "Public domain（Commons 来源页核查：2026-10-24）",
+  "wall": "west",
+  "offset": -3.9,
+  "centerY": 2.1,
+  "physicalSize": {
+    "heightCm": 34.5,
+    "widthCm": 24.6,
+    "source": "https://www.gallerieaccademia.it/mostra/corpi-moderni-la-costruzione-del-corpo-nella-venezia-del-rinascimento-leonardo-michelangelo-durer-giorgione/",
+    "checkedAt": "2026-10-24"
+  },
+  "displayScale": 2,
+  "room": "leonardo",
+  "displayStatus": "数字主题策展，非实体展厅复原",
+  "sourceWidth": 2131,
+  "sourceHeight": 2953,
+  "originalFile": "originals/renaissance/leonardo-vitruvian.jpg",
+  "originalFileBytes": 7254048,
+  "variants": [
+    {
+      "url": "/assets/artworks/leonardo-vitruvian/far.webp",
+      "width": 462,
+      "height": 640,
+      "bytes": 122930,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-vitruvian/medium.webp",
+      "width": 1155,
+      "height": 1600,
+      "bytes": 780486,
+      "quality": 94
+    },
+    {
+      "url": "/assets/artworks/leonardo-vitruvian/near.webp",
+      "width": 2131,
+      "height": 2953,
+      "bytes": 2334820,
+      "quality": 94
+    }
+  ],
+  "detail": {
+    "url": "/assets/artworks/leonardo-vitruvian/detail.webp",
+    "width": 2131,
+    "height": 2953,
+    "bytes": 2334820,
+    "quality": 94,
+    "dzi": "/assets/artworks/leonardo-vitruvian/detail.dzi"
+  },
+  "generatedAt": "2026-10-24T09:57:39.943Z"
+}

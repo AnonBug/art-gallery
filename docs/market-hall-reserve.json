@@ -1,0 +1,268 @@
+[
+  {
+    "id": "snyders-quay",
+    "title": "码头市场",
+    "originalTitle": "Market Scene on a Quay",
+    "date": "约 1635—1640 年",
+    "author": "弗兰斯·斯奈德斯及工作室",
+    "source": "https://commons.wikimedia.org/wiki/File:Market_Scene_on_a_Quay_-_Frans_Snyders_and_Workshop_-_Google_Cultural_Institute.jpg",
+    "license": "Public domain（来源页 PD-Art 标记）",
+    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+    "description": "码头上的食材、猎物和活着的动物密集交错，远处的港口将市场与运输、贸易联系起来。作品署名为斯奈德斯及工作室。",
+    "looking": "从前景摊位慢慢看向港口，追踪人物与动物的动作，体会近景密度与远景开阔之间的变化。",
+    "dimensions": "201.5 × 343.5 厘米（高 × 宽，无框）",
+    "medium": "布面油画",
+    "file": "Snyders-Market-Scene-on-a-Quay.jpg",
+    "collection": "北卡罗来纳艺术博物馆",
+    "catalogueUrl": "https://artnc.org/works-of-art/market-scene-quay/",
+    "wall": "west",
+    "offset": -4.48,
+    "room": "market",
+    "centerY": 2.3475,
+    "displayStatus": "主题策展；不代表实体馆当前陈列",
+    "originalUrl": "https://commons.wikimedia.org/wiki/File:Market_Scene_on_a_Quay_-_Frans_Snyders_and_Workshop_-_Google_Cultural_Institute.jpg",
+    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+    "sourceWidth": 4729,
+    "sourceHeight": 2745,
+    "originalFile": "originals/market-hall/Snyders-Market-Scene-on-a-Quay.jpg",
+    "originalFileBytes": 8187093,
+    "variants": [
+      {
+        "url": "/assets/artworks/snyders-quay/far.webp",
+        "width": 640,
+        "height": 371,
+        "bytes": 109318,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-quay/medium.webp",
+        "width": 1600,
+        "height": 929,
+        "bytes": 667272,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-quay/near.webp",
+        "width": 3000,
+        "height": 1741,
+        "bytes": 2477234,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/snyders-quay/detail.webp",
+      "width": 4729,
+      "height": 2745,
+      "bytes": 5999902,
+      "quality": 94,
+      "dzi": "/assets/artworks/snyders-quay/detail.dzi"
+    },
+    "generatedAt": "2026-10-12T15:24:50.507Z",
+    "physicalSize": {
+      "heightCm": 201.5,
+      "widthCm": 343.5,
+      "source": "https://learn.ncartmuseum.org/artwork/market-scene-on-a-quay/",
+      "checkedAt": "2026-10-24"
+    }
+  },
+  {
+    "id": "snyders-kitchen",
+    "title": "女仆与男孩的厨房静物",
+    "originalTitle": "Kitchen Still Life with a Maid and Young Boy",
+    "date": "1636—1638 年",
+    "author": "弗兰斯·斯奈德斯及工作室、鲁本斯工作室",
+    "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders,_with_figures_attributed_to_Jan_Boeckhorst_-_Kitchen_Still_Life_with_a_Maid_and_Young_Boy_-_78.PA.207_-_J._Paul_Getty_Museum.jpg",
+    "license": "Public domain（来源页 PD-Art 标记）",
+    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+    "description": "男孩伸手拿葡萄，女管家将手放在他的肩上制止他；水果、禽鸟和猫狗的动作，使储藏室静物充满叙事。盖蒂现行记录署为斯奈德斯及工作室、鲁本斯工作室。",
+    "looking": "先看两人的手与目光，再沿着葡萄和禽鸟看向桌面；分辨静物细节与人物动作如何相互呼应。",
+    "dimensions": "157.4 × 243.3 厘米（高 × 宽，无框）",
+    "medium": "布面油画",
+    "file": "Snyders-Kitchen-Still-Life-with-a-Maid-and-Young-Boy.jpg",
+    "attribution": "盖蒂现行记录：斯奈德斯及工作室、鲁本斯工作室；旧目录将人物归于扬·博克霍斯特。",
+    "collection": "J. 保罗·盖蒂博物馆",
+    "wall": "south",
+    "offset": 3.36,
+    "room": "market",
+    "centerY": 2.1001,
+    "displayStatus": "主题策展；不代表实体馆当前陈列",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/2/21/Frans_Snyders%2C_with_figures_attributed_to_Jan_Boeckhorst_-_Kitchen_Still_Life_with_a_Maid_and_Young_Boy_-_78.PA.207_-_J._Paul_Getty_Museum.jpg",
+    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+    "sourceWidth": 4674,
+    "sourceHeight": 2991,
+    "originalFile": "originals/market-hall/Snyders-Kitchen-Still-Life-with-a-Maid-and-Young-Boy.jpg",
+    "originalFileBytes": 22772919,
+    "variants": [
+      {
+        "url": "/assets/artworks/snyders-kitchen/far.webp",
+        "width": 640,
+        "height": 410,
+        "bytes": 101026,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-kitchen/medium.webp",
+        "width": 1600,
+        "height": 1024,
+        "bytes": 608672,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-kitchen/near.webp",
+        "width": 3000,
+        "height": 1920,
+        "bytes": 2377708,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/snyders-kitchen/detail.webp",
+      "width": 4674,
+      "height": 2991,
+      "bytes": 6097630,
+      "quality": 94,
+      "dzi": "/assets/artworks/snyders-kitchen/detail.dzi"
+    },
+    "generatedAt": "2026-10-12T15:24:55.573Z",
+    "catalogueUrl": "https://www.getty.edu/art/collection/object/103RDT",
+    "physicalSize": {
+      "heightCm": 157.4,
+      "widthCm": 243.3,
+      "source": "https://www.getty.edu/art/collection/object/103RDT",
+      "checkedAt": "2026-10-24"
+    }
+  },
+  {
+    "id": "snyders-maid",
+    "title": "有女仆的静物",
+    "originalTitle": "Still Life with a Maid",
+    "date": "约 1633 年",
+    "author": "弗兰斯·斯奈德斯",
+    "source": "https://commons.wikimedia.org/wiki/File:LA_FRUTERA_(SNYDERS).jpg",
+    "license": "Public domain（来源页 PD-Art 标记）",
+    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+    "description": "成堆水果围绕女仆展开，猴子和鹦鹉的加入，让静物陈设变成富有动感的室内场景。",
+    "looking": "寻找动物藏身的位置，观察圆润果实与织物、篮筐之间的质感对比。",
+    "dimensions": "153 × 214 厘米（高 × 宽，无框）",
+    "medium": "布面油画",
+    "file": "Snyders-Still-Life-with-a-Maid.jpg",
+    "collection": "普拉多博物馆",
+    "catalogueUrl": "https://www.museodelprado.es/en/the-collection/art-work/still-life-with-a-maid/025b2c33-b378-40da-a40c-a60389cce73c",
+    "wall": "west",
+    "offset": 3.92,
+    "room": "market",
+    "centerY": 2.0733,
+    "displayStatus": "主题策展；不代表实体馆当前陈列",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/7/74/LA_FRUTERA_%28SNYDERS%29.jpg",
+    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+    "sourceWidth": 3051,
+    "sourceHeight": 2153,
+    "originalFile": "originals/market-hall/Snyders-Still-Life-with-a-Maid.jpg",
+    "originalFileBytes": 6127908,
+    "variants": [
+      {
+        "url": "/assets/artworks/snyders-maid/far.webp",
+        "width": 640,
+        "height": 452,
+        "bytes": 79448,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-maid/medium.webp",
+        "width": 1600,
+        "height": 1129,
+        "bytes": 445144,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-maid/near.webp",
+        "width": 3000,
+        "height": 2117,
+        "bytes": 1593896,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/snyders-maid/detail.webp",
+      "width": 3051,
+      "height": 2153,
+      "bytes": 1796550,
+      "quality": 94,
+      "dzi": "/assets/artworks/snyders-maid/detail.dzi"
+    },
+    "generatedAt": "2026-10-12T15:24:58.190Z",
+    "physicalSize": {
+      "heightCm": 153,
+      "widthCm": 214,
+      "source": "https://www.museodelprado.es/en/the-collection/art-work/still-life-with-a-maid/025b2c33-b378-40da-a40c-a60389cce73c",
+      "checkedAt": "2026-10-24"
+    }
+  },
+  {
+    "id": "snyders-produce",
+    "title": "水果与蔬菜静物",
+    "originalTitle": "Still Life with Fruit and Vegetables",
+    "date": "1625—1635 年",
+    "author": "弗兰斯·斯奈德斯",
+    "source": "https://commons.wikimedia.org/wiki/File:Frans_Snyders_-_Still_life_with_fruit_and_vegetables.jpg",
+    "license": "Public domain（来源页 PD-Art 标记）",
+    "credit": "Wikimedia Commons；图像作者及来源见作品链接",
+    "description": "水果和蔬菜从桌面铺到地上，女人、男孩与动物穿插其中。画家把不同季节的物产组合成想象中的丰盛；人物由科内利斯·德·沃斯绘制。",
+    "looking": "比较地面的根茎与篮中的豌豆、芦笋，再看人物的目光与触碰怎样让静物产生生活气息。",
+    "dimensions": "173.4 × 256.5 厘米（高 × 宽，无框）",
+    "medium": "布面油画",
+    "file": "Snyders-Still-Life-with-Fruit-and-Vegetables.jpg",
+    "attribution": "人物由科内利斯·德·沃斯绘制",
+    "collection": "诺顿·西蒙博物馆",
+    "catalogueUrl": "https://50.nortonsimon.org/collections/still-life-with-fruit-and-vegetables/",
+    "wall": "east",
+    "offset": -7.84,
+    "room": "market",
+    "centerY": 2.1977,
+    "displayStatus": "主题策展；不代表实体馆当前陈列",
+    "originalUrl": "https://upload.wikimedia.org/wikipedia/commons/4/43/Frans_Snyders_-_Still_life_with_fruit_and_vegetables.jpg",
+    "licenseStatus": "Public domain（来源页 PD-Art 标记）",
+    "sourceWidth": 2402,
+    "sourceHeight": 1660,
+    "originalFile": "originals/market-hall/Snyders-Still-Life-with-Fruit-and-Vegetables.jpg",
+    "originalFileBytes": 3580731,
+    "variants": [
+      {
+        "url": "/assets/artworks/snyders-produce/far.webp",
+        "width": 640,
+        "height": 442,
+        "bytes": 121492,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-produce/medium.webp",
+        "width": 1600,
+        "height": 1106,
+        "bytes": 428630,
+        "quality": 94
+      },
+      {
+        "url": "/assets/artworks/snyders-produce/near.webp",
+        "width": 2402,
+        "height": 1660,
+        "bytes": 692394,
+        "quality": 94
+      }
+    ],
+    "detail": {
+      "url": "/assets/artworks/snyders-produce/detail.webp",
+      "width": 2402,
+      "height": 1660,
+      "bytes": 692394,
+      "quality": 94,
+      "dzi": "/assets/artworks/snyders-produce/detail.dzi"
+    },
+    "generatedAt": "2026-10-12T15:24:59.733Z",
+    "physicalSize": {
+      "heightCm": 173.4,
+      "widthCm": 256.5,
+      "source": "https://www.nortonsimon.org/art/detail/F.1973.16.P/",
+      "checkedAt": "2026-10-24"
+    }
+  }
+]

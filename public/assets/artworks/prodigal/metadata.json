@@ -42,11 +42,5 @@
     "dzi": "/assets/artworks/prodigal/detail.dzi",
     "tileBytes": 17544116
   },
-  "original": {
-    "width": 22991,
-    "height": 30000,
-    "dzi": "/assets/artworks/prodigal/original.dzi"
-  },
-  "hasOriginal": true,
   "credit": "Rembrandt"
 }

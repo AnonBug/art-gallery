@@ -45,11 +45,5 @@
     "bytes": 920660,
     "dzi": "/assets/artworks/magi/detail.dzi",
     "tileBytes": 1499212
-  },
-  "original": {
-    "width": 1920,
-    "height": 2210,
-    "dzi": "/assets/artworks/magi/detail.dzi"
-  },
-  "hasOriginal": false
+  }
 }
