@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import vm from 'node:vm';
 import ts from 'typescript';
 import {rooms} from '../src/museum-layout.mjs';
-import {assetPath} from '../src/asset-path.mjs';
+import {assetPath,DEFAULT_ASSET_BASE_URL} from '../src/asset-path.mjs';
 
 async function fixture(){
  class Element extends EventTarget{
@@ -27,6 +27,10 @@ async function fixture(){
 test('首次加载不显示展厅选择或生成预览，首次手动打开也能直接关闭返回漫游',async()=>{
  const {browser,captures,changes,focus}=await fixture();
  assert.equal(browser.isOpen,false);assert.deepEqual(captures,[]);assert.deepEqual(changes,[]);
+ const covers=[...browser.root.innerHTML.matchAll(/<img src="([^"]+)"/g)].map(match=>match[1]);
+ assert.equal(covers.length,5);
+ assert.ok(covers.every(url=>url.startsWith(DEFAULT_ASSET_BASE_URL+'assets/')));
+ assert.ok(browser.root.innerHTML.includes('href="/"'),'站内首页链接不应指向OSS');
  browser.open('nefertiti');await Promise.resolve();
  assert.equal(browser.isOpen,true);assert.deepEqual(captures,['nefertiti']);assert.equal(browser.root.querySelector('#halls-close').hidden,false);
  assert.equal(browser.root.querySelector('#hall-selected-title').textContent,'图特摩斯厅');

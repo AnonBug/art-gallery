@@ -70,6 +70,8 @@
 
 也感谢博物馆、Wikimedia Commons 和数字扫描贡献者提供作品资料与数字资源。画廊在作品介绍中保留对应的来源、署名与许可信息。
 
+图片、高清瓦片与雕塑模型由阿里云 OSS 提供，GitHub Pages 仅托管画廊应用。
+
 ## 给想继续了解的人
 
 - [参观在线画廊](https://anonbug.github.io/art-gallery/)

@@ -4,7 +4,7 @@ import fs from 'node:fs/promises';
 import vm from 'node:vm';
 import ts from 'typescript';
 import * as THREE from 'three';
-import {assetPath} from '../src/asset-path.mjs';
+import {assetPath,DEFAULT_ASSET_BASE_URL} from '../src/asset-path.mjs';
 
 async function loaderFixture(){
  const requests=[],decoders=[],exports={};
@@ -29,8 +29,9 @@ test('每件雕塑独立缓存，并发细看与展厅共享加载，保留彩�
  const b=f.loadSculpture('nefertiti');
  const c=f.loadSculpture('crouching-boy',()=>progress.push('boy'));
  assert.equal(f.requests.length,2);
- assert.equal(f.requests[0].url,'/art-gallery/assets/sculptures/nefertiti/model.glb');
- assert.equal(f.decoders[0].path,'/art-gallery/assets/draco/');
+ assert.equal(f.requests[0].url,DEFAULT_ASSET_BASE_URL+'assets/sculptures/nefertiti/model.glb');
+ assert.equal(f.decoders[0].path,DEFAULT_ASSET_BASE_URL+'assets/draco/');
+ assert.equal(f.sculptureFor('nefertiti').poster,DEFAULT_ASSET_BASE_URL+'assets/sculptures/nefertiti/poster.webp');
  f.requests[0].progress({loaded:10,total:100});assert.deepEqual(progress,['queen']);
  const painted=f.complete(f.requests[0],true),originalMaterial=painted.material;
  f.complete(f.requests[1],false);

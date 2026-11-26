@@ -14,7 +14,7 @@ import {setOverlayInteractivity} from './overlay-interactivity.mjs';
 import {appendArtworkStory} from './artwork-story';
 import {withPhysicalSize} from './artwork-scale.mjs';
 import type {Artwork,ArtworkStory} from './types';
-const artworks=data.map(a=>artworkWithBase(withPhysicalSize(a),import.meta.env.BASE_URL)) as Artwork[];
+const artworks=data.map(a=>artworkWithBase(withPhysicalSize(a))) as Artwork[];
 const stories:Partial<Record<string,ArtworkStory>>=storyData;
 const app=document.querySelector<HTMLElement>('#app')!;
 app.innerHTML=`<main id="gallery"></main><div class="vignette"></div>

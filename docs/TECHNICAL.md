@@ -9,12 +9,12 @@
 | 部分 | 实现 |
 | --- | --- |
 | 3D 展厅、模型与漫游 | Three.js |
-| 绘画高清细看 | OpenSeadragon + 本地 DZI 瓦片 |
+| 绘画高清细看 | OpenSeadragon + OSS DZI 瓦片 |
 | 应用与构建 | TypeScript、Vite、npm |
 | 图像处理 | sharp |
-| 线上托管 | GitHub Pages + GitHub Actions |
+| 线上托管 | GitHub Pages（应用）+ 阿里云 OSS（资源）+ GitHub Actions |
 
-运行所需的画作图像、瓦片、雕塑模型和 Draco 解码器均位于 `public/assets/`，随静态站点发布；外部馆藏与许可页面作为来源链接。依赖版本以 [package.json](../package.json) 和锁文件为准。
+运行所需的画作图像、瓦片、雕塑模型和 Draco 解码器统一从 OSS 版本目录加载，不再存入 Git 或随 Pages 发布。`public/assets/` 仅用于本地资源处理与备份，已被 Git 忽略；外部馆藏与许可页面作为来源链接。依赖版本以 [package.json](../package.json) 和锁文件为准。
 
 ## 当前展厅与启动流程
 
@@ -41,10 +41,10 @@
 | 米开朗基罗《蹲伏的男孩》 | 6,023,996字节 | [Scan-the-World / Zenodo](https://zenodo.org/records/21353106)，[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/) |
 | 《奈费尔提蒂王后半身像》 | 12,178,252字节 | [柏林国立博物馆 / TrigonArt 2008年扫描](https://www.smb.museum/en/museums-institutions/aegyptisches-museum-und-papyrussammlung/collection-research/bust-of-nefertiti/the-replica/)，[CC BY-NC-SA 3.0 DE](https://creativecommons.org/licenses/by-nc-sa/3.0/de/) |
 
-奈费尔提蒂使用已压缩的GLB，保留200万个三角面、4096×4096彩色贴图、Draco压缩和原彩绘材质。《蹲伏的男孩》源模型无材质，应用统一暖白石材。来源、署名、校验值与转换说明分别保存在 [男孩模型元数据](../public/assets/sculptures/crouching-boy/metadata.json) 和 [王后模型元数据](../public/assets/sculptures/nefertiti/metadata.json)。
+奈费尔提蒂使用已压缩的GLB，保留200万个三角面、4096×4096彩色贴图、Draco压缩和原彩绘材质。《蹲伏的男孩》源模型无材质，应用统一暖白石材。来源、署名、校验值与转换说明分别保存在 [男孩模型元数据](https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/art-gallery/releases/835e10133392/assets/sculptures/crouching-boy/metadata.json) 和 [王后模型元数据](https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/art-gallery/releases/835e10133392/assets/sculptures/nefertiti/metadata.json)。
 
 - [sculptures.json](../src/data/sculptures.json)：两件雕塑的展厅、模型、封面、介绍、署名与许可。
-- [sculpture-model.ts](../src/sculpture-model.ts)：按作品ID独立缓存和重试，展厅与细看共享解码后的几何与材质。Draco解码器从本站加载。
+- [sculpture-model.ts](../src/sculpture-model.ts)：按作品ID独立缓存和重试，展厅与细看共享解码后的几何与材质。Draco解码器与模型从同一个 OSS 版本目录加载。
 - [sculpture-pedestal.ts](../src/sculpture-pedestal.ts)：内收石质台身、分层台脚、铜边、接地阴影和可点击展签；石材纹理本地生成。
 - [sculpture-viewer.ts](../src/sculpture-viewer.ts)：独立3D细看、旋转、缩放、平移、重置、自动旋转与参考网格。关闭时销毁控件、渲染器和WebGL上下文；异步会话标记阻止过期结果覆盖新一轮查看。
 - [hall-browser.ts](../src/hall-browser.ts)：按需打开的展厅切换面板。预览同时加载门洞视野内可见的相邻雕塑，避免出现空展台。
@@ -59,7 +59,7 @@ npm ci
 npm run dev
 ```
 
-开发服务器默认监听 **0.0.0.0:5173**。
+开发服务器默认监听 **0.0.0.0:5173**。无需下载资源目录：开发模式通过 Vite 的 `/__gallery_assets/` 代理从 OSS 获取资源，因此 localhost 和局域网访问不依赖 OSS 的跨域白名单。
 
 - 本机：http://localhost:5173/
 - 局域网：使用电脑当前的局域网 IP，例如 `http://<电脑IP>:5173/`。
@@ -72,25 +72,33 @@ npm run dev
 - 在线画廊：https://anonbug.github.io/art-gallery/
 - 部署记录：https://github.com/AnonBug/art-gallery/actions/workflows/deploy.yml
 
-`main` 分支每次推送会自动安装依赖、运行测试和资源检查，再通过 GitHub Actions 构建并部署至 GitHub Pages。Pages 发布源为 GitHub Actions，工作流位于 `.github/workflows/deploy.yml`。当前馆藏的展示图、高清瓦片与运行依赖随站点一起发布，无需运行中的本地电脑。构建结束时，`scripts/package-gallery.mjs` 按馆藏配置精简 `dist/`：移除未在展作品，高清细看发布 DZI 与完整瓦片，省去查看器不使用的重复整图；`public/` 保留高清完整图与展示图，额外的原画 DZI 已移除。发布包超过 1000 MB 时构建失败，防止超出 Pages 容量。
+`main` 分支每次推送会自动安装依赖、运行测试和 OSS 资源检查，再通过 GitHub Actions 构建并部署至 GitHub Pages。Pages 发布源为 GitHub Actions，工作流位于 `.github/workflows/deploy.yml`。发布包仅包含 HTML、CSS、JavaScript 和图标；Vite 设置 `publicDir: false`，即使本地留有完整资源也不会复制进 `dist/`。
 
-本地开发默认从 `/` 加载；Pages 构建根据部署地址添加子目录前缀。作品配置仍使用 `/assets/...`，应用启动时统一解析路径。可在本地检查相同的构建：
+当前默认资源根地址在 `src/asset-path.mjs`：
 
-```bash
-npm run build -- --base=/art-gallery/
-npm run preview -- --base=/art-gallery/
-# 打开 http://localhost:4173/art-gallery/
+```text
+https://halfbvg-art-assets.oss-cn-shanghai.aliyuncs.com/art-gallery/releases/835e10133392/
 ```
 
-`originals/`、依赖目录、构建产物、环境变量文件不上传仓库；应用运行所需的展示图与瓦片均位于受版本控制的 `public/`。本地原始画源备份需自行保留。未来加入更大资源时需关注GitHub仓库与Pages体积限制。
+资源目录需保持为 `<release>/assets/artworks/...`、`<release>/assets/sculptures/...`、`<release>/assets/draco/...`。作品配置仍使用 `/assets/...`，统一在应用边界转换；网站首页链接和 Vite 构建文件继续使用 Pages 的子目录前缀。DZI 的相对瓦片地址自然落在同一 OSS release 下。
+
+更换 release 时可修改默认地址，或复制 `.env.example` 为 `.env.local` 设置 `VITE_ASSET_BASE_URL`；也可在构建命令/CI 环境中提供该变量。变量是公开 URL，不需要 OSS 密钥；修改后需重启开发服务器或重新构建。`assets:check` 默认读取 production 环境，与正式构建一致；自定义模式使用 `--mode <mode>`。
+
+OSS 资源需允许匿名 GET/HEAD，CORS 允许网站 origin `https://anonbug.github.io`（不含 `/art-gallery/` 路径）。OpenSeadragon 使用匿名跨域请求，不携带凭据。当前 bucket 未允许 localhost 跨域：`npm run dev` 的代理已处理本地开发；生产构建使用直接 OSS 地址，在本地执行 `npm run preview` 时需将预览 origin（例如 `http://localhost:4173`）加入 OSS CORS 和防盗链 Referer 白名单。开发代理不转发浏览器的 Origin、Referer、Cookie 或 Authorization；bucket 需允许空 Referer。
+
+`originals/`、`public/assets/`、依赖目录、构建产物与本地环境变量不上传仓库。本次迁移停止跟踪现有资源，保留本地副本，不改写旧 Git 历史。资源处理和完整像素校验仍可使用本地副本，日常开发及 CI 无需它们。
 
 ```bash
-npm run build              # TypeScript 检查 + Vite 生产构建，输出 dist/
-npm run preview            # 在 0.0.0.0:4173 预览生产版本
-npm test                   # 审视距离、转向、摇杆、两步交互、图片处理回归测试
-npm run assets:check       # 文件体积、像素尺寸、完整 DZI 层级和每张必需瓦片
-npm run assets:check -- --http http://localhost:5173  # 同时逐一 HEAD 检查所有展出资源
+npm run dev                # 从 OSS 代理加载资源，支持 localhost / 局域网
+npm run build -- --base=/art-gallery/  # TypeScript + Pages 子目录构建
+npm run preview -- --base=/art-gallery/  # 需 OSS 允许预览 origin
+npm test                   # 交互、资源路径与图片处理回归测试
+npm run assets:check       # OSS 可达性、CORS、DZI 尺寸、全量瓦片及模型体积
+npm run assets:check -- --base https://example.com/releases/new/ --origin https://anonbug.github.io
+npm run assets:check:local # 仅资源维护时：完整本地资源的像素、哈希及瓦片校验
 ```
+
+远程检查结果写入已忽略的 `output/oss-resource-audit.json`；本地深度检查仍写入 `docs/resource-audit.json`。远程检查不会下载完整模型或每张瓦片解码，资源生成后应先做本地深度检查。
 
 如本机安装了全局 libvips，sharp 安装可能尝试本地编译。可用下面的命令强制使用 npm 预编译依赖，之后仍照常 npm ci：
 
@@ -117,7 +125,7 @@ SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm ci
 
 当前展品按1 MB（1,000,000字节）下限筛选，优先采用原始画源大小；旧作品缺少原文件记录时采用现有最高分辨率完整图。逐件撤展依据见`docs/image-size-selection.json`，缩略图和单张瓦片不参与筛选。
 
-所有运行依赖通过 npm 安装，构建后由本地静态服务提供。图像、DZI、瓦片均位于 `public/assets/artworks/`。字体采用操作系统本地中文字体栈（PingFang SC、Microsoft YaHei 等），无远程字体或 CDN 请求。外部来源链接仅在用户主动查看来源时访问。
+JavaScript 运行依赖通过 npm 安装，构建后由 Pages 提供；图像、DZI、瓦片、雕塑和 Draco 解码器由 OSS 提供。字体采用操作系统本地中文字体栈（PingFang SC、Microsoft YaHei 等），无远程字体请求。外部来源链接仅在用户主动查看来源时访问。
 
 每幅画具有：
 
@@ -170,6 +178,8 @@ Three.js 的像素比上限1.6；每幅画只保留当前展示纹理，高清�
 ```bash
 npm run images -- originals/my-painting.jpg my-painting originals/my-painting.json
 npm run artwork:add -- my-painting north 3.5
+npm run assets:check:local  # 需要完整的本地资源副本
+# 将 public/assets/ 上传到新的 OSS release/assets/，更新 VITE_ASSET_BASE_URL
 npm run assets:check
 npm run build
 ```
@@ -177,6 +187,8 @@ npm run build
 第一条会应用 EXIF 方向，建立临时无损母版，生成多尺寸 WebP、≤20MB 细看源、单套细看 DZI，输出完整像素/字节/路径清单到作品 `metadata.json`。在 WebP 单边16383像素编码限制内优先维持原始像素，尝试94/90/86/82质量，仍超限才逐步缩小。原始文件始终保留，重复执行将旧输出移动至 `originals/generated-backups/`，不覆盖或删除用户输入。
 
 第二条将生成清单加入 `src/data/artworks.json`，或更新同 ID 项。参数依次是：作品ID、墙、沿墙位置（米）、画心离地高度（米，可省略，按原作尺寸自动选择）。元数据必须包含有来源的 `physicalSize`；脚本不再接受任意展示高度。可使用 `north / south / east / west`。沿墙位置以墙中心为零，按各墙自己的局部横轴排列；需预留画框及右下展签位置，避免重叠。
+
+生成的 `public/assets/` 不会进入 Git 或 Pages。新增作品后先将完整资源上传至新的 OSS release（保留 `assets/...` 目录结构），再更新资源根地址并执行远程检查。不要覆盖使用 immutable 缓存的旧 release。
 
 随后可以直接编辑 `src/data/artworks.json` 调整墙面、挂画位置、介绍、来源与许可。更正原作尺寸时同步更新 `physicalSize`、供展签显示的 `dimensions` 与相应批量导入目录，避免再次导入时恢复旧值。图像宽高和像素密度只用于图像资源与清晰度选择，实体画面宽高以 `physicalSize` 为准。
 

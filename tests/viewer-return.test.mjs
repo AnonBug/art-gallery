@@ -15,7 +15,7 @@ async function fixture(){
  const source=await fs.readFile(new URL('../src/viewer.ts',import.meta.url),'utf8');
  const code=ts.transpileModule(source,{compilerOptions:{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2022,esModuleInterop:true}}).outputText;
  const exports={},order=[],changes=[],sources=[],zoom=[];
- const osd=options=>{sources.push(options.tileSources);return {world:{getItemCount:()=>0},viewport:{zoomBy:value=>zoom.push(value),applyConstraints(){},goHome:()=>zoom.push('home')},addHandler(){},removeAllHandlers(){},destroy(){}};};
+ const osd=options=>{assert.equal(options.crossOriginPolicy,'Anonymous');assert.equal(options.ajaxWithCredentials,false);sources.push(options.tileSources);return {world:{getItemCount:()=>0},viewport:{zoomBy:value=>zoom.push(value),applyConstraints(){},goHome:()=>zoom.push('home')},addHandler(){},removeAllHandlers(){},destroy(){}};};
  const win=new EventTarget();win.setTimeout=()=>0;
  vm.runInNewContext(code,{exports,require:id=>id==='openseadragon'?osd:{VERSION:'test'},document:doc,window:win,ResizeObserver:class{observe(){}},clearTimeout});
  const viewer=new exports.ArtViewer(()=>{},(...args)=>{order.push('change');changes.push(args);},[]);

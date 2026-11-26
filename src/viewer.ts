@@ -103,7 +103,7 @@ export class ArtViewer {
   const options: OpenSeadragon.Options & {drawer:string;tileRetryMax:number;tileRetryDelay:number}={element:this.stage, tileSources:source.dzi,drawer:'canvas',
     autoResize:false,showNavigationControl:false,showNavigator:true,navigatorId:'artwork-map',
     navigatorAutoFade:false,navigatorAutoResize:true,navigatorBackground:'#111811',navigatorDisplayRegionColor:'#f3d398',
-    loadTilesWithAjax:true,maxImageCacheCount:100,imageLoaderLimit:4,
+    crossOriginPolicy:'Anonymous',ajaxWithCredentials:false,loadTilesWithAjax:true,maxImageCacheCount:100,imageLoaderLimit:4,
     timeout:15000,tileRetryMax:1,tileRetryDelay:750,maxZoomPixelRatio:1.5,
     visibilityRatio:.7,constrainDuringPan:true,animationTime:.3,blendTime:.15,
     gestureSettingsTouch:{pinchToZoom:true,flickEnabled:false,clickToZoom:false,dblClickToZoom:true},
@@ -111,12 +111,12 @@ export class ArtViewer {
     viewportMargins:this.viewMargins(),minZoomImageRatio:.8,homeFillsViewer:false,immediateRender:false};
   this.viewer=OpenSeadragon(options);
   this.log(`加载 ${a.id} ${source.dzi} / DPR=${OpenSeadragon.pixelDensityRatio}`);
-  this.timer=window.setTimeout(()=>{if(generation===this.generation)this.fail('载入超时，请检查本地瓦片后重试。');},25000);
+  this.timer=window.setTimeout(()=>{if(generation===this.generation)this.fail('载入超时，请检查网络连接后重试。');},25000);
   const viewer=this.viewer;let firstTile=true;
   viewer.addHandler('open',()=>{if(generation!==this.generation)return;const source=viewer.world.getItemAt(0).source as unknown as {downloadTileStart:(job:TileJob)=>void};const start=source.downloadTileStart;source.downloadTileStart=(job)=>{this.jobs.add(job);const finish=job.finish;job.finish=(...args)=>{this.jobs.delete(job);finish.apply(job,args);const image=job.userData.image;if(image?.src.startsWith('blob:'))URL.revokeObjectURL(image.src);};start.call(source,job);};this.resize();if(this.pendingView)this.restoreView(this.pendingView);this.pendingView=null;this.log('DZI 打开成功');});
   viewer.addHandler('tile-drawn',()=>{if(generation!==this.generation)return;clearTimeout(this.timer);if(firstTile){firstTile=false;this.log('首张瓦片已绘制');}if(!this.status.querySelector('button'))this.status.hidden=true;});
   viewer.addHandler('open-failed',()=>{if(generation===this.generation)this.fail('无法打开高清图像，请重试。');});
-  viewer.addHandler('tile-load-failed',(event)=>{if(generation===this.generation)this.fail(`部分瓦片加载失败：${(event as unknown as {message?:string}).message||'本地资源不可用'}`);});
+  viewer.addHandler('tile-load-failed',(event)=>{if(generation===this.generation)this.fail(`部分瓦片加载失败：${(event as unknown as {message?:string}).message||'图像资源不可用'}`);});
   viewer.addHandler('animation-finish',()=>this.log(`缩放 ${viewer.viewport.getZoom().toFixed(3)}`));
   viewer.addHandler('resize',()=>this.updateDiagnostic());
  }

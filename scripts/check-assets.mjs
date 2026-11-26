@@ -31,7 +31,7 @@ for(const a of artworks){
  }
  report.push(row);
 }
-// Sculpture resources and the local Draco decoder are part of the static site too.
+// Deep validation of local sculpture and Draco copies before uploading to OSS.
 const sculptures=JSON.parse(await fs.readFile('src/data/sculptures.json','utf8')),sculptureReport=[];
 for(const s of sculptures){
  const sculptureMeta=JSON.parse(await fs.readFile(`public/assets/sculptures/${s.id}/metadata.json`,'utf8'));

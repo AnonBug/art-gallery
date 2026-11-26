@@ -2,6 +2,8 @@ node_modules/
 dist/
 .DS_Store
 originals/
+# Uploaded to OSS; keep any local processing copies out of Git and Pages.
+/public/assets/
 *.log
 .env
 .env.*

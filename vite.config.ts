@@ -1,14 +1,29 @@
-import {defineConfig} from 'vite';
-import path from 'node:path';
-import artworks from './src/data/artworks.json';
-import {packageGallery} from './scripts/package-gallery.mjs';
-let outDir:string;
-export default defineConfig({
- server:{host:'0.0.0.0',port:5173},preview:{host:'0.0.0.0'},
- plugins:[{
-  name:'package-current-gallery',apply:'build',
-  configResolved(config){outDir=path.resolve(config.root,config.build.outDir);},
-  async closeBundle(){const report=await packageGallery(outDir,artworks);console.log(`Gallery package: ${report.artworks} artworks, ${(report.bytes/1e6).toFixed(1)} MB (1000 MB budget)`);},
- }],
- build:{rollupOptions:{output:{manualChunks:{three:['three'],viewer:['openseadragon']}}}},
+import {defineConfig,loadEnv} from 'vite';
+import {DEFAULT_ASSET_BASE_URL} from './src/asset-path.mjs';
+
+export default defineConfig(({mode})=>{
+ const env=loadEnv(mode,process.cwd(),'VITE_');
+ const assetBase=(env.VITE_ASSET_BASE_URL?.trim()||DEFAULT_ASSET_BASE_URL).replace(/\/+$/,'');
+ const remote=new URL(assetBase);
+ if(!['https:','http:'].includes(remote.protocol)||remote.search||remote.hash){
+  throw new Error('VITE_ASSET_BASE_URL must be an HTTP(S) release URL without query or fragment');
+ }
+ return {
+  // Local processing copies must never be copied into the Pages build.
+  publicDir:false,
+  server:{host:'0.0.0.0',port:5173,proxy:{
+   '/__gallery_assets/':{
+    target:remote.origin,changeOrigin:true,
+    rewrite:url=>`${remote.pathname.replace(/\/+$/,'')}/`+url.slice('/__gallery_assets/'.length),
+    configure(proxy){
+     proxy.on('proxyReq',request=>{
+      // This is a server-to-server request for public objects, not a browser CORS request.
+      for(const header of ['origin','referer','cookie','authorization'])request.removeHeader(header);
+     });
+    },
+   },
+  }},
+  preview:{host:'0.0.0.0'},
+  build:{rollupOptions:{output:{manualChunks:{three:['three'],viewer:['openseadragon']}}}},
+ };
 });

@@ -4,19 +4,19 @@ import {DRACOLoader} from 'three/addons/loaders/DRACOLoader.js';
 import {assetPath} from './asset-path.mjs';
 import data from './data/sculptures.json';
 
-export const sculptures=data.map(s=>({...s,model:assetPath(s.model,import.meta.env.BASE_URL)}));
+export const sculptures=data.map(s=>({...s,model:assetPath(s.model),poster:assetPath(s.poster)}));
 export type Sculpture=typeof sculptures[number];
 export function sculptureFor(id:string){const s=sculptures.find(s=>s.id===id);if(!s)throw new Error(`Unknown sculpture: ${id}`);return s;}
 const cache=new Map<string,Promise<THREE.Group>>();
 const listeners=new Map<string,Set<(loaded:number,total:number)=>void>>();
 
-/** One immutable, centred asset shared by hall and inspection viewer. No runtime CDN. */
+/** One immutable, centred OSS asset shared by hall and inspection viewer. */
 export function loadSculpture(id:string,onProgress?:(loaded:number,total:number)=>void){
  const sculpture=sculptureFor(id);
  const progressListeners=listeners.get(id)??new Set<(loaded:number,total:number)=>void>();listeners.set(id,progressListeners);
  if(onProgress)progressListeners.add(onProgress);
  if(!cache.has(id)){
-  const draco=new DRACOLoader();draco.setDecoderPath(assetPath('/assets/draco/',import.meta.env.BASE_URL));draco.setWorkerLimit(2);
+  const draco=new DRACOLoader();draco.setDecoderPath(assetPath('/assets/draco/'));draco.setWorkerLimit(2);
   const loader=new GLTFLoader();loader.setDRACOLoader(draco);
   const promise=new Promise<THREE.Group>((resolve,reject)=>{
    loader.load(sculpture.model,gltf=>{

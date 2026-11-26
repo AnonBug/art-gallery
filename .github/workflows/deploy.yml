@@ -29,7 +29,8 @@ jobs:
         uses: actions/configure-pages@983d7736d9b0ae728b81ab479565c72886d7745b # v5
       - run: npm ci
       - run: npm test
-      - run: npm run assets:check
+      - name: Check OSS resources and Pages CORS access
+        run: npm run assets:check
       - name: Build for the Pages subdirectory
         env:
           PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
