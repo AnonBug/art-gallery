@@ -8,6 +8,7 @@ interface ArtworkView {x:number;y:number;zoom:number}
 (OpenSeadragon as unknown as {getCurrentPixelDensityRatio:()=>number}).getCurrentPixelDensityRatio=()=>1;
 export class ArtViewer {
  private jobs=new Set<TileJob>();
+ private failedTiles=new Set<OpenSeadragon.Tile>();
  private viewer: OpenSeadragon.Viewer | null = null;
  private artwork: Artwork | null = null;
  private pendingView: ArtworkView | null = null;
@@ -51,7 +52,7 @@ export class ArtViewer {
   window.addEventListener('orientationchange',()=>requestAnimationFrame(()=>this.resize()));
  }
  get isOpen(){return !this.root.hidden;}
- get state(){const view=this.captureView();return {activeViewers:this.viewer?1:0,pendingTiles:this.jobs.size,artwork:this.artwork?.id,source:'detail',zoom:view?.zoom,center:view?[view.x,view.y]:undefined,viewport:[this.stage.clientWidth,this.stage.clientHeight],events:this.logs};}
+ get state(){const view=this.captureView();return {activeViewers:this.viewer?1:0,pendingTiles:this.jobs.size,failedTiles:this.failedTiles.size,artwork:this.artwork?.id,source:'detail',zoom:view?.zoom,center:view?[view.x,view.y]:undefined,viewport:[this.stage.clientWidth,this.stage.clientHeight],events:this.logs};}
  setDiagnostics(show:boolean){this.diagnostic.hidden=!show;this.updateDiagnostic();}
  private log(message:string){this.logs.push(`${new Date().toLocaleTimeString()} ${message}`);this.logs=this.logs.slice(-24);this.updateDiagnostic();}
  private updateDiagnostic(){if(!this.diagnostic.hidden)this.diagnostic.textContent=`漫览 v${VERSION}\n${JSON.stringify({...this.state,events:undefined},null,2)}\n${this.logs.join('\n')}`;}
@@ -73,7 +74,7 @@ export class ArtViewer {
   viewer.navigator?.update(viewer.viewport);viewer.forceRedraw();
   this.log(`保留视野 / 缩放 ${viewer.viewport.getZoom(true).toFixed(3)} / 中心 ${view.x.toFixed(4)}, ${view.y.toFixed(4)}`);
  }
- private destroy(){this.generation++;clearTimeout(this.timer);for(const job of this.jobs){job.callback=()=>{};clearTimeout(job.jobId);job.abort();const image=job.userData.image;if(image){if(image.src.startsWith('blob:'))URL.revokeObjectURL(image.src);image.src='';}}this.jobs.clear();if(this.viewer){for(const event of ['open','tile-drawn','open-failed','tile-load-failed','animation-finish','resize'] as const)this.viewer.removeAllHandlers(event);this.viewer.destroy();this.viewer=null;}this.stage.replaceChildren();const map=this.root.querySelector('.viewer-map') as HTMLElement;map.hidden=true;map.innerHTML='<span>画幅位置</span><div id="artwork-map" class="viewer-map-viewport" title="点击或拖动小地图定位"></div>';}
+ private destroy(){this.generation++;clearTimeout(this.timer);for(const job of this.jobs){job.callback=()=>{};clearTimeout(job.jobId);job.abort();const image=job.userData.image;if(image){if(image.src.startsWith('blob:'))URL.revokeObjectURL(image.src);image.src='';}}this.jobs.clear();this.failedTiles.clear();if(this.viewer){for(const event of ['open','tile-drawn','tile-loaded','open-failed','tile-load-failed','animation-finish','resize'] as const)this.viewer.removeAllHandlers(event);this.viewer.destroy();this.viewer=null;}this.stage.replaceChildren();const map=this.root.querySelector('.viewer-map') as HTMLElement;map.hidden=true;map.innerHTML='<span>画幅位置</span><div id="artwork-map" class="viewer-map-viewport" title="点击或拖动小地图定位"></div>';}
  private viewMargins(){
   const stage=this.stage.getBoundingClientRect();
   const header=this.root.querySelector('.viewer-header')!.getBoundingClientRect();
@@ -114,9 +115,19 @@ export class ArtViewer {
   this.timer=window.setTimeout(()=>{if(generation===this.generation)this.fail('载入超时，请检查网络连接后重试。');},25000);
   const viewer=this.viewer;let firstTile=true;
   viewer.addHandler('open',()=>{if(generation!==this.generation)return;const source=viewer.world.getItemAt(0).source as unknown as {downloadTileStart:(job:TileJob)=>void};const start=source.downloadTileStart;source.downloadTileStart=(job)=>{this.jobs.add(job);const finish=job.finish;job.finish=(...args)=>{this.jobs.delete(job);finish.apply(job,args);const image=job.userData.image;if(image?.src.startsWith('blob:'))URL.revokeObjectURL(image.src);};start.call(source,job);};this.resize();if(this.pendingView)this.restoreView(this.pendingView);this.pendingView=null;this.log('DZI 打开成功');});
-  viewer.addHandler('tile-drawn',()=>{if(generation!==this.generation)return;clearTimeout(this.timer);if(firstTile){firstTile=false;this.log('首张瓦片已绘制');}if(!this.status.querySelector('button'))this.status.hidden=true;});
+  viewer.addHandler('tile-drawn',()=>{if(generation!==this.generation)return;clearTimeout(this.timer);if(firstTile){firstTile=false;this.log('首张瓦片已绘制');}if(!this.failedTiles.size)this.status.hidden=true;});
+  viewer.addHandler('tile-loaded',event=>{
+   if(generation!==this.generation||!this.failedTiles.delete(event.tile))return;
+   if(!this.failedTiles.size){this.status.hidden=true;this.log('失败瓦片已自动恢复');}
+   else this.updateDiagnostic();
+  });
   viewer.addHandler('open-failed',()=>{if(generation===this.generation)this.fail('无法打开高清图像，请重试。');});
-  viewer.addHandler('tile-load-failed',(event)=>{if(generation===this.generation)this.fail(`部分瓦片加载失败：${(event as unknown as {message?:string}).message||'图像资源不可用'}`);});
+  viewer.addHandler('tile-load-failed',event=>{
+   if(generation!==this.generation)return;
+   this.failedTiles.add(event.tile);
+   this.log(`瓦片 ${event.tile.toString()} / HTTP ${event.tileRequest?.status??'未知'} / ${event.message}`);
+   this.fail(`部分瓦片加载失败：${event.message||'图像资源不可用'}`);
+  });
   viewer.addHandler('animation-finish',()=>this.log(`缩放 ${viewer.viewport.getZoom().toFixed(3)}`));
   viewer.addHandler('resize',()=>this.updateDiagnostic());
  }
